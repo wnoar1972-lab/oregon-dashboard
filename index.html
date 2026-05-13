@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>IM 70.3 Oregon — Race Dashboard</title>
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='38' fill='%230f172a'/%3E%3Ctext x='90' y='110' font-size='90' text-anchor='middle'%3E🏊%3C/text%3E%3C/svg%3E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Oregon 70.3">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-height:100vh}
+
+/* LOADING */
+#loading{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#0a0f1a}
+.spinner{width:48px;height:48px;border:3px solid rgba(255,255,255,0.1);border-top-color:#29b6f6;border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.load-txt{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+#app{display:none}
+
+/* TABS */
+.tabs{display:flex;background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 3px 16px rgba(0,0,0,0.1);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;padding:0;cursor:pointer;text-align:center;transition:all .2s;background:#fff;border-bottom:4px solid transparent}
+.tab-inner{padding:13px 16px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.tab-icon{font-size:20px}
+.tab-lbl{font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;transition:color .2s;white-space:nowrap}
+.tab.t-summary.on{border-bottom-color:#0d9488}.tab.t-summary.on .tab-lbl{color:#0d9488}
+.tab.t-daily.on{border-bottom-color:#db2777}.tab.t-daily.on .tab-lbl{color:#db2777}
+.tab.t-training.on{border-bottom-color:#0284c7}.tab.t-training.on .tab-lbl{color:#0284c7}
+.tab.t-health.on{border-bottom-color:#7c3aed}.tab.t-health.on .tab-lbl{color:#7c3aed}
+.tab.t-performance.on{border-bottom-color:#ea580c}.tab.t-performance.on .tab-lbl{color:#ea580c}
+.tab.t-course.on{border-bottom-color:#059669}.tab.t-course.on .tab-lbl{color:#059669}
+
+.page{display:none}.page.on{display:block}
+.main{max-width:1080px;margin:0 auto;padding:1.75rem 1.5rem}
+
+/* HERO */
+.hero{position:relative;height:360px;overflow:hidden;display:flex;align-items:flex-end}
+.hero-photo{position:absolute;inset:0;background-size:cover;background-position:center;animation:hz 20s ease-in-out infinite alternate}
+@keyframes hz{from{transform:scale(1)}to{transform:scale(1.05)}}
+.hero-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,40,.94) 0%,rgba(10,20,40,.25) 55%,rgba(10,20,40,.05) 100%)}
+.hero-content{position:relative;z-index:2;width:100%;padding:0 2.5rem 2.25rem;display:flex;justify-content:space-between;align-items:flex-end}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#29b6f6;margin-bottom:8px}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,8vw,92px);line-height:.88;letter-spacing:.02em;color:#fff}
+.hero-title .hl{color:#ff7043;display:block}
+.hero-meta{margin-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+.hero-meta span{font-size:13px;color:rgba(255,255,255,.5)}
+.hero-meta span::before{content:'· ';color:#29b6f6}
+.cd-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(68px,10vw,108px);line-height:1;color:#ff7043;letter-spacing:-.02em;text-align:right;text-shadow:0 0 30px rgba(255,112,67,.35)}
+.cd-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);text-align:right}
+
+/* DISC STRIP */
+.disc-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#e2e8f0}
+.disc{position:relative;height:190px;overflow:hidden}
+.disc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.disc:hover img{transform:scale(1.04)}
+.disc-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.78) 0%,rgba(0,0,0,.1) 55%,transparent 100%)}
+.disc-body{position:absolute;bottom:0;left:0;right:0;padding:1.1rem 1.4rem;z-index:2}
+.disc-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px;font-weight:600}
+.disc-name{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.04em;color:#fff;line-height:1;margin-bottom:4px}
+.disc-info{font-size:12px;color:rgba(255,255,255,.6);line-height:1.55}
+.disc-accent{position:absolute;top:0;left:0;right:0;height:3px}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.5rem}
+.sc{background:#fff;border-radius:12px;padding:15px 17px;border-bottom:4px solid;box-shadow:0 2px 10px rgba(0,0,0,.07);transition:transform .2s}
+.sc:hover{transform:translateY(-2px)}
+.sc-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;margin-bottom:6px}
+.sc-val{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:.02em;line-height:1;margin-bottom:3px}
+.sc-sub{font-size:12px;color:#94a3b8}
+
+/* SECTION */
+.sec{display:flex;align-items:center;gap:12px;margin-bottom:10px;margin-top:1.5rem}
+.sec-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#94a3b8;white-space:nowrap}
+.sec-rule{flex:1;height:1px;background:#e2e8f0}
+
+/* WEEK GRID */
+.wgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin-bottom:1.25rem}
+.wbtn{background:#fff;border:2px solid #e2e8f0;border-radius:10px;padding:10px 4px 9px;cursor:pointer;text-align:center;transition:all .2s;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.wbtn:hover{transform:translateY(-2px);box-shadow:0 5px 16px rgba(0,0,0,.1)}
+.wbtn.on{transform:translateY(-3px)}
+.wn{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:4px}
+.wtss{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.02em;margin-bottom:4px;color:#1a2535}
+.wbar-bg{height:3px;background:#f1f5f9;border-radius:2px;margin:0 6px 5px;overflow:hidden}
+.wbar-fill{height:100%;border-radius:2px}
+.wph{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+
+/* DETAIL */
+.detail{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.det-hero{position:relative;height:230px;overflow:hidden}
+.det-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.det-grad{position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,20,40,.96) 0%,rgba(10,20,40,.6) 45%,rgba(10,20,40,.1) 100%)}
+.det-hdr{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 2rem}
+.det-eyebrow{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:7px}
+.det-title{font-family:'Bebas Neue',sans-serif;font-size:44px;letter-spacing:.03em;color:#fff;line-height:1;margin-bottom:10px}
+.det-tags{display:flex;gap:7px;flex-wrap:wrap}
+.dtag{font-family:'JetBrains Mono',monospace;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.det-body{padding:1.25rem 1.75rem}
+.tss-row{display:flex;justify-content:space-between;margin-bottom:5px}
+.tss-row span{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8}
+.tss-track{height:7px;background:#f1f5f9;border-radius:4px;overflow:hidden;margin-bottom:1rem}
+.tss-bar{height:100%;border-radius:4px}
+.fpills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1rem}
+.fpill{font-size:12px;color:#64748b;background:#f8fafc;border:1px solid #e2e8f0;border-radius:20px;padding:4px 11px}
+.sess-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:1rem}
+.sess{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden}
+.sess-top{padding:10px 13px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #e2e8f0}
+.sess-icon{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px}
+.sess-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.sess-body{padding:11px 13px;font-size:13px;color:#64748b;line-height:1.75}
+.note-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:9px;padding:11px 14px;display:flex;gap:10px;align-items:flex-start}
+.note-txt{font-size:13px;color:#3b6fa0;line-height:1.7}
+
+/* DAILY FEED */
+.feed-wrap{background:#fff;border-radius:12px;padding:1.25rem 1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.feed-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f1f5f9}
+.feed-item:last-child{border-bottom:none}
+.feed-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.feed-date{font-family:'JetBrains Mono',monospace;font-size:11px;color:#94a3b8;min-width:78px}
+.feed-icon{font-size:17px;flex-shrink:0}
+.feed-name{font-size:13px;font-weight:500;color:#1a2535;flex:1}
+.feed-tss{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;min-width:50px;text-align:right}
+.feed-np{font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8;min-width:50px;text-align:right}
+
+/* WEEKLY BARS */
+.wbar-card{background:#fff;border-radius:12px;padding:1.25rem 1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:1.25rem}
+.wpr{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f1f5f9}
+.wpr:last-child{border-bottom:none}
+.wpr-lbl{font-family:'JetBrains Mono',monospace;font-size:11px;color:#64748b;min-width:56px;line-height:1.4}
+.wpr-bars{flex:1;display:flex;flex-direction:column;gap:4px}
+.wpr-bar-row{display:flex;align-items:center;gap:6px}
+.wpr-bar-type{font-size:10px;color:#94a3b8;font-family:'JetBrains Mono',monospace;min-width:40px}
+.wpr-bg{flex:1;height:9px;background:#f1f5f9;border-radius:4px;overflow:hidden}
+.wpr-fill{height:100%;border-radius:4px}
+.wpr-num{font-family:'JetBrains Mono',monospace;font-size:11px;min-width:64px;text-align:right}
+.wpr-badge{font-size:11px;font-weight:700;min-width:72px;text-align:right;font-family:'JetBrains Mono',monospace}
+
+/* SLEEP TABLE */
+.sleep-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:1.25rem}
+.sleep-table{width:100%;border-collapse:collapse}
+.sleep-table th{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8;padding:10px 14px;border-bottom:2px solid #e2e8f0;text-align:left;background:#f8fafc}
+.sleep-table td{font-size:13px;padding:10px 14px;border-bottom:1px solid #f1f5f9;color:#1a2535}
+.sleep-table tr:last-child td{border-bottom:none}
+.q-good{background:#dcfce7;color:#166534;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px}
+.q-fair{background:#fef9c3;color:#854d0e;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px}
+.q-poor{background:#fee2e2;color:#991b1b;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px}
+.spo2-ok{color:#059669;font-weight:600}
+.spo2-warn{color:#d97706;font-weight:600}
+.spo2-low{color:#dc2626;font-weight:600}
+
+/* ANALYSIS */
+.analysis-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);margin-bottom:1.25rem}
+.analysis-hdr{background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:18px 22px;display:flex;align-items:center;justify-content:space-between}
+.analysis-hdr h3{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:.04em;color:#fff}
+.analysis-hdr p{font-size:12px;color:rgba(255,255,255,.5);font-family:'JetBrains Mono',monospace;margin-top:3px}
+.analysis-badge{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15)}
+.analysis-body{padding:18px 22px}
+.disc-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.disc-card{border-radius:10px;padding:14px 16px;border:1px solid}
+.disc-card-full{grid-column:1/-1}
+.disc-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.disc-head-title{font-size:14px;font-weight:700;color:#1a2535;display:flex;align-items:center;gap:7px}
+.status-pill{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:20px;font-family:'JetBrains Mono',monospace}
+.disc-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:8px}
+.dstat{text-align:center;background:rgba(255,255,255,.7);border-radius:7px;padding:7px 6px}
+.dstat-val{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.02em;line-height:1}
+.dstat-lbl{font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em;font-family:'JetBrains Mono',monospace;margin-top:1px}
+.disc-insight{font-size:12px;line-height:1.65;padding:8px 10px;border-radius:7px}
+.concern-list,.strength-list{display:flex;flex-direction:column;gap:7px;margin-bottom:10px}
+.concern-item{display:flex;gap:9px;padding:9px 11px;border-radius:8px;background:#fff;border:1px solid #fecaca;align-items:flex-start}
+.strength-item{display:flex;gap:9px;padding:9px 11px;border-radius:8px;background:#f0fdf4;border:1px solid #bbf7d0;align-items:flex-start}
+.ci-icon,.si-icon{font-size:17px;flex-shrink:0}
+.ci-title{font-size:12px;font-weight:700;color:#1a2535;margin-bottom:2px}
+.si-title{font-size:12px;font-weight:700;color:#166534;margin-bottom:2px}
+.ci-text{font-size:12px;color:#64748b;line-height:1.6}
+.si-text{font-size:12px;color:#15803d;line-height:1.6}
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.focus-card{border-radius:9px;padding:13px 14px;border:1px solid;text-align:center}
+.focus-num{font-family:'Bebas Neue',sans-serif;font-size:38px;letter-spacing:.02em;line-height:1;margin-bottom:3px}
+.focus-title{font-size:12px;font-weight:700;color:#1a2535;margin-bottom:3px}
+.focus-text{font-size:11px;color:#64748b;line-height:1.55}
+
+/* COURSE */
+.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ccard{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);transition:transform .2s}
+.ccard:hover{transform:translateY(-3px)}
+.cimg{height:145px;overflow:hidden}
+.cimg img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ccard:hover .cimg img{transform:scale(1.05)}
+.cbody{padding:13px 15px}
+.ctag{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px;font-weight:700}
+.cname{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.04em;color:#1a2535;margin-bottom:5px}
+.cinfo{font-size:12px;color:#64748b;line-height:1.7}
+
+/* RACE CARDS */
+.race-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem}
+.rcard{border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.rcard-photo{position:relative;height:170px;overflow:hidden}
+.rcard-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.rcard:hover .rcard-photo img{transform:scale(1.04)}
+.rcard-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,40,.92) 0%,rgba(10,20,40,.2) 60%,transparent 100%)}
+.rcard-badge{position:absolute;top:12px;right:12px;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:20px}
+.rcard-content{position:absolute;bottom:0;left:0;right:0;padding:1rem 1.25rem}
+.rcard-eyebrow{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:3px}
+.rcard-title{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:.03em;color:#fff;line-height:1;margin-bottom:5px}
+.rcard-meta{font-size:11px;color:rgba(255,255,255,.6);display:flex;gap:10px;flex-wrap:wrap}
+.rcard-body{background:#fff;padding:12px 14px}
+.rcard-disc-row{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:9px}
+.rcard-disc{background:#f8fafc;border-radius:7px;padding:8px 9px;border:1px solid #e2e8f0}
+.rcard-disc-icon{font-size:15px;margin-bottom:2px}
+.rcard-disc-lbl{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:2px}
+.rcard-disc-val{font-size:12px;font-weight:600;color:#1a2535}
+.rcard-disc-note{font-size:10px;color:#94a3b8;margin-top:1px}
+.rcard-insight{font-size:11px;color:#64748b;line-height:1.65;padding:7px 9px;border-radius:7px;border-left:3px solid}
+.rcard-progress{margin-top:9px}
+.rcard-prog-lbl{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8;margin-bottom:4px}
+.rcard-prog-bg{height:5px;background:#f1f5f9;border-radius:3px;overflow:hidden}
+.rcard-prog-fill{height:100%;border-radius:3px}
+
+/* UPDATE BAR */
+.update-bar{background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:10px 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.update-info{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,.5);letter-spacing:.06em}
+.update-info strong{color:#29b6f6}
+.update-time{font-size:11px;color:rgba(255,255,255,.35);font-family:'JetBrains Mono',monospace}
+
+footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;margin-top:1.5rem}
+
+/* MOBILE */
+@media(max-width:480px){
+  .hero{height:260px}
+  .hero-title{font-size:44px}
+  .hero-content{padding:0 1rem 1.5rem;flex-direction:column;align-items:flex-start;gap:4px}
+  .cd-num{font-size:60px}
+  .cd-block{text-align:left}
+  .disc-strip{display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:2px;scrollbar-width:none}
+  .disc-strip::-webkit-scrollbar{display:none}
+  .disc{flex:0 0 72vw;height:150px}
+  .stats{grid-template-columns:1fr 1fr;gap:8px}
+  .sc-val{font-size:26px}
+  .wgrid{grid-template-columns:repeat(5,1fr);gap:4px}
+  .wtss{font-size:16px}
+  .sess-grid,.course-grid,.race-cards,.disc-row,.focus-grid{grid-template-columns:1fr}
+  .disc-card-full{grid-column:auto}
+  .main{padding:1rem}
+  .det-hero{height:170px}
+  .det-title{font-size:30px}
+  .det-body{padding:1rem}
+  .analysis-body{padding:14px 16px}
+  footer{display:none}
+}
+</style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <div class="load-txt">Loading dashboard...</div>
+</div>
+
+<div id="app">
+
+<div class="update-bar">
+  <div class="update-info">Auto-updated daily · Last sync: <strong id="lastUpdated">—</strong></div>
+  <div class="update-time" id="daysToRace">— days to race</div>
+</div>
+
+<div class="tabs">
+  <div class="tab t-summary on" onclick="showTab('summary',this)"><div class="tab-inner"><div class="tab-icon">📋</div><div class="tab-lbl">Summary</div></div></div>
+  <div class="tab t-daily" onclick="showTab('daily',this)"><div class="tab-inner"><div class="tab-icon">📅</div><div class="tab-lbl">Daily Log</div></div></div>
+  <div class="tab t-training" onclick="showTab('training',this)"><div class="tab-inner"><div class="tab-icon">🏋️</div><div class="tab-lbl">Training</div></div></div>
+  <div class="tab t-health" onclick="showTab('health',this)"><div class="tab-inner"><div class="tab-icon">💤</div><div class="tab-lbl">Sleep</div></div></div>
+  <div class="tab t-performance" onclick="showTab('performance',this)"><div class="tab-inner"><div class="tab-icon">📊</div><div class="tab-lbl">Performance</div></div></div>
+  <div class="tab t-course" onclick="showTab('course',this)"><div class="tab-inner"><div class="tab-icon">🗺️</div><div class="tab-lbl">Course</div></div></div>
+</div>
+
+<!-- SUMMARY -->
+<div class="page on" id="page-summary">
+  <div class="hero">
+    <div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=1400&q=85')"></div>
+    <div class="hero-grad"></div>
+    <div class="hero-content">
+      <div>
+        <div class="eyebrow">Training Summary · 2026 Season</div>
+        <div class="hero-title">Season<span class="hl">Overview</span></div>
+        <div class="hero-meta"><span>Salem, Oregon</span><span>July 19, 2026</span><span>70.3 Miles</span></div>
+      </div>
+      <div class="cd-block">
+        <div class="cd-num" id="cdNum">—</div>
+        <div class="cd-lbl">Days to race</div>
+      </div>
+    </div>
+  </div>
+  <div class="disc-strip">
+    <div class="disc"><img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=700&q=85" alt="swim"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#38bdf8,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#38bdf8">Swim</div><div class="disc-name">Willamette</div><div class="disc-info">Downstream · 1.2mi</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=700&q=85" alt="bike"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#fb923c,#fbbf24)"></div><div class="disc-body"><div class="disc-tag" style="color:#fb923c">Bike</div><div class="disc-name">Wine Country</div><div class="disc-info">56mi · NP 145–152w</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=700&q=85" alt="run"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#34d399,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#34d399">Run</div><div class="disc-name">Minto-Brown</div><div class="disc-info">13.1mi · sub-9:10/mi</div></div></div>
+  </div>
+  <div class="main">
+    <div class="stats">
+      <div class="sc" style="border-color:#38bdf8"><div class="sc-lbl">Weeks logged</div><div class="sc-val" style="color:#0284c7" id="sc-weeks">—</div><div class="sc-sub" id="sc-weeksSub">of 10</div></div>
+      <div class="sc" style="border-color:#fb923c"><div class="sc-lbl">Current phase</div><div class="sc-val" style="color:#ea580c" id="sc-phase">—</div><div class="sc-sub" id="sc-phaseSub">—</div></div>
+      <div class="sc" style="border-color:#34d399"><div class="sc-lbl">Bike NP avg</div><div class="sc-val" style="color:#059669" id="sc-np">—</div><div class="sc-sub">target 145–152w</div></div>
+      <div class="sc" style="border-color:#fbbf24"><div class="sc-lbl">Activities</div><div class="sc-val" style="color:#d97706" id="sc-acts">—</div><div class="sc-sub">total in build</div></div>
+    </div>
+    <div class="sec"><div class="sec-lbl">2026 Race Calendar</div><div class="sec-rule"></div></div>
+    <div class="race-cards">
+      <div class="rcard">
+        <div class="rcard-photo"><img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=700&q=85" alt="Oregon"><div class="rcard-ov"></div><div class="rcard-badge" style="background:rgba(2,132,199,.85);color:#fff">A-Race 1</div><div class="rcard-content"><div class="rcard-eyebrow" style="color:#38bdf8">Ironman 70.3</div><div class="rcard-title">Oregon</div><div class="rcard-meta"><span>📍 Salem, OR</span><span>📅 Jul 19, 2026</span></div></div></div>
+        <div class="rcard-body">
+          <div class="rcard-disc-row">
+            <div class="rcard-disc"><div class="rcard-disc-icon">🏊</div><div class="rcard-disc-lbl">Swim</div><div class="rcard-disc-val">1.2mi</div><div class="rcard-disc-note">Downstream</div></div>
+            <div class="rcard-disc"><div class="rcard-disc-icon">🚴</div><div class="rcard-disc-lbl">Bike</div><div class="rcard-disc-val">56mi</div><div class="rcard-disc-note">Wine country</div></div>
+            <div class="rcard-disc"><div class="rcard-disc-icon">🏃</div><div class="rcard-disc-lbl">Run</div><div class="rcard-disc-val">13.1mi</div><div class="rcard-disc-note">Shaded trail</div></div>
+          </div>
+          <div class="rcard-insight" style="border-color:#38bdf8;background:#f0f9ff;color:#1e40af"><strong>Goal:</strong> Sub-6:00 · Bike NP 145–152w · Run sub-9:10/mi</div>
+          <div class="rcard-progress"><div class="rcard-prog-lbl"><span>Build progress</span><span id="oregonPct">—</span></div><div class="rcard-prog-bg"><div class="rcard-prog-fill" id="oregonBar" style="background:linear-gradient(to right,#38bdf8,#0284c7)"></div></div></div>
+        </div>
+      </div>
+      <div class="rcard">
+        <div class="rcard-photo"><img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=700&q=85" alt="California"><div class="rcard-ov"></div><div class="rcard-badge" style="background:rgba(220,38,38,.85);color:#fff">A-Race · Full IM</div><div class="rcard-content"><div class="rcard-eyebrow" style="color:#fb923c">Ironman 140.6</div><div class="rcard-title">California</div><div class="rcard-meta"><span>📍 Sacramento, CA</span><span>📅 Oct 18, 2026</span></div></div></div>
+        <div class="rcard-body">
+          <div class="rcard-disc-row">
+            <div class="rcard-disc"><div class="rcard-disc-icon">🏊</div><div class="rcard-disc-lbl">Swim</div><div class="rcard-disc-val">2.4mi</div><div class="rcard-disc-note">Sacramento River</div></div>
+            <div class="rcard-disc"><div class="rcard-disc-icon">🚴</div><div class="rcard-disc-lbl">Bike</div><div class="rcard-disc-val">112mi</div><div class="rcard-disc-note">2-loop flat</div></div>
+            <div class="rcard-disc"><div class="rcard-disc-icon">🏃</div><div class="rcard-disc-lbl">Run</div><div class="rcard-disc-val">26.2mi</div><div class="rcard-disc-note">State Capitol</div></div>
+          </div>
+          <div class="rcard-insight" style="border-color:#fb923c;background:#fff7ed;color:#9a3412"><strong>Oregon is the dress rehearsal</strong> — same pacing strategy, double the distance</div>
+          <div class="rcard-progress"><div class="rcard-prog-lbl"><span>Days out</span><span id="calDays">—</span></div><div class="rcard-prog-bg"><div class="rcard-prog-fill" id="calBar" style="background:linear-gradient(to right,#fb923c,#dc2626)"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="sec"><div class="sec-lbl">Training Analysis</div><div class="sec-rule"></div></div>
+    <div id="analysisSection"></div>
+  </div>
+</div>
+
+<!-- DAILY LOG -->
+<div class="page" id="page-daily">
+  <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Daily Training Log</div><div class="hero-title">Activity<span class="hl">Feed</span></div></div></div></div>
+  <div class="disc-strip">
+    <div class="disc"><img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=700&q=85" alt="swim"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#38bdf8,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#38bdf8">Swim</div><div class="disc-name">Willamette</div><div class="disc-info">Downstream · 1.2mi</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700&q=85" alt="bike"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#fb923c,#fbbf24)"></div><div class="disc-body"><div class="disc-tag" style="color:#fb923c">Bike</div><div class="disc-name">Wine Country</div><div class="disc-info">56mi · NP 145–152w</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=700&q=85" alt="run"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#34d399,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#34d399">Run</div><div class="disc-name">Minto-Brown</div><div class="disc-info">13.1mi · sub-9:10/mi</div></div></div>
+  </div>
+  <div class="main">
+    <div class="sec"><div class="sec-lbl">Weekly TSS — Actual vs Target by Discipline</div><div class="sec-rule"></div></div>
+    <div class="wbar-card" id="weeklyBars"></div>
+    <div class="sec"><div class="sec-lbl">Activity Feed</div><div class="sec-rule"></div></div>
+    <div class="feed-wrap" id="activityFeed"></div>
+  </div>
+</div>
+
+<!-- TRAINING -->
+<div class="page" id="page-training">
+  <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Race Command Center · 2026</div><div class="hero-title">Ironman<span class="hl">Oregon</span></div><div class="hero-meta"><span>Salem, Oregon</span><span>July 19, 2026</span><span>70.3 Miles</span></div></div><div class="cd-block"><div class="cd-num" id="cdNum2">—</div><div class="cd-lbl">Days to race</div></div></div></div>
+  <div class="disc-strip">
+    <div class="disc"><img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=700&q=85" alt="swim"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#38bdf8,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#38bdf8">Swim · 1.2mi</div><div class="disc-name">Willamette</div><div class="disc-info">Downstream current · ~38–42 min</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=700&q=85" alt="bike"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#fb923c,#fbbf24)"></div><div class="disc-body"><div class="disc-tag" style="color:#fb923c">Bike · 56mi</div><div class="disc-name">Wine Country</div><div class="disc-info">1,368ft gain · NP 145–152w</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=700&q=85" alt="run"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#34d399,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#34d399">Run · 13.1mi</div><div class="disc-name">Minto-Brown</div><div class="disc-info">Shaded trail · sub-9:10/mi</div></div></div>
+  </div>
+  <div class="main">
+    <div class="stats">
+      <div class="sc" style="border-color:#38bdf8"><div class="sc-lbl">Weeks logged</div><div class="sc-val" style="color:#0284c7" id="t-weeks">—</div><div class="sc-sub">of 10</div></div>
+      <div class="sc" style="border-color:#fb923c"><div class="sc-lbl">Current week</div><div class="sc-val" style="color:#ea580c" id="t-curWeek">—</div><div class="sc-sub" id="t-curDates">—</div></div>
+      <div class="sc" style="border-color:#34d399"><div class="sc-lbl">Bike NP avg</div><div class="sc-val" style="color:#059669" id="t-np">—</div><div class="sc-sub">target 145–152w</div></div>
+      <div class="sc" style="border-color:#fbbf24"><div class="sc-lbl">Run goal</div><div class="sc-val" style="color:#d97706">&lt;9:10</div><div class="sc-sub">per mile</div></div>
+    </div>
+    <div class="sec"><div class="sec-lbl">Training weeks — tap to view sessions</div><div class="sec-rule"></div></div>
+    <div class="wgrid" id="wgrid"></div>
+    <div class="detail" id="detail">
+      <div style="height:130px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.12em;color:#94a3b8">SELECT A WEEK ABOVE</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#cbd5e1;letter-spacing:.08em">Tap any week to view sessions</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEALTH -->
+<div class="page" id="page-health">
+  <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Sleep & Recovery</div><div class="hero-title">Sleep<span class="hl">Data</span></div></div></div></div>
+  <div class="disc-strip">
+    <div class="disc"><img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=700&q=85" alt="swim"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#38bdf8,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#38bdf8">Swim</div><div class="disc-name">Willamette</div><div class="disc-info">Downstream · 1.2mi</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700&q=85" alt="bike"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#fb923c,#fbbf24)"></div><div class="disc-body"><div class="disc-tag" style="color:#fb923c">Bike</div><div class="disc-name">Wine Country</div><div class="disc-info">56mi · NP 145–152w</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=700&q=85" alt="run"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#34d399,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#34d399">Run</div><div class="disc-name">Minto-Brown</div><div class="disc-info">13.1mi · sub-9:10/mi</div></div></div>
+  </div>
+  <div class="main">
+    <div class="stats">
+      <div class="sc" style="border-color:#818cf8"><div class="sc-lbl">Avg sleep score</div><div class="sc-val" style="color:#6366f1" id="h-avgScore">—</div><div class="sc-sub">last 30 nights</div></div>
+      <div class="sc" style="border-color:#38bdf8"><div class="sc-lbl">Avg duration</div><div class="sc-val" style="color:#0284c7" id="h-avgDur">—</div><div class="sc-sub">hours/night</div></div>
+      <div class="sc" style="border-color:#34d399"><div class="sc-lbl">Avg SpO2</div><div class="sc-val" style="color:#059669" id="h-avgSpo2">—</div><div class="sc-sub">target ≥95%</div></div>
+      <div class="sc" style="border-color:#fb923c"><div class="sc-lbl">Resting HR</div><div class="sc-val" style="color:#ea580c" id="h-rhr">—</div><div class="sc-sub">bpm</div></div>
+    </div>
+    <div class="sec"><div class="sec-lbl">Sleep log</div><div class="sec-rule"></div></div>
+    <div class="sleep-card"><table class="sleep-table"><thead><tr><th>Date</th><th>Score</th><th>Duration</th><th>SpO2</th><th>RHR</th><th>Quality</th></tr></thead><tbody id="sleepTableBody"></tbody></table></div>
+    <div id="spo2Alert"></div>
+  </div>
+</div>
+
+<!-- PERFORMANCE -->
+<div class="page" id="page-performance">
+  <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Performance Metrics</div><div class="hero-title">Your<span class="hl">Numbers</span></div></div></div></div>
+  <div class="disc-strip">
+    <div class="disc"><img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=700&q=85" alt="swim"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#38bdf8,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#38bdf8">Swim</div><div class="disc-name">Willamette</div><div class="disc-info">Downstream · 1.2mi</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700&q=85" alt="bike"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#fb923c,#fbbf24)"></div><div class="disc-body"><div class="disc-tag" style="color:#fb923c">Bike</div><div class="disc-name">Wine Country</div><div class="disc-info">56mi · NP 145–152w</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=700&q=85" alt="run"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#34d399,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#34d399">Run</div><div class="disc-name">Minto-Brown</div><div class="disc-info">13.1mi · sub-9:10/mi</div></div></div>
+  </div>
+  <div class="main">
+    <div class="stats">
+      <div class="sc" style="border-color:#0284c7"><div class="sc-lbl">VO2 Max</div><div class="sc-val" style="color:#0284c7">45</div><div class="sc-sub">ml/kg/min</div></div>
+      <div class="sc" style="border-color:#ea580c"><div class="sc-lbl">FTP</div><div class="sc-val" style="color:#ea580c">221w</div><div class="sc-sub">functional threshold</div></div>
+      <div class="sc" style="border-color:#7c3aed"><div class="sc-lbl">Max HR</div><div class="sc-val" style="color:#7c3aed">166</div><div class="sc-sub">bpm</div></div>
+      <div class="sc" style="border-color:#34d399"><div class="sc-lbl">Resting HR</div><div class="sc-val" style="color:#059669" id="p-rhr">55</div><div class="sc-sub">bpm · strong base</div></div>
+    </div>
+    <div class="sec"><div class="sec-lbl">Oceanside 70.3 — 3-Year Progression</div><div class="sec-rule"></div></div>
+    <div style="background:#fff;border-radius:12px;padding:1.25rem 1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:1.25rem">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+        <div style="background:#f8fafc;border-radius:10px;padding:12px 14px;border:1px solid #e2e8f0">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#0284c7;margin-bottom:8px">🏊 Swim</div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2024</span><span style="font-family:'JetBrains Mono',monospace">51:01</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2025</span><span style="font-family:'JetBrains Mono',monospace">47:33</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2026</span><span style="font-weight:700;color:#059669;font-family:'JetBrains Mono',monospace">45:16 ↓</span></div>
+          </div>
+        </div>
+        <div style="background:#f8fafc;border-radius:10px;padding:12px 14px;border:1px solid #e2e8f0">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#ea580c;margin-bottom:8px">🚴 Bike</div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2024</span><span style="font-family:'JetBrains Mono',monospace">3:14:37</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2025</span><span style="font-weight:700;color:#059669;font-family:'JetBrains Mono',monospace">2:56:54 ↓</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2026</span><span style="font-family:'JetBrains Mono',monospace">3:01:26</span></div>
+          </div>
+        </div>
+        <div style="background:#f8fafc;border-radius:10px;padding:12px 14px;border:1px solid #e2e8f0">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#059669;margin-bottom:8px">🏃 Run</div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2024</span><span style="font-family:'JetBrains Mono',monospace">2:08:52</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2025</span><span style="font-family:'JetBrains Mono',monospace">2:15:57</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#94a3b8">2026</span><span style="font-weight:700;color:#059669;font-family:'JetBrains Mono',monospace">1:59:35 ↓</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:10px;background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:10px 12px;font-size:12px;color:#166534;line-height:1.65">
+        <strong>37-minute improvement over 3 years.</strong> Conservative bike in 2026 gave back 4:32 on the bike to gain 16 minutes on the run. Same strategy applies to Oregon.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COURSE -->
+<div class="page" id="page-course">
+  <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Course Intel · Salem Oregon</div><div class="hero-title">Race<span class="hl">Course</span></div></div></div></div>
+  <div class="disc-strip">
+    <div class="disc"><img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=700&q=85" alt="swim"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#38bdf8,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#38bdf8">Swim</div><div class="disc-name">Willamette</div><div class="disc-info">Downstream · 1.2mi</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700&q=85" alt="bike"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#fb923c,#fbbf24)"></div><div class="disc-body"><div class="disc-tag" style="color:#fb923c">Bike</div><div class="disc-name">Wine Country</div><div class="disc-info">56mi · NP 145–152w</div></div></div>
+    <div class="disc"><img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=700&q=85" alt="run"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#34d399,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#34d399">Run</div><div class="disc-name">Minto-Brown</div><div class="disc-info">13.1mi · sub-9:10/mi</div></div></div>
+  </div>
+  <div class="main">
+    <div class="sec"><div class="sec-lbl">Course breakdown</div><div class="sec-rule"></div></div>
+    <div class="course-grid" style="margin-bottom:1.5rem">
+      <div class="ccard"><div class="cimg"><img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=85" alt="river"></div><div class="cbody"><div class="ctag" style="color:#0284c7">Swim · 1.2 miles</div><div class="cname">Willamette River</div><div class="cinfo">Downstream point-to-point — fastest 70.3 swim on the circuit. First 200m shallow — do NOT stand. Let the current carry you.</div></div></div>
+      <div class="ccard"><div class="cimg"><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=85" alt="vineyard"></div><div class="cbody"><div class="ctag" style="color:#ea580c">Bike · 56 miles</div><div class="cname">Wine Country</div><div class="cinfo">Flat to rolling · 1,368ft gain · deceptively easy feeling. This is the trap. NP 145–152w absolute max. Conservative bike = strong run.</div></div></div>
+      <div class="ccard"><div class="cimg"><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&q=85" alt="trail"></div><div class="cbody"><div class="ctag" style="color:#059669">Run · 13.1 miles</div><div class="cname">Minto-Brown Park</div><div class="cinfo">Two loops · fully shaded paved trail. July heat up to 90°F — shade is your advantage. Use every aid station.</div></div></div>
+    </div>
+    <div class="sec"><div class="sec-lbl">Race day strategy</div><div class="sec-rule"></div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
+      <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:15px 17px"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1e40af;margin-bottom:7px">🏊 Swim</div><div style="font-size:13px;color:#3b6fa0;line-height:1.7">Start easy, let current work. Don't stand first 200m. Sight every 6–8 strokes. Exit water HR should feel controlled.</div></div>
+      <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:15px 17px"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#c2410c;margin-bottom:7px">🚴 Bike</div><div style="font-size:13px;color:#9a3412;line-height:1.7">NP 145–152w ceiling. First 20 miles feel easy — that's correct. Eat every 20 min. Drink every 10 min. The run starts at mile 57.</div></div>
+      <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:15px 17px"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#166534;margin-bottom:7px">🏃 Run</div><div style="font-size:13px;color:#15803d;line-height:1.7">Miles 1–3: hold back. Miles 4–9: 9:00–9:10/mi. Miles 10–13: whatever you have. Walk 15 sec at aid stations if needed.</div></div>
+    </div>
+  </div>
+</div>
+
+<footer>IM 70.3 OREGON · RACE DAY JUL 19 2026 · DATA AUTO-UPDATED DAILY FROM GARMIN · SUB-6:00 IS THE GOAL</footer>
+</div>
+
+<script>
+// ── TRAINING PLAN DATA ─────────────────────────────────────────────────────
+var PLAN = [
+  {n:1,dates:'Apr 21–27',title:'Recovery Reactivation',img:'https://images.unsplash.com/photo-1510137600163-2729bc6959f0?w=900&q=80',focus:['Post-Oceanside recovery','Easy aerobic only','Swim back online'],sw:'2x pool — 2,300m + 2,500m\nAll easy aerobic · HR 113–118',bk:'2x ROUVY — Compiegne 30mi + Santa Cruz 40km\nNP 148–162w',rn:'2x easy — 6mi + 6.5mi\nHR 144–145 · zero intensity',note:'Completed. Textbook recovery — easy across all three disciplines.'},
+  {n:2,dates:'Apr 28–May 3',title:'First Volume Step-Up',img:'https://images.unsplash.com/photo-1468746587034-766ade373e56?w=900&q=80',focus:['TSS jump to 396','Oregon ROUVY sim 55mi','10-mile long run'],sw:'3x pool — 3,050 + 3,000 + 3,000m\nAerobic · HR 114–118',bk:'3x ROUVY — Oman 60km + Sunshine Coast + Oregon 55mi\nOregon sim: NP 142 · 177 TSS session',rn:'1x long run — 10.06mi in 1:33\nHR 145 · strong effort',note:'Completed. Oregon ROUVY sim NP 141–142 — exactly on race-pace target.'},
+  {n:3,dates:'May 4–10',title:'Consistent Build',img:'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=900&q=80',focus:['3 bikes in 4 days','First open water swim','Run volume light'],sw:'3x pool + 1 open water\nHR 111–122 · controlled',bk:'3x ROUVY — Kalmar + Taupo + Muncie\nNP 148–158w · back-to-back days',rn:'2x — 1mi shakeout + San Diego 10mi\nHR 147–154',note:'Completed. First open water swim logged. Back-to-back bikes confirm solid aerobic base.'},
+  {n:4,dates:'May 11–17',title:'First Brick Week',img:'https://images.unsplash.com/photo-1559163499-413811fb2344?w=900&q=80',focus:['First brick workout','Run to 9 miles','Threshold swim sets'],sw:'2x pool — 3,000m each\n4x100 threshold · HR 125–130',bk:'2x ROUVY + 1 brick\n90 min Z2 · Brick: 60 min then 20 min run',rn:'2x — 7mi easy + brick run\n1 mid-day run for heat prep',note:'Week in progress. One ride logged (NP 127w — below target band, may be intentional easy day). Need swim sessions and brick this week.'},
+  {n:5,dates:'May 18–24',title:'Outdoor Ride + Long Run',img:'https://images.unsplash.com/photo-1593348842493-3e1a8b0d7b63?w=900&q=80',focus:['First outdoor long ride','Long run 10–11mi','Heat adaptation'],sw:'2x pool — 3,000–3,200m\nThreshold sets · open water if possible',bk:'1x ROUVY + 1x outdoor\n45–50mi Z2 flat · QR Kilo on real road',rn:'2x — 7mi + 10–11mi long\n1 mid-day run · easy HR on long',note:'Get outdoor road miles in. ROUVY fitness is real but road feel differs. Confidence check ride.'},
+  {n:6,dates:'May 25–31',title:'Recovery Week',img:'https://images.unsplash.com/photo-1475274047050-1d0c0975864c?w=900&q=80',focus:['Planned down week','Absorb 5 weeks of work','Active recovery only'],sw:'2x pool — 2,500m each\nAll easy · zero intensity',bk:'1x ROUVY — 75 min easy Z2 only',rn:'1x easy — 5–6mi\nNo strides · very comfortable',note:'Non-negotiable down week. Volume drops ~35%. Your body absorbs fitness during rest.'},
+  {n:7,dates:'Jun 1–7',title:'Race-Specific Intensity',img:'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=900&q=80',focus:['Oregon bike sim + pacing','Brick quality','Race-pace run intervals'],sw:'2x pool — 3,200m each\n4x200 at 70.3 race effort',bk:'1x Oregon ROUVY sim + brick\nNP 145–152w · Brick: 90 min then 25 min run',rn:'2x — 7mi + 4x1mi at ~9:00/mi',note:'Dress rehearsal. Ride Oregon course with deliberate restraint — hold NP 145–152w.'},
+  {n:8,dates:'Jun 8–14',title:'Peak Volume Week',img:'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=900&q=80',focus:['Biggest training week','2hr outdoor brick','9,000m swim'],sw:'3x pool — 3,000m each\nOne threshold set · 9,000m total',bk:'1x outdoor 50–55mi race effort\nBrick: 2hr then 30 min run',rn:'2x — 6mi easy + 30 min brick\nTarget sub-9:10/mi on brick run',note:'Your peak week. Conservative bike = strong run. NP ceiling 155w on the ride.'},
+  {n:9,dates:'Jun 15–21',title:'Taper — Volume Drops 40%',img:'https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=900&q=80',focus:['Volume cuts sharply','Short sharp intensity','Salem logistics'],sw:'2x pool — 2,000m each\n4x50 at race pace per session',bk:'2x short — 40–45 min each\n3x5 min Z4 to stay sharp',rn:'2x — 4mi + 5mi\n4–6 strides per run',note:'Volume drops 40% but short intensity stays. Book Salem hotel and sort bike travel.'},
+  {n:10,dates:'Jul 13–19',title:'Race Week — Salem Oregon',img:'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=900&q=80',focus:['Arrive Sun Jul 13','Rest and activate','Race day Sun Jul 19'],sw:'Mon: 1,500m easy\nWed: 800m + 4x50 race pace\nFri: shakeout at Willamette',bk:'Tue: 30 min spin\nThu: 20 min + 3x1 min sharp\nSat: 10 min post check-in',rn:'Mon: 20 min easy\nWed: 15 min + 4 strides\nSun Jul 19: RACE DAY',note:'Shallow first 200m — do NOT stand, let current carry you. Bike NP 145–152w max. Trust your Oceanside run legs.'}
+];
+
+var WEEK_TARGETS = [211,396,284,380,420,260,460,500,290,150];
+var WEEK_COLORS  = {done:'#34d399',build:'#38bdf8',peak:'#a78bfa',taper:'#2dd4bf',race:'#fbbf24'};
+var WEEK_PHASES  = ['Logged','Logged','Logged','Build','Build','Recovery','Peak','Peak','Taper','Race'];
+
+// ── NAVIGATION ─────────────────────────────────────────────────────────────
+function showTab(id, el){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.getElementById('page-'+id).classList.add('on');
+  el.classList.add('on');
+}
+
+// ── LOAD DATA ──────────────────────────────────────────────────────────────
+var summaryData = null;
+var activitiesData = [];
+var sleepData = [];
+
+async function loadAll(){
+  try {
+    const [sumRes, actRes, slpRes] = await Promise.all([
+      fetch('data/summary.json').catch(()=>null),
+      fetch('data/activities.json').catch(()=>null),
+      fetch('data/sleep.json').catch(()=>null)
+    ]);
+
+    if(sumRes && sumRes.ok) summaryData = await sumRes.json();
+    if(actRes && actRes.ok) activitiesData = await actRes.json();
+    if(slpRes && slpRes.ok) sleepData = await slpRes.json();
+
+    buildDashboard();
+  } catch(e) {
+    console.error('Error loading data:', e);
+    buildDashboard(); // build with empty data
+  }
+}
+
+// ── BUILD DASHBOARD ────────────────────────────────────────────────────────
+function buildDashboard(){
+  const today = new Date();
+  const raceDate = new Date('2026-07-19');
+  const calDate  = new Date('2026-10-18');
+  const daysToRace = Math.ceil((raceDate - today) / 864e5);
+
+  // Countdown
+  document.querySelectorAll('#cdNum, #cdNum2').forEach(el=>{ if(el) el.textContent = daysToRace > 0 ? daysToRace : 'RACE!'; });
+  const dtrEl = document.getElementById('daysToRace');
+  if(dtrEl) dtrEl.textContent = daysToRace + ' days to race';
+
+  // Race card progress
+  const buildStart = new Date('2026-04-21');
+  const oregonPct = Math.min(100, Math.round((today - buildStart) / (raceDate - buildStart) * 100));
+  const elOP = document.getElementById('oregonPct'); if(elOP) elOP.textContent = oregonPct + '% of build complete';
+  const elOB = document.getElementById('oregonBar'); if(elOB) elOB.style.width = oregonPct + '%';
+  const calDays = Math.ceil((calDate - today) / 864e5);
+  const elCD = document.getElementById('calDays'); if(elCD) elCD.textContent = calDays + ' days out';
+  const calPct = today < raceDate ? 2 : Math.min(100, Math.round((today - raceDate) / (calDate - raceDate) * 100));
+  const elCB = document.getElementById('calBar'); if(elCB) elCB.style.width = Math.max(2,calPct) + '%';
+
+  // Get weeks data
+  var weeks = summaryData ? summaryData.weeks : PLAN.map((p,i)=>({week:i+1,start:'',end:'',target:WEEK_TARGETS[i],actual:0,bikeTSS:0,swimN:0,bikeN:0,runN:0,avgNP:0,done:false}));
+  var overall = summaryData ? summaryData.overall : {lastUpdated:'Not yet synced',totalActs:activitiesData.length,avgBikeNP:0,currentWeek:4,weeksComplete:3};
+
+  // Update bar
+  const elLU = document.getElementById('lastUpdated'); if(elLU) elLU.textContent = overall.lastUpdated || 'Not yet synced';
+  const elAC = document.getElementById('sc-acts'); if(elAC) elAC.textContent = overall.totalActs;
+
+  // Summary stats
+  var weeksWithData = weeks.filter(w=>w.actual>0).length;
+  var curWeekNum = overall.currentWeek || 4;
+  var curWeek = weeks[curWeekNum-1] || weeks[3];
+  var avgNP = overall.avgBikeNP || 0;
+
+  ['sc-weeks','t-weeks'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = weeksWithData+' / 10'; });
+  ['sc-phase'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = WEEK_PHASES[curWeekNum-1]||'Build'; });
+  ['sc-phaseSub'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = 'Week '+curWeekNum+' · '+PLAN[curWeekNum-1].dates; });
+  ['sc-np','t-np'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = avgNP>0 ? avgNP+'w' : '148w'; });
+  var elTW = document.getElementById('t-curWeek'); if(elTW) elTW.textContent = 'Week '+curWeekNum;
+  var elTD = document.getElementById('t-curDates'); if(elTD) elTD.textContent = PLAN[curWeekNum-1].dates;
+
+  // Week grid
+  buildWeekGrid(weeks);
+
+  // Weekly bars
+  buildWeeklyBars(weeks);
+
+  // Activity feed
+  buildActivityFeed();
+
+  // Sleep
+  buildSleepTable();
+
+  // Analysis
+  buildAnalysis(weeks, overall);
+
+  // Show app
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+}
+
+// ── WEEK GRID ──────────────────────────────────────────────────────────────
+var activeWk = -1;
+function buildWeekGrid(weeks){
+  var grid = document.getElementById('wgrid');
+  if(!grid) return;
+  grid.innerHTML = '';
+  weeks.forEach(function(w,i){
+    var pct = Math.round(w.actual / WEEK_TARGETS[i] * 100);
+    var c = w.done && w.actual>0 ? '#34d399' : w.actual>0 ? '#38bdf8' : '#94a3b8';
+    var ph = WEEK_PHASES[i];
+    var btn = document.createElement('div');
+    btn.className = 'wbtn'; btn.id = 'wb'+i;
+    btn.innerHTML = '<div class="wn">Wk '+(i+1)+'</div>'
+      +'<div class="wtss" style="color:'+c+'">'+w.actual+'</div>'
+      +'<div class="wbar-bg"><div class="wbar-fill" style="width:'+Math.min(100,pct)+'%;background:'+c+'"></div></div>'
+      +'<div class="wph" style="color:'+c+'">'+ph+'</div>';
+    btn.onclick = function(){ showWeek(i, w, c); };
+    grid.appendChild(btn);
+  });
+}
+
+function showWeek(i, w, c){
+  if(activeWk>=0){ var ob=document.getElementById('wb'+activeWk); if(ob){ob.classList.remove('on');ob.style.borderColor='#e2e8f0';ob.style.boxShadow='';} }
+  activeWk=i;
+  var btn=document.getElementById('wb'+i);
+  if(btn){ btn.classList.add('on'); btn.style.borderColor=c; btn.style.boxShadow='0 6px 20px '+c+'30'; }
+  var p=PLAN[i];
+  var pct=Math.min(100,Math.round(w.actual/WEEK_TARGETS[i]*100));
+  var chips=p.focus.map(function(f){return '<span class="fpill">'+f+'</span>';}).join('');
+  document.getElementById('detail').innerHTML=
+    '<div class="det-hero"><img src="'+p.img+'" alt="Week '+(i+1)+'"><div class="det-grad"></div>'
+    +'<div class="det-hdr"><div class="det-eyebrow" style="color:'+c+'">Week '+(i+1)+' · '+p.dates+'</div>'
+    +'<div class="det-title">'+p.title+'</div>'
+    +'<div class="det-tags"><span class="dtag" style="background:'+c+'22;color:'+c+'">'+WEEK_PHASES[i]+'</span>'
+    +'<span class="dtag" style="background:rgba(255,255,255,.12);color:rgba(255,255,255,.7)">TSS '+w.actual+' / '+WEEK_TARGETS[i]+'</span>'
+    +'<span class="dtag" style="background:rgba(255,255,255,.12);color:rgba(255,255,255,.7)">'+pct+'% of target</span>'
+    +'</div></div></div>'
+    +'<div class="det-body">'
+    +'<div class="tss-row"><span>Training load</span><span style="color:'+c+';font-weight:600">TSS '+w.actual+' / '+WEEK_TARGETS[i]+'</span></div>'
+    +'<div class="tss-track"><div class="tss-bar" style="width:'+pct+'%;background:linear-gradient(to right,'+c+'80,'+c+')"></div></div>'
+    +'<div class="fpills">'+chips+'</div>'
+    +'<div class="sess-grid">'
+    +'<div class="sess" style="border-top:3px solid #38bdf8"><div class="sess-top"><div class="sess-icon" style="background:#eff8ff">🏊</div><div class="sess-lbl" style="color:#0284c7">Swim</div></div><div class="sess-body">'+p.sw.replace(/\n/g,'<br>')+'</div></div>'
+    +'<div class="sess" style="border-top:3px solid #fb923c"><div class="sess-top"><div class="sess-icon" style="background:#fff7ed">🚴</div><div class="sess-lbl" style="color:#ea580c">Bike</div></div><div class="sess-body">'+p.bk.replace(/\n/g,'<br>')+'</div></div>'
+    +'<div class="sess" style="border-top:3px solid #34d399"><div class="sess-top"><div class="sess-icon" style="background:#f0fdf4">🏃</div><div class="sess-lbl" style="color:#059669">Run</div></div><div class="sess-body">'+p.rn.replace(/\n/g,'<br>')+'</div></div>'
+    +'</div>'
+    +'<div class="note-box"><div>💡</div><div class="note-txt">'+p.note+'</div></div>'
+    +'</div>';
+}
+
+// ── WEEKLY BARS ─────────────────────────────────────────────────────────────
+function buildWeeklyBars(weeks){
+  var el = document.getElementById('weeklyBars');
+  if(!el) return;
+  var maxT = 500;
+  el.innerHTML = '<div style="font-size:12px;color:#94a3b8;margin-bottom:10px;font-family:JetBrains Mono,monospace">⚠ Garmin TSS is power-based (bike only). Swim and run show session counts.</div>'
+    + weeks.map(function(w,i){
+    var aPct = Math.round(w.actual/maxT*100);
+    var tPct = Math.round(WEEK_TARGETS[i]/maxT*100);
+    var pct  = w.actual>0 ? Math.round(w.actual/WEEK_TARGETS[i]*100) : 0;
+    var c    = w.done&&w.actual>0?'#34d399':w.actual>0?'#38bdf8':'#e2e8f0';
+    var badge= w.done&&w.actual>0
+      ?'<span style="color:#059669;font-weight:700;font-family:JetBrains Mono,monospace;font-size:11px">✓ Done</span>'
+      :w.actual>0
+        ?'<span style="color:#d97706;font-weight:700;font-family:JetBrains Mono,monospace;font-size:11px">'+pct+'%</span>'
+        :'<span style="color:#94a3b8;font-size:11px;font-family:JetBrains Mono,monospace">—</span>';
+    var discHtml = (w.done||w.actual>0) ?
+      '<div style="margin-top:7px;display:flex;flex-direction:column;gap:3px">'
+      +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🚴</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.round(w.bikeTSS/maxT*100)+'%;background:#fb923c;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#ea580c;min-width:52px;text-align:right">'+Math.round(w.bikeTSS)+' TSS</span></div>'
+      +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🏊</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.min(100,w.swimN*15)+'%;background:#38bdf8;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#0284c7;min-width:52px;text-align:right">'+w.swimN+' sessions</span></div>'
+      +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🏃</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.min(100,w.runN*20)+'%;background:#34d399;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#059669;min-width:52px;text-align:right">'+w.runN+' runs</span></div>'
+      +'</div>' : '';
+    return '<div class="wpr">'
+      +'<div class="wpr-lbl">Wk '+(i+1)+'<br><span style="font-size:10px">'+PLAN[i].dates.split('–')[0]+'</span></div>'
+      +'<div style="flex:1">'
+        +'<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px">'
+          +'<div style="flex:1;height:10px;background:#f1f5f9;border-radius:5px;overflow:hidden"><div style="height:100%;width:'+aPct+'%;background:'+c+';border-radius:5px"></div></div>'
+          +'<span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#1a2535;min-width:70px;text-align:right"><strong>'+w.actual+'</strong> / '+WEEK_TARGETS[i]+'</span>'
+          +badge
+        +'</div>'
+        +'<div style="display:flex;align-items:center;gap:8px">'
+          +'<div style="flex:1;height:4px;background:#f1f5f9;border-radius:2px;overflow:hidden"><div style="height:100%;width:'+tPct+'%;background:#e2e8f0;border-radius:2px"></div></div>'
+          +'<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#94a3b8;min-width:70px;text-align:right">Target '+WEEK_TARGETS[i]+'</span>'
+          +'<div style="min-width:46px"></div>'
+        +'</div>'
+        +discHtml
+      +'</div>'
+    +'</div>';
+  }).join('');
+}
+
+// ── ACTIVITY FEED ───────────────────────────────────────────────────────────
+function buildActivityFeed(){
+  var el = document.getElementById('activityFeed');
+  if(!el) return;
+  var acts = activitiesData.slice().reverse();
+  if(!acts.length){ el.innerHTML='<div style="padding:1rem;color:#94a3b8;font-size:13px;text-align:center">No activities loaded yet</div>'; return; }
+  var cmap = {bike:'#fb923c',swim:'#38bdf8',run:'#34d399',other:'#94a3b8'};
+  var imap = {bike:'🚴',swim:'🏊',run:'🏃',other:'⚡'};
+  el.innerHTML = acts.map(function(a){
+    var c = cmap[a.disc]||'#94a3b8';
+    var np = a.np>0?'<span class="feed-np">NP '+a.np+'w</span>':'';
+    var tss = a.tss>0?'<span class="feed-tss" style="color:'+c+'">'+a.tss+'</span>':'<span class="feed-tss" style="color:#e2e8f0">—</span>';
+    return '<div class="feed-item">'
+      +'<div class="feed-dot" style="background:'+c+'"></div>'
+      +'<div class="feed-date">'+a.date+'</div>'
+      +'<div class="feed-icon">'+(imap[a.disc]||'⚡')+'</div>'
+      +'<div class="feed-name">'+a.title+'</div>'
+      +np+tss
+    +'</div>';
+  }).join('');
+}
+
+// ── SLEEP TABLE ─────────────────────────────────────────────────────────────
+function buildSleepTable(){
+  var tb = document.getElementById('sleepTableBody');
+  if(!tb) return;
+  var data = sleepData.slice().reverse();
+  if(!data.length){ tb.innerHTML='<tr><td colspan="6" style="padding:1rem;color:#94a3b8;text-align:center">No sleep data loaded yet</td></tr>'; return; }
+
+  var scores = data.filter(s=>s.score>0).map(s=>s.score);
+  var spo2s  = data.filter(s=>s.spo2>0).map(s=>s.spo2);
+  var rhrs   = data.filter(s=>s.rhr>0).map(s=>s.rhr);
+
+  if(scores.length){
+    var el=document.getElementById('h-avgScore'); if(el) el.textContent=Math.round(scores.reduce((a,b)=>a+b,0)/scores.length);
+  }
+  if(spo2s.length){
+    var el=document.getElementById('h-avgSpo2'); if(el) el.textContent=(spo2s.reduce((a,b)=>a+b,0)/spo2s.length).toFixed(1)+'%';
+  }
+  if(rhrs.length){
+    var avg=Math.round(rhrs.reduce((a,b)=>a+b,0)/rhrs.length);
+    ['h-rhr','p-rhr'].forEach(function(id){ var el=document.getElementById(id); if(el) el.textContent=avg; });
+  }
+  var avgDur=data.filter(s=>s.total>0);
+  if(avgDur.length){ var el=document.getElementById('h-avgDur'); if(el) el.textContent=(avgDur.reduce((a,s)=>a+s.total,0)/avgDur.length).toFixed(1)+'h'; }
+
+  tb.innerHTML = data.slice(0,30).map(function(s){
+    var spo2Class = s.spo2>=95?'spo2-ok':s.spo2>=92?'spo2-warn':'spo2-low';
+    var qClass = s.quality==='Good'?'q-good':s.quality==='Fair'?'q-fair':'q-poor';
+    var scoreColor = s.score>=75?'#059669':s.score>=60?'#d97706':'#dc2626';
+    return '<tr>'
+      +'<td style="font-family:JetBrains Mono,monospace;font-size:12px">'+s.date+'</td>'
+      +'<td><strong style="color:'+scoreColor+'">'+s.score+'</strong></td>'
+      +'<td>'+s.total+'h</td>'
+      +'<td class="'+spo2Class+'">'+(s.spo2>0?s.spo2+'%':'—')+'</td>'
+      +'<td style="font-family:JetBrains Mono,monospace">'+(s.rhr>0?s.rhr:'—')+'</td>'
+      +'<td><span class="'+qClass+'">'+s.quality+'</span></td>'
+    +'</tr>';
+  }).join('');
+
+  // SpO2 alert
+  var lowSpo2 = spo2s.filter(s=>s<92).length;
+  var alertEl = document.getElementById('spo2Alert');
+  if(alertEl && lowSpo2>0){
+    alertEl.innerHTML='<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:12px 16px;display:flex;gap:10px;align-items:flex-start;margin-top:1rem">'
+      +'<div style="font-size:18px">⚠️</div>'
+      +'<div style="font-size:13px;color:#991b1b;line-height:1.65"><strong>'+lowSpo2+' night'+(lowSpo2>1?'s':'')+' below 92% SpO2</strong> in the loaded data. Normal is 95%+. Note: Garmin wrist SpO2 can be affected by night sweats — consider a finger pulse oximeter for a more accurate reading. Worth mentioning to your TRT doctor.</div>'
+    +'</div>';
+  }
+}
+
+// ── ANALYSIS SECTION ────────────────────────────────────────────────────────
+function buildAnalysis(weeks, overall){
+  var el = document.getElementById('analysisSection');
+  if(!el) return;
+
+  var bikeActs = activitiesData.filter(a=>a.disc==='bike'&&a.np>0);
+  var swimActs = activitiesData.filter(a=>a.disc==='swim');
+  var runActs  = activitiesData.filter(a=>a.disc==='run');
+  var avgNP    = bikeActs.length ? Math.round(bikeActs.reduce((s,a)=>s+a.np,0)/bikeActs.length) : 0;
+  var totalBikeTSS = Math.round(activitiesData.filter(a=>a.disc==='bike').reduce((s,a)=>s+a.tss,0));
+  var weeksComplete = weeks.filter(w=>w.actual>0).length;
+  var npStatus = avgNP>=145&&avgNP<=152?'Strong ✓':avgNP>152?'Above target ⚠':avgNP>0?'Below target ⚠':'—';
+  var npStatusClass = avgNP>=145&&avgNP<=152?'background:#dcfce7;color:#166534':avgNP>0?'background:#fef3c7;color:#92400e':'background:#f1f5f9;color:#64748b';
+
+  el.innerHTML='<div class="analysis-card">'
+    +'<div class="analysis-hdr">'
+      +'<div><h3>Training Assessment</h3><p>'+weeksComplete+' weeks logged · '+activitiesData.length+' activities · updated '+overall.lastUpdated+'</p></div>'
+      +'<div class="analysis-badge">Week '+(overall.currentWeek||4)+' of 10</div>'
+    +'</div>'
+    +'<div class="analysis-body">'
+      +'<div class="disc-row">'
+        +'<div class="disc-card" style="border-color:#fed7aa;background:#fff7ed">'
+          +'<div class="disc-head"><div class="disc-head-title">🚴 Bike</div><div class="status-pill" style="'+npStatusClass+'">'+npStatus+'</div></div>'
+          +'<div class="disc-stats">'
+            +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+bikeActs.length+'</div><div class="dstat-lbl">Sessions</div></div>'
+            +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+(avgNP>0?avgNP+'w':'—')+'</div><div class="dstat-lbl">Avg NP</div></div>'
+            +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+totalBikeTSS+'</div><div class="dstat-lbl">Total TSS</div></div>'
+          +'</div>'
+          +'<div class="disc-insight" style="background:#fff7ed;border:1px solid #fed7aa;color:#9a3412">'+(avgNP>=145&&avgNP<=152?'<strong>Right on target.</strong> Avg NP '+avgNP+'w sits in your 145–152w race band. Consistency is excellent.':'<strong>NP '+(avgNP>152?'slightly high':'slightly low')+'.</strong> Target 145–152w for race-specific training. Current avg: '+avgNP+'w.')+'</div>'
+        +'</div>'
+        +'<div class="disc-card" style="border-color:#bae6fd;background:#f0f9ff">'
+          +'<div class="disc-head"><div class="disc-head-title">🏊 Swim</div><div class="status-pill" style="background:#dcfce7;color:#166534">Consistent ✓</div></div>'
+          +'<div class="disc-stats">'
+            +'<div class="dstat"><div class="dstat-val" style="color:#0284c7">'+swimActs.length+'</div><div class="dstat-lbl">Sessions</div></div>'
+            +'<div class="dstat"><div class="dstat-val" style="color:#0284c7">3,000m</div><div class="dstat-lbl">Avg dist</div></div>'
+            +'<div class="dstat"><div class="dstat-val" style="color:#0284c7">116</div><div class="dstat-lbl">Avg HR</div></div>'
+          +'</div>'
+          +'<div class="disc-insight" style="background:#f0f9ff;border:1px solid #bae6fd;color:#1e40af"><strong>Solid and aerobic.</strong> Willamette current will make Oregon your fastest swim. First open water swim logged in Week 3 — good progress.</div>'
+        +'</div>'
+        +'<div class="disc-card disc-card-full" style="border-color:#bbf7d0;background:#f0fdf4">'
+          +'<div class="disc-head"><div class="disc-head-title">🏃 Run</div><div class="status-pill" style="background:#fef3c7;color:#92400e">Needs Focus ⚠</div></div>'
+          +'<div class="disc-stats">'
+            +'<div class="dstat"><div class="dstat-val" style="color:#059669">'+runActs.length+'</div><div class="dstat-lbl">Sessions</div></div>'
+            +'<div class="dstat"><div class="dstat-val" style="color:#059669">6.6mi</div><div class="dstat-lbl">Avg dist</div></div>'
+            +'<div class="dstat"><div class="dstat-val" style="color:#d97706">0</div><div class="dstat-lbl">Bricks</div></div>'
+          +'</div>'
+          +'<div class="disc-insight" style="background:#fef3c7;border:1px solid #fde68a;color:#92400e"><strong>Run volume is the area needing most attention.</strong> Only '+runActs.length+' runs logged, avg 6.6mi. Long run needs to climb to 12–13mi by Week 8. No dedicated brick workouts yet — first true brick is due this week. Current avg pace ~9:22/mi vs target sub-9:10.</div>'
+        +'</div>'
+      +'</div>'
+      +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">'
+        +'<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:13px 15px">'
+          +'<div style="font-size:13px;font-weight:700;color:#991b1b;margin-bottom:9px">⚠️ Areas of Concern</div>'
+          +'<div class="concern-list">'
+            +'<div class="concern-item"><div class="ci-icon">🏃</div><div><div class="ci-title">Run volume light</div><div class="ci-text">Long run needs to reach 12–13mi by Week 8. Add 1 mile per week from now.</div></div></div>'
+            +'<div class="concern-item"><div class="ci-icon">🧱</div><div><div class="ci-title">Zero dedicated brick workouts</div><div class="ci-text">First true brick due this week — 60 min ride → 20 min run immediately after.</div></div></div>'
+            +'<div class="concern-item"><div class="ci-icon">🌤️</div><div><div class="ci-title">All riding is indoor</div><div class="ci-text">QR Kilo needs outdoor miles before Oregon. First outdoor ride in Week 5.</div></div></div>'
+          +'</div>'
+        +'</div>'
+        +'<div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:13px 15px">'
+          +'<div style="font-size:13px;font-weight:700;color:#166534;margin-bottom:9px">💪 Strengths</div>'
+          +'<div class="strength-list">'
+            +'<div class="strength-item"><div class="si-icon">⚡</div><div><div class="si-title">Bike pacing discipline</div><div class="si-text">Avg NP '+avgNP+'w — consistent race-specific effort. Oceanside pacing lesson internalized.</div></div></div>'
+            +'<div class="strength-item"><div class="si-icon">📈</div><div><div class="si-title">TSS targets hit 3 for 3</div><div class="si-text">Hitting prescribed load exactly shows excellent training intelligence.</div></div></div>'
+            +'<div class="strength-item"><div class="si-icon">🏊</div><div><div class="si-title">Swim is strongest discipline</div><div class="si-text">45:16 at Oceanside + downstream Willamette current = fast exit ahead.</div></div></div>'
+          +'</div>'
+        +'</div>'
+      +'</div>'
+      +'<div style="font-size:13px;font-weight:700;color:#1a2535;margin-bottom:9px">🎯 Top 3 Focus — Next 4 Weeks</div>'
+      +'<div class="focus-grid">'
+        +'<div class="focus-card" style="border-color:#bbf7d0;background:#f0fdf4"><div class="focus-num" style="color:#059669">1</div><div class="focus-title">Run Volume</div><div class="focus-text">Long run 10mi → 13mi by Week 8. One tempo run per week at 8:45/mi.</div></div>'
+        +'<div class="focus-card" style="border-color:#fed7aa;background:#fff7ed"><div class="focus-num" style="color:#ea580c">2</div><div class="focus-title">Brick Workouts</div><div class="focus-text">First brick this week. Build to 2hr ride → 30 min run by Week 8.</div></div>'
+        +'<div class="focus-card" style="border-color:#bae6fd;background:#f0f9ff"><div class="focus-num" style="color:#0284c7">3</div><div class="focus-title">Outdoor Riding</div><div class="focus-text">First 45–50mi outdoor ride in Week 5. Practice race nutrition on that ride.</div></div>'
+      +'</div>'
+    +'</div>'
+  +'</div>';
+}
+
+// ── INIT ────────────────────────────────────────────────────────────────────
+loadAll();
+</script>
+
+</body>
+</html>
