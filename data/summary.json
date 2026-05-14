@@ -1,11 +1,11 @@
 {
   "overall": {
-    "lastUpdated": "May 13, 2026",
-    "totalActs": 26,
+    "lastUpdated": "May 14, 2026",
+    "totalActs": 29,
     "avgBikeNP": 0,
     "currentWeek": 4,
     "weeksComplete": 3,
-    "daysToRace": 67
+    "daysToRace": 66
   },
   "weeks": [
     {
@@ -52,11 +52,11 @@
       "start": "2026-05-11",
       "end": "2026-05-17",
       "target": 380,
-      "actual": 102,
-      "bikeTSS": 102,
-      "swimN": 0,
-      "bikeN": 1,
-      "runN": 1,
+      "actual": 180,
+      "bikeTSS": 180,
+      "swimN": 1,
+      "bikeN": 2,
+      "runN": 2,
       "avgNP": 0,
       "done": false
     },

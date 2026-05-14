@@ -258,5 +258,35 @@
     "np": 0,
     "avgHR": 149.0,
     "distance": 11489.9
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Pool Swim",
+    "type": "lap_swim",
+    "disc": "swim",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 111.0,
+    "distance": 2743.2
+  },
+  {
+    "date": "2026-05-13",
+    "title": "ROUVY - IRONMAN Cairns 2021 40km",
+    "type": "virtual_",
+    "disc": "bike",
+    "tss": 77.8,
+    "np": 0,
+    "avgHR": 126.0,
+    "distance": 40000.2
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Carlsbad Running",
+    "type": "running",
+    "disc": "run",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 144.0,
+    "distance": 8171.7
   }
 ]
