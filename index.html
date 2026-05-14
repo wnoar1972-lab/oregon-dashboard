@@ -12,14 +12,14 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-height:100vh}
-
+ 
 /* LOADING */
 #loading{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#0a0f1a}
 .spinner{width:48px;height:48px;border:3px solid rgba(255,255,255,0.1);border-top-color:#29b6f6;border-radius:50%;animation:spin 1s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .load-txt{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
 #app{display:none}
-
+ 
 /* TABS */
 .tabs{display:flex;background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 3px 16px rgba(0,0,0,0.1);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
@@ -33,10 +33,10 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .tab.t-health.on{border-bottom-color:#7c3aed}.tab.t-health.on .tab-lbl{color:#7c3aed}
 .tab.t-performance.on{border-bottom-color:#ea580c}.tab.t-performance.on .tab-lbl{color:#ea580c}
 .tab.t-course.on{border-bottom-color:#059669}.tab.t-course.on .tab-lbl{color:#059669}
-
+ 
 .page{display:none}.page.on{display:block}
 .main{max-width:1080px;margin:0 auto;padding:1.75rem 1.5rem}
-
+ 
 /* HERO */
 .hero{position:relative;height:360px;overflow:hidden;display:flex;align-items:flex-end}
 .hero-photo{position:absolute;inset:0;background-size:cover;background-position:center;animation:hz 20s ease-in-out infinite alternate}
@@ -51,7 +51,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .hero-meta span::before{content:'· ';color:#29b6f6}
 .cd-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(68px,10vw,108px);line-height:1;color:#ff7043;letter-spacing:-.02em;text-align:right;text-shadow:0 0 30px rgba(255,112,67,.35)}
 .cd-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);text-align:right}
-
+ 
 /* DISC STRIP */
 .disc-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#e2e8f0}
 .disc{position:relative;height:190px;overflow:hidden}
@@ -63,7 +63,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .disc-name{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.04em;color:#fff;line-height:1;margin-bottom:4px}
 .disc-info{font-size:12px;color:rgba(255,255,255,.6);line-height:1.55}
 .disc-accent{position:absolute;top:0;left:0;right:0;height:3px}
-
+ 
 /* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.5rem}
 .sc{background:#fff;border-radius:12px;padding:15px 17px;border-bottom:4px solid;box-shadow:0 2px 10px rgba(0,0,0,.07);transition:transform .2s}
@@ -71,12 +71,12 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .sc-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;margin-bottom:6px}
 .sc-val{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:.02em;line-height:1;margin-bottom:3px}
 .sc-sub{font-size:12px;color:#94a3b8}
-
+ 
 /* SECTION */
 .sec{display:flex;align-items:center;gap:12px;margin-bottom:10px;margin-top:1.5rem}
 .sec-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#94a3b8;white-space:nowrap}
 .sec-rule{flex:1;height:1px;background:#e2e8f0}
-
+ 
 /* WEEK GRID */
 .wgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin-bottom:1.25rem}
 .wbtn{background:#fff;border:2px solid #e2e8f0;border-radius:10px;padding:10px 4px 9px;cursor:pointer;text-align:center;transition:all .2s;box-shadow:0 1px 4px rgba(0,0,0,.05)}
@@ -87,7 +87,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .wbar-bg{height:3px;background:#f1f5f9;border-radius:2px;margin:0 6px 5px;overflow:hidden}
 .wbar-fill{height:100%;border-radius:2px}
 .wph{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
-
+ 
 /* DETAIL */
 .detail{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08)}
 .det-hero{position:relative;height:230px;overflow:hidden}
@@ -113,7 +113,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .sess-body{padding:11px 13px;font-size:13px;color:#64748b;line-height:1.75}
 .note-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:9px;padding:11px 14px;display:flex;gap:10px;align-items:flex-start}
 .note-txt{font-size:13px;color:#3b6fa0;line-height:1.7}
-
+ 
 /* DAILY FEED */
 .feed-wrap{background:#fff;border-radius:12px;padding:1.25rem 1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07)}
 .feed-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f1f5f9}
@@ -124,7 +124,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .feed-name{font-size:13px;font-weight:500;color:#1a2535;flex:1}
 .feed-tss{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;min-width:50px;text-align:right}
 .feed-np{font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8;min-width:50px;text-align:right}
-
+ 
 /* WEEKLY BARS */
 .wbar-card{background:#fff;border-radius:12px;padding:1.25rem 1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:1.25rem}
 .wpr{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f1f5f9}
@@ -137,7 +137,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .wpr-fill{height:100%;border-radius:4px}
 .wpr-num{font-family:'JetBrains Mono',monospace;font-size:11px;min-width:64px;text-align:right}
 .wpr-badge{font-size:11px;font-weight:700;min-width:72px;text-align:right;font-family:'JetBrains Mono',monospace}
-
+ 
 /* SLEEP TABLE */
 .sleep-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:1.25rem}
 .sleep-table{width:100%;border-collapse:collapse}
@@ -150,7 +150,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .spo2-ok{color:#059669;font-weight:600}
 .spo2-warn{color:#d97706;font-weight:600}
 .spo2-low{color:#dc2626;font-weight:600}
-
+ 
 /* ANALYSIS */
 .analysis-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);margin-bottom:1.25rem}
 .analysis-hdr{background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:18px 22px;display:flex;align-items:center;justify-content:space-between}
@@ -182,7 +182,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .focus-num{font-family:'Bebas Neue',sans-serif;font-size:38px;letter-spacing:.02em;line-height:1;margin-bottom:3px}
 .focus-title{font-size:12px;font-weight:700;color:#1a2535;margin-bottom:3px}
 .focus-text{font-size:11px;color:#64748b;line-height:1.55}
-
+ 
 /* COURSE */
 .course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .ccard{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);transition:transform .2s}
@@ -194,7 +194,7 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .ctag{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px;font-weight:700}
 .cname{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.04em;color:#1a2535;margin-bottom:5px}
 .cinfo{font-size:12px;color:#64748b;line-height:1.7}
-
+ 
 /* RACE CARDS */
 .race-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem}
 .rcard{border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.1)}
@@ -219,15 +219,15 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .rcard-prog-lbl{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8;margin-bottom:4px}
 .rcard-prog-bg{height:5px;background:#f1f5f9;border-radius:3px;overflow:hidden}
 .rcard-prog-fill{height:100%;border-radius:3px}
-
+ 
 /* UPDATE BAR */
 .update-bar{background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:10px 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .update-info{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,.5);letter-spacing:.06em}
 .update-info strong{color:#29b6f6}
 .update-time{font-size:11px;color:rgba(255,255,255,.35);font-family:'JetBrains Mono',monospace}
-
+ 
 footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;margin-top:1.5rem}
-
+ 
 /* MOBILE */
 @media(max-width:480px){
   .hero{height:260px}
@@ -254,19 +254,19 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
 </style>
 </head>
 <body>
-
+ 
 <div id="loading">
   <div class="spinner"></div>
   <div class="load-txt">Loading dashboard...</div>
 </div>
-
+ 
 <div id="app">
-
+ 
 <div class="update-bar">
   <div class="update-info">Auto-updated daily · Last sync: <strong id="lastUpdated">—</strong></div>
   <div class="update-time" id="daysToRace">— days to race</div>
 </div>
-
+ 
 <div class="tabs">
   <div class="tab t-summary on" onclick="showTab('summary',this)"><div class="tab-inner"><div class="tab-icon">📋</div><div class="tab-lbl">Summary</div></div></div>
   <div class="tab t-daily" onclick="showTab('daily',this)"><div class="tab-inner"><div class="tab-icon">📅</div><div class="tab-lbl">Daily Log</div></div></div>
@@ -275,7 +275,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
   <div class="tab t-performance" onclick="showTab('performance',this)"><div class="tab-inner"><div class="tab-icon">📊</div><div class="tab-lbl">Performance</div></div></div>
   <div class="tab t-course" onclick="showTab('course',this)"><div class="tab-inner"><div class="tab-icon">🗺️</div><div class="tab-lbl">Course</div></div></div>
 </div>
-
+ 
 <!-- SUMMARY -->
 <div class="page on" id="page-summary">
   <div class="hero">
@@ -336,7 +336,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     <div id="analysisSection"></div>
   </div>
 </div>
-
+ 
 <!-- DAILY LOG -->
 <div class="page" id="page-daily">
   <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Daily Training Log</div><div class="hero-title">Activity<span class="hl">Feed</span></div></div></div></div>
@@ -352,7 +352,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     <div class="feed-wrap" id="activityFeed"></div>
   </div>
 </div>
-
+ 
 <!-- TRAINING -->
 <div class="page" id="page-training">
   <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Race Command Center · 2026</div><div class="hero-title">Ironman<span class="hl">Oregon</span></div><div class="hero-meta"><span>Salem, Oregon</span><span>July 19, 2026</span><span>70.3 Miles</span></div></div><div class="cd-block"><div class="cd-num" id="cdNum2">—</div><div class="cd-lbl">Days to race</div></div></div></div>
@@ -378,7 +378,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     </div>
   </div>
 </div>
-
+ 
 <!-- HEALTH -->
 <div class="page" id="page-health">
   <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Sleep & Recovery</div><div class="hero-title">Sleep<span class="hl">Data</span></div></div></div></div>
@@ -399,7 +399,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     <div id="spo2Alert"></div>
   </div>
 </div>
-
+ 
 <!-- PERFORMANCE -->
 <div class="page" id="page-performance">
   <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Performance Metrics</div><div class="hero-title">Your<span class="hl">Numbers</span></div></div></div></div>
@@ -449,7 +449,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     </div>
   </div>
 </div>
-
+ 
 <!-- COURSE -->
 <div class="page" id="page-course">
   <div class="hero"><div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=1400&q=85')"></div><div class="hero-grad"></div><div class="hero-content"><div><div class="eyebrow">Course Intel · Salem Oregon</div><div class="hero-title">Race<span class="hl">Course</span></div></div></div></div>
@@ -473,10 +473,10 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     </div>
   </div>
 </div>
-
+ 
 <footer>IM 70.3 OREGON · RACE DAY JUL 19 2026 · DATA AUTO-UPDATED DAILY FROM GARMIN · SUB-6:00 IS THE GOAL</footer>
 </div>
-
+ 
 <script>
 // ── TRAINING PLAN DATA ─────────────────────────────────────────────────────
 var PLAN = [
@@ -491,11 +491,11 @@ var PLAN = [
   {n:9,dates:'Jun 15–21',title:'Taper — Volume Drops 40%',img:'https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=900&q=80',focus:['Volume cuts sharply','Short sharp intensity','Salem logistics'],sw:'2x pool — 2,000m each\n4x50 at race pace per session',bk:'2x short — 40–45 min each\n3x5 min Z4 to stay sharp',rn:'2x — 4mi + 5mi\n4–6 strides per run',note:'Volume drops 40% but short intensity stays. Book Salem hotel and sort bike travel.'},
   {n:10,dates:'Jul 13–19',title:'Race Week — Salem Oregon',img:'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=900&q=80',focus:['Arrive Sun Jul 13','Rest and activate','Race day Sun Jul 19'],sw:'Mon: 1,500m easy\nWed: 800m + 4x50 race pace\nFri: shakeout at Willamette',bk:'Tue: 30 min spin\nThu: 20 min + 3x1 min sharp\nSat: 10 min post check-in',rn:'Mon: 20 min easy\nWed: 15 min + 4 strides\nSun Jul 19: RACE DAY',note:'Shallow first 200m — do NOT stand, let current carry you. Bike NP 145–152w max. Trust your Oceanside run legs.'}
 ];
-
+ 
 var WEEK_TARGETS = [211,396,284,380,420,260,460,500,290,150];
 var WEEK_COLORS  = {done:'#34d399',build:'#38bdf8',peak:'#a78bfa',taper:'#2dd4bf',race:'#fbbf24'};
 var WEEK_PHASES  = ['Logged','Logged','Logged','Build','Build','Recovery','Peak','Peak','Taper','Race'];
-
+ 
 // ── NAVIGATION ─────────────────────────────────────────────────────────────
 function showTab(id, el){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));
@@ -503,12 +503,12 @@ function showTab(id, el){
   document.getElementById('page-'+id).classList.add('on');
   el.classList.add('on');
 }
-
+ 
 // ── LOAD DATA ──────────────────────────────────────────────────────────────
 var summaryData = null;
 var activitiesData = [];
 var sleepData = [];
-
+ 
 async function loadAll(){
   try {
     const [sumRes, actRes, slpRes] = await Promise.all([
@@ -516,30 +516,30 @@ async function loadAll(){
       fetch('data/activities.json').catch(()=>null),
       fetch('data/sleep.json').catch(()=>null)
     ]);
-
+ 
     if(sumRes && sumRes.ok) summaryData = await sumRes.json();
     if(actRes && actRes.ok) activitiesData = await actRes.json();
     if(slpRes && slpRes.ok) sleepData = await slpRes.json();
-
+ 
     buildDashboard();
   } catch(e) {
     console.error('Error loading data:', e);
     buildDashboard(); // build with empty data
   }
 }
-
+ 
 // ── BUILD DASHBOARD ────────────────────────────────────────────────────────
 function buildDashboard(){
   const today = new Date();
   const raceDate = new Date('2026-07-19');
   const calDate  = new Date('2026-10-18');
   const daysToRace = Math.ceil((raceDate - today) / 864e5);
-
+ 
   // Countdown
   document.querySelectorAll('#cdNum, #cdNum2').forEach(el=>{ if(el) el.textContent = daysToRace > 0 ? daysToRace : 'RACE!'; });
   const dtrEl = document.getElementById('daysToRace');
   if(dtrEl) dtrEl.textContent = daysToRace + ' days to race';
-
+ 
   // Race card progress
   const buildStart = new Date('2026-04-21');
   const oregonPct = Math.min(100, Math.round((today - buildStart) / (raceDate - buildStart) * 100));
@@ -549,48 +549,48 @@ function buildDashboard(){
   const elCD = document.getElementById('calDays'); if(elCD) elCD.textContent = calDays + ' days out';
   const calPct = today < raceDate ? 2 : Math.min(100, Math.round((today - raceDate) / (calDate - raceDate) * 100));
   const elCB = document.getElementById('calBar'); if(elCB) elCB.style.width = Math.max(2,calPct) + '%';
-
+ 
   // Get weeks data
   var weeks = summaryData ? summaryData.weeks : PLAN.map((p,i)=>({week:i+1,start:'',end:'',target:WEEK_TARGETS[i],actual:0,bikeTSS:0,swimN:0,bikeN:0,runN:0,avgNP:0,done:false}));
   var overall = summaryData ? summaryData.overall : {lastUpdated:'Not yet synced',totalActs:activitiesData.length,avgBikeNP:0,currentWeek:4,weeksComplete:3};
-
+ 
   // Update bar
   const elLU = document.getElementById('lastUpdated'); if(elLU) elLU.textContent = overall.lastUpdated || 'Not yet synced';
   const elAC = document.getElementById('sc-acts'); if(elAC) elAC.textContent = overall.totalActs;
-
+ 
   // Summary stats
   var weeksWithData = weeks.filter(w=>w.actual>0).length;
   var curWeekNum = overall.currentWeek || 4;
   var curWeek = weeks[curWeekNum-1] || weeks[3];
   var avgNP = overall.avgBikeNP || 0;
-
+ 
   ['sc-weeks','t-weeks'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = weeksWithData+' / 10'; });
   ['sc-phase'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = WEEK_PHASES[curWeekNum-1]||'Build'; });
   ['sc-phaseSub'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = 'Week '+curWeekNum+' · '+PLAN[curWeekNum-1].dates; });
-  ['sc-np','t-np'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = avgNP>0 ? avgNP+'w' : '148w'; });
+  ['sc-np','t-np'].forEach(id=>{ var el=document.getElementById(id); if(el) el.textContent = (summaryData&&summaryData.overall&&summaryData.overall.avgBikeNP>0) ? summaryData.overall.avgBikeNP+'w' : 'N/A'; });
   var elTW = document.getElementById('t-curWeek'); if(elTW) elTW.textContent = 'Week '+curWeekNum;
   var elTD = document.getElementById('t-curDates'); if(elTD) elTD.textContent = PLAN[curWeekNum-1].dates;
-
+ 
   // Week grid
   buildWeekGrid(weeks);
-
+ 
   // Weekly bars
   buildWeeklyBars(weeks);
-
+ 
   // Activity feed
   buildActivityFeed();
-
+ 
   // Sleep
   buildSleepTable();
-
+ 
   // Analysis
   buildAnalysis(weeks, overall);
-
+ 
   // Show app
   document.getElementById('loading').style.display = 'none';
   document.getElementById('app').style.display = 'block';
 }
-
+ 
 // ── WEEK GRID ──────────────────────────────────────────────────────────────
 var activeWk = -1;
 function buildWeekGrid(weeks){
@@ -611,7 +611,7 @@ function buildWeekGrid(weeks){
     grid.appendChild(btn);
   });
 }
-
+ 
 function showWeek(i, w, c){
   if(activeWk>=0){ var ob=document.getElementById('wb'+activeWk); if(ob){ob.classList.remove('on');ob.style.borderColor='#e2e8f0';ob.style.boxShadow='';} }
   activeWk=i;
@@ -640,7 +640,7 @@ function showWeek(i, w, c){
     +'<div class="note-box"><div>💡</div><div class="note-txt">'+p.note+'</div></div>'
     +'</div>';
 }
-
+ 
 // ── WEEKLY BARS ─────────────────────────────────────────────────────────────
 function buildWeeklyBars(weeks){
   var el = document.getElementById('weeklyBars');
@@ -681,7 +681,7 @@ function buildWeeklyBars(weeks){
     +'</div>';
   }).join('');
 }
-
+ 
 // ── ACTIVITY FEED ───────────────────────────────────────────────────────────
 function buildActivityFeed(){
   var el = document.getElementById('activityFeed');
@@ -703,18 +703,18 @@ function buildActivityFeed(){
     +'</div>';
   }).join('');
 }
-
+ 
 // ── SLEEP TABLE ─────────────────────────────────────────────────────────────
 function buildSleepTable(){
   var tb = document.getElementById('sleepTableBody');
   if(!tb) return;
   var data = sleepData.slice().reverse();
   if(!data.length){ tb.innerHTML='<tr><td colspan="6" style="padding:1rem;color:#94a3b8;text-align:center">No sleep data loaded yet</td></tr>'; return; }
-
+ 
   var scores = data.filter(s=>s.score>0).map(s=>s.score);
   var spo2s  = data.filter(s=>s.spo2>0).map(s=>s.spo2);
   var rhrs   = data.filter(s=>s.rhr>0).map(s=>s.rhr);
-
+ 
   if(scores.length){
     var el=document.getElementById('h-avgScore'); if(el) el.textContent=Math.round(scores.reduce((a,b)=>a+b,0)/scores.length);
   }
@@ -727,7 +727,7 @@ function buildSleepTable(){
   }
   var avgDur=data.filter(s=>s.total>0);
   if(avgDur.length){ var el=document.getElementById('h-avgDur'); if(el) el.textContent=(avgDur.reduce((a,s)=>a+s.total,0)/avgDur.length).toFixed(1)+'h'; }
-
+ 
   tb.innerHTML = data.slice(0,30).map(function(s){
     var spo2Class = s.spo2>=95?'spo2-ok':s.spo2>=92?'spo2-warn':'spo2-low';
     var qClass = s.quality==='Good'?'q-good':s.quality==='Fair'?'q-fair':'q-poor';
@@ -741,7 +741,7 @@ function buildSleepTable(){
       +'<td><span class="'+qClass+'">'+s.quality+'</span></td>'
     +'</tr>';
   }).join('');
-
+ 
   // SpO2 alert
   var lowSpo2 = spo2s.filter(s=>s<92).length;
   var alertEl = document.getElementById('spo2Alert');
@@ -752,21 +752,21 @@ function buildSleepTable(){
     +'</div>';
   }
 }
-
+ 
 // ── ANALYSIS SECTION ────────────────────────────────────────────────────────
 function buildAnalysis(weeks, overall){
   var el = document.getElementById('analysisSection');
   if(!el) return;
-
-  var bikeActs = activitiesData.filter(a=>a.disc==='bike'&&a.np>0);
+ 
+  var bikeActs = activitiesData.filter(a=>a.disc==='bike');
   var swimActs = activitiesData.filter(a=>a.disc==='swim');
   var runActs  = activitiesData.filter(a=>a.disc==='run');
-  var avgNP    = bikeActs.length ? Math.round(bikeActs.reduce((s,a)=>s+a.np,0)/bikeActs.length) : 0;
+  var avgNP    = (summaryData && summaryData.overall && summaryData.overall.avgBikeNP) ? summaryData.overall.avgBikeNP : 0;
   var totalBikeTSS = Math.round(activitiesData.filter(a=>a.disc==='bike').reduce((s,a)=>s+a.tss,0));
   var weeksComplete = weeks.filter(w=>w.actual>0).length;
-  var npStatus = avgNP>=145&&avgNP<=152?'Strong ✓':avgNP>152?'Above target ⚠':avgNP>0?'Below target ⚠':'—';
-  var npStatusClass = avgNP>=145&&avgNP<=152?'background:#dcfce7;color:#166534':avgNP>0?'background:#fef3c7;color:#92400e':'background:#f1f5f9;color:#64748b';
-
+  var npStatus = bikeActs.length>=8?'Strong ✓':bikeActs.length>=5?'On Track':'Building';
+  var npStatusClass = bikeActs.length>=8?'background:#dcfce7;color:#166534':bikeActs.length>=5?'background:#fef3c7;color:#92400e':'background:#f1f5f9;color:#64748b';
+ 
   el.innerHTML='<div class="analysis-card">'
     +'<div class="analysis-hdr">'
       +'<div><h3>Training Assessment</h3><p>'+weeksComplete+' weeks logged · '+activitiesData.length+' activities · updated '+overall.lastUpdated+'</p></div>'
@@ -778,10 +778,10 @@ function buildAnalysis(weeks, overall){
           +'<div class="disc-head"><div class="disc-head-title">🚴 Bike</div><div class="status-pill" style="'+npStatusClass+'">'+npStatus+'</div></div>'
           +'<div class="disc-stats">'
             +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+bikeActs.length+'</div><div class="dstat-lbl">Sessions</div></div>'
-            +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+(avgNP>0?avgNP+'w':'—')+'</div><div class="dstat-lbl">Avg NP</div></div>'
+            +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+totalBikeTSS+'</div><div class="dstat-lbl">Bike TSS</div></div>'
             +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+totalBikeTSS+'</div><div class="dstat-lbl">Total TSS</div></div>'
           +'</div>'
-          +'<div class="disc-insight" style="background:#fff7ed;border:1px solid #fed7aa;color:#9a3412">'+(avgNP>=145&&avgNP<=152?'<strong>Right on target.</strong> Avg NP '+avgNP+'w sits in your 145–152w race band. Consistency is excellent.':'<strong>NP '+(avgNP>152?'slightly high':'slightly low')+'.</strong> Target 145–152w for race-specific training. Current avg: '+avgNP+'w.')+'</div>'
+          +'<div class="disc-insight" style="background:#fff7ed;border:1px solid #fed7aa;color:#9a3412">'+'<strong>'+bikeActs.length+' sessions logged.</strong> All indoor on ROUVY — solid aerobic base building. NP data not available via Garmin API; check Garmin Connect or Intervals.icu for power metrics. TSS total: '+totalBikeTSS+'.'+'</div>'
         +'</div>'
         +'<div class="disc-card" style="border-color:#bae6fd;background:#f0f9ff">'
           +'<div class="disc-head"><div class="disc-head-title">🏊 Swim</div><div class="status-pill" style="background:#dcfce7;color:#166534">Consistent ✓</div></div>'
@@ -829,10 +829,10 @@ function buildAnalysis(weeks, overall){
     +'</div>'
   +'</div>';
 }
-
+ 
 // ── INIT ────────────────────────────────────────────────────────────────────
 loadAll();
 </script>
-
+ 
 </body>
 </html>
