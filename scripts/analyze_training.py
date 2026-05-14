@@ -161,7 +161,7 @@ Be specific and data-driven. Reference actual numbers from the data. Keep langua
 print(f"Calling Claude API for training analysis ({TODAY})...")
 
 payload = json.dumps({
-    "model": "claude-sonnet-4-20250514",
+    "model": "claude-sonnet-4-5",
     "max_tokens": 1000,
     "messages": [{"role": "user", "content": prompt}]
 }).encode()
