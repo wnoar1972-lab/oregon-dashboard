@@ -1,4 +1,4 @@
-<!-- v2 --> <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -498,7 +498,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     <div class="sec"><div class="sec-lbl">Race day strategy</div><div class="sec-rule"></div></div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
       <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:15px 17px"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1e40af;margin-bottom:7px">🏊 Swim</div><div style="font-size:13px;color:#3b6fa0;line-height:1.7">Start easy, let current work. Don't stand first 200m. Sight every 6–8 strokes. Exit water HR should feel controlled.</div></div>
-      <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:15px 17px"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#c2410c;margin-bottom:7px">🚴 Bike</div><div style="font-size:13px;color:#9a3412;line-height:1.7">NP 145–152w ceiling. First 20 miles feel easy — that's correct. Eat every 20 min. Drink every 10 min. The run starts at mile 57.</div></div>
+      <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:15px 17px"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#c2410c;margin-bottom:7px">🚴 Bike</div><div style="font-size:13px;color:#9a3412;line-height:1.7">NP 145–152w ceiling. First 20 miles feel easy — that\'s correct. Eat every 20 min. Drink every 10 min. The run starts at mile 57.</div></div>
       <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:15px 17px"><div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#166534;margin-bottom:7px">🏃 Run</div><div style="font-size:13px;color:#15803d;line-height:1.7">Miles 1–3: hold back. Miles 4–9: 9:00–9:10/mi. Miles 10–13: whatever you have. Walk 15 sec at aid stations if needed.</div></div>
     </div>
   </div>
@@ -640,7 +640,7 @@ async function loadAll(){
     if(actRes && actRes.ok) activitiesData = await actRes.json();
     if(slpRes && slpRes.ok) sleepData = await slpRes.json();
 
-    // Analysis is optional - don't break if missing
+    // Analysis is optional - don\'t break if missing
     try {
       const anlRes = await fetch('data/analysis.json');
       if(anlRes && anlRes.ok) analysisData = await anlRes.json();
