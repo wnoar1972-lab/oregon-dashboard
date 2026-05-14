@@ -21,16 +21,21 @@ jobs:
 
       - run: pip install garminconnect
 
+      - name: Sync with remote first
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Dashboard Bot"
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Fetch Garmin data
         env:
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: python scripts/fetch_garmin.py
 
-      - run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "Dashboard Bot"
-          git pull --rebase origin main
+      - name: Commit and push
+        run: |
           git add data/
           git diff --staged --quiet || git commit -m "Auto-update $(date '+%Y-%m-%d')"
           git push
