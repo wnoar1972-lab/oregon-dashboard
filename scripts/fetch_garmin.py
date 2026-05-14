@@ -3,48 +3,48 @@ fetch_garmin.py - Uses get_sleep_data with full debug output
 """
 import json, os, sys
 from datetime import datetime, timedelta, date
-
+ 
 try:
     from garminconnect import Garmin
 except ImportError:
     os.system(f"{sys.executable} -m pip install garminconnect")
     from garminconnect import Garmin
-
+ 
 EMAIL    = os.environ.get("GARMIN_EMAIL")
 PASSWORD = os.environ.get("GARMIN_PASSWORD")
 if not EMAIL or not PASSWORD:
     print("ERROR: Set GARMIN_EMAIL and GARMIN_PASSWORD"); sys.exit(1)
-
+ 
 TODAY = date.today()
 START_DATE = date(2026,4,21)
 print(f"Fetching {START_DATE} to {TODAY}")
-
+ 
 try:
     client = Garmin(EMAIL, PASSWORD)
     client.login()
     print("Logged in")
 except Exception as e:
     print(f"Login error: {e}"); sys.exit(1)
-
+ 
 os.makedirs("data", exist_ok=True)
-
+ 
 def disc(t):
     t=str(t).upper()
     if any(x in t for x in ["SWIM","POOL","OPEN_WATER"]): return "swim"
     if any(x in t for x in ["CYCLING","VIRTUAL","BIKE"]): return "bike"
     if any(x in t for x in ["RUNNING","RUN"]): return "run"
     return "other"
-
+ 
 def sf(v,d=0):
     try: return round(float(v),1) if v else d
     except: return d
-
+ 
 def quality(score):
     if score>=80: return "Good"
     if score>=60: return "Fair"
     if score>0: return "Poor"
     return "—"
-
+ 
 # ── ACTIVITIES ────────────────────────────────────────────────────────────
 activities = []
 try:
@@ -68,7 +68,7 @@ try:
     print(f"Saved {len(activities)} activities")
 except Exception as e:
     print(f"Activities error: {e}")
-
+ 
 # ── SLEEP — use stats_and_body which is more reliable ────────────────────
 sleep_data = []
 try:
@@ -84,7 +84,7 @@ try:
                 if first:
                     print(f"DEBUG sleep keys: {list(raw.keys())}")
                     first = False
-
+ 
                 # Try to find sleep duration in various places
                 total_sec = 0
                 score = 0
@@ -92,12 +92,12 @@ try:
                 rhr = 0
                 deep = 0
                 rem = 0
-
+ 
                 # Check dailySleepDTO
                 dto = raw.get("dailySleepDTO") or {}
                 if dto and first == False and len(sleep_data) == 0:
                     print(f"DEBUG dto keys: {list(dto.keys())[:30]}")
-
+ 
                 # Duration
                 for src in [dto, raw]:
                     for k in ["sleepTimeSeconds","totalSleepSeconds","sleepDuration",
@@ -106,13 +106,13 @@ try:
                         if v and int(v) > 0:
                             total_sec = int(v); break
                     if total_sec: break
-
+ 
                 # Deep/REM
                 for src in [dto, raw]:
                     deep = int(src.get("deepSleepSeconds",0) or 0)
                     rem  = int(src.get("remSleepSeconds",0) or 0)
                     if deep or rem: break
-
+ 
                 # Score — very flexible parsing
                 for src in [dto, raw]:
                     for k in ["sleepScores","overallSleepScore","sleepScore",
@@ -130,7 +130,7 @@ try:
                                     except: pass
                         if score: break
                     if score: break
-
+ 
                 # SpO2
                 for src in [dto, raw]:
                     for k in ["averageSpO2Value","avgSPO2","spo2",
@@ -151,7 +151,7 @@ try:
                     ep = raw.get("wellnessEpochSPO2DataDTOList",[]) or []
                     vals = [x.get("spo2Reading",0) for x in ep if x.get("spo2Reading")]
                     if vals: spo2 = round(sum(vals)/len(vals),1)
-
+ 
                 # RHR
                 for src in [dto, raw]:
                     for k in ["restingHeartRate","avgRestingHeartRate",
@@ -161,7 +161,7 @@ try:
                             try: rhr = int(v); break
                             except: pass
                     if rhr: break
-
+ 
                 if total_sec > 3600 or spo2 > 0:
                     entry = {
                         "date":    ds,
@@ -176,24 +176,24 @@ try:
                     sleep_data.append(entry)
                     if len(sleep_data) <= 3:
                         print(f"Sleep {ds}: {entry}")
-
+ 
         except Exception as ex:
             print(f"Sleep {ds} error: {ex}")
-
+ 
         cur += timedelta(days=1)
-
+ 
     sleep_data.sort(key=lambda x:x["date"])
     print(f"Total sleep nights: {len(sleep_data)}")
-
+ 
 except Exception as e:
     print(f"Sleep outer error: {e}")
     import traceback; traceback.print_exc()
-
+ 
 # Always write sleep file
 with open("data/sleep.json","w") as f:
     json.dump(sleep_data, f, indent=2)
 print(f"Wrote sleep.json: {len(sleep_data)} entries")
-
+ 
 # ── SUMMARY ───────────────────────────────────────────────────────────────
 week_ranges=[(1,"2026-04-21","2026-04-27"),(2,"2026-04-28","2026-05-03"),
              (3,"2026-05-04","2026-05-10"),(4,"2026-05-11","2026-05-17"),
@@ -222,9 +222,11 @@ overall={
     "avgBikeNP":round(sum(bn_all)/len(bn_all),1) if bn_all else 0,
     "currentWeek":next((w["week"] for w in weeks if not w["done"]),10),
     "weeksComplete":sum(1 for w in weeks if w["done"] and w["actual"]>0),
-    "daysToRace":(date(2026,7,19)-TODAY).days
+    "daysToRace":(date(2026,7,19)-TODAY).days,
+    "totalBikeSessions":len([a for a in activities if a["disc"]=="bike"]),
+    "totalSwimSessions":len([a for a in activities if a["disc"]=="swim"]),
+    "totalRunSessions":len([a for a in activities if a["disc"]=="run"])
 }
 with open("data/summary.json","w") as f:
     json.dump({"overall":overall,"weeks":weeks},f,indent=2)
 print(f"Done: {len(activities)} activities, {len(sleep_data)} sleep nights")
-
