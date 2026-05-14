@@ -1,0 +1,20 @@
+{
+  "date": "May 14, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Analysis temporarily unavailable \u2014 check back tomorrow.",
+  "todayRecommendation": "Follow your scheduled training plan for today.",
+  "weekProgress": "Week 4 \u2014 180 of 380 TSS (47% complete).",
+  "keyInsight": "66 days to Oregon. Stay consistent.",
+  "alerts": [],
+  "positives": [
+    "Training is progressing",
+    "Consistency is key"
+  ],
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-05-14",
+  "daysToRace": 66,
+  "currentWeek": 4,
+  "weekPhase": "Build"
+}
