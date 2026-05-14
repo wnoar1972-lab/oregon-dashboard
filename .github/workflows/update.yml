@@ -2,21 +2,19 @@ name: Update Dashboard Daily
 
 on:
   schedule:
-    # Runs at 6:00 AM Pacific Time (14:00 UTC) every day
     - cron: '0 14 * * *'
   workflow_dispatch:
-    # Also allows manual trigger from GitHub Actions tab
 
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
-
     permissions:
-      contents: write  # needed to commit updated data files
-
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -24,20 +22,28 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
+        run: pip install garminconnect
+
+      - name: Sync with remote first
         run: |
-          pip install garminconnect
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Dashboard Bot"
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Fetch Garmin data
         env:
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
-        run: |
-          python scripts/fetch_garmin.py
+        run: python scripts/fetch_garmin.py
+
+      - name: Generate AI training analysis
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/analyze_training.py
 
       - name: Commit and push updated data
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "Dashboard Bot"
           git add data/
-          git diff --staged --quiet || git commit -m "🏊 Auto-update: $(date '+%Y-%m-%d %H:%M') UTC"
+          git diff --staged --quiet || git commit -m "Auto-update $(date '+%Y-%m-%d')"
           git push
