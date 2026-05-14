@@ -5,7 +5,10 @@
     "avgBikeNP": 0,
     "currentWeek": 4,
     "weeksComplete": 3,
-    "daysToRace": 66
+    "daysToRace": 66,
+    "totalBikeSessions": 11,
+    "totalSwimSessions": 9,
+    "totalRunSessions": 9
   },
   "weeks": [
     {
