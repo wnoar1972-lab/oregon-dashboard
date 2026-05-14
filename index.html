@@ -630,17 +630,23 @@ function buildAIAnalysis(){
 
 async function loadAll(){
   try {
-    const [sumRes, actRes, slpRes, anlRes] = await Promise.all([
+    const [sumRes, actRes, slpRes] = await Promise.all([
       fetch('data/summary.json').catch(()=>null),
       fetch('data/activities.json').catch(()=>null),
-      fetch('data/sleep.json').catch(()=>null),
-      fetch('data/analysis.json').catch(()=>null)
+      fetch('data/sleep.json').catch(()=>null)
     ]);
 
     if(sumRes && sumRes.ok) summaryData = await sumRes.json();
     if(actRes && actRes.ok) activitiesData = await actRes.json();
     if(slpRes && slpRes.ok) sleepData = await slpRes.json();
-    if(anlRes && anlRes.ok) analysisData = await anlRes.json();
+
+    // Analysis is optional - don't break if missing
+    try {
+      const anlRes = await fetch('data/analysis.json');
+      if(anlRes && anlRes.ok) analysisData = await anlRes.json();
+    } catch(e) {
+      console.log('No analysis data yet');
+    }
 
     buildDashboard();
   } catch(e) {
