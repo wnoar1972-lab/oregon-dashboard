@@ -2,22 +2,20 @@
   "date": "May 15, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "5.1-mile run at 143 HR averaged moderate intensity, contributing 43 TSS. This was appropriately paced aerobic work, but continues a concerning pattern: you're now 4 weeks into Build phase with ZERO bike TSS logged and no brick workouts completed despite this being designated as your first brick week. The run execution was solid, but discipline balance is critically off-target.",
-  "todayRecommendation": "Today MUST include cycling \u2014 ideally the planned 60-minute ride followed by 20-minute brick run. You're at 37% of weekly TSS target with limited days remaining, and cycling is completely absent from your Build phase. Prioritize the brick workout to establish race-specific neuromuscular patterns.",
-  "weekProgress": "Week 4 tracking at 140/380 TSS (37%) with only 2 swim and 3 run sessions logged. Critical gap: 0 bike activities across entire 4-week Build phase and 0 brick workouts despite this being brick-focused week. Run volume is solid (22.2 miles last 7 days), but without cycling integration, you're not building Ironman-specific fitness. Need immediate course correction.",
-  "keyInsight": "You cannot race a 70.3 in 65 days without cycling \u2014 zero bike TSS in 4 weeks of Build phase represents a fundamental training execution failure that threatens both race goals.",
+  "yesterdayAnalysis": "Yesterday's 5.1-mile run at 143 HR (TSS 43) was a solid moderate effort that keeps run volume building appropriately. However, this is week 4 of 10 in the build phase with a specific focus on brick workouts, and you still haven't completed any bike sessions\u2014zero bike TSS accumulated so far in this build block despite being 37% through the week's TSS target.",
+  "todayRecommendation": "Priority today is executing your first bike session of this build phase\u2014ideally the planned 60-minute ride + 20-minute brick run that's the week's focus. You're 65 days from IM 70.3 Oregon and need consistent bike volume to hold race watts (145-152w NP) for 2.5+ hours.",
+  "weekProgress": "Week TSS is 140 of 380 (37% complete) but discipline balance is critically skewed: 3 runs (216 TSS), 2 swims (63 TSS), and zero bike sessions. With this being designated as your first brick week, the absence of any cycling is a significant gap that needs immediate correction to stay on track for race-specific fitness.",
+  "keyInsight": "You've completed 29 activities in this build phase without a single bike ride\u2014the bike leg will make or break your sub-6:00 goal at Oregon, and Oceanside proved conservative pacing works only if you have the bike fitness to sustain it.",
   "alerts": [
-    "CRITICAL: 0 bike TSS in entire 4-week Build phase",
-    "No brick workout completed this week (Week 4 focus)",
-    "Only 37% of weekly TSS target with limited days remaining",
-    "65 days to Ironman 70.3 Oregon without bike-specific fitness development",
-    "Sleep duration below 7h on 2 of last 6 nights"
+    "ZERO bike TSS in 4 weeks of build phase\u2014critical discipline gap",
+    "No brick workouts completed despite week 4 focus on brick training",
+    "Only 37% of weekly TSS with limited days remaining",
+    "Sleep duration dropped to 6.7h on 5/14\u2014below optimal for 54yo athlete on heavy load"
   ],
   "positives": [
-    "Run consistency strong: 3 quality sessions totaling 22.2 miles in 7 days",
-    "Heart rate control excellent across runs (143-148 avg, Zone 2 dominant)",
-    "Swim volume building nicely: 2.9 miles across 2 sessions with threshold work",
-    "RHR stable 53-60 range showing good cardiovascular adaptation"
+    "Run consistency strong: 3 quality sessions in 7 days with controlled HR (143-148 avg)",
+    "10-mile long run on 5/9 at 144 HR shows good aerobic base building",
+    "RHR stable 53-60 range indicating good cardiovascular adaptation to run load"
   ],
   "recoveryScore": 7,
   "trainingLoadStatus": "Fresh",
