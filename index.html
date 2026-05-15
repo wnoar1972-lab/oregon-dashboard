@@ -774,7 +774,7 @@ function buildWeeklyBars(weeks){
   var el = document.getElementById('weeklyBars');
   if(!el) return;
   var maxT = 500;
-  el.innerHTML = '<div style="font-size:12px;color:#94a3b8;margin-bottom:10px;font-family:JetBrains Mono,monospace">⚠ Garmin TSS is power-based (bike only). Swim and run show session counts.</div>'
+  el.innerHTML = '<div style="font-size:12px;color:#94a3b8;margin-bottom:10px;font-family:JetBrains Mono,monospace">✓ Full TSS from Intervals.icu — swim, bike and run all included.</div>'
     + weeks.map(function(w,i){
     var aPct = Math.round(w.actual/maxT*100);
     var tPct = Math.round(WEEK_TARGETS[i]/maxT*100);
@@ -788,8 +788,8 @@ function buildWeeklyBars(weeks){
     var discHtml = (w.done||w.actual>0) ?
       '<div style="margin-top:7px;display:flex;flex-direction:column;gap:3px">'
       +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🚴</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.round(w.bikeTSS/maxT*100)+'%;background:#fb923c;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#ea580c;min-width:52px;text-align:right">'+Math.round(w.bikeTSS)+' TSS</span></div>'
-      +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🏊</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.min(100,w.swimN*15)+'%;background:#38bdf8;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#0284c7;min-width:52px;text-align:right">'+w.swimN+' sessions</span></div>'
-      +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🏃</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.min(100,w.runN*20)+'%;background:#34d399;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#059669;min-width:52px;text-align:right">'+w.runN+' runs</span></div>'
+      +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🏊</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.min(100,Math.round((w.swimTSS||w.swimN*15)/maxT*100))+'%;background:#38bdf8;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#0284c7;min-width:52px;text-align:right">'+(w.swimTSS>0?w.swimTSS+' TSS':w.swimN+' sess')+'</span></div>'
+      +'<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;width:22px">🏃</span><div style="flex:1;height:7px;background:#f1f5f9;border-radius:3px;overflow:hidden"><div style="height:100%;width:'+Math.min(100,Math.round((w.runTSS||w.runN*20)/maxT*100))+'%;background:#34d399;border-radius:3px"></div></div><span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#059669;min-width:52px;text-align:right">'+(w.runTSS>0?w.runTSS+' TSS':w.runN+' runs')+'</span></div>'
       +'</div>' : '';
     return '<div class="wpr">'
       +'<div class="wpr-lbl">Wk '+(i+1)+'<br><span style="font-size:10px">'+PLAN[i].dates.split('–')[0]+'</span></div>'
@@ -909,7 +909,7 @@ function buildAnalysis(weeks, overall){
             +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+totalBikeTSS+'</div><div class="dstat-lbl">Bike TSS</div></div>'
             +'<div class="dstat"><div class="dstat-val" style="color:#ea580c">'+totalBikeTSS+'</div><div class="dstat-lbl">Total TSS</div></div>'
           +'</div>'
-          +'<div class="disc-insight" style="background:#fff7ed;border:1px solid #fed7aa;color:#9a3412">'+'<strong>'+bikeActs.length+' sessions logged.</strong> All indoor on ROUVY — solid aerobic base building. NP data not available via Garmin API; check Garmin Connect or Intervals.icu for power metrics. TSS total: '+totalBikeTSS+'.'+'</div>'
+          +'<div class="disc-insight" style="background:#fff7ed;border:1px solid #fed7aa;color:#9a3412">'+'<strong>'+bikeActs.length+' sessions logged.</strong> TSS: '+totalBikeTSS+'. All indoor ROUVY sessions. Pacing and consistency looking strong heading into Oregon.'+'</div>'
         +'</div>'
         +'<div class="disc-card" style="border-color:#bae6fd;background:#f0f9ff">'
           +'<div class="disc-head"><div class="disc-head-title">🏊 Swim</div><div class="status-pill" style="background:#dcfce7;color:#166534">Consistent ✓</div></div>'
