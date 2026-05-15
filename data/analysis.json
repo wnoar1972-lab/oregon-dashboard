@@ -2,24 +2,24 @@
   "date": "May 15, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday's 5.1-mile run at 143 HR avg delivered 43 TSS with solid aerobic effort. The distance and heart rate suggest controlled Zone 2 work, which is appropriate for build phase. However, this run-only focus continues the pattern of zero bike training in the current build block.",
-  "todayRecommendation": "Today must prioritize the first brick workout of this week \u2014 60 minutes on the bike followed by 20-minute transition run. You're 65 days from Oregon 70.3 with zero bike TSS logged in this build phase, and brick-specific adaptations require immediate attention.",
-  "weekProgress": "Week 4 tracking at only 37% TSS completion (140 of 380 target) with critical discipline imbalance: 3 runs, 2 swims, but zero bike workouts. The week's stated focus is brick training, yet no brick sessions have been completed. With 240 TSS remaining and limited days left, catching up requires immediate course correction.",
-  "keyInsight": "With zero bike training logged across 29 activities in this build phase and your A-race 65 days away, the absence of cycling workload represents a critical gap that threatens race-day bike fitness and pacing execution.",
+  "yesterdayAnalysis": "Yesterday's 5.1-mile run at HR 143 (TSS 43) was a solid aerobic effort, contributing well to run volume without overreaching. However, this continues a concerning pattern: you're now in Week 4 of build phase with ZERO bike TSS accumulated across 29 total activities. Given this is your first brick week and you're only at 37% of weekly TSS target with no bike work yet, the training balance is critically off-track.",
+  "todayRecommendation": "Today MUST include the planned brick workout: 60-minute bike ride at aerobic pace (targeting 60-70% FTP) immediately followed by 20-minute transition run. This is non-negotiable given the complete absence of bike training and the brick focus of this week. Prioritize getting on the Quintana Roo.",
+  "weekProgress": "Week tracking is significantly behind: 140 of 380 TSS (37%) with zero bike contribution and no brick workouts completed yet. The discipline balance is broken\u2014you have run and swim work logged, but bike training is completely missing. With 65 days to IM 70.3 Oregon and targeting NP 145-152w, the lack of bike-specific fitness development is the critical gap right now.",
+  "keyInsight": "You cannot race a 56-mile bike leg at target power without bike training\u2014zero bike TSS in 29 activities during build phase is a red flag that threatens race day execution and your conservative pacing strategy that earned the Oceanside run PR.",
   "alerts": [
-    "No bike training in entire build phase (0 of 29 activities)",
-    "No brick workouts completed despite week focus",
-    "Only 37% of weekly TSS target with limited time remaining",
-    "Sleep duration inconsistent: last night 8.0h but 6.7h two nights prior",
-    "Deep sleep was only 29min on May 14 (significantly below other nights)"
+    "ZERO bike TSS accumulated in entire build phase (29 activities)",
+    "No brick workouts completed this week despite being Week 4 brick focus",
+    "Week TSS only 37% complete with limited days remaining",
+    "Sleep duration inconsistent (6.7-8.0h range, two nights under 7h)",
+    "Deep sleep was very low on 5/14 (only 29min)"
   ],
   "positives": [
-    "Run consistency excellent: 3 quality sessions totaling 22.2 miles in 7 days",
-    "Heart rate control strong across runs (143-148 avg) showing good aerobic base",
-    "RHR remains stable at 57, indicating adequate recovery despite training load",
-    "Most recent sleep was 8.0h with strong deep sleep (78min) showing recovery prioritization"
+    "Run consistency strong: 3 quality runs in 7 days with controlled HR averaging 143-148",
+    "10-mile run on 5/9 (TSS 99) shows solid aerobic endurance building",
+    "Resting heart rate stable in low-to-mid 50s showing good baseline fitness",
+    "SpO2 holding consistently above 92% despite TRT protocol"
   ],
-  "recoveryScore": 7,
+  "recoveryScore": 6,
   "trainingLoadStatus": "Fresh",
   "generatedAt": "2026-05-15",
   "daysToRace": 65,
