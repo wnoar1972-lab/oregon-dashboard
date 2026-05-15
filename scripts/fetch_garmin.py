@@ -6,6 +6,7 @@ and sleep data from Garmin Connect, saves to data/ folder.
 
 import json, os, sys, urllib.request, urllib.parse, base64, subprocess
 subprocess.run(['pip', 'install', 'requests', '-q'], check=False)
+import requests
 from datetime import date, timedelta
 
 TODAY      = date.today()
@@ -21,9 +22,11 @@ os.makedirs("data", exist_ok=True)
 
 def disc(t):
     t = str(t).upper()
-    if any(x in t for x in ["SWIM","POOL","OPEN_WATER"]): return "swim"
-    if any(x in t for x in ["RIDE","CYCLING","VIRTUAL","BIKE","ROUVY"]): return "bike"
-    if any(x in t for x in ["RUN","RUNNING"]): return "run"
+    if any(x in t for x in ["SWIM","POOL","OPEN_WATER","OPENWATER"]): return "swim"
+    if any(x in t for x in ["RIDE","CYCLING","VIRTUAL","BIKE","ROUVY",
+                              "VELODROME","INDOOR","VIRTUALRIDE","CYCLE",
+                              "EBIKE","MTB","ROAD","GRAVEL"]): return "bike"
+    if any(x in t for x in ["RUN","RUNNING","TRAIL","TREADMILL","WALK"]): return "run"
     return "other"
 
 def sf(v, d=0):
@@ -35,7 +38,6 @@ activities = []
 if INTERVALS_KEY and INTERVALS_ID:
     try:
         print(f"Fetching activities from Intervals.icu ({START_DATE} to {TODAY})...")
-        import requests
         url = (f"https://intervals.icu/api/v1/athlete/{INTERVALS_ID}/activities"
                f"?oldest={START_DATE}&newest={TODAY}&cols=name,type,start_date_local,"
                f"distance,moving_time,tss,normalized_power,average_heartrate,icu_training_load")
@@ -44,10 +46,16 @@ if INTERVALS_KEY and INTERVALS_ID:
         resp.raise_for_status()
         raw = resp.json()
         print(f"Got {len(raw)} activities from Intervals.icu")
+
+        # Debug — print all activity types so we can see what ROUVY sends
+        print("=== ACTIVITY TYPES ===")
+        for a in raw:
+            print(f"  {a.get('start_date_local','')[:10]} | type={a.get('type','?')} | name={str(a.get('name',''))[:30]} | tss={a.get('tss')} | load={a.get('icu_training_load')}")
+        print("=== END TYPES ===")
+
         for a in raw:
             act_type = a.get("type", "")
             d = disc(act_type)
-            # Use icu_training_load (ATL contribution) as TSS if tss not available
             tss = sf(a.get("tss") or a.get("icu_training_load"))
             np  = sf(a.get("normalized_power"))
             dt  = str(a.get("start_date_local",""))[:10]
@@ -66,9 +74,7 @@ if INTERVALS_KEY and INTERVALS_ID:
         with open("data/activities.json","w") as f:
             json.dump(activities, f, indent=2)
         print(f"Saved {len(activities)} activities with full TSS")
-
-        # Show TSS breakdown
-        for d_type in ["swim","bike","run"]:
+        for d_type in ["swim","bike","run","other"]:
             acts = [a for a in activities if a["disc"]==d_type]
             total_tss = sum(a["tss"] for a in acts)
             print(f"  {d_type}: {len(acts)} sessions, {total_tss:.0f} TSS")
