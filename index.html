@@ -820,7 +820,7 @@ function buildWeeklyBars(weeks){
 function buildActivityFeed(){
   var el = document.getElementById('activityFeed');
   if(!el) return;
-  var acts = activitiesData.slice().reverse();
+  var acts = Array.isArray(activitiesData) ? activitiesData.slice().reverse() : [];
   if(!acts.length){ el.innerHTML='<div style="padding:1rem;color:#94a3b8;font-size:13px;text-align:center">No activities loaded yet</div>'; return; }
   var cmap = {bike:'#fb923c',swim:'#38bdf8',run:'#34d399',other:'#94a3b8'};
   var imap = {bike:'🚴',swim:'🏊',run:'🏃',other:'⚡'};
