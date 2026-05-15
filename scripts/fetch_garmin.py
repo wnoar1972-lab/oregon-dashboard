@@ -4,7 +4,8 @@ Pulls activities from Intervals.icu (for proper TSS across all disciplines)
 and sleep data from Garmin Connect, saves to data/ folder.
 """
 
-import json, os, sys, urllib.request, urllib.parse, base64
+import json, os, sys, urllib.request, urllib.parse, base64, subprocess
+subprocess.run(['pip', 'install', 'requests', '-q'], check=False)
 from datetime import date, timedelta
 
 TODAY      = date.today()
@@ -34,13 +35,14 @@ activities = []
 if INTERVALS_KEY and INTERVALS_ID:
     try:
         print(f"Fetching activities from Intervals.icu ({START_DATE} to {TODAY})...")
-        creds = base64.b64encode(f"{INTERVALS_KEY}:".encode()).decode()
+        import requests
         url = (f"https://intervals.icu/api/v1/athlete/{INTERVALS_ID}/activities"
                f"?oldest={START_DATE}&newest={TODAY}&cols=name,type,start_date_local,"
                f"distance,moving_time,tss,normalized_power,average_heartrate,icu_training_load")
-        req = urllib.request.Request(url, headers={"Authorization": f"Basic {creds}"})
-        with urllib.request.urlopen(req) as r:
-            raw = json.loads(r.read().decode())
+        resp = requests.get(url, auth=("API_KEY", INTERVALS_KEY))
+        print(f"Intervals.icu status: {resp.status_code}")
+        resp.raise_for_status()
+        raw = resp.json()
         print(f"Got {len(raw)} activities from Intervals.icu")
         for a in raw:
             act_type = a.get("type", "")
