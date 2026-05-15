@@ -1,23 +1,24 @@
 {
   "date": "May 15, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Completed a 5.1-mile run at HR 144 (moderate Z2 intensity). This was an appropriate recovery-paced run following the 7.1-mile effort on 5/12. The controlled heart rate shows good aerobic discipline, consistent with the conservative pacing approach that earned you a 16-min run PR at Oceanside.",
-  "todayRecommendation": "Focus on a brick workout today since none completed this week yet \u2014 target 60 min bike at race effort (145-152w NP) followed by 20 min transition run. This aligns with your week 4 brick focus and builds on the successful pattern from your previous 4 brick sessions.",
-  "weekProgress": "Week TSS showing as 0 of 380 target (0% complete), but last 7 days show solid training: 102.4 bike TSS (5/11), 77.8 bike TSS (5/13), three quality runs totaling 22.2 miles, and two swim sessions. Need to verify TSS calculation accuracy and ensure this week includes the prescribed brick workout to maintain your established pattern.",
-  "keyInsight": "Your training volume is solid with 65 days to Oregon 70.3, but the missing brick workout this week needs addressing today to maintain neuromuscular adaptation for bike-to-run transitions.",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Yesterday's 5.1-mile run at HR 144 was a solid aerobic effort, maintaining good intensity control consistent with your endurance base work. This follows a strong training week with the 10-mile run on 5/9 and quality bike sessions. However, the week's TSS tracking shows 0 of 380 target, indicating a data recording or calculation issue that needs resolution.",
+  "todayRecommendation": "Priority is a brick workout (60min bike + 20min run) as specified in Week 4 focus. You've completed only one brick in the last 14 days (5/5), and with Oregon 70.3 just 65 days out, consistent bike-to-run transitions are critical for sub-6:00 pacing strategy.",
+  "weekProgress": "Week tracking data shows anomalies (0 TSS recorded despite quality workouts completed). Last 7 days show excellent discipline balance: 3 runs (23.2mi total), 2 bikes (62.4mi), 2 swims (2.9mi). However, only one brick session in past two weeks falls short of the stated Week 4 focus on brick training.",
+  "keyInsight": "Your sleep quality is declining with only 6.7-7.1 hours the last three nights and inconsistent deep sleep (29-78min range) \u2014 prioritize 7.5-8+ hours tonight to support the build phase training load.",
   "alerts": [
-    "No brick workout completed this week yet (last one: 2026-05-05)",
-    "Week TSS tracking shows 0% but activities are logged \u2014 data sync issue?",
-    "Sleep duration below 7h on 3 of last 6 nights \u2014 accumulating deficit"
+    "No brick workout completed in past 9 days (last was 5/5)",
+    "Sleep duration trending down: 6.7h last two nights vs 7.6-7.8h earlier in week",
+    "Deep sleep highly variable: 29min on 5/14 vs 78min on 5/15",
+    "TSS tracking showing 0 despite completed workouts \u2014 data sync issue"
   ],
   "positives": [
-    "Excellent 10-mile run on 5/9 shows strong run endurance building",
-    "Bike efforts show good consistency: 37.5mi and 24.9mi with controlled HR",
-    "Resting heart rate stable in mid-50s indicates good recovery adaptation",
-    "Open water swim session maintaining race-specific skills"
+    "Excellent 10-mile run on 5/9 at HR 145 showing strong endurance base",
+    "Consistent training volume: 7 quality sessions in 7 days across all three disciplines",
+    "SpO2 averaging 94.7% with no nights below 92% \u2014 respiratory health stable",
+    "37.5-mile course recon ride on Oregon 70.3 route (5/11) shows smart race prep"
   ],
-  "recoveryScore": 7,
+  "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
   "generatedAt": "2026-05-15",
   "daysToRace": 65,
