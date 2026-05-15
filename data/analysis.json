@@ -1,27 +1,26 @@
 {
-  "date": "May 14, 2026",
+  "date": "May 15, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Solid swim session with 1.7mi at low aerobic HR (111 bpm) followed by a 25-mile bike on the Cairns course simulator accumulating 77.8 TSS at HR 126. This was a good aerobic endurance day but notably this is Week 4 focused on brick workouts\u2014yesterday should have included a bike-to-run transition to align with the weekly emphasis on first brick sessions.",
-  "todayRecommendation": "Your 5.1-mile run today at HR 144 was appropriate standalone volume, but you need a brick workout this week to stay on plan. Schedule a 60-min bike + 20-min run brick session within the next 2 days to fulfill the week's primary objective and maintain the brick progression you've built (4 completed to date).",
-  "weekProgress": "Currently at 180 TSS of 380 target (47% complete) with 5 days remaining\u2014you're slightly behind pace and need ~200 more TSS. More critically, you have zero brick workouts completed this week despite it being the stated focus. Discipline balance is reasonable (2 swims, 2 bikes, 3 runs in 7 days) but the quality emphasis is missing.",
-  "keyInsight": "You're drifting from the week's brick workout focus\u2014this specific adaptation is what earned you that 16-minute run PR at Oceanside, so prioritize the bike-to-run neuromuscular pattern over standalone volume.",
+  "yesterdayAnalysis": "Completed a 5.1-mile easy run at HR 144 (aerobic zone) in Carlsbad. This recovery-paced run is appropriate mid-week placement, but contributes zero TSS to weekly targets. The moderate HR suggests good aerobic efficiency, though you're now 3 days removed from your last bike session.",
+  "todayRecommendation": "Priority today should be a bike session \u2014 you're 3 days off the bike and need consistent cycling volume in this build phase. Target 60-90 minutes at endurance pace (Z2) to accumulate TSS and maintain bike fitness for Oregon in 65 days.",
+  "weekProgress": "Week is significantly behind pace at 47% TSS completion (180/380) mid-week. You've completed 3 runs, 2 bikes, and 2 swims, but no brick workout yet despite this being designated as 'first brick week.' Need 200 more TSS in the next 2-3 days to stay on track, requiring strategic discipline distribution.",
+  "keyInsight": "You're repeating the pattern from previous weeks \u2014 strong individual sessions but missing the week's signature brick workout that builds race-specific fitness for consecutive bike-run efforts.",
   "alerts": [
-    "No brick workout completed yet in Week 4 despite it being the primary weekly focus",
-    "TSS tracking 53% behind weekly target with 5 days remaining",
-    "Sleep duration averaging only 6.8 hours (below optimal 7.5-8h for 54yo athlete)",
-    "Deep sleep only 29min last night\u2014well below the 59min recent average"
+    "No brick workout completed yet in designated brick week",
+    "Only 47% of weekly TSS target at mid-week",
+    "3 days since last bike session \u2014 frequency gap",
+    "Sleep duration inconsistent: 6.7-8.0h range, avg 7.3h (need 7.5-8h consistently)"
   ],
   "positives": [
-    "Excellent 10-mile run on 5/9 showing strong aerobic base development",
-    "Consistent bike volume with good course-specific preparation (Oregon and Cairns simulations)",
-    "Heart rate discipline holding steady\u2014bike HR 124-126 bpm shows good aerobic pacing control",
-    "SpO2 holding stable at 94.8% average with no concerning drops below 92%"
+    "10-mile run on 5/9 shows strong base endurance at HR 145",
+    "37.5-mile Oregon course preview ride on 5/11 (102 TSS) excellent race-specific prep",
+    "RHR stable at 53-60 range indicates good aerobic adaptation and recovery from TRT protocol"
   ],
-  "recoveryScore": 5,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-05-14",
-  "daysToRace": 66,
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-05-15",
+  "daysToRace": 65,
   "currentWeek": 4,
   "weekPhase": "Build"
 }
