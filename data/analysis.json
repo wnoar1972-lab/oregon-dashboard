@@ -2,24 +2,24 @@
   "date": "May 15, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday's 5.1-mile run at HR 143 (TSS 43) was a solid aerobic effort, contributing well to run volume without overreaching. However, this continues a concerning pattern: you're now in Week 4 of build phase with ZERO bike TSS accumulated across 29 total activities. Given this is your first brick week and you're only at 37% of weekly TSS target with no bike work yet, the training balance is critically off-track.",
-  "todayRecommendation": "Today MUST include the planned brick workout: 60-minute bike ride at aerobic pace (targeting 60-70% FTP) immediately followed by 20-minute transition run. This is non-negotiable given the complete absence of bike training and the brick focus of this week. Prioritize getting on the Quintana Roo.",
-  "weekProgress": "Week tracking is significantly behind: 140 of 380 TSS (37%) with zero bike contribution and no brick workouts completed yet. The discipline balance is broken\u2014you have run and swim work logged, but bike training is completely missing. With 65 days to IM 70.3 Oregon and targeting NP 145-152w, the lack of bike-specific fitness development is the critical gap right now.",
-  "keyInsight": "You cannot race a 56-mile bike leg at target power without bike training\u2014zero bike TSS in 29 activities during build phase is a red flag that threatens race day execution and your conservative pacing strategy that earned the Oceanside run PR.",
+  "yesterdayAnalysis": "5.1-mile run at 143 HR averaged moderate intensity, contributing 43 TSS. This was appropriately paced aerobic work, but continues a concerning pattern: you're now 4 weeks into Build phase with ZERO bike TSS logged and no brick workouts completed despite this being designated as your first brick week. The run execution was solid, but discipline balance is critically off-target.",
+  "todayRecommendation": "Today MUST include cycling \u2014 ideally the planned 60-minute ride followed by 20-minute brick run. You're at 37% of weekly TSS target with limited days remaining, and cycling is completely absent from your Build phase. Prioritize the brick workout to establish race-specific neuromuscular patterns.",
+  "weekProgress": "Week 4 tracking at 140/380 TSS (37%) with only 2 swim and 3 run sessions logged. Critical gap: 0 bike activities across entire 4-week Build phase and 0 brick workouts despite this being brick-focused week. Run volume is solid (22.2 miles last 7 days), but without cycling integration, you're not building Ironman-specific fitness. Need immediate course correction.",
+  "keyInsight": "You cannot race a 70.3 in 65 days without cycling \u2014 zero bike TSS in 4 weeks of Build phase represents a fundamental training execution failure that threatens both race goals.",
   "alerts": [
-    "ZERO bike TSS accumulated in entire build phase (29 activities)",
-    "No brick workouts completed this week despite being Week 4 brick focus",
-    "Week TSS only 37% complete with limited days remaining",
-    "Sleep duration inconsistent (6.7-8.0h range, two nights under 7h)",
-    "Deep sleep was very low on 5/14 (only 29min)"
+    "CRITICAL: 0 bike TSS in entire 4-week Build phase",
+    "No brick workout completed this week (Week 4 focus)",
+    "Only 37% of weekly TSS target with limited days remaining",
+    "65 days to Ironman 70.3 Oregon without bike-specific fitness development",
+    "Sleep duration below 7h on 2 of last 6 nights"
   ],
   "positives": [
-    "Run consistency strong: 3 quality runs in 7 days with controlled HR averaging 143-148",
-    "10-mile run on 5/9 (TSS 99) shows solid aerobic endurance building",
-    "Resting heart rate stable in low-to-mid 50s showing good baseline fitness",
-    "SpO2 holding consistently above 92% despite TRT protocol"
+    "Run consistency strong: 3 quality sessions totaling 22.2 miles in 7 days",
+    "Heart rate control excellent across runs (143-148 avg, Zone 2 dominant)",
+    "Swim volume building nicely: 2.9 miles across 2 sessions with threshold work",
+    "RHR stable 53-60 range showing good cardiovascular adaptation"
   ],
-  "recoveryScore": 6,
+  "recoveryScore": 7,
   "trainingLoadStatus": "Fresh",
   "generatedAt": "2026-05-15",
   "daysToRace": 65,
