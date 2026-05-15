@@ -28,14 +28,13 @@ def disc(t):
 def sf(v, d=0):
     try: return round(float(v), 1) if v else d
     except: return d
-print(f"INTERVALS_KEY present: {bool(INTERVALS_KEY)}")
-print(f"INTERVALS_ID present: {bool(INTERVALS_ID)}")
+
 # ── INTERVALS.ICU ACTIVITIES ──────────────────────────────────────────────────
 activities = []
 if INTERVALS_KEY and INTERVALS_ID:
     try:
         print(f"Fetching activities from Intervals.icu ({START_DATE} to {TODAY})...")
-        creds = base64.b64encode(f"API_KEY:{INTERVALS_KEY}".encode()).decode()
+        creds = base64.b64encode(f"{INTERVALS_KEY}:".encode()).decode()
         url = (f"https://intervals.icu/api/v1/athlete/{INTERVALS_ID}/activities"
                f"?oldest={START_DATE}&newest={TODAY}&cols=name,type,start_date_local,"
                f"distance,moving_time,tss,normalized_power,average_heartrate,icu_training_load")
