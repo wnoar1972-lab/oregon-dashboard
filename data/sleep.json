@@ -1,5 +1,305 @@
 [
   {
+    "date": "2026-03-16",
+    "score": 0,
+    "total": 8.0,
+    "deep": 28,
+    "rem": 92,
+    "spo2": 96.0,
+    "rhr": 55,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-17",
+    "score": 0,
+    "total": 6.9,
+    "deep": 63,
+    "rem": 68,
+    "spo2": 92.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-18",
+    "score": 0,
+    "total": 6.6,
+    "deep": 62,
+    "rem": 66,
+    "spo2": 94.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-19",
+    "score": 0,
+    "total": 6.5,
+    "deep": 40,
+    "rem": 61,
+    "spo2": 92.0,
+    "rhr": 55,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-20",
+    "score": 0,
+    "total": 7.6,
+    "deep": 69,
+    "rem": 99,
+    "spo2": 94.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-21",
+    "score": 0,
+    "total": 6.6,
+    "deep": 63,
+    "rem": 20,
+    "spo2": 90.0,
+    "rhr": 56,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-22",
+    "score": 0,
+    "total": 8.1,
+    "deep": 32,
+    "rem": 77,
+    "spo2": 94.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-23",
+    "score": 0,
+    "total": 7.5,
+    "deep": 18,
+    "rem": 41,
+    "spo2": 93.0,
+    "rhr": 55,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-24",
+    "score": 0,
+    "total": 6.5,
+    "deep": 0,
+    "rem": 31,
+    "spo2": 94.0,
+    "rhr": 54,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-25",
+    "score": 0,
+    "total": 6.4,
+    "deep": 59,
+    "rem": 48,
+    "spo2": 96.0,
+    "rhr": 51,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-26",
+    "score": 0,
+    "total": 7.2,
+    "deep": 49,
+    "rem": 72,
+    "spo2": 93.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-27",
+    "score": 0,
+    "total": 8.7,
+    "deep": 63,
+    "rem": 41,
+    "spo2": 94.0,
+    "rhr": 54,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-28",
+    "score": 0,
+    "total": 5.8,
+    "deep": 71,
+    "rem": 44,
+    "spo2": 95.0,
+    "rhr": 54,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-29",
+    "score": 0,
+    "total": 9.2,
+    "deep": 83,
+    "rem": 134,
+    "spo2": 91.0,
+    "rhr": 54,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-30",
+    "score": 0,
+    "total": 6.9,
+    "deep": 73,
+    "rem": 68,
+    "spo2": 90.0,
+    "rhr": 50,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-03-31",
+    "score": 0,
+    "total": 7.2,
+    "deep": 50,
+    "rem": 86,
+    "spo2": 93.0,
+    "rhr": 53,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-01",
+    "score": 0,
+    "total": 7.8,
+    "deep": 57,
+    "rem": 82,
+    "spo2": 94.0,
+    "rhr": 54,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-02",
+    "score": 0,
+    "total": 8.4,
+    "deep": 56,
+    "rem": 162,
+    "spo2": 90.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-03",
+    "score": 0,
+    "total": 5.9,
+    "deep": 54,
+    "rem": 11,
+    "spo2": 96.0,
+    "rhr": 55,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-04",
+    "score": 0,
+    "total": 9.0,
+    "deep": 77,
+    "rem": 129,
+    "spo2": 95.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-05",
+    "score": 0,
+    "total": 9.1,
+    "deep": 121,
+    "rem": 87,
+    "spo2": 92.0,
+    "rhr": 54,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-06",
+    "score": 0,
+    "total": 6.6,
+    "deep": 36,
+    "rem": 26,
+    "spo2": 94.0,
+    "rhr": 56,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-07",
+    "score": 0,
+    "total": 5.7,
+    "deep": 27,
+    "rem": 8,
+    "spo2": 93.0,
+    "rhr": 55,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-08",
+    "score": 0,
+    "total": 8.4,
+    "deep": 61,
+    "rem": 81,
+    "spo2": 92.0,
+    "rhr": 57,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-09",
+    "score": 0,
+    "total": 7.6,
+    "deep": 76,
+    "rem": 38,
+    "spo2": 94.0,
+    "rhr": 55,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-10",
+    "score": 0,
+    "total": 7.8,
+    "deep": 40,
+    "rem": 109,
+    "spo2": 96.0,
+    "rhr": 53,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-11",
+    "score": 0,
+    "total": 7.2,
+    "deep": 72,
+    "rem": 98,
+    "spo2": 93.0,
+    "rhr": 53,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-12",
+    "score": 0,
+    "total": 11.1,
+    "deep": 64,
+    "rem": 202,
+    "spo2": 95.0,
+    "rhr": 52,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-13",
+    "score": 0,
+    "total": 6.2,
+    "deep": 63,
+    "rem": 60,
+    "spo2": 95.0,
+    "rhr": 51,
+    "quality": "\u2014"
+  },
+  {
+    "date": "2026-04-14",
+    "score": 0,
+    "total": 7.1,
+    "deep": 24,
+    "rem": 115,
+    "spo2": 93.0,
+    "rhr": 51,
+    "quality": "\u2014"
+  },
+  {
     "date": "2026-04-15",
     "score": 0,
     "total": 6.2,
