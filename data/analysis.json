@@ -1,24 +1,18 @@
 {
   "date": "May 16, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Completed your first brick workout of the build phase: 20.3mi bike at 138 HR (very controlled) followed by 1mi transition run at 155 HR. The bike TSS of 40 was appropriate for brick work, and the HR data shows good discipline staying aerobic. However, the run portion was quite short at only 1 mile \u2014 brick runs should ideally be 15-20 minutes to get neuromuscular adaptation benefits.",
-  "todayRecommendation": "Take an active recovery day or rest. You had a good training stimulus yesterday with the brick, and your week is only at 51% TSS completion with plenty of time remaining. Focus on sleep quality (last night showed lower deep sleep at 51min) and hydration before resuming threshold work.",
-  "weekProgress": "Week 4 tracking at 194 of 380 TSS (51%) with 3 days remaining is behind pace. Critical gap: only 1 bike session completed (40 TSS total) when you need significantly more cycling volume. Swim and run disciplines are progressing, but bike volume is severely lacking for someone 64 days out from a 70.3 with an A-race Ironman following.",
-  "keyInsight": "Bike volume is critically low \u2014 only 1 ride totaling 40 TSS in a week targeting 380 TSS puts you far behind on race-specific preparation for the bike leg.",
-  "alerts": [
-    "Only 1 bike workout this week (40 TSS) \u2014 need 2-3 more sessions",
-    "Week TSS at 51% with limited time to reach 380 target",
-    "Brick run duration only 1 mile \u2014 target should be 15-20 minutes",
-    "Deep sleep only 51min last night (below your 7-day average of 60min)"
-  ],
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Analysis temporarily unavailable \u2014 check back tomorrow.",
+  "todayRecommendation": "Follow your scheduled training plan for today.",
+  "weekProgress": "Week 4 \u2014 273 of 380 TSS (72% complete).",
+  "keyInsight": "64 days to Oregon. Stay consistent.",
+  "alerts": [],
   "positives": [
-    "Excellent HR discipline on brick bike (138 avg) \u2014 staying well within aerobic zone",
-    "Consistent training frequency with 7 workouts in last 7 days",
-    "SpO2 average at 94.8% with no concerning drops below 92%"
+    "Training is progressing",
+    "Consistency is key"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Fresh",
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Optimal",
   "generatedAt": "2026-05-16",
   "daysToRace": 64,
   "currentWeek": 4,
