@@ -2,14 +2,19 @@
   "date": "May 16, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Analysis temporarily unavailable \u2014 check back tomorrow.",
-  "todayRecommendation": "Follow your scheduled training plan for today.",
-  "weekProgress": "Week 4 \u2014 273 of 380 TSS (72% complete).",
-  "keyInsight": "64 days to Oregon. Stay consistent.",
-  "alerts": [],
+  "yesterdayAnalysis": "Completed second brick workout of the week: 20.3mi indoor ride at TSS 40 (HR 138) followed by 1mi run at HR 155. The bike HR was controlled and appropriate for brick work, while the run HR shows good neuromuscular engagement despite short duration. This session builds on the May 14th brick foundation, developing crucial bike-to-run transition capacity with 64 days to Oregon.",
+  "todayRecommendation": "Focus on swim discipline today \u2014 only 2 swims logged in this build phase versus 5 runs and 2 bikes. Consider a threshold set per week plan to address discipline imbalance and contribute meaningful TSS toward the 380 weekly target (currently 72% with time remaining).",
+  "weekProgress": "Week TSS at 273 of 380 (72% complete) with 2 successful brick workouts completed as planned. Discipline distribution is heavily run-weighted (5 sessions) with bike (2) and especially swim (2) lagging behind. Need approximately 107 more TSS to hit weekly target, likely requiring 2-3 quality sessions in remaining days.",
+  "keyInsight": "Brick workouts are executing well with conservative HR control on the bike (117-138 bpm), directly applying the Oceanside lesson that earned your 16-min run PR \u2014 continue this disciplined pacing strategy.",
+  "alerts": [
+    "Swim volume significantly behind other disciplines (only 2 sessions in build phase)",
+    "Sleep duration on May 14th was only 6.7h with minimal deep sleep (29min)",
+    "Bike TSS only 80 total in build phase \u2014 may need longer rides soon"
+  ],
   "positives": [
-    "Training is progressing",
-    "Consistency is key"
+    "Both brick workouts completed successfully with controlled bike HR matching race strategy",
+    "Run consistency excellent with 5 sessions logged and HR averaging 143-155 (aerobic range)",
+    "SpO2 averaging 94.8% with no nights below 92% \u2014 respiratory function stable"
   ],
   "recoveryScore": 7,
   "trainingLoadStatus": "Optimal",
