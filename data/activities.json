@@ -317,5 +317,27 @@
     "avgHR": 143.0,
     "distance": 8171.7,
     "duration": 2506.0
+  },
+  {
+    "date": "2026-05-15",
+    "title": "Run after the bike",
+    "type": "Run",
+    "disc": "run",
+    "tss": 14.0,
+    "np": 0,
+    "avgHR": 155.0,
+    "distance": 1637.0,
+    "duration": 589.0
+  },
+  {
+    "date": "2026-05-15",
+    "title": "ROUVY - IRONMAN 70.3 Santa Cruz 2021 40k",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 40.0,
+    "np": 0,
+    "avgHR": 138.0,
+    "distance": 32643.6,
+    "duration": 4016.0
   }
 ]
