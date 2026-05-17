@@ -342,6 +342,17 @@
   },
   {
     "date": "2026-05-16",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 28.0,
+    "np": 0,
+    "avgHR": 115.0,
+    "distance": 2743.2,
+    "duration": 3742.0
+  },
+  {
+    "date": "2026-05-16",
     "title": "Oceanside Running",
     "type": "Run",
     "disc": "run",

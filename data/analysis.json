@@ -1,25 +1,26 @@
 {
-  "date": "May 16, 2026",
+  "date": "May 17, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Completed second brick workout of the week: 20.3mi indoor ride at TSS 40 (HR 138) followed by 1mi run at HR 155. The bike HR was controlled and appropriate for brick work, while the run HR shows good neuromuscular engagement despite short duration. This session builds on the May 14th brick foundation, developing crucial bike-to-run transition capacity with 64 days to Oregon.",
-  "todayRecommendation": "Focus on swim discipline today \u2014 only 2 swims logged in this build phase versus 5 runs and 2 bikes. Consider a threshold set per week plan to address discipline imbalance and contribute meaningful TSS toward the 380 weekly target (currently 72% with time remaining).",
-  "weekProgress": "Week TSS at 273 of 380 (72% complete) with 2 successful brick workouts completed as planned. Discipline distribution is heavily run-weighted (5 sessions) with bike (2) and especially swim (2) lagging behind. Need approximately 107 more TSS to hit weekly target, likely requiring 2-3 quality sessions in remaining days.",
-  "keyInsight": "Brick workouts are executing well with conservative HR control on the bike (117-138 bpm), directly applying the Oceanside lesson that earned your 16-min run PR \u2014 continue this disciplined pacing strategy.",
+  "yesterdayAnalysis": "Solid triple-discipline day with 107 TSS across swim (1.7mi), bike (24.9mi, HR 117), and run (3.0mi, HR 154). The swim-bike-run sequence mimics race day demands well, though the bike HR of 117 was notably lower than the 138 seen on 5/15's brick\u2014good conservative pacing. Run HR of 154 post-bike is appropriately controlled, reinforcing the Oceanside lesson of conservative bike effort enabling strong running.",
+  "todayRecommendation": "Recovery day needed after yesterday's 107 TSS triple. Consider easy 30-40min Z1/Z2 swim for active recovery, or full rest day given you're at 79% of weekly TSS target with 2 days remaining\u2014you have cushion to hit 380 TSS.",
+  "weekProgress": "Week 4 tracking well at 301/380 TSS (79%) with brick workouts completed (5/15, 5/16 both executed). Swim discipline strong (3 sessions, 51 TSS), but bike TSS remains light at 80 total\u2014need one more quality bike session before week end to build aerobic base for 70.3 Oregon (63 days out).",
+  "keyInsight": "Your brick workout execution is excellent with controlled HR transitions (bike 117-138, run 154-155), directly applying the Oceanside conservative-bike-to-PR-run strategy that earned you 16 minutes.",
   "alerts": [
-    "Swim volume significantly behind other disciplines (only 2 sessions in build phase)",
-    "Sleep duration on May 14th was only 6.7h with minimal deep sleep (29min)",
-    "Bike TSS only 80 total in build phase \u2014 may need longer rides soon"
+    "SpO2 dropped to 93% on 5/16\u2014monitor tonight for trends",
+    "Deep sleep only 51min on 5/16 (below 5/15's 78min)",
+    "Bike TSS at 80\u2014need 60-80 more TSS this week for balanced build"
   ],
   "positives": [
-    "Both brick workouts completed successfully with controlled bike HR matching race strategy",
-    "Run consistency excellent with 5 sessions logged and HR averaging 143-155 (aerobic range)",
-    "SpO2 averaging 94.8% with no nights below 92% \u2014 respiratory function stable"
+    "Two successful brick workouts completed this week with excellent HR discipline",
+    "Consistent swim volume: 3 sessions totaling 5.1mi in 7 days",
+    "Training load building smartly\u20147.1mi run on 5/12 (74 TSS) shows strong run base developing",
+    "RHR stable at 55-56 despite increased training load"
   ],
-  "recoveryScore": 7,
+  "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-05-16",
-  "daysToRace": 64,
+  "generatedAt": "2026-05-17",
+  "daysToRace": 63,
   "currentWeek": 4,
   "weekPhase": "Build"
 }
