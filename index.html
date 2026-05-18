@@ -390,7 +390,7 @@ var WEEK_PHASES  = ['Logged','Logged','Logged','Build','Build','Recovery','Peak'
 function showTab(id, el){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
-  document.getElementById('page-'+id).classList.add('on');
+  var pg = document.getElementById('page-'+id); if(pg) pg.classList.add('on');
   el.classList.add('on');
 }
 
