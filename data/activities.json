@@ -372,5 +372,27 @@
     "avgHR": 117.0,
     "distance": 40050.0,
     "duration": 4758.0
+  },
+  {
+    "date": "2026-05-17",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 96.0,
+    "np": 0,
+    "avgHR": 136.0,
+    "distance": 17730.0,
+    "duration": 6620.0
+  },
+  {
+    "date": "2026-05-17",
+    "title": "Open Water Swimming",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 33.0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 1609.2,
+    "duration": 2456.0
   }
 ]
