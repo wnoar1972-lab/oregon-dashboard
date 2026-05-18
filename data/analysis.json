@@ -2,22 +2,21 @@
   "date": "May 18, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Completed an excellent 11-mile long run at HR 136 (96 TSS) plus 1-mile open water swim (33 TSS) \u2014 solid back-to-back quality sessions totaling 129 TSS. The run HR of 136 suggests good aerobic control during the long effort. This was the week's primary long run objective, executed well after brick workouts on 5/15-5/16.",
-  "todayRecommendation": "Take a full recovery day or very light active recovery only. Your body responded to yesterday's big day with 10.1 hours of sleep (highest of the week) and elevated REM at 187 minutes, signaling recovery needs. The week's major run volume is complete.",
-  "weekProgress": "Week TSS shows 0 of 420 target, but recent 7-day total is approximately 367 TSS (strong load). Week focus calls for first 45-50mi outdoor ride which hasn't happened yet \u2014 this is the critical missing piece. Long run objective was achieved yesterday (11mi). Need the long outdoor bike to complete week goals.",
-  "keyInsight": "Your body is clearly signaling recovery need with 10+ hours sleep after yesterday's effort \u2014 honor this before attempting the planned long outdoor ride later this week.",
+  "yesterdayAnalysis": "Completed an excellent 11-mile run at 136 bpm average HR (well-controlled aerobic effort) plus 1-mile open water swim for 129 combined TSS. This was your week-target long run delivered on schedule. The controlled HR on an 11-miler shows strong aerobic development and proper pacing discipline.",
+  "todayRecommendation": "Today should be active recovery or complete rest given yesterday's high-load combination and last night's extended 10.1h sleep (body clearly signaling recovery need). If you feel fresh, a very easy 30-40min spin or recovery swim is acceptable, but prioritize tomorrow's planned 45-50mi outdoor ride.",
+  "weekProgress": "Week 5 is starting strong but TSS accounting shows 0 of 420 target (likely data sync issue, as last 7 days show 390 TSS). You've hit the long run target (11mi) but still need the key 45-50mi outdoor bike session. Swim volume is solid with 2 sessions already. Need to log 2+ more bike sessions and maintain run frequency.",
+  "keyInsight": "Your HR control on yesterday's 11-miler (136 bpm) demonstrates excellent aerobic fitness development\u2014this controlled effort at distance is exactly what translates to race-day success like your Oceanside 70.3 run PR.",
   "alerts": [
-    "Planned 45-50mi outdoor ride not yet completed this week",
-    "Body requesting recovery: 10.1h sleep with 187min REM last night",
-    "Weekly TSS tracking shows 0 recorded but 7-day rolling is ~367 TSS"
+    "Last night's 10.1h sleep with low REM (187min but extended duration) suggests deep fatigue response",
+    "No outdoor long bike ride completed yet this week\u2014primary week objective still pending",
+    "Bike TSS trailing significantly\u2014only 80 TSS across entire build phase, need volume increase"
   ],
   "positives": [
-    "Long run executed perfectly: 11mi at conservative HR 136 \u2014 excellent aerobic pacing",
-    "Consistent training volume: 367 TSS over last 7 days trending toward weekly target",
-    "Sleep quality responsive: body self-regulating with increased duration after hard efforts",
-    "Open water swim practice adding race-specific preparation"
+    "11-mile run with controlled 136 bpm HR shows excellent aerobic pacing discipline",
+    "Consistent swim execution: 3 sessions in last 7 days totaling 4.4 miles",
+    "Strong 7-day training block: 390 TSS with good discipline balance before this recovery day"
   ],
-  "recoveryScore": 5,
+  "recoveryScore": 6,
   "trainingLoadStatus": "Fatigued",
   "generatedAt": "2026-05-18",
   "daysToRace": 62,
