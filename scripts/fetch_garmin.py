@@ -40,7 +40,7 @@ if INTERVALS_KEY and INTERVALS_ID:
         print(f"Fetching activities from Intervals.icu ({START_DATE} to {TODAY})...")
         url = (f"https://intervals.icu/api/v1/athlete/{INTERVALS_ID}/activities"
                f"?oldest={START_DATE}&newest={TODAY}&cols=name,type,start_date_local,"
-               f"distance,moving_time,tss,normalized_power,average_heartrate,icu_training_load")
+               f"distance,moving_time,tss,normalized_power,average_heartrate,icu_training_load,load")
         resp = requests.get(url, auth=("API_KEY", INTERVALS_KEY))
         print(f"Intervals.icu status: {resp.status_code}")
         resp.raise_for_status()
@@ -56,7 +56,7 @@ if INTERVALS_KEY and INTERVALS_ID:
         for a in raw:
             act_type = a.get("type", "")
             d = disc(act_type)
-            tss = sf(a.get("tss") or a.get("icu_training_load"))
+            tss = sf(a.get("tss") or a.get("icu_training_load") or a.get("load"))
             np  = sf(a.get("normalized_power"))
             dt  = str(a.get("start_date_local",""))[:10]
             activities.append({
