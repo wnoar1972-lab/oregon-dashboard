@@ -211,7 +211,7 @@ overall = {
     "totalActs":     len(activities),
     "avgBikeNP":     round(sum(bn_all)/len(bn_all),1) if bn_all else 0,
     "currentWeek":   next((w["week"] for w in weeks if not w["done"]),10),
-    "weeksComplete": sum(1 for w in weeks if w["done"] and w["actual"]>0),
+    "weeksComplete": sum(1 for w in weeks if w["done"],
     "daysToRace":    (date(2026,7,19)-TODAY).days,
     "totalSwimTSS":  round(sum(a["tss"] for a in activities if a["disc"]=="swim")),
     "totalBikeTSS":  round(sum(a["tss"] for a in activities if a["disc"]=="bike")),
