@@ -2,20 +2,20 @@
   "date": "May 19, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Rest day taken after a high-volume Saturday (11mi run + 1mi open water swim totaling 129 TSS). This was smart recovery timing following back-to-back brick workouts on 5/15-5/16. The rest day allows adaptation before this week's planned long outdoor ride.",
-  "todayRecommendation": "Execute the first 45-50mi outdoor ride on your Quintana Roo Kilo, targeting 145-152w NP (66-69% FTP). Focus on race-specific pacing discipline and nutrition testing. This is a key milestone ride for your build phase.",
-  "weekProgress": "Week is at 0 TSS of 420 target (0% complete) butstructurally on track - rest day yesterday positions you well for today's long ride. You've completed the 11mi long run already (5/17), so this week's two priority sessions are both checked off or queued. Swim volume needs attention this week to maintain balance.",
-  "keyInsight": "Your 10+ hour sleep duration on 5/18 (10.1h with 187min REM) signals strong recovery response after Saturday's high load - body is adapting well and ready for today's long ride.",
+  "yesterdayAnalysis": "Rest day taken after Saturday's high-quality long run (11mi, TSS 96) paired with open water swim. This recovery day was well-timed given the 10.1h sleep bounce-back, suggesting the body needed it. RHR elevated to 57 but acceptable post-training stress.",
+  "todayRecommendation": "Execute the planned 45-50mi outdoor ride today at conservative power (145-152w NP target). With excellent recovery sleep (10.1h) and fresh legs from yesterday's rest, conditions are ideal for this week's key bike volume builder.",
+  "weekProgress": "Week 5 shows 0 of 420 TSS target with focus on outdoor ride + 10-11mi run still ahead. Last 7 days accumulated strong run volume (20.1mi total) and swim consistency, but only 45.2mi bike from two indoor sessions. Today's long ride is critical to hit weekly bike TSS targets.",
+  "keyInsight": "You're well-rested and positioned perfectly for today's pivotal 45-50mi outdoor ride\u2014this single session will deliver ~30% of your weekly TSS target and build race-specific endurance.",
   "alerts": [
-    "Week TSS at 0% - need today's long ride to hit trajectory",
-    "Only 2 total bike sessions logged in entire build phase (80 TSS total) - volume needs consistent increase",
-    "No swim activity since 5/17 - need 1-2 sessions this week"
+    "Week TSS at 0% - need to log today's planned long ride",
+    "Outdoor bike exposure still limited (2 indoor rides last week, no outdoor yet)",
+    "SpO2 averaged 94.7% this week - monitor trend, may indicate recovery stress"
   ],
   "positives": [
-    "11mi run on 5/17 at 136 avg HR shows excellent aerobic efficiency",
-    "Excellent recovery sleep: 10.1h with 187min REM on 5/18",
-    "Smart brick workout execution on 5/15-5/16 building race-specific fitness",
-    "SpO2 averaging 94.7% with no nights below 92% - respiratory health stable"
+    "Exceptional 11mi run on 5/17 (TSS 96) shows strong run fitness building",
+    "Sleep recovery excellent: 10.1h last night with 187min REM indicates full adaptation",
+    "Two brick workouts completed earlier in build phase demonstrating discipline",
+    "RHR trending well (52-60 range) showing good cardiovascular adaptation"
   ],
   "recoveryScore": 8,
   "trainingLoadStatus": "Fresh",
