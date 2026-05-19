@@ -394,5 +394,27 @@
     "avgHR": 0,
     "distance": 1609.2,
     "duration": 2456.0
+  },
+  {
+    "date": "2026-05-19",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 13.0,
+    "np": 0,
+    "avgHR": 153.0,
+    "distance": 1735.5,
+    "duration": 581.0
+  },
+  {
+    "date": "2026-05-19",
+    "title": "ROUVY - \u00c9guilly-sous-Bois to Cl\u00e9rey | Fr",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 54.0,
+    "np": 0,
+    "avgHR": 119.0,
+    "distance": 43050.1,
+    "duration": 5212.0
   }
 ]
