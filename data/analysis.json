@@ -1,26 +1,26 @@
 {
-  "date": "May 18, 2026",
-  "overallStatus": "Recovery Mode",
-  "statusColor": "blue",
-  "yesterdayAnalysis": "Excellent back-to-back endurance work: 11-mile run at TSS 96 with controlled HR 136 (aerobic zone), plus 1-mile open water swim. This was your longest run of the build phase and hit the week's 10-11 mile target perfectly. The conservative HR of 136 shows strong pacing discipline, consistent with your Oceanside 70.3 success strategy.",
-  "todayRecommendation": "Active recovery or complete rest day. You've banked 129 TSS yesterday after a 3-day brick weekend (196 TSS total May 15-17). The 10.1h sleep last night signals your body is processing significant load. Save legs for the week's key outdoor bike session.",
-  "weekProgress": "Week TSS shows 0 of 420 target (data sync issue - actual completed: 129+ from yesterday alone). Long run target achieved (11mi). Still need the signature 45-50 mile outdoor ride this week, plus continued swim volume. Bike TSS at only 80 total for entire build phase - this week's long ride is critical.",
-  "keyInsight": "Your body responded to yesterday's 11-mile effort with 10.1 hours of sleep and elevated REM (187min) - respect this recovery signal before the planned long outdoor bike session.",
+  "date": "May 19, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Rest day taken after a high-volume Saturday (11mi run + 1mi open water swim totaling 129 TSS). This was smart recovery timing following back-to-back brick workouts on 5/15-5/16. The rest day allows adaptation before this week's planned long outdoor ride.",
+  "todayRecommendation": "Execute the first 45-50mi outdoor ride on your Quintana Roo Kilo, targeting 145-152w NP (66-69% FTP). Focus on race-specific pacing discipline and nutrition testing. This is a key milestone ride for your build phase.",
+  "weekProgress": "Week is at 0 TSS of 420 target (0% complete) butstructurally on track - rest day yesterday positions you well for today's long ride. You've completed the 11mi long run already (5/17), so this week's two priority sessions are both checked off or queued. Swim volume needs attention this week to maintain balance.",
+  "keyInsight": "Your 10+ hour sleep duration on 5/18 (10.1h with 187min REM) signals strong recovery response after Saturday's high load - body is adapting well and ready for today's long ride.",
   "alerts": [
-    "Total bike TSS only 80 across entire 5-week build - outdoor long ride is essential this week",
-    "Last night's 10.1h sleep + high REM suggests significant recovery debt from yesterday",
-    "Week TSS tracking appears broken (shows 0 despite completed workouts)"
+    "Week TSS at 0% - need today's long ride to hit trajectory",
+    "Only 2 total bike sessions logged in entire build phase (80 TSS total) - volume needs consistent increase",
+    "No swim activity since 5/17 - need 1-2 sessions this week"
   ],
   "positives": [
-    "11-mile run completed at excellent aerobic HR 136 - longest run of build phase achieved",
-    "Consistent brick training: 2 completed in 3 days with disciplined pacing",
-    "Open water swim integration shows race-specific preparation",
-    "Sleep quality rebounded with 10.1h duration after 3-day training block"
+    "11mi run on 5/17 at 136 avg HR shows excellent aerobic efficiency",
+    "Excellent recovery sleep: 10.1h with 187min REM on 5/18",
+    "Smart brick workout execution on 5/15-5/16 building race-specific fitness",
+    "SpO2 averaging 94.7% with no nights below 92% - respiratory health stable"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-05-18",
-  "daysToRace": 62,
+  "recoveryScore": 8,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-05-19",
+  "daysToRace": 61,
   "currentWeek": 5,
   "weekPhase": "Build"
 }
