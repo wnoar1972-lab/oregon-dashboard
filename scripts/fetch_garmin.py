@@ -9,7 +9,8 @@ subprocess.run(['pip', 'install', 'requests', '-q'], check=False)
 import requests
 from datetime import date, timedelta
 
-TODAY      = date.today()
+import datetime as _dt
+TODAY = _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=-7))).date()
 START_DATE = date(2026, 4, 21)
 
 # ── CREDENTIALS ───────────────────────────────────────────────────────────────
