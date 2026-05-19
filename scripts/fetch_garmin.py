@@ -106,6 +106,9 @@ if GARMIN_EMAIL and GARMIN_PASSWORD:
             ds = cur.strftime("%Y-%m-%d")
             try:
                 raw = client.get_sleep_data(ds)
+                if ds == "2026-05-17":  # Debug one recent night
+                    import json as _json
+                    print("SLEEP DEBUG:", _json.dumps({k:v for k,v in raw.items() if k in ["dailySleepDTO","sleepScores","overallSleepScore","sleepScore","wellnessEpochRespirationDataDTOList"]}, default=str)[:2000])
                 if raw and isinstance(raw, dict):
                     dto = raw.get("dailySleepDTO") or {}
                     score = 0
