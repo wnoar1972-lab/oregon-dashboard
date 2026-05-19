@@ -252,6 +252,41 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
   footer{display:none}
 }
 
+/* WEEKLY RECAP */
+.recap-wrap{padding-bottom:1.5rem}
+.recap-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
+.recap-title{font-size:15px;font-weight:600;color:#1a2535}
+.recap-sub{font-size:12px;color:#94a3b8;margin-top:2px}
+.recap-nav{display:flex;gap:6px}
+.recap-nav-btn{padding:5px 12px;font-size:12px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;color:#64748b;cursor:pointer;font-family:DM Sans,sans-serif}
+.recap-nav-btn:hover{background:#f8fafc}
+.recap-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1rem}
+.rscard{background:#f8fafc;border-radius:10px;padding:10px 12px;border:1px solid #e2e8f0}
+.rscard-lbl{font-size:11px;color:#94a3b8;margin-bottom:4px;font-family:JetBrains Mono,monospace;text-transform:uppercase;letter-spacing:.08em}
+.rscard-val{font-size:22px;font-weight:700;color:#1a2535;font-family:Bebas Neue,sans-serif;letter-spacing:.02em}
+.rscard-sub{font-size:11px;color:#94a3b8;margin-top:1px}
+.recap-prog-row{display:flex;justify-content:space-between;font-size:11px;color:#94a3b8;margin-bottom:4px;font-family:JetBrains Mono,monospace}
+.recap-prog-bg{height:5px;background:#f1f5f9;border-radius:3px;overflow:hidden;margin-bottom:1.25rem}
+.recap-prog-fill{height:100%;border-radius:3px}
+.day-rows{display:flex;flex-direction:column;gap:6px}
+.day-row-r{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:72px 1fr 56px;align-items:center;gap:12px}
+.day-row-r.today{border:2px solid #0284c7}
+.day-row-r.rest-day{opacity:0.55}
+.day-name-r{font-size:12px;font-weight:600;color:#64748b}
+.day-date-r{font-size:11px;color:#94a3b8;margin-top:2px}
+.today-badge-r{font-size:10px;font-weight:700;background:#dbeafe;color:#1e40af;padding:2px 7px;border-radius:20px;margin-bottom:3px;display:inline-block;font-family:JetBrains Mono,monospace;letter-spacing:.06em}
+.day-pills{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.dpill{display:flex;align-items:center;gap:4px;padding:4px 9px;border-radius:20px;font-size:12px;font-weight:500}
+.dpill-swim{background:#e0f2fe;color:#0369a1}
+.dpill-bike{background:#fff3e0;color:#c2410c}
+.dpill-run{background:#f0fdf4;color:#15803d}
+.dpill-brick{background:#fdf4ff;color:#7e22ce}
+.dpill-rest{background:#f8fafc;color:#94a3b8}
+.dpill-plan{background:#f8fafc;color:#94a3b8;border:1px dashed #cbd5e1}
+.day-tss-r{text-align:right}
+.day-tss-val{font-size:14px;font-weight:700;color:#1a2535;font-family:Bebas Neue,sans-serif}
+.day-tss-lbl{font-size:10px;color:#94a3b8;font-family:JetBrains Mono,monospace}
+
 /* AI ANALYSIS */
 .ai-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);margin-bottom:1.25rem}
 .ai-header{background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
@@ -362,8 +397,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     </div>
     <div class="sec"><div class="sec-lbl">AI Daily Coaching Analysis</div><div class="sec-rule"></div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8">Updated daily · Powered by Claude</div></div>
     <div id="aiAnalysisSection"><div class="ai-loading">Loading analysis...</div></div>
-
-</div>
+    
 </div>
 
 <!-- DAILY LOG PAGE -->
@@ -375,10 +409,7 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     <div class="disc"><img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=700&q=85" alt="run"><div class="disc-ov"></div><div class="disc-accent" style="background:linear-gradient(to right,#34d399,#06b6d4)"></div><div class="disc-body"><div class="disc-tag" style="color:#34d399">Run</div><div class="disc-name">Minto-Brown</div><div class="disc-info">13.1mi · sub-9:10/mi</div></div></div>
   </div>
   <div class="main">
-    <div class="sec"><div class="sec-lbl">Weekly TSS — Actual vs Target by Discipline</div><div class="sec-rule"></div></div>
-    <div class="wbar-card" id="weeklyBars"></div>
-    <div class="sec"><div class="sec-lbl">Activity Feed</div><div class="sec-rule"></div></div>
-    <div class="feed-wrap" id="activityFeed"></div>
+    <div id="weeklyRecap"></div>
   </div>
 </div>
 
@@ -531,6 +562,9 @@ function showTab(id, el){
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
   document.getElementById('page-'+id).classList.add('on');
   el.classList.add('on');
+  if(id==='daily') buildWeeklyRecap();
+  if(id==='training') buildWeekGrid(summaryData?summaryData.weeks:[]);
+  if(id==='health') buildSleepTable();
 }
 
 // ── LOAD DATA ──────────────────────────────────────────────────────────────
@@ -627,6 +661,148 @@ function buildAIAnalysis(){
     '</div>';
 }
 
+
+// ── WEEKLY SCHEDULE TEMPLATE ────────────────────────────────────────────────
+// DOW: 0=Sun,1=Mon,2=Tue,3=Wed,4=Thu,5=Fri,6=Sat
+var WEEKLY_SCHEDULE = {
+  0:{rest:false,planned:[{disc:'swim',label:'Open water swim',note:'OW when possible'},{disc:'run',label:'Long run',note:'9-11mi easy'}]},
+  1:{rest:false,planned:[{disc:'swim',label:'Pool swim',note:'3,000m aerobic'}]},
+  2:{rest:false,planned:[{disc:'bike',label:'ROUVY morning',note:'45-60 min Z2'},{disc:'brick',label:'Brick run',note:'20 min off bike'},{disc:'run',label:'Tri club run',note:'6-7mi evening'}]},
+  3:{rest:false,planned:[{disc:'bike',label:'ROUVY morning',note:'45-60 min Z2'},{disc:'brick',label:'Brick run',note:'20 min off bike'},{disc:'swim',label:'Pool swim',note:'3,000m aerobic'}]},
+  4:{rest:false,planned:[{disc:'run',label:'Run',note:'6mi easy-moderate'}]},
+  5:{rest:false,planned:[{disc:'swim',label:'Pool swim',note:'3,000m aerobic'}]},
+  6:{rest:false,planned:[{disc:'bike',label:'Long ride',note:'50-60mi outdoor'},{disc:'swim',label:'Pool or OW swim',note:'optional'}]}
+};
+
+var recapWeekOffset = 0;
+
+function buildWeeklyRecap(){
+  var el = document.getElementById('weeklyRecap');
+  if(!el) return;
+
+  var today = new Date();
+  var todayStr = today.toISOString().slice(0,10);
+
+  // Get Monday of target week
+  var monday = new Date(today);
+  var dow = today.getDay();
+  var toMon = dow === 0 ? -6 : 1 - dow;
+  monday.setDate(today.getDate() + toMon + (recapWeekOffset * 7));
+
+  var weekDates = [];
+  for(var i=0;i<7;i++){
+    var d = new Date(monday);
+    d.setDate(monday.getDate()+i);
+    weekDates.push(d);
+  }
+
+  var weekStart = weekDates[0].toISOString().slice(0,10);
+  var weekEnd   = weekDates[6].toISOString().slice(0,10);
+
+  // Find plan week
+  var planWeek = null;
+  if(summaryData && summaryData.weeks){
+    planWeek = summaryData.weeks.find(function(w){ return w.start<=weekStart && w.end>=weekStart; });
+  }
+  var weekTarget = planWeek ? planWeek.target : 420;
+  var weekPhaseIdx = planWeek ? planWeek.week-1 : 4;
+  var weekPhase = WEEK_PHASES[weekPhaseIdx] || 'Build';
+  var weekNum = planWeek ? 'Week '+planWeek.week+' · ' : '';
+
+  // Activities this week
+  var weekActs = activitiesData.filter(function(a){ return a.date>=weekStart && a.date<=weekEnd; });
+  var actsByDate = {};
+  weekActs.forEach(function(a){
+    if(!actsByDate[a.date]) actsByDate[a.date]=[];
+    actsByDate[a.date].push(a);
+  });
+
+  // Totals
+  var totalTSS = Math.round(weekActs.reduce(function(s,a){ return s+a.tss; },0));
+  var swimN = weekActs.filter(function(a){ return a.disc==='swim'; }).length;
+  var bikeN = weekActs.filter(function(a){ return a.disc==='bike'; }).length;
+  var runN  = weekActs.filter(function(a){ return a.disc==='run'; }).length;
+  var brickDone = weekActs.some(function(a){ return a.disc==='bike'; }) && weekActs.some(function(a){ return a.disc==='run'; });
+  var pct = weekTarget>0 ? Math.min(100,Math.round(totalTSS/weekTarget*100)) : 0;
+  var daysLeft = weekDates.filter(function(d){ return d.toISOString().slice(0,10)>todayStr; }).length;
+
+  var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var wLabel = months[weekDates[0].getMonth()]+' '+weekDates[0].getDate()+' – '+months[weekDates[6].getMonth()]+' '+weekDates[6].getDate();
+
+  var pillColors = {swim:'dpill-swim',bike:'dpill-bike',run:'dpill-run',brick:'dpill-brick',rest:'dpill-rest'};
+  var pillIcons  = {swim:'🏊',bike:'🚴',run:'🏃',brick:'⚡',rest:'😴'};
+
+  // Build day rows
+  var dayRowsHtml = weekDates.map(function(d){
+    var ds = d.toISOString().slice(0,10);
+    var dow = d.getDay();
+    var isToday = ds === todayStr;
+    var isPast  = ds < todayStr;
+    var dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var dName = dayNames[dow];
+    var dDate = months[d.getMonth()]+' '+d.getDate();
+
+    var acts = actsByDate[ds] || [];
+    var dayTSS = Math.round(acts.reduce(function(s,a){ return s+a.tss; },0));
+    var sched = WEEKLY_SCHEDULE[dow];
+
+    var pillsHtml = '';
+    if(acts.length > 0){
+      // Show actual activities
+      var hasBike = acts.some(function(a){ return a.disc==='bike'; });
+      var hasRun  = acts.some(function(a){ return a.disc==='run'; });
+      var hasBrickCombo = hasBike && hasRun;
+      acts.forEach(function(a){
+        var label = a.title.length > 25 ? a.title.slice(0,25)+'…' : a.title;
+        var tssStr = a.tss>0 ? ' · '+Math.round(a.tss)+' TSS' : '';
+        pillsHtml += '<span class="dpill '+pillColors[a.disc]+'">'+pillIcons[a.disc]+' '+label+tssStr+'</span>';
+      });
+      if(hasBrickCombo){
+        pillsHtml = '<span class="dpill dpill-brick">⚡ Brick done</span>' + pillsHtml;
+      }
+    } else if(isPast && !isToday){
+      // Past day with no activity
+      pillsHtml = '<span class="dpill dpill-rest">😴 Rest</span>';
+    } else {
+      // Future or today — show planned
+      sched.planned.forEach(function(p){
+        pillsHtml += '<span class="dpill dpill-plan">'+pillIcons[p.disc]+' '+p.label+'</span>';
+      });
+    }
+
+    var todayBadge = isToday ? '<div class="today-badge-r">TODAY</div>' : '';
+    var rowClass = 'day-row-r' + (isToday?' today':'') + (acts.length===0&&isPast?' rest-day':'');
+    var tssDisp = dayTSS>0 ? '<div class="day-tss-val">'+dayTSS+'</div><div class="day-tss-lbl">TSS</div>' : '<div class="day-tss-val" style="color:#e2e8f0">—</div><div class="day-tss-lbl">TSS</div>';
+
+    return '<div class="'+rowClass+'">'
+      +'<div>'+todayBadge+'<div class="day-name-r">'+dName+'</div><div class="day-date-r">'+dDate+'</div></div>'
+      +'<div class="day-pills">'+pillsHtml+'</div>'
+      +'<div class="day-tss-r">'+tssDisp+'</div>'
+    +'</div>';
+  }).join('');
+
+  el.innerHTML =
+    '<div class="recap-wrap">'
+    +'<div class="recap-top">'
+      +'<div><div class="recap-title">'+weekNum+wLabel+'</div>'
+      +'<div class="recap-sub">'+weekPhase+' phase · Target '+weekTarget+' TSS</div></div>'
+      +'<div class="recap-nav">'
+        +'<button class="recap-nav-btn" onclick="recapWeekOffset--;buildWeeklyRecap()">← Prev</button>'
+        +(recapWeekOffset<0?'<button class="recap-nav-btn" onclick="recapWeekOffset++;buildWeeklyRecap()">Next →</button>':'')
+      +'</div>'
+    +'</div>'
+    +'<div class="recap-summary">'
+      +'<div class="rscard"><div class="rscard-lbl">TSS</div><div class="rscard-val">'+totalTSS+'</div><div class="rscard-sub">of '+weekTarget+' target</div></div>'
+      +'<div class="rscard"><div class="rscard-lbl">Sessions</div><div class="rscard-val">'+(swimN+bikeN+runN)+'</div><div class="rscard-sub">swim '+swimN+' · bike '+bikeN+' · run '+runN+'</div></div>'
+      +'<div class="rscard"><div class="rscard-lbl">Brick</div><div class="rscard-val" style="color:'+(brickDone?'#059669':'#dc2626')+'">'+(brickDone?'Yes':'No')+'</div><div class="rscard-sub">'+(brickDone?'completed':'due this week')+'</div></div>'
+      +'<div class="rscard"><div class="rscard-lbl">Days left</div><div class="rscard-val">'+daysLeft+'</div><div class="rscard-sub">in this week</div></div>'
+    +'</div>'
+    +'<div class="recap-prog-row"><span>Weekly progress</span><span>'+totalTSS+' / '+weekTarget+' TSS ('+pct+'%)</span></div>'
+    +'<div class="recap-prog-bg"><div class="recap-prog-fill" style="width:'+pct+'%;background:'+(pct>=100?'#34d399':pct>=75?'#38bdf8':'#fb923c')+'"></div></div>'
+    +'<div class="day-rows">'+dayRowsHtml+'</div>'
+    +'</div>';
+}
+
 async function loadAll(){
   try {
     const [sumRes, actRes, slpRes] = await Promise.all([
@@ -708,6 +884,9 @@ function buildDashboard(){
 
   // Weekly bars
   buildWeeklyBars(weeks);
+
+  // Weekly recap
+  buildWeeklyRecap();
 
   // Activity feed
   buildActivityFeed();
