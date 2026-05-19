@@ -106,24 +106,25 @@ if GARMIN_EMAIL and GARMIN_PASSWORD:
             ds = cur.strftime("%Y-%m-%d")
             try:
                 raw = client.get_sleep_data(ds)
-                if ds == "2026-05-17":  # Debug one recent night
-                    import json as _json
-                    print("SLEEP DEBUG:", _json.dumps({k:v for k,v in raw.items() if k in ["dailySleepDTO","sleepScores","overallSleepScore","sleepScore","wellnessEpochRespirationDataDTOList"]}, default=str)[:2000])
                 if raw and isinstance(raw, dict):
                     dto = raw.get("dailySleepDTO") or {}
                     score = 0
-                    for src in [dto, raw]:
-                        for k in ["sleepScores","overallSleepScore","sleepScore"]:
-                            v = src.get(k)
-                            if v is None: continue
-                            if isinstance(v,(int,float)) and v>0: score=int(v); break
-                            if isinstance(v,dict):
-                                for sk in ["overallScore","totalScore","value","score","overall"]:
-                                    sv = v.get(sk)
-                                    if sv:
-                                        try: score=int(sv); break
-                                        except: pass
-                        if score: break
+                    quality_key = ""
+                    # Primary: sleepScores.overall.value (confirmed field from Garmin)
+                    sleep_scores = dto.get("sleepScores") or raw.get("sleepScores")
+                    if sleep_scores and isinstance(sleep_scores, dict):
+                        overall = sleep_scores.get("overall")
+                        if overall and isinstance(overall, dict):
+                            v = overall.get("value")
+                            if v: score = int(v)
+                            quality_key = str(overall.get("qualifierKey","")).upper()
+                    # Fallback
+                    if not score:
+                        for src in [dto, raw]:
+                            for k in ["overallSleepScore","sleepScore"]:
+                                v = src.get(k)
+                                if isinstance(v,(int,float)) and v>0: score=int(v); break
+                            if score: break
                     spo2 = 0
                     for src in [dto, raw]:
                         for k in ["averageSpO2Value","avgSPO2","spo2","averageSpo2"]:
@@ -154,6 +155,15 @@ if GARMIN_EMAIL and GARMIN_PASSWORD:
                     total = int(dto.get("sleepTimeSeconds") or dto.get("totalSleepSeconds") or 0)
                     deep  = int(dto.get("deepSleepSeconds") or 0)
                     rem   = int(dto.get("remSleepSeconds") or 0)
+                    # Use qualifierKey if available, otherwise derive from score
+                    if quality_key in ["EXCELLENT","GOOD"]:
+                        qual = "Good"
+                    elif quality_key in ["FAIR"]:
+                        qual = "Fair"
+                    elif quality_key in ["POOR","UNKNOWN"]:
+                        qual = "Poor"
+                    else:
+                        qual = quality(score)
                     if total > 3600 or spo2 > 0:
                         sleep_data.append({
                             "date":    ds,
@@ -163,7 +173,7 @@ if GARMIN_EMAIL and GARMIN_PASSWORD:
                             "rem":     round(rem/60),
                             "spo2":    spo2,
                             "rhr":     rhr,
-                            "quality": quality(score)
+                            "quality": qual
                         })
             except Exception: pass
             cur += timedelta(days=1)
