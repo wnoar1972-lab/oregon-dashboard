@@ -1,572 +1,572 @@
 [
   {
     "date": "2026-03-20",
-    "score": 0,
+    "score": 85,
     "total": 7.6,
     "deep": 69,
     "rem": 99,
     "spo2": 94.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-03-21",
-    "score": 0,
+    "score": 43,
     "total": 6.6,
     "deep": 63,
     "rem": 20,
     "spo2": 90.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-03-22",
-    "score": 0,
+    "score": 78,
     "total": 8.1,
     "deep": 32,
     "rem": 77,
     "spo2": 94.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-03-23",
-    "score": 0,
+    "score": 41,
     "total": 7.5,
     "deep": 18,
     "rem": 41,
     "spo2": 93.0,
     "rhr": 55,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-03-24",
-    "score": 0,
+    "score": 54,
     "total": 6.5,
     "deep": 0,
     "rem": 31,
     "spo2": 94.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-03-25",
-    "score": 0,
+    "score": 74,
     "total": 6.4,
     "deep": 59,
     "rem": 48,
     "spo2": 96.0,
     "rhr": 51,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-03-26",
-    "score": 0,
+    "score": 79,
     "total": 7.2,
     "deep": 49,
     "rem": 72,
     "spo2": 93.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-03-27",
-    "score": 0,
+    "score": 46,
     "total": 8.7,
     "deep": 63,
     "rem": 41,
     "spo2": 94.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-03-28",
-    "score": 0,
+    "score": 72,
     "total": 5.8,
     "deep": 71,
     "rem": 44,
     "spo2": 95.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-03-29",
-    "score": 0,
+    "score": 82,
     "total": 9.2,
     "deep": 83,
     "rem": 134,
     "spo2": 91.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-03-30",
-    "score": 0,
+    "score": 80,
     "total": 6.9,
     "deep": 73,
     "rem": 68,
     "spo2": 90.0,
     "rhr": 50,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-03-31",
-    "score": 0,
+    "score": 80,
     "total": 7.2,
     "deep": 50,
     "rem": 86,
     "spo2": 93.0,
     "rhr": 53,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-01",
-    "score": 0,
+    "score": 85,
     "total": 7.8,
     "deep": 57,
     "rem": 82,
     "spo2": 94.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-02",
-    "score": 0,
+    "score": 79,
     "total": 8.4,
     "deep": 56,
     "rem": 162,
     "spo2": 90.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-03",
-    "score": 0,
+    "score": 54,
     "total": 5.9,
     "deep": 54,
     "rem": 11,
     "spo2": 96.0,
     "rhr": 55,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-04-04",
-    "score": 0,
+    "score": 86,
     "total": 9.0,
     "deep": 77,
     "rem": 129,
     "spo2": 95.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-05",
-    "score": 0,
+    "score": 65,
     "total": 9.1,
     "deep": 121,
     "rem": 87,
     "spo2": 92.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-06",
-    "score": 0,
+    "score": 44,
     "total": 6.6,
     "deep": 36,
     "rem": 26,
     "spo2": 94.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-04-07",
-    "score": 0,
+    "score": 56,
     "total": 5.7,
     "deep": 27,
     "rem": 8,
     "spo2": 93.0,
     "rhr": 55,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-04-08",
-    "score": 0,
+    "score": 76,
     "total": 8.4,
     "deep": 61,
     "rem": 81,
     "spo2": 92.0,
     "rhr": 57,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-09",
-    "score": 0,
+    "score": 75,
     "total": 7.6,
     "deep": 76,
     "rem": 38,
     "spo2": 94.0,
     "rhr": 55,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-10",
-    "score": 0,
+    "score": 83,
     "total": 7.8,
     "deep": 40,
     "rem": 109,
     "spo2": 96.0,
     "rhr": 53,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-11",
-    "score": 0,
+    "score": 85,
     "total": 7.2,
     "deep": 72,
     "rem": 98,
     "spo2": 93.0,
     "rhr": 53,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-12",
-    "score": 0,
+    "score": 81,
     "total": 11.1,
     "deep": 64,
     "rem": 202,
     "spo2": 95.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-13",
-    "score": 0,
+    "score": 76,
     "total": 6.2,
     "deep": 63,
     "rem": 60,
     "spo2": 95.0,
     "rhr": 51,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-14",
-    "score": 0,
+    "score": 79,
     "total": 7.1,
     "deep": 24,
     "rem": 115,
     "spo2": 93.0,
     "rhr": 51,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-15",
-    "score": 0,
+    "score": 72,
     "total": 6.2,
     "deep": 21,
     "rem": 57,
     "spo2": 95.0,
     "rhr": 53,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-16",
-    "score": 0,
+    "score": 49,
     "total": 7.5,
     "deep": 80,
     "rem": 44,
     "spo2": 91.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-04-17",
-    "score": 0,
+    "score": 79,
     "total": 7.8,
     "deep": 76,
     "rem": 64,
     "spo2": 94.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-18",
-    "score": 0,
+    "score": 78,
     "total": 6.8,
     "deep": 30,
     "rem": 88,
     "spo2": 95.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-19",
-    "score": 0,
+    "score": 61,
     "total": 7.0,
     "deep": 49,
     "rem": 20,
     "spo2": 95.0,
     "rhr": 55,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-21",
-    "score": 0,
+    "score": 77,
     "total": 6.9,
     "deep": 56,
     "rem": 79,
     "spo2": 92.0,
     "rhr": 57,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-23",
-    "score": 0,
+    "score": 69,
     "total": 6.2,
     "deep": 33,
     "rem": 41,
     "spo2": 95.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-24",
-    "score": 0,
+    "score": 49,
     "total": 6.9,
     "deep": 91,
     "rem": 64,
     "spo2": 90.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-04-25",
-    "score": 0,
+    "score": 68,
     "total": 6.3,
     "deep": 14,
     "rem": 72,
     "spo2": 90.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-26",
-    "score": 0,
+    "score": 82,
     "total": 7.6,
     "deep": 69,
     "rem": 58,
     "spo2": 93.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-27",
-    "score": 0,
+    "score": 87,
     "total": 8.9,
     "deep": 76,
     "rem": 139,
     "spo2": 95.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-28",
-    "score": 0,
+    "score": 72,
     "total": 7.3,
     "deep": 19,
     "rem": 73,
     "spo2": 92.0,
     "rhr": 53,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-04-29",
-    "score": 0,
+    "score": 81,
     "total": 7.9,
     "deep": 56,
     "rem": 78,
     "spo2": 95.0,
     "rhr": 57,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-04-30",
-    "score": 0,
+    "score": 46,
     "total": 7.0,
     "deep": 49,
     "rem": 34,
     "spo2": 94.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-05-01",
-    "score": 0,
+    "score": 76,
     "total": 6.5,
     "deep": 60,
     "rem": 76,
     "spo2": 90.0,
     "rhr": 53,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-05-02",
-    "score": 0,
+    "score": 46,
     "total": 7.0,
     "deep": 23,
     "rem": 51,
     "spo2": 87.0,
     "rhr": 58,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-05-03",
-    "score": 0,
+    "score": 46,
     "total": 7.6,
     "deep": 72,
     "rem": 25,
     "spo2": 89.0,
     "rhr": 58,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-05-04",
-    "score": 0,
+    "score": 66,
     "total": 6.7,
     "deep": 50,
     "rem": 23,
     "spo2": 92.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-05-05",
-    "score": 0,
+    "score": 67,
     "total": 6.2,
     "deep": 35,
     "rem": 30,
     "spo2": 96.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-05-06",
-    "score": 0,
+    "score": 78,
     "total": 9.5,
     "deep": 61,
     "rem": 214,
     "spo2": 96.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-05-07",
-    "score": 0,
+    "score": 48,
     "total": 7.4,
     "deep": 62,
     "rem": 44,
     "spo2": 93.0,
     "rhr": 57,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-05-08",
-    "score": 0,
+    "score": 65,
     "total": 5.1,
     "deep": 59,
     "rem": 41,
     "spo2": 96.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-05-09",
-    "score": 0,
+    "score": 76,
     "total": 7.8,
     "deep": 41,
     "rem": 59,
     "spo2": 92.0,
     "rhr": 55,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-05-11",
-    "score": 0,
+    "score": 83,
     "total": 7.6,
     "deep": 59,
     "rem": 93,
     "spo2": 95.0,
     "rhr": 54,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-05-12",
-    "score": 0,
+    "score": 81,
     "total": 6.7,
     "deep": 66,
     "rem": 77,
     "spo2": 95.0,
     "rhr": 53,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-05-13",
-    "score": 0,
+    "score": 57,
     "total": 7.1,
     "deep": 41,
     "rem": 47,
     "spo2": 96.0,
     "rhr": 60,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-05-14",
-    "score": 0,
+    "score": 74,
     "total": 6.7,
     "deep": 29,
     "rem": 71,
     "spo2": 95.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Fair"
   },
   {
     "date": "2026-05-15",
-    "score": 0,
+    "score": 48,
     "total": 8.0,
     "deep": 78,
     "rem": 41,
     "spo2": 95.0,
     "rhr": 56,
-    "quality": "\u2014"
+    "quality": "Poor"
   },
   {
     "date": "2026-05-16",
-    "score": 0,
+    "score": 80,
     "total": 7.5,
     "deep": 51,
     "rem": 61,
     "spo2": 93.0,
     "rhr": 55,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-05-17",
-    "score": 0,
+    "score": 81,
     "total": 7.0,
     "deep": 66,
     "rem": 54,
     "spo2": 94.0,
     "rhr": 52,
-    "quality": "\u2014"
+    "quality": "Good"
   },
   {
     "date": "2026-05-18",
-    "score": 0,
+    "score": 76,
     "total": 10.1,
     "deep": 42,
     "rem": 187,
     "spo2": 95.0,
     "rhr": 57,
-    "quality": "\u2014"
+    "quality": "Fair"
   }
 ]
