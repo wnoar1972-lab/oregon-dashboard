@@ -2,23 +2,23 @@
   "date": "May 19, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Rest day taken after completing the 11-mile long run on 5/17 (TSS 96, HR 136 avg). This was appropriate recovery positioning before today's planned outdoor ride. The rest day helps ensure freshness for the week's key outdoor bike session.",
-  "todayRecommendation": "Execute the planned 45-50 mile outdoor ride today with conservative pacing at target race watts (145-152w NP). This is your first long outdoor ride of the build phase and critical for race-specific adaptation. Monitor how the hip responds to extended aero position time.",
-  "weekProgress": "Week is significantly behind pace at only 67 of 420 TSS (16%) through day 7. You've completed the long run (11mi, TSS 96 on 5/17) but still need the key outdoor ride today plus additional volume to reach weekly target. Swim discipline is on track with 2 sessions, but you'll need 2-3 more bike sessions and 1-2 more runs this week.",
-  "keyInsight": "Last night's sleep quality (score 61, only 8min REM, SpO2 91%) is concerning heading into today's critical long outdoor ride\u2014consider adjusting intensity targets if energy is compromised.",
+  "yesterdayAnalysis": "Rest day taken on 5/18, which was appropriate after the demanding 11-mile long run (TSS 96) completed on 5/17. However, the sleep quality that night (5/19) was significantly compromised with a score of 61, only 6.8h duration, critically low SpO2 at 91%, and just 8 minutes of REM sleep\u2014this is a red flag for recovery quality despite the 10+ hour catch-up sleep the night before.",
+  "todayRecommendation": "This is the week for your first 45-50 mile outdoor ride per plan, but given last night's poor sleep metrics (especially 8min REM and 91% SpO2), consider delaying to tomorrow if you feel significantly fatigued. If proceeding today, keep intensity strictly Z2, target the lower end of your race power (145-150w NP), and monitor RPE closely\u2014bail early if feeling off.",
+  "weekProgress": "Week is significantly behind schedule at only 67 of 420 TSS (16% complete) on day 7 of week 5. You've completed the 11-mile long run (5/17) but still need the critical 45-50 mile outdoor bike which alone should add ~150-180 TSS. Brick training has been good (3 completed), but swim volume appears light with only 2 sessions visible in last 7 days.",
+  "keyInsight": "Sleep quality has become erratic (7-day avg 68/100) with the 5/19 night showing concerning recovery markers (91% SpO2, 8min REM)\u2014this needs immediate attention as it directly impacts your ability to absorb the big bike volume planned this week.",
   "alerts": [
-    "Week TSS critically low: 67/420 (16%) with ~3 days remaining",
-    "Last night: poor sleep quality (61 score, 8min REM, 91% SpO2)",
-    "No outdoor ride completed yet this week (key week objective)",
-    "Run volume complete but bike/swim need significant addition"
+    "Last night SpO2 critically low at 91% with only 8min REM sleep",
+    "Week TSS severely behind: 67/420 (16%) with major outdoor ride still pending",
+    "7-day avg sleep score only 68/100\u2014below optimal for build phase",
+    "No outdoor long ride completed yet\u2014primary week objective outstanding"
   ],
   "positives": [
-    "Solid 11-mile long run completed 5/17 at excellent aerobic HR (136 avg)",
-    "Three quality brick workouts logged in build phase demonstrating race-specific training",
-    "Consistent swim discipline with both pool and open water sessions"
+    "Excellent 11-mile long run completed at HR 136 (very controlled aerobic effort)",
+    "Three quality brick workouts completed in recent training block",
+    "Conservative bike HR averaging 117-138 on indoor rides shows good pacing discipline matching Oceanside 70.3 success strategy"
   ],
-  "recoveryScore": 5,
-  "trainingLoadStatus": "Fresh",
+  "recoveryScore": 4,
+  "trainingLoadStatus": "Fatigued",
   "generatedAt": "2026-05-19",
   "daysToRace": 61,
   "currentWeek": 5,
