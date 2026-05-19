@@ -2,24 +2,23 @@
   "date": "May 19, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Rest day executed as planned after Saturday's big training day (11mi run + 1mi open water swim totaling 129 TSS). The rest timing was appropriate following the high-load weekend volume. Last night's sleep showed good recovery with 10.1 hours duration and a score of 76, though RHR at 57 is slightly elevated compared to recent baseline of 52-55.",
-  "todayRecommendation": "Today should be the week's key outdoor bike session (45-50mi target) at your race-specific NP of 145-152w. With good recovery markers and 0 TSS logged this week, you're fresh for this critical long ride. Focus on nutrition rehearsal and pacing discipline that earned you that 16-min run PR at Oceanside.",
-  "weekProgress": "Week 5 is 0% complete (0 of 420 TSS target) with the demanding outdoor ride and 10-11mi run still ahead. With 3 days of the week already passed, you need to execute the planned long bike today and the long run session to stay on track. Current week structure is back-loaded, which is workable if you execute Monday-Tuesday effectively.",
-  "keyInsight": "You're well-rested and primed for the week's two key sessions (long outdoor bike + long run) but need to execute both in the next 48 hours to hit the 420 TSS target and maintain build phase progression.",
+  "yesterdayAnalysis": "Rest day taken as scheduled after Saturday's demanding double session (11mi run at TSS 96 + 1mi open water swim). This recovery day was well-timed following 290 TSS accumulated across Thursday-Saturday, allowing adaptation before this week's key long outdoor ride and 10-11mi run targets.",
+  "todayRecommendation": "Execute the first 45-50mi outdoor ride today with strict discipline on NP 145-152w (66-69% FTP). Given excellent sleep recovery (76 score, 10.1h duration, RHR 57) and fresh legs from yesterday's rest, conditions are ideal for this milestone ride that simulates race pacing.",
+  "weekProgress": "Week 5 has 0 of 420 TSS target with 62 days to race\u2014perfectly positioned at start of week. Prior week showed strong execution with 290 TSS including 2 brick workouts and an 11mi long run. Need to balance this week with outdoor bike focus while maintaining swim volume (only 2 swims in last 7 days vs typical 3-4).",
+  "keyInsight": "Your conservative bike pacing strategy (145-152w) that earned you a 16-min run PR at Oceanside must be reinforced now\u2014today's long outdoor ride is critical practice for executing race-day power discipline.",
   "alerts": [
-    "Week is 0% complete with 3 days elapsed - need long bike today",
-    "Only 2 bike sessions logged in entire build phase (80 TSS total) - volume needs attention",
-    "RHR elevated to 57 last night vs 52-55 baseline - monitor today"
+    "Week just starting - 420 TSS target ahead",
+    "Swim frequency dropped to 2 sessions in last 7 days"
   ],
   "positives": [
-    "Excellent 11mi run on Saturday at HR 136 shows strong aerobic base",
-    "Open water swim integration demonstrates race-specific preparation",
-    "10.1 hours sleep last night provides solid recovery buffer for today's long ride"
+    "Excellent 11mi long run completed Saturday at appropriate TSS (96) with HR 136\u2014building endurance at controlled intensity",
+    "Sleep recovery strong: 10.1h duration with 76 score and RHR 57 indicating full readiness",
+    "Successfully completed 2 brick workouts last week, reinforcing bike-to-run transitions"
   ],
-  "recoveryScore": 7,
+  "recoveryScore": 8,
   "trainingLoadStatus": "Fresh",
   "generatedAt": "2026-05-19",
-  "daysToRace": 61,
+  "daysToRace": 62,
   "currentWeek": 5,
   "weekPhase": "Build"
 }
