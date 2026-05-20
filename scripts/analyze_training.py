@@ -16,7 +16,12 @@ if not ANTHROPIC_API_KEY:
     print("ERROR: Set ANTHROPIC_API_KEY environment variable")
     sys.exit(1)
 
-TODAY = date.today()
+import datetime as _dt
+TODAY = _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=-7))).date()
+DAY_OF_WEEK = TODAY.strftime('%A')  # e.g. Wednesday
+DAYS_INTO_WEEK = (TODAY.weekday() + 1) % 7  # Mon=1, Tue=2... Sun=0 -> 7
+if DAYS_INTO_WEEK == 0: DAYS_INTO_WEEK = 7
+DAYS_LEFT_IN_WEEK = 7 - DAYS_INTO_WEEK
 
 # ── LOAD DATA FILES ───────────────────────────────────────────────────────────
 def load_json(path):
@@ -120,9 +125,11 @@ RACE TARGETS:
 - Overall goal: sub-6:00
 
 CURRENT TRAINING STATUS:
+- Today is {DAY_OF_WEEK} — Day {DAYS_INTO_WEEK} of 7 in this training week ({DAYS_LEFT_IN_WEEK} days remaining including today)
 - Week {current_week} of 10 ({WEEK_PHASES.get(current_week, 'Build')} phase)
 - Week focus: {WEEK_FOCUS.get(current_week, '')}
 - Week TSS: {week_actual} of {week_target} target ({week_pct}% complete)
+- Typical weekly schedule: Mon=swim, Tue=ROUVY bike+brick+tri club run, Wed=ROUVY bike+brick+swim, Thu=6mi run, Fri=swim, Sat=long ride 50-60mi, Sun=long run+open water swim
 - Total activities in build: {overall.get('totalActs', 0)} ({total_bike} bike, {total_swim} swim, {total_run} run)
 - Total bike TSS: {total_bike_tss}
 - Brick workouts completed: {len(brick_days)} (dates: {', '.join(brick_days) if brick_days else 'none yet'})
