@@ -2,19 +2,19 @@
   "date": "May 20, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Yesterday delivered a solid brick session: 26.8mi ROUVY ride (TSS 54, HR 119) followed by a quality 5mi run at HR 147, plus a 1.1mi shakeout at HR 153. Total TSS of 123 demonstrates good workout density. The controlled bike HR (119) and strong run execution show you're managing effort distribution well in brick sessions, which aligns perfectly with your Oceanside conservative-bike-fast-run strategy.",
-  "todayRecommendation": "Execute today's scheduled ROUVY bike + brick + swim as planned. Target TSS 50-60 on the bike with controlled HR (<125), then a short 1-2mi brick run. You're at 29% of weekly TSS with 4 days remaining and the long ride/run still ahead\u2014stay on plan to hit 420 target.",
-  "weekProgress": "Week is tracking well at 123/420 TSS (29%) through Day 3. Discipline balance looks good: 3 brick workouts completed, bike work consistent, but you need to bank significant TSS on Saturday's 45-50mi outdoor ride and Sunday's 10-11mi long run to reach weekly target. Swimming frequency is on pace (2 sessions so far, need 1-2 more).",
-  "keyInsight": "Your brick workout execution is excellent\u20143 sessions completed with controlled bike HR and strong run transitions\u2014this is building the exact race-day discipline that earned you a 16-min run PR at Oceanside.",
+  "yesterdayAnalysis": "Yesterday delivered a solid brick workout: 26.8mi ROUVY ride (TSS 54, HR 119) followed by 5mi run (TSS 56, HR 147) plus 1.1mi at tri club (HR 153). Total TSS of 123 is excellent progression. Heart rate discipline on bike was conservative (119 avg), which aligns perfectly with your Oceanside lesson about trading bike speed for run performance.",
+  "todayRecommendation": "Execute the scheduled ROUVY bike + brick + swim per your Wed pattern. Target 50-60 TSS on bike keeping HR <125, then 20-30min transition run. This should bring week TSS to ~250 (60% of target) before Thu's 6mi run.",
+  "weekProgress": "Week at 29% TSS completion (123/420) through Day 3 is slightly behind pace but manageable \u2014 need ~300 TSS over remaining 4 days. Sat's 45-50mi outdoor ride (~150 TSS) and Sun's 10-11mi run (~100 TSS) are the anchors. Swim discipline light so far this week (0 sessions yet).",
+  "keyInsight": "Your brick execution is strong (3 completed, consistent HR control), but you're entering the week's critical outdoor long ride phase \u2014 Sat's 45-50mi will be your longest outdoor ride yet in this build.",
   "alerts": [
-    "May 19 sleep score only 61 with abnormally low REM (8min)\u2014monitor tonight's recovery",
-    "Weekly TSS needs 297 more points in 4 days\u2014weekend workouts are critical",
-    "One night (May 19) showed SpO2 at 91%\u2014may be night sweating artifact"
+    "No swim workouts yet this week (Wed/Fri sessions needed)",
+    "SpO2 dropped to 91% on 5/19 (may indicate recovery stress)",
+    "Only 8min REM sleep on 5/19 (poor sleep architecture)"
   ],
   "positives": [
-    "Excellent 11mi long run on May 17 (TSS 96, HR 136)\u2014strong aerobic control at that distance",
-    "Bike HR discipline outstanding: all 3 ROUVY sessions at 117-138 avg, perfect for base endurance",
-    "7-day sleep average of 71/100 with consistent RHR 52-58 shows solid recovery baseline"
+    "Excellent 11mi long run on 5/17 (TSS 96) with controlled HR 136 \u2014 peak run volume achieved",
+    "Brick workouts showing great HR discipline: bike averaging 119-138, transition runs 154-155",
+    "Sleep recovery rebounded to 76 score last night after poor 5/19 night (61 score)"
   ],
   "recoveryScore": 7,
   "trainingLoadStatus": "Optimal",
