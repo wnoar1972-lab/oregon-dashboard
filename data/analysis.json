@@ -1,26 +1,25 @@
 {
-  "date": "May 19, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Rest day taken on 5/18, which was appropriate after the demanding 11-mile long run (TSS 96) completed on 5/17. However, the sleep quality that night (5/19) was significantly compromised with a score of 61, only 6.8h duration, critically low SpO2 at 91%, and just 8 minutes of REM sleep\u2014this is a red flag for recovery quality despite the 10+ hour catch-up sleep the night before.",
-  "todayRecommendation": "This is the week for your first 45-50 mile outdoor ride per plan, but given last night's poor sleep metrics (especially 8min REM and 91% SpO2), consider delaying to tomorrow if you feel significantly fatigued. If proceeding today, keep intensity strictly Z2, target the lower end of your race power (145-150w NP), and monitor RPE closely\u2014bail early if feeling off.",
-  "weekProgress": "Week is significantly behind schedule at only 67 of 420 TSS (16% complete) on day 7 of week 5. You've completed the 11-mile long run (5/17) but still need the critical 45-50 mile outdoor bike which alone should add ~150-180 TSS. Brick training has been good (3 completed), but swim volume appears light with only 2 sessions visible in last 7 days.",
-  "keyInsight": "Sleep quality has become erratic (7-day avg 68/100) with the 5/19 night showing concerning recovery markers (91% SpO2, 8min REM)\u2014this needs immediate attention as it directly impacts your ability to absorb the big bike volume planned this week.",
+  "date": "May 20, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Strong brick workout completed: 26.8mi indoor ride (TSS 54, HR 119) followed by 5mi run at HR 147 and 1.1mi cooldown. The bike HR was appropriately low at 54% max, conserving energy for the run portion. This brick adds to your 3 total brick sessions this build phase, reinforcing the race-day bike-to-run transition that delivered your 16-min PR at Oceanside.",
+  "todayRecommendation": "Today should be the week's key session: your first 45-50mi outdoor ride on the Quintana Roo. Target 145-152w NP (66-69% FTP) and keep HR conservative around 120-130 to practice race pacing. Follow with 10-11mi long run if legs allow, otherwise schedule the long run for tomorrow with full recovery.",
+  "weekProgress": "Week TSS at 123/420 (29%) after 5 days is slightly behind pace but manageable with today's long ride and run planned. Discipline balance is good with 3 bricks completed. You need approximately 297 more TSS over the next 2 days, with the 45-50mi outdoor ride likely contributing 100-120 TSS and the 10-11mi run adding 80-100 TSS.",
+  "keyInsight": "Your conservative bike pacing strategy (HR 117-119 on indoor rides) is perfectly aligned with the race plan that earned your Oceanside run PR\u2014maintain this discipline on today's outdoor ride.",
   "alerts": [
-    "Last night SpO2 critically low at 91% with only 8min REM sleep",
-    "Week TSS severely behind: 67/420 (16%) with major outdoor ride still pending",
-    "7-day avg sleep score only 68/100\u2014below optimal for build phase",
-    "No outdoor long ride completed yet\u2014primary week objective outstanding"
+    "Low REM sleep on 5/19 (only 8min) despite 6.8h duration\u2014monitor recovery",
+    "One night with SpO2 at 91% (5/19)\u2014may correlate with poor REM and night sweating",
+    "Week TSS tracking needs 297 more points in 2 days\u2014requires today's long sessions"
   ],
   "positives": [
-    "Excellent 11-mile long run completed at HR 136 (very controlled aerobic effort)",
-    "Three quality brick workouts completed in recent training block",
-    "Conservative bike HR averaging 117-138 on indoor rides shows good pacing discipline matching Oceanside 70.3 success strategy"
+    "Excellent 11mi long run completed on 5/17 with controlled HR 136\u2014building endurance without overreach",
+    "Three quality brick workouts in build phase reinforcing bike-to-run transition",
+    "Recent sleep quality strong (avg 71/100) with good recovery nights of 76-81 scores"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-05-19",
-  "daysToRace": 61,
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-05-20",
+  "daysToRace": 60,
   "currentWeek": 5,
   "weekPhase": "Build"
 }

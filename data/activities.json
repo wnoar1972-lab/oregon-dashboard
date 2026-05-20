@@ -397,6 +397,17 @@
   },
   {
     "date": "2026-05-19",
+    "title": "Carlsbad Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 56.0,
+    "np": 0,
+    "avgHR": 147.0,
+    "distance": 8099.6,
+    "duration": 2913.0
+  },
+  {
+    "date": "2026-05-19",
     "title": "Oceanside Running",
     "type": "Run",
     "disc": "run",
