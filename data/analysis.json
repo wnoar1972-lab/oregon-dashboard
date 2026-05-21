@@ -1,25 +1,27 @@
 {
-  "date": "May 20, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Yesterday delivered a solid brick workout: 26.8mi ROUVY ride (TSS 54, HR 119) followed by 5mi run (TSS 56, HR 147) plus 1.1mi at tri club (HR 153). Total TSS of 123 is excellent progression. Heart rate discipline on bike was conservative (119 avg), which aligns perfectly with your Oceanside lesson about trading bike speed for run performance.",
-  "todayRecommendation": "Execute the scheduled ROUVY bike + brick + swim per your Wed pattern. Target 50-60 TSS on bike keeping HR <125, then 20-30min transition run. This should bring week TSS to ~250 (60% of target) before Thu's 6mi run.",
-  "weekProgress": "Week at 29% TSS completion (123/420) through Day 3 is slightly behind pace but manageable \u2014 need ~300 TSS over remaining 4 days. Sat's 45-50mi outdoor ride (~150 TSS) and Sun's 10-11mi run (~100 TSS) are the anchors. Swim discipline light so far this week (0 sessions yet).",
-  "keyInsight": "Your brick execution is strong (3 completed, consistent HR control), but you're entering the week's critical outdoor long ride phase \u2014 Sat's 45-50mi will be your longest outdoor ride yet in this build.",
+  "date": "May 21, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Solid 1.7mi pool swim with TSS 25 and controlled HR at 112 bpm. This was your scheduled Friday swim, maintaining consistent volume with previous pool sessions. Heart rate suggests good aerobic control, but this marks the third swim-only day in the last 7 days while bike volume remains light at only 187 total TSS across the build phase.",
+  "todayRecommendation": "Today (Thursday) should be your scheduled 6-mile run at easy-moderate pace, targeting HR around 140-150 bpm. With only 201 of 420 TSS complete and 3 days remaining, this run is critical to set up your weekend volume\u2014aim for TSS 60-70 to stay on track.",
+  "weekProgress": "Week is significantly behind at 48% TSS completion (201/420) with 3 days left, requiring 219 TSS over Thu-Fri-Sat-Sun. Swim volume is strong (3 sessions), but you've only logged one bike workout (TSS 53) when the week target emphasizes your first 45-50mi outdoor ride Saturday. No brick workout yet this week despite typically doing 2-3 per week.",
+  "keyInsight": "You're tracking to miss your weekly TSS target by ~150-200 unless Saturday's outdoor ride delivers 120+ TSS and Sunday's long run hits 80-90 TSS\u2014the week structure is swim-heavy but bike/run light.",
   "alerts": [
-    "No swim workouts yet this week (Wed/Fri sessions needed)",
-    "SpO2 dropped to 91% on 5/19 (may indicate recovery stress)",
-    "Only 8min REM sleep on 5/19 (poor sleep architecture)"
+    "No brick workout yet this week (typically 2-3/week)",
+    "Only 1 bike session completed, need outdoor long ride Saturday",
+    "Week TSS 48% complete with 52% to go in 3 days",
+    "SpO2 dropped to 91% on May 19 (below 92% threshold)",
+    "Run volume light\u2014only 5mi this week, need 10-11mi Sunday"
   ],
   "positives": [
-    "Excellent 11mi long run on 5/17 (TSS 96) with controlled HR 136 \u2014 peak run volume achieved",
-    "Brick workouts showing great HR discipline: bike averaging 119-138, transition runs 154-155",
-    "Sleep recovery rebounded to 76 score last night after poor 5/19 night (61 score)"
+    "Excellent 11-mile long run on May 17 with controlled HR at 136 bpm (96 TSS)",
+    "Sleep quality rebounding\u201477 score last night with 8.4h duration",
+    "Consistent swim execution with 3 quality sessions this week"
   ],
   "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-05-20",
-  "daysToRace": 60,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-05-21",
+  "daysToRace": 59,
   "currentWeek": 5,
   "weekPhase": "Build"
 }

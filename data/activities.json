@@ -427,5 +427,27 @@
     "avgHR": 119.0,
     "distance": 43050.1,
     "duration": 5212.0
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 25.0,
+    "np": 0,
+    "avgHR": 112.0,
+    "distance": 2743.2,
+    "duration": 3834.0
+  },
+  {
+    "date": "2026-05-21",
+    "title": "ROUVY - IRONMAN Barcelona 2021 40km",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 53.0,
+    "np": 0,
+    "avgHR": 111.0,
+    "distance": 40000.3,
+    "duration": 4809.0
   }
 ]
