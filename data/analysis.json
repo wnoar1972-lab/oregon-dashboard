@@ -1,25 +1,24 @@
 {
   "date": "May 22, 2026",
-  "overallStatus": "Recovery Mode",
-  "statusColor": "blue",
-  "yesterdayAnalysis": "Crushed an 11.0mi run at 149 HR average with TSS 119 \u2014 this appears to be the week's long run requirement (10-11mi target). However, this was Thursday not Sunday per typical schedule, and it came after yesterday's 24.9mi indoor ride. The back-to-back load (TSS 53 + 119 = 172 over 2 days) is significant, especially with sleep score dropping to 69 last night with only 51min deep sleep.",
-  "todayRecommendation": "Today should be an easy recovery swim only. You've already completed the week's long run (11mi) and have 320 of 420 TSS banked (76%). With tomorrow's scheduled 50-60mi outdoor ride being the week's key workout, preserve energy and prioritize recovery today.",
-  "weekProgress": "Week is tracking well at 76% TSS completion with 2 days remaining. Long run requirement met (11mi Thursday vs typical Sunday). Still need Saturday's first 45-50mi outdoor ride to hit the week's primary focus. Discipline balance good: 2 bikes, 4 runs, 2 swims through Day 4.",
-  "keyInsight": "You front-loaded your long run to Thursday instead of Sunday, which puts significant fatigue ahead of tomorrow's critical first long outdoor ride of the build phase \u2014 manage today carefully to ensure Saturday quality.",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "You completed an 11-mile run in Carlsbad with TSS 119 and HR 149, which appears to be your scheduled long run for the week. However, this was done on Thursday (yesterday) instead of the typical Sunday slot, and the weekly plan called for a long outdoor bike ride (45-50mi) first. The run execution looks solid with good HR management, but the sequence is backwards from your plan.",
+  "todayRecommendation": "Today is Friday swim day per your schedule, but you're sitting at 320 TSS with 100 TSS remaining to hit your 420 target. You still need your long outdoor bike ride (45-50mi target) which would deliver 80-100+ TSS. Consider if you can move the swim to accommodate a partial outdoor ride today, or plan for both Saturday rides to make up the deficit.",
+  "weekProgress": "Week is 76% complete on TSS (320/420) but critically missing the primary week focus: your first 45-50mi outdoor ride. You've completed the long run objective (11mi Thursday) and have 3 brick sessions logged. With only 2 days remaining, you need ~100 TSS primarily from the missing long bike to hit targets and achieve the week's stated training purpose.",
+  "keyInsight": "The week's primary objective\u2014your first extended outdoor ride\u2014hasn't happened yet, and you're running out of time with only Saturday/Sunday remaining.",
   "alerts": [
-    "Sleep quality dropped to 69 after yesterday's high-TSS run",
-    "Only 51min deep sleep last night vs 66min average",
-    "Long run completed Thursday instead of typical Sunday schedule",
-    "Tomorrow's 50-60mi outdoor ride is week's primary objective \u2014 needs fresh legs"
+    "Week focus goal (45-50mi outdoor ride) not yet completed with 2 days left",
+    "Only 4 bike activities in 5 weeks of build phase\u2014bike volume appears significantly undertrained",
+    "Total bike TSS of 187 across 5 weeks averages only 37 TSS/week\u2014well below what's needed for 70.3 prep",
+    "Sleep score dropped to 69 last night after yesterday's hard run effort"
   ],
   "positives": [
-    "Strong 11mi run execution at controlled HR (149 avg)",
-    "Already 76% to weekly TSS target with 2 days remaining",
-    "7-day average sleep score solid at 74/100",
-    "SpO2 tracking well at 93.6% average over 7 days"
+    "Excellent long run execution: 11mi with controlled HR of 149 shows strong aerobic fitness",
+    "Sleep quality generally good: 7-day average of 74/100 with most nights 76+",
+    "Brick discipline maintained: 3 quality sessions completed including bike-to-run transitions"
   ],
-  "recoveryScore": 5,
-  "trainingLoadStatus": "Fatigued",
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
   "generatedAt": "2026-05-22",
   "daysToRace": 58,
   "currentWeek": 5,
