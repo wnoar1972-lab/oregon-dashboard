@@ -452,6 +452,17 @@
   },
   {
     "date": "2026-05-22",
+    "title": "San Diego Open Water Swimming",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 39.0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 1743.9,
+    "duration": 2542.0
+  },
+  {
+    "date": "2026-05-22",
     "title": "Carlsbad Running",
     "type": "Run",
     "disc": "run",
