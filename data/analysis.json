@@ -2,21 +2,21 @@
   "date": "May 23, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Completed an exceptional long run session: 11.0mi at HR 149 (TSS 119) plus 1.1mi open water swim (TSS 39). This was the targeted long run for the week and represents significant volume at appropriate aerobic intensity. Total TSS of 158 for the day is substantial and positions you well against the weekly target.",
-  "todayRecommendation": "Today should be an active recovery or complete rest day. You've accumulated 359 TSS (85% of target) with yesterday's hard efforts, and your body needs adaptation time. If you feel recovered, consider a short 30-40min easy spin or light swim, but prioritize recovery given the 9.8h sleep rebound last night.",
-  "weekProgress": "Strong week at 85% TSS completion with 1 day remaining. However, bike volume is concerning: only 2 indoor ROUVY rides totaling 107 TSS across 52mi \u2014 the targeted 45-50mi outdoor ride has not occurred. Swim and run disciplines are well-executed with 3 swims (97 TSS) and 5 runs (284 TSS including yesterday's standout session).",
-  "keyInsight": "You've hit the run volume target brilliantly but completely missed this week's primary objective: the first long outdoor ride of 45-50mi on the Quintana Roo.",
+  "yesterdayAnalysis": "Excellent execution of the week's long run objective with 11.0mi at HR 149 (TSS 119) plus 1.1mi OWS. This completes the primary run volume goal (10-11mi target) and demonstrates strong aerobic endurance. The HR average of 149 suggests controlled effort, though this was a significant load following Tuesday's brick and run club session.",
+  "todayRecommendation": "Today should be a complete rest day or very light active recovery only. You've completed 359 TSS (85% of weekly target) and hit both key sessions (long run yesterday, outdoor rides earlier this week). With 57 days to race, prioritizing recovery after back-to-back long run days (May 17 and May 22) is critical for adaptation.",
+  "weekProgress": "Week is effectively complete at 359/420 TSS (85%). You've executed the long run (11mi) but missed the prescribed 45-50mi outdoor ride \u2014 only indoor ROUVY rides totaling ~52mi occurred. Discipline balance is good: 4 swims (3.8mi total), 4 runs (28.1mi total), 2 bikes (51.7mi total). The outdoor bike session was replaced with indoor work, which impacts race-specific adaptation.",
+  "keyInsight": "You're completing high-quality long runs consistently (11mi on both May 17 and May 22), but the prescribed outdoor bike volume (45-50mi single session) hasn't materialized yet in this build block \u2014 critical for race-pacing rehearsal.",
   "alerts": [
-    "No outdoor bike ride this week \u2014 primary week objective missed",
-    "Bike TSS only 107 of ~200 typical weekly target",
-    "SpO2 dropped to 91% on May 19 (may indicate recovery stress)",
-    "Yesterday's combined TSS of 158 requires recovery today"
+    "Target 45-50mi outdoor ride not completed this week",
+    "Only 2 bike sessions this week vs typical schedule suggests more needed",
+    "Back-to-back 11mi runs (May 17, 22) with minimal recovery between \u2014 monitor hip",
+    "One night with SpO2 at 91% (May 19)"
   ],
   "positives": [
-    "Exceptional 11mi run at controlled HR 149 \u2014 excellent aerobic pacing",
-    "Sleep recovery strong: 9.8h last night (score 74) after demanding training day",
-    "Consistent open water swimming building race-specific skills",
-    "Run discipline well ahead with 5 sessions and solid volume"
+    "Strong 11mi run at controlled HR 149 \u2014 building excellent endurance foundation",
+    "Sleep recovery excellent last night: 74 score, 9.8h duration, good deep/REM balance",
+    "Consistent swim volume: 3.8mi across 4 sessions this week including 2 OWS",
+    "7-day average sleep score of 73 shows solid recovery habits"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Fatigued",
