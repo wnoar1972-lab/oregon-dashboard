@@ -9,7 +9,7 @@
     "totalSwimTSS": 188,
     "totalBikeTSS": 187,
     "totalRunTSS": 553,
-    "totalBikeSessions": 4,
+    "totalBikeSessions": 5,
     "totalSwimSessions": 6,
     "totalRunSessions": 9
   },
@@ -84,7 +84,7 @@
       "swimTSS": 64,
       "runTSS": 188,
       "swimN": 2,
-      "bikeN": 2,
+      "bikeN": 3,
       "runN": 3,
       "avgNP": 0,
       "done": false

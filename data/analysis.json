@@ -1,25 +1,24 @@
 {
   "date": "May 23, 2026",
-  "overallStatus": "Recovery Mode",
-  "statusColor": "blue",
-  "yesterdayAnalysis": "Executed a strong long run/swim brick with 11.0mi run at HR 149 (TSS 119) plus 1.1mi open water swim (TSS 39) in Carlsbad/San Diego. This totaled 158 TSS in one day\u2014a significant training load that hit the week's long run target of 10-11mi. The run HR of 149 suggests solid aerobic effort without overcooking it, consistent with your successful Oceanside 70.3 conservative pacing strategy.",
-  "todayRecommendation": "Today should be complete rest or very light active recovery only. Yesterday's 158 TSS day brought you to 85% of weekly target with heavy run load, and sleep score dropped to 69 post-workout with only 7.0h duration and just 35min REM sleep. Your body needs this recovery day before next week's build continues.",
-  "weekProgress": "Week is at 359/420 TSS (85% complete) with strong run discipline\u20143 run sessions totaling 27.1mi including the planned 11mi long run. However, bike volume is critically light: only ONE indoor ride (24.9mi, TSS 53) this week when the plan called for your first 45-50mi outdoor ride on Saturday. Swim discipline is on track with 3 sessions completed.",
-  "keyInsight": "You completed the long run target but missed the signature Saturday long outdoor bike ride (45-50mi planned)\u2014this is a critical gap in your 70.3 bike prep with race 57 days out.",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Yesterday delivered the planned long run (11mi, TSS 119, HR 149) plus open water swim (1.1mi, TSS 39), hitting the week's 10-11mi run target. However, the run HR of 149 is elevated for long aerobic work, and combined with Thursday's back-to-back 11mi runs (May 17 and May 22), you've now logged 22 miles of long runs in 6 days without adequate recovery between efforts. This violates the principle of hard-easy cycling and increases injury risk, especially with Perthes considerations.",
+  "todayRecommendation": "Today's 17.9mi bike logged zero TSS, indicating either a recovery spin or data recording issue. With 61 TSS remaining to hit your 420 target and one day left in the week, prioritize active recovery today\u2014easy 30-40min spin or complete rest. DO NOT attempt to chase the TSS gap with intensity; you're at 85% of target with adequate volume completed.",
+  "weekProgress": "Week TSS at 359/420 (85%) is solid, but discipline distribution is concerning: only 107 bike TSS versus 284 run/swim TSS creates imbalance. The week called for your first 45-50mi outdoor ride\u2014today's 17.9mi falls short of that benchmark. You've completed the long run target excellently (11mi) but missed the signature long bike session that defines this week's focus.",
+  "keyInsight": "You're running yourself into fatigue with back-to-back long runs (11mi on 5/17, 11mi on 5/22) while underdelivering on bike volume\u2014this inverts your race-day priority where conservative cycling enables the run PR.",
   "alerts": [
-    "No long outdoor bike ride completed this week (45-50mi was planned for Saturday)",
-    "Only 1 bike workout this week vs typical 3+ sessions",
-    "Total bike TSS remains very low: 187 across entire build with only 4 bike activities",
-    "Post-long-run sleep quality dropped: 69 score, 7.0h duration, only 35min REM",
-    "No brick workouts this week (last one was 2026-05-19)"
+    "Back-to-back 11mi runs with only 5 days separation risks overuse injury",
+    "Week's signature 45-50mi outdoor ride not completed (only 17.9mi today)",
+    "Bike TSS critically low: only 107 vs ~200+ needed for Ironman bike prep",
+    "Elevated run HR of 149 on long run suggests insufficient aerobic base pacing",
+    "Sleep quality declined mid-week: 61 score on 5/19 with only 8min REM sleep"
   ],
   "positives": [
-    "Excellent 11mi long run execution at controlled HR 149\u2014building race-day endurance",
-    "Strong run consistency: 27.1mi across 3 sessions this week shows commitment to sub-9:10/mi goal",
-    "Open water swim volume increasing: 1.1mi OWS yesterday demonstrates race-specific preparation",
-    "Sleep recovery excellent last night: 74 score with 9.8h duration, 93min REM\u2014body responding well to rest"
+    "Excellent long run execution: 11mi completed at planned volume, building endurance foundation",
+    "Consistent open water swim practice (3 sessions in 7 days) developing race-specific skills",
+    "Sleep recovery strong overall: 73/100 avg with 9.8h last night showing good adaptation response"
   ],
-  "recoveryScore": 6,
+  "recoveryScore": 5,
   "trainingLoadStatus": "Fatigued",
   "generatedAt": "2026-05-23",
   "daysToRace": 57,

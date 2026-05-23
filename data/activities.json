@@ -474,13 +474,13 @@
   },
   {
     "date": "2026-05-23",
-    "title": "Activity",
-    "type": "",
-    "disc": "other",
+    "title": "Lunch Ride",
+    "type": "Ride",
+    "disc": "bike",
     "tss": 0,
     "np": 0,
     "avgHR": 0,
-    "distance": 0,
-    "duration": 0
+    "distance": 28752.6,
+    "duration": 3552.0
   }
 ]
