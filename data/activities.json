@@ -471,5 +471,16 @@
     "avgHR": 149.0,
     "distance": 17774.7,
     "duration": 5967.0
+  },
+  {
+    "date": "2026-05-23",
+    "title": "Activity",
+    "type": "",
+    "disc": "other",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 0,
+    "duration": 0
   }
 ]
