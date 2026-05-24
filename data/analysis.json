@@ -2,20 +2,22 @@
   "date": "May 24, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday's 17.9mi outdoor ride shows zero TSS and HR data, indicating a data recording issue that needs troubleshooting before today's planned long ride. This was meant to be part of the week's outdoor riding emphasis but provided no training stress contribution toward the 420 TSS target. With only 392 TSS accumulated through 6 days, missing data from key workouts creates planning gaps.",
-  "todayRecommendation": "Before starting today's long run (10-11mi target), verify all device recording is functioning properly. Consider the 11mi run from May 22 (TSS 119, HR 149) as evidence you're ready for today's volume, but monitor pacing given the short 5.8h sleep last night and elevated RHR of 55.",
-  "weekProgress": "Week is at 93% of TSS target (392/420) with one day remaining, but actual load may be higher if yesterday's ride data is recovered. Discipline balance is concerning: only 2 recorded bike sessions this week versus the planned outdoor ride emphasis, though brick workouts continue on schedule. The long run component hasn't been completed yet today.",
-  "keyInsight": "Data integrity issues are undermining training visibility\u2014yesterday's outdoor ride and several sessions show missing power/HR metrics, making it impossible to properly manage training load heading into Week 6.",
+  "yesterdayAnalysis": "Yesterday's 17.9mi outdoor ride registered zero TSS and HR data, indicating either a device malfunction or a very easy recovery spin. This was supposed to be your first 45-50mi outdoor ride of the build phase per the week focus, but fell significantly short on distance. Missing this key long ride leaves a critical aerobic endurance gap heading into Week 6.",
+  "todayRecommendation": "Complete your scheduled 10-11mi long run today to hit week targets, but monitor closely given only 5.8h sleep last night (score 70). If legs feel heavy from yesterday's ride effort (despite no recorded data), consider scaling to 8-9mi at conservative Z2 pace to protect the training block.",
+  "weekProgress": "Week TSS at 392/420 (93%) looks complete, but discipline balance is off: only 2 bike workouts totaling ~40mi indoor versus the planned 45-50mi outdoor long ride. You nailed the 11mi long run on Thursday (TSS 119) and got solid brick work in, but the abbreviated Saturday ride undermines the week's primary bike endurance objective. Today's long run + open water swim can salvage the week.",
+  "keyInsight": "The missed long outdoor ride (17.9mi vs 45-50mi target) is a significant setback in building the aerobic endurance required for sustained 145-152w race power over 56 miles in Oregon.",
   "alerts": [
-    "Yesterday's 17.9mi ride missing all TSS and HR data",
-    "Only 2 recorded bike sessions this week vs 3+ typical pattern",
-    "Short sleep last night (5.8h) before long run day",
-    "Week TSS at 93% with long run still pending\u2014may exceed target significantly"
+    "Saturday long ride dramatically short: 17.9mi vs 45-50mi target",
+    "No TSS/HR data recorded on yesterday's ride - device issue?",
+    "Sleep duration 5.8h last night - lowest of week",
+    "Only 2 bike sessions this week vs typical 3-4",
+    "Total weekly bike mileage ~58mi vs typical 80-100mi build target"
   ],
   "positives": [
-    "Excellent 11mi run execution on May 22 (TSS 119, HR 149 avg)\u2014demonstrating strong aerobic endurance",
-    "Brick workout consistency maintained (4 total in build phase)",
-    "Sleep quality averaging 72/100 with good SpO2 average of 94.1% over 7 days"
+    "Excellent 11mi long run Thursday with solid HR 149 - on pace for race targets",
+    "Strong brick execution on May 24 (ROUVY + 1mi run) maintaining consistency",
+    "Sleep quality averaging 72/100 with SpO2 stable at 94.1% - only 1 night below 92%",
+    "Open water swim progression continues (1.1mi May 22)"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
