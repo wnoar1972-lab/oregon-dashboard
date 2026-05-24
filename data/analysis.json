@@ -1,27 +1,27 @@
 {
-  "date": "May 23, 2026",
+  "date": "May 24, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday delivered the planned long run (11mi, TSS 119, HR 149) plus open water swim (1.1mi, TSS 39), hitting the week's 10-11mi run target. However, the run HR of 149 is elevated for long aerobic work, and combined with Thursday's back-to-back 11mi runs (May 17 and May 22), you've now logged 22 miles of long runs in 6 days without adequate recovery between efforts. This violates the principle of hard-easy cycling and increases injury risk, especially with Perthes considerations.",
-  "todayRecommendation": "Today's 17.9mi bike logged zero TSS, indicating either a recovery spin or data recording issue. With 61 TSS remaining to hit your 420 target and one day left in the week, prioritize active recovery today\u2014easy 30-40min spin or complete rest. DO NOT attempt to chase the TSS gap with intensity; you're at 85% of target with adequate volume completed.",
-  "weekProgress": "Week TSS at 359/420 (85%) is solid, but discipline distribution is concerning: only 107 bike TSS versus 284 run/swim TSS creates imbalance. The week called for your first 45-50mi outdoor ride\u2014today's 17.9mi falls short of that benchmark. You've completed the long run target excellently (11mi) but missed the signature long bike session that defines this week's focus.",
-  "keyInsight": "You're running yourself into fatigue with back-to-back long runs (11mi on 5/17, 11mi on 5/22) while underdelivering on bike volume\u2014this inverts your race-day priority where conservative cycling enables the run PR.",
+  "yesterdayAnalysis": "Saturday's outdoor ride logged only 17.9mi with no TSS or HR data captured\u2014significantly short of the planned 45-50mi long ride that was the week's focal workout. This represents a major gap in the weekly plan and likely explains why weekly TSS is at 392/420 (93%). Missing this key aerobic endurance session is concerning as we're in week 5 of 10 in the build phase.",
+  "todayRecommendation": "Complete the planned 10-11mi long run today to maintain run volume progression (you hit 11mi on May 22, so fitness is there). Given the missed long bike yesterday, consider adding the scheduled open water swim to salvage weekly volume, but prioritize run quality and don't force extra work if recovery is compromised.",
+  "weekProgress": "Week is 28 TSS short of the 420 target primarily due to Saturday's abbreviated ride. Discipline balance shows only 2 bike sessions totaling 77 TSS this week (should be 3-4 sessions with ~150-200 TSS), while run volume is solid with 11mi + 5mi + brick runs completed. One brick workout completed (May 24) meets minimum weekly requirement.",
+  "keyInsight": "The missed long outdoor ride is a critical gap in your aerobic base development\u2014these 3-4 hour endurance sessions at race intensity are non-negotiable for Ironman preparation and can't be easily replicated by shorter indoor sessions.",
   "alerts": [
-    "Back-to-back 11mi runs with only 5 days separation risks overuse injury",
-    "Week's signature 45-50mi outdoor ride not completed (only 17.9mi today)",
-    "Bike TSS critically low: only 107 vs ~200+ needed for Ironman bike prep",
-    "Elevated run HR of 149 on long run suggests insufficient aerobic base pacing",
-    "Sleep quality declined mid-week: 61 score on 5/19 with only 8min REM sleep"
+    "Saturday long ride only 17.9mi vs planned 45-50mi\u2014major weekly volume miss",
+    "Weekly bike TSS only 77 vs typical 150-200 target",
+    "No HR/power data captured on yesterday's ride\u2014equipment issue?",
+    "Sleep score dropped to 70 last night with only 5.8h duration after heavy 11mi run",
+    "One night this week below 92% SpO2 (May 19: 91%)"
   ],
   "positives": [
-    "Excellent long run execution: 11mi completed at planned volume, building endurance foundation",
-    "Consistent open water swim practice (3 sessions in 7 days) developing race-specific skills",
-    "Sleep recovery strong overall: 73/100 avg with 9.8h last night showing good adaptation response"
+    "Excellent 11mi long run completed May 22 at HR 149\u2014right on target for sub-9:10 race pace training",
+    "Solid brick execution on May 24 with controlled HR 123 on bike, 146 on run",
+    "7-day average sleep score of 72 shows generally adequate recovery despite one poor night"
   ],
   "recoveryScore": 5,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-05-23",
-  "daysToRace": 57,
+  "generatedAt": "2026-05-24",
+  "daysToRace": 56,
   "currentWeek": 5,
   "weekPhase": "Build"
 }
