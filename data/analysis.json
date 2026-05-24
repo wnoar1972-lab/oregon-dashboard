@@ -2,24 +2,23 @@
   "date": "May 24, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Saturday's outdoor ride logged only 17.9mi with no TSS or HR data captured\u2014significantly short of the planned 45-50mi long ride that was the week's focal workout. This represents a major gap in the weekly plan and likely explains why weekly TSS is at 392/420 (93%). Missing this key aerobic endurance session is concerning as we're in week 5 of 10 in the build phase.",
-  "todayRecommendation": "Complete the planned 10-11mi long run today to maintain run volume progression (you hit 11mi on May 22, so fitness is there). Given the missed long bike yesterday, consider adding the scheduled open water swim to salvage weekly volume, but prioritize run quality and don't force extra work if recovery is compromised.",
-  "weekProgress": "Week is 28 TSS short of the 420 target primarily due to Saturday's abbreviated ride. Discipline balance shows only 2 bike sessions totaling 77 TSS this week (should be 3-4 sessions with ~150-200 TSS), while run volume is solid with 11mi + 5mi + brick runs completed. One brick workout completed (May 24) meets minimum weekly requirement.",
-  "keyInsight": "The missed long outdoor ride is a critical gap in your aerobic base development\u2014these 3-4 hour endurance sessions at race intensity are non-negotiable for Ironman preparation and can't be easily replicated by shorter indoor sessions.",
+  "yesterdayAnalysis": "Yesterday's 17.9mi outdoor ride shows zero TSS and HR data, indicating a data recording issue that needs troubleshooting before today's planned long ride. This was meant to be part of the week's outdoor riding emphasis but provided no training stress contribution toward the 420 TSS target. With only 392 TSS accumulated through 6 days, missing data from key workouts creates planning gaps.",
+  "todayRecommendation": "Before starting today's long run (10-11mi target), verify all device recording is functioning properly. Consider the 11mi run from May 22 (TSS 119, HR 149) as evidence you're ready for today's volume, but monitor pacing given the short 5.8h sleep last night and elevated RHR of 55.",
+  "weekProgress": "Week is at 93% of TSS target (392/420) with one day remaining, but actual load may be higher if yesterday's ride data is recovered. Discipline balance is concerning: only 2 recorded bike sessions this week versus the planned outdoor ride emphasis, though brick workouts continue on schedule. The long run component hasn't been completed yet today.",
+  "keyInsight": "Data integrity issues are undermining training visibility\u2014yesterday's outdoor ride and several sessions show missing power/HR metrics, making it impossible to properly manage training load heading into Week 6.",
   "alerts": [
-    "Saturday long ride only 17.9mi vs planned 45-50mi\u2014major weekly volume miss",
-    "Weekly bike TSS only 77 vs typical 150-200 target",
-    "No HR/power data captured on yesterday's ride\u2014equipment issue?",
-    "Sleep score dropped to 70 last night with only 5.8h duration after heavy 11mi run",
-    "One night this week below 92% SpO2 (May 19: 91%)"
+    "Yesterday's 17.9mi ride missing all TSS and HR data",
+    "Only 2 recorded bike sessions this week vs 3+ typical pattern",
+    "Short sleep last night (5.8h) before long run day",
+    "Week TSS at 93% with long run still pending\u2014may exceed target significantly"
   ],
   "positives": [
-    "Excellent 11mi long run completed May 22 at HR 149\u2014right on target for sub-9:10 race pace training",
-    "Solid brick execution on May 24 with controlled HR 123 on bike, 146 on run",
-    "7-day average sleep score of 72 shows generally adequate recovery despite one poor night"
+    "Excellent 11mi run execution on May 22 (TSS 119, HR 149 avg)\u2014demonstrating strong aerobic endurance",
+    "Brick workout consistency maintained (4 total in build phase)",
+    "Sleep quality averaging 72/100 with good SpO2 average of 94.1% over 7 days"
   ],
-  "recoveryScore": 5,
-  "trainingLoadStatus": "Fatigued",
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
   "generatedAt": "2026-05-24",
   "daysToRace": 56,
   "currentWeek": 5,
