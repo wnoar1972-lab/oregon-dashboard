@@ -504,5 +504,16 @@
     "avgHR": 123.0,
     "distance": 25890.0,
     "duration": 2543.0
+  },
+  {
+    "date": "2026-05-25",
+    "title": "San Diego Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 74.0,
+    "np": 0,
+    "avgHR": 146.0,
+    "distance": 11448.5,
+    "duration": 3870.0
   }
 ]
