@@ -2,21 +2,21 @@
   "date": "May 26, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "7.1-mile run in San Diego at 146 HR averaging TSS 74 was solid endurance work, but doesn't align with recovery week protocol (35% volume reduction, no intensity). This run represents nearly 30% of your weekly TSS target alone, suggesting the recovery week strategy isn't being executed as planned. The HR of 146 indicates good aerobic control, but volume should be dialed back.",
-  "todayRecommendation": "Today's scheduled ROUVY bike + brick + tri club run should be significantly shortened. Target 45-60min easy spin (zone 1-2, <50 TSS) with a 10-15min transition run only. Skip the tri club run or make it social-only pace to honor the recovery week intent.",
-  "weekProgress": "At 74 TSS of 260 target (28% complete) after day 1, you're tracking too high for a recovery week where you should be at ~15% daily accumulation. Missing swim discipline entirely in the last 7 days despite typical Mon/Wed/Fri schedule. Only 5 days remaining to complete week without overloading.",
-  "keyInsight": "You're not executing the recovery week protocol\u2014yesterday's run alone consumed the TSS you should accumulate over 2-3 days during a 35% volume reduction phase.",
+  "yesterdayAnalysis": "7.1-mile run at HR 146 produced 74 TSS\u2014a solid effort that represents 28% of your weekly target in a single session. This is problematic for a recovery week where volume should drop 35% and intensity should be eliminated. Running at this HR and generating this much stress contradicts the recovery week protocol when your body needs adaptation time.",
+  "todayRecommendation": "Today should be an easy 30-40 minute ROUVY session at <120 HR (Zone 1-2 only), followed by a very short 10-minute brick run at conversational pace. Skip the tri club run or keep it extremely social\u2014your sleep score of 40 last night with 0 minutes REM indicates your body is struggling to recover.",
+  "weekProgress": "Week TSS is 74 of 260 target (28% complete) after just one workout, putting you on pace to significantly exceed your recovery week goal. For a 35% volume reduction week, you should be targeting ~170 TSS total, not 260. No brick workout completed yet this week, and no swim sessions logged in the last 4 days despite having scheduled pool swims.",
+  "keyInsight": "Last night's catastrophic sleep (score 40, 0 REM, 92% SpO2) following yesterday's hard run is a clear signal you're not respecting the recovery week protocol\u2014dial back immediately or risk compromising the next training block.",
   "alerts": [
-    "Last night's sleep score of 40 with 0min REM is critically poor\u2014major recovery concern",
-    "SpO2 dropped to 92% last night, lowest in 7-day window",
-    "No swim workouts since 5/22 (4 days ago), breaking your typical Mon/Wed/Fri pattern",
-    "Recovery week TSS pacing too aggressive\u201428% complete after day 1 of 7",
-    "RHR elevated to 60 from 55 average"
+    "Critical: 0 minutes REM sleep last night with sleep score 40",
+    "Yesterday's run TSS too high for recovery week (74 TSS = 28% of weekly target)",
+    "No swim workouts in 4 days\u2014missing discipline consistency",
+    "On pace to exceed recovery week TSS target by 50%+",
+    "SpO2 dropped to 92% last night"
   ],
   "positives": [
-    "Consistent HR control at 146 across recent runs shows strong aerobic base",
-    "4 brick workouts completed in training block demonstrates race-specific preparation",
-    "Total bike TSS of 210 building good foundation toward race power targets of 145-152w"
+    "7-day average SpO2 of 94.1% remains solid overall",
+    "Completed 11-mile run on 5/22 showing strong run fitness building",
+    "Resting HR averaging 55-58 indicates good base fitness"
   ],
   "recoveryScore": 3,
   "trainingLoadStatus": "Fatigued",
