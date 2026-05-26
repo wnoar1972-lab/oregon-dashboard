@@ -1,27 +1,27 @@
 {
-  "date": "May 25, 2026",
-  "overallStatus": "Recovery Mode",
-  "statusColor": "blue",
-  "yesterdayAnalysis": "Solid 7.1mi run at TSS 74 with consistent HR 146 bpm, maintaining your target pace zone. This was appropriate volume for early in recovery week, though it represents the majority of your weekly TSS allocation (74 of 260 target). The run came after Saturday's brick session (16.1mi bike + 1mi run), showing good back-to-back tolerance.",
-  "todayRecommendation": "Execute your Monday swim session as planned, keeping it easy and focused on form. With 186 TSS remaining for the week and this being a recovery phase, aim for low-intensity technique work rather than volume or pace stress.",
-  "weekProgress": "Week is 28% complete on TSS (74/260) after just one run workout, which is slightly ahead of typical Mon-only pace. You're missing the swim component to balance disciplines - only 1 of your 3 planned swims completed so far. No brick workouts logged yet this week, but typical schedule has first brick on Tuesday.",
-  "keyInsight": "Recovery week execution is critical here - you've front-loaded 28% of weekly TSS in one run, so strict discipline on volume reduction (35% drop) and zero intensity work is essential for the remaining 6 days to avoid negating recovery benefits.",
+  "date": "May 26, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "7.1-mile run in San Diego at 146 HR averaging TSS 74 was solid endurance work, but doesn't align with recovery week protocol (35% volume reduction, no intensity). This run represents nearly 30% of your weekly TSS target alone, suggesting the recovery week strategy isn't being executed as planned. The HR of 146 indicates good aerobic control, but volume should be dialed back.",
+  "todayRecommendation": "Today's scheduled ROUVY bike + brick + tri club run should be significantly shortened. Target 45-60min easy spin (zone 1-2, <50 TSS) with a 10-15min transition run only. Skip the tri club run or make it social-only pace to honor the recovery week intent.",
+  "weekProgress": "At 74 TSS of 260 target (28% complete) after day 1, you're tracking too high for a recovery week where you should be at ~15% daily accumulation. Missing swim discipline entirely in the last 7 days despite typical Mon/Wed/Fri schedule. Only 5 days remaining to complete week without overloading.",
+  "keyInsight": "You're not executing the recovery week protocol\u2014yesterday's run alone consumed the TSS you should accumulate over 2-3 days during a 35% volume reduction phase.",
   "alerts": [
-    "Sleep inconsistent - 3 nights below 7h in last 7 days",
-    "SpO2 dropped to 91% on May 19 (likely night sweating)",
-    "Only 1 swim in last 7 days despite 3/week target",
-    "Zero bike TSS logged this recovery week yet"
+    "Last night's sleep score of 40 with 0min REM is critically poor\u2014major recovery concern",
+    "SpO2 dropped to 92% last night, lowest in 7-day window",
+    "No swim workouts since 5/22 (4 days ago), breaking your typical Mon/Wed/Fri pattern",
+    "Recovery week TSS pacing too aggressive\u201428% complete after day 1 of 7",
+    "RHR elevated to 60 from 55 average"
   ],
   "positives": [
-    "Last night excellent recovery: 80 sleep score, 8.1h duration, good REM (89min)",
-    "Consistent run HR averaging 146-149 bpm shows disciplined pacing across multiple sessions",
-    "11mi long run on May 22 (TSS 119) demonstrates building endurance capacity",
-    "RHR stable 54-58 range shows good cardiovascular adaptation"
+    "Consistent HR control at 146 across recent runs shows strong aerobic base",
+    "4 brick workouts completed in training block demonstrates race-specific preparation",
+    "Total bike TSS of 210 building good foundation toward race power targets of 145-152w"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-05-25",
-  "daysToRace": 55,
+  "recoveryScore": 3,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-05-26",
+  "daysToRace": 54,
   "currentWeek": 6,
   "weekPhase": "Recovery"
 }
