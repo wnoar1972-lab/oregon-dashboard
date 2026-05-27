@@ -1,27 +1,25 @@
 {
-  "date": "May 26, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "7.1-mile run at HR 146 produced 74 TSS\u2014a solid effort that represents 28% of your weekly target in a single session. This is problematic for a recovery week where volume should drop 35% and intensity should be eliminated. Running at this HR and generating this much stress contradicts the recovery week protocol when your body needs adaptation time.",
-  "todayRecommendation": "Today should be an easy 30-40 minute ROUVY session at <120 HR (Zone 1-2 only), followed by a very short 10-minute brick run at conversational pace. Skip the tri club run or keep it extremely social\u2014your sleep score of 40 last night with 0 minutes REM indicates your body is struggling to recover.",
-  "weekProgress": "Week TSS is 74 of 260 target (28% complete) after just one workout, putting you on pace to significantly exceed your recovery week goal. For a 35% volume reduction week, you should be targeting ~170 TSS total, not 260. No brick workout completed yet this week, and no swim sessions logged in the last 4 days despite having scheduled pool swims.",
-  "keyInsight": "Last night's catastrophic sleep (score 40, 0 REM, 92% SpO2) following yesterday's hard run is a clear signal you're not respecting the recovery week protocol\u2014dial back immediately or risk compromising the next training block.",
+  "date": "May 27, 2026",
+  "overallStatus": "Recovery Mode",
+  "statusColor": "blue",
+  "yesterdayAnalysis": "Easy 3.7mi recovery run at HR 109 generating 17 TSS \u2014 appropriately low intensity for a recovery week. This follows Sunday's harder 7.1mi run (TSS 74, HR 146), so the conservative effort aligns perfectly with the 35% volume reduction protocol. Heart rate discipline was excellent, staying well below aerobic threshold.",
+  "todayRecommendation": "Execute today's scheduled ROUVY bike + brick + swim per typical Wednesday protocol, but maintain recovery week discipline with reduced duration and no intensity work. Target ~30-40 TSS on the bike, keep brick run to 10-15 minutes easy, and focus on technique in the swim rather than volume.",
+  "weekProgress": "Week tracking at 48% TSS completion (126 of 260 target) with 4 days remaining including today \u2014 slightly ahead of pace for a recovery week. Discipline balance is good with bike, run, and swim represented, but no brick workout yet this week despite typical Wed/Tue brick schedule. Saturday's long ride and Sunday's long run will be key to hitting weekly target while respecting recovery protocols.",
+  "keyInsight": "Sleep quality has been inconsistent (score 64 last night, 40 Monday night with zero REM) during a recovery week when adaptation should be occurring \u2014 prioritize sleep hygiene tonight and consider earlier bedtime to support physiological recovery.",
   "alerts": [
-    "Critical: 0 minutes REM sleep last night with sleep score 40",
-    "Yesterday's run TSS too high for recovery week (74 TSS = 28% of weekly target)",
-    "No swim workouts in 4 days\u2014missing discipline consistency",
-    "On pace to exceed recovery week TSS target by 50%+",
-    "SpO2 dropped to 92% last night"
+    "No brick workout completed yet this week (typically Tue/Wed)",
+    "Sleep quality compromised: 64 score last night, 40 Monday with 0min REM",
+    "RHR elevated to 58 (up from 55-56 range earlier in week)"
   ],
   "positives": [
-    "7-day average SpO2 of 94.1% remains solid overall",
-    "Completed 11-mile run on 5/22 showing strong run fitness building",
-    "Resting HR averaging 55-58 indicates good base fitness"
+    "Excellent heart rate discipline on recovery runs (HR 109 yesterday vs 146 on Sunday)",
+    "7-day avg SpO2 at 94.1% with zero nights below 92% threshold",
+    "TSS pacing appropriate for recovery week \u2014 maintaining volume discipline"
   ],
-  "recoveryScore": 3,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-05-26",
-  "daysToRace": 54,
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-05-27",
+  "daysToRace": 53,
   "currentWeek": 6,
   "weekPhase": "Recovery"
 }

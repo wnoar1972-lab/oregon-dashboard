@@ -515,5 +515,27 @@
     "avgHR": 146.0,
     "distance": 11448.5,
     "duration": 3870.0
+  },
+  {
+    "date": "2026-05-26",
+    "title": "Carlsbad Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 17.0,
+    "np": 0,
+    "avgHR": 109.0,
+    "distance": 5952.7,
+    "duration": 2631.0
+  },
+  {
+    "date": "2026-05-27",
+    "title": "ROUVY - IRONMAN 70.3 Gulf Coast 2021 40k",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 35.0,
+    "np": 0,
+    "avgHR": 115.0,
+    "distance": 40000.1,
+    "duration": 4620.0
   }
 ]
