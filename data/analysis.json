@@ -2,19 +2,20 @@
   "date": "May 27, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Easy 3.7mi recovery run at HR 109 generating 17 TSS \u2014 appropriately low intensity for a recovery week. This follows Sunday's harder 7.1mi run (TSS 74, HR 146), so the conservative effort aligns perfectly with the 35% volume reduction protocol. Heart rate discipline was excellent, staying well below aerobic threshold.",
-  "todayRecommendation": "Execute today's scheduled ROUVY bike + brick + swim per typical Wednesday protocol, but maintain recovery week discipline with reduced duration and no intensity work. Target ~30-40 TSS on the bike, keep brick run to 10-15 minutes easy, and focus on technique in the swim rather than volume.",
-  "weekProgress": "Week tracking at 48% TSS completion (126 of 260 target) with 4 days remaining including today \u2014 slightly ahead of pace for a recovery week. Discipline balance is good with bike, run, and swim represented, but no brick workout yet this week despite typical Wed/Tue brick schedule. Saturday's long ride and Sunday's long run will be key to hitting weekly target while respecting recovery protocols.",
-  "keyInsight": "Sleep quality has been inconsistent (score 64 last night, 40 Monday night with zero REM) during a recovery week when adaptation should be occurring \u2014 prioritize sleep hygiene tonight and consider earlier bedtime to support physiological recovery.",
+  "yesterdayAnalysis": "Easy 3.7mi run at HR 109 averaging TSS 17 \u2014 perfectly executed recovery run with excellent heart rate discipline. This low-intensity effort is exactly what's needed during a 35% volume reduction week. The conservative HR control shows good adaptation to the recovery week protocol.",
+  "todayRecommendation": "Execute planned Wed brick: ROUVY bike + short run transition + swim. Keep bike power conversational (sub-140w), brick run under 15min easy effort, swim technique-focused. Total target TSS ~60-70 to stay within recovery week parameters.",
+  "weekProgress": "Week TSS at 126 of 260 (48% complete) through Day 3 is appropriate for recovery week pacing. Bike and run disciplines active, but no brick or swim logged yet this week. With 4 days remaining including long weekend sessions, on track to hit modified targets if typical schedule holds.",
+  "keyInsight": "Sleep quality inconsistent (64 score last night, 40 two nights ago with 0min REM) \u2014 prioritize sleep hygiene during recovery week as this is when adaptation and healing occur, especially critical given Perthes condition.",
   "alerts": [
-    "No brick workout completed yet this week (typically Tue/Wed)",
-    "Sleep quality compromised: 64 score last night, 40 Monday with 0min REM",
-    "RHR elevated to 58 (up from 55-56 range earlier in week)"
+    "No brick workout completed yet this week (typical Wed schedule)",
+    "No swim logged this week yet (0 of typical 3 sessions)",
+    "Sleep score 64 last night with only 57min REM \u2014 below optimal recovery",
+    "RHR elevated to 58 (vs 55-56 baseline) \u2014 monitor fatigue"
   ],
   "positives": [
-    "Excellent heart rate discipline on recovery runs (HR 109 yesterday vs 146 on Sunday)",
-    "7-day avg SpO2 at 94.1% with zero nights below 92% threshold",
-    "TSS pacing appropriate for recovery week \u2014 maintaining volume discipline"
+    "Excellent HR discipline on recovery runs (109 yesterday, 109 on 5/26)",
+    "7-day SpO2 average 94.1% with zero nights below 92% threshold",
+    "TSS pacing appropriate for recovery week \u2014 no junk miles or unplanned intensity"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
