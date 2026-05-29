@@ -2,20 +2,19 @@
   "date": "May 29, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Solid 1.2-mile open water swim with 38 TSS completed in San Diego. This aligns perfectly with your recovery week protocol and Friday swim schedule. The open water exposure is valuable race-specific training for the swim discipline, particularly with Oregon 70.3 just 51 days out.",
-  "todayRecommendation": "Today is Friday swim day. Given you already completed yesterday's open water swim (likely a scheduling shift), consider a light technique-focused pool session or complete rest to preserve energy for tomorrow's long ride. You're at 63% of weekly TSS target with 2 days remaining.",
-  "weekProgress": "Week tracking well at 164/260 TSS (63% complete) with excellent discipline distribution across swim, bike, and run. Recovery week volume reduction is appropriate. You still need ~96 TSS over the next 2 days, which aligns with your typical Sat long ride (50-60mi) and Sun long run pattern.",
-  "keyInsight": "Sleep quality has been inconsistent this week (avg 67/100, ranging 40-80) with particularly poor REM sleep on 5/26 (0 min) \u2014 prioritize sleep hygiene tonight before tomorrow's long ride.",
+  "yesterdayAnalysis": "Strong 1.2-mile open water swim (TSS 38) completed in San Diego, excellent discipline work for this recovery week. This represents solid threshold volume without the HR monitoring typical of pool work. The session appropriately maintains swim fitness while respecting the 35% volume reduction protocol for this recovery week.",
+  "todayRecommendation": "Execute scheduled pool swim with technique focus and moderate intensity, targeting 25-30 TSS to stay within recovery week parameters. Keep effort conversational, prioritize form over volume, and use this session to prepare for tomorrow's long ride.",
+  "weekProgress": "Week tracking at 63% TSS completion (164 of 260) with 2 days remaining including long ride Saturday and long run Sunday. Discipline balance is solid: swim work progressing well, bike volume appropriate for recovery week at reduced TSS, run load lighter than typical. Missing the typical Wed brick workout, but recovery week protocol supersedes normal patterns.",
+  "keyInsight": "Sleep quality remains inconsistent (67/100 avg) with variable REM sleep disrupting full recovery during a designated recovery week\u2014prioritize sleep hygiene tonight before Saturday's long ride.",
   "alerts": [
-    "Sleep score averaged only 67/100 this week with high variability",
-    "REM sleep was 0 minutes on night of 5/26",
-    "No brick workout completed yet this recovery week"
+    "Sleep score averaging only 67/100 this week with highly variable REM (0-102 min)",
+    "No brick workout completed this week\u2014acceptable given recovery week protocol",
+    "RHR elevated at 57-60 range vs typical baseline\u2014monitor for overtraining"
   ],
   "positives": [
-    "Strong 7.1-mile run on 5/25 with good HR control (146 avg)",
-    "Excellent open water swim yesterday maintains race-specific skills",
-    "Recovery week volume discipline being followed appropriately",
-    "SpO2 stable at 94.6% avg with no nights below 92%"
+    "Excellent open water swim execution maintaining race-specific skills",
+    "Disciplined adherence to recovery week volume reduction (35% drop)",
+    "Strong 7.1-mile run on 5/25 (TSS 74, HR 146) showed solid aerobic fitness before recovery phase"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
