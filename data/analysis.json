@@ -1,25 +1,26 @@
 {
-  "date": "May 28, 2026",
+  "date": "May 29, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Completed a 24.9mi ROUVY session at very low intensity (TSS 35, HR 115 avg) simulating the Gulf Coast 70.3 course. This aligns perfectly with recovery week protocol\u2014no intensity, just aerobic maintenance. The conservative HR suggests good discipline in holding back during the recovery phase.",
-  "todayRecommendation": "Execute your scheduled 6mi run at easy conversational pace, targeting HR <140 to stay within recovery week parameters. With 126 TSS banked (48% of weekly target), today should add ~40-50 TSS to stay on track for the 260 goal without compromising recovery adaptation.",
-  "weekProgress": "Week is tracking well at 126/260 TSS (48%) through day 3, with typical schedule having big volume days (long ride Saturday, long run Sunday) still ahead. Discipline balance is appropriate for recovery week\u20141 bike, 3 runs completed. Missing swim this week so far; Friday's scheduled swim will be important to maintain feel.",
-  "keyInsight": "Sleep quality remains inconsistent (67/100 avg, poor REM on 5/26 with 0 minutes) which may be limiting recovery adaptation\u2014prioritize sleep hygiene during this critical recovery week to maximize training absorption.",
+  "yesterdayAnalysis": "Solid 1.2-mile open water swim with 38 TSS completed in San Diego. This aligns perfectly with your recovery week protocol and Friday swim schedule. The open water exposure is valuable race-specific training for the swim discipline, particularly with Oregon 70.3 just 51 days out.",
+  "todayRecommendation": "Today is Friday swim day. Given you already completed yesterday's open water swim (likely a scheduling shift), consider a light technique-focused pool session or complete rest to preserve energy for tomorrow's long ride. You're at 63% of weekly TSS target with 2 days remaining.",
+  "weekProgress": "Week tracking well at 164/260 TSS (63% complete) with excellent discipline distribution across swim, bike, and run. Recovery week volume reduction is appropriate. You still need ~96 TSS over the next 2 days, which aligns with your typical Sat long ride (50-60mi) and Sun long run pattern.",
+  "keyInsight": "Sleep quality has been inconsistent this week (avg 67/100, ranging 40-80) with particularly poor REM sleep on 5/26 (0 min) \u2014 prioritize sleep hygiene tonight before tomorrow's long ride.",
   "alerts": [
-    "No swim workouts yet this week (Friday swim is critical)",
-    "Sleep scores below 70 for 5 of last 7 nights",
-    "Very low REM sleep on 5/26 (0 minutes) despite 7.6h duration"
+    "Sleep score averaged only 67/100 this week with high variability",
+    "REM sleep was 0 minutes on night of 5/26",
+    "No brick workout completed yet this recovery week"
   ],
   "positives": [
-    "Excellent discipline maintaining low intensity during recovery week (HR 115 on bike, well below threshold)",
-    "Strong 11mi run on 5/22 (TSS 119) shows good endurance before recovery week",
-    "SpO2 stable at 94.4% avg with no nights below 92%"
+    "Strong 7.1-mile run on 5/25 with good HR control (146 avg)",
+    "Excellent open water swim yesterday maintains race-specific skills",
+    "Recovery week volume discipline being followed appropriately",
+    "SpO2 stable at 94.6% avg with no nights below 92%"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-05-28",
-  "daysToRace": 52,
+  "generatedAt": "2026-05-29",
+  "daysToRace": 51,
   "currentWeek": 6,
   "weekPhase": "Recovery"
 }
