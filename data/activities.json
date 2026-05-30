@@ -548,5 +548,16 @@
     "avgHR": 0,
     "distance": 1891.6,
     "duration": 2922.0
+  },
+  {
+    "date": "2026-05-29",
+    "title": "Coronado Walking",
+    "type": "Walk",
+    "disc": "run",
+    "tss": 3.0,
+    "np": 0,
+    "avgHR": 82.0,
+    "distance": 1963.5,
+    "duration": 1516.0
   }
 ]
