@@ -559,5 +559,16 @@
     "avgHR": 82.0,
     "distance": 1963.5,
     "duration": 1516.0
+  },
+  {
+    "date": "2026-05-30",
+    "title": "ROUVY - IRONMAN South Africa African Cha",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 70.0,
+    "np": 0,
+    "avgHR": 128.0,
+    "distance": 59767.4,
+    "duration": 7138.0
   }
 ]
