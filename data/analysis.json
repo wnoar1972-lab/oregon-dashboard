@@ -2,22 +2,21 @@
   "date": "June 01, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday delivered solid work with a 1.1mi pool swim (TSS 23, HR 121) and 5.2mi run (TSS 45, HR 139). The run heart rate of 139 suggests good aerobic efficiency, and the combined TSS of 68 shows appropriate volume for a Sunday. However, this run was likely the scheduled long run, and 5.2 miles falls short of typical long run volume 48 days out from your A-race.",
-  "todayRecommendation": "Execute Monday swim as planned, but keep intensity moderate given last night's poor sleep quality (score 40, zero REM sleep, elevated RHR of 60). Prioritize technique work over high-intensity intervals to avoid digging a recovery hole at the start of this critical 460 TSS week.",
-  "weekProgress": "Week 7 is just beginning with 0 of 460 TSS completed. This is your peak phase with specific Oregon course simulation work planned (NP 145-152w), but you haven't logged a brick workout since May 24 (8 days ago). With only 6 days remaining and Tuesday's ROUVY+brick session crucial, you need strong execution this week to hit race-specific adaptations.",
-  "keyInsight": "Sleep quality has crashed (40 and 48 scores with zero REM on two consecutive nights) while entering your most demanding training week\u2014recovery management is now the limiting factor for hitting this week's 460 TSS target.",
+  "yesterdayAnalysis": "Solid swim-run combination yesterday with 68 combined TSS. The 5.2-mile run at HR 139 shows good aerobic effort. Pool swim at 1.1 miles was moderate volume. Good discipline balance, but yesterday's session completed last week's training block rather than contributing to this week's 460 TSS target.",
+  "todayRecommendation": "Execute today's planned bike + brick run focusing on race-specific NP 145-152w (66-69% FTP). This is week 7 of 10 in peak phase\u2014time to dial in race intensity on the bike and test transition running at sub-9:10 pace off controlled watts. Target 80-100 TSS for this session to make progress toward the 460 weekly goal.",
+  "weekProgress": "Week just starting\u20140 of 460 TSS complete (0%). With 6 training days ahead including 3 brick sessions, Saturday long bike + swim, and Sunday long run, the structure is solid but requires disciplined execution. Need approximately 77 TSS per day average to hit target.",
+  "keyInsight": "Sleep quality is compromised (59/100 avg, last night only 40 score with 0min REM) heading into peak training week\u2014monitor fatigue closely and prioritize sleep hygiene tonight to support the demanding brick schedule ahead.",
   "alerts": [
-    "Critical sleep deficit: 0min REM last night, score 40/100",
-    "No brick workouts in 8 days (last: May 24)",
-    "7-day average sleep score 59/100\u2014well below optimal",
-    "Long run yesterday only 5.2mi\u2014light for peak phase",
-    "Week 7 peak phase starting with compromised recovery"
+    "Last night sleep score: 40/100 with 0min REM\u2014significant recovery deficit",
+    "Week TSS at 0%\u2014need strong start today to stay on track for 460 target",
+    "7-day sleep average 59/100\u2014suboptimal recovery trending",
+    "SpO2 94.3% average\u2014monitor breathing quality"
   ],
   "positives": [
-    "Run HR of 139 for 5.2mi shows strong aerobic efficiency",
-    "SpO2 averaging 94.3% with no nights below 92%",
-    "Consistent training execution through last 7 days (6 workouts)",
-    "Bike TSS on May 30 (70 TSS, 37.1mi) shows good endurance foundation"
+    "4 brick workouts completed in build phase\u2014good race-specific preparation",
+    "Yesterday's run HR 139 shows controlled aerobic pacing",
+    "May 30 bike session 70 TSS at HR 128\u2014solid endurance work at race watts",
+    "Perthes hip stable\u2014continuing to compete successfully"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
