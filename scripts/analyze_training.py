@@ -55,6 +55,39 @@ WEEK_FOCUS   = {
     10:"Race week — arrive Salem Jul 13, race Jul 19"
 }
 
+# ── WEEKLY SCHEDULE (default template + week-specific overrides) ──────────────
+# DEFAULT_SCHEDULE is the recurring template. To change a single week, add a
+# block to WEEK_OVERRIDES keyed by the MONDAY (ISO date) of that week. Any week
+# not listed falls back to DEFAULT_SCHEDULE. Keep this in sync with the
+# WEEK_OVERRIDES block in index.html so the dashboard and AI coaching match.
+DEFAULT_SCHEDULE = {
+    "Monday":    "Pool swim 3,000m aerobic",
+    "Tuesday":   "ROUVY bike + brick run + tri club run (6-7mi)",
+    "Wednesday": "ROUVY bike + brick run + pool swim 3,000m",
+    "Thursday":  "Run 6mi easy-moderate",
+    "Friday":    "Pool swim 3,000m aerobic",
+    "Saturday":  "Long ride 50-60mi outdoor + optional swim",
+    "Sunday":    "Long run 9-11mi + open water swim",
+}
+
+WEEK_OVERRIDES = {
+    "2026-06-01": {
+        "Monday":    "Bike ride + brick run",
+        "Tuesday":   "Swim + Run Club run",
+        "Wednesday": "Bike ride + brick run",
+        "Thursday":  "Run",
+        "Friday":    "Bike ride + brick run",
+        "Saturday":  "Long bike ride + swim",
+        "Sunday":    "Long run",
+    },
+}
+
+# Monday (ISO) of the current week — used to look up any override for this week
+_this_monday = (TODAY - timedelta(days=TODAY.weekday())).strftime("%Y-%m-%d")
+this_week_schedule = WEEK_OVERRIDES.get(_this_monday, DEFAULT_SCHEDULE)
+today_planned = this_week_schedule.get(DAY_OF_WEEK, "see weekly schedule")
+schedule_line = ", ".join(f"{d[:3]}={s}" for d, s in this_week_schedule.items())
+
 # ── FIND YESTERDAY AND RECENT WORKOUTS ───────────────────────────────────────
 yesterday = (TODAY - timedelta(days=1)).strftime("%Y-%m-%d")
 last7days = [(TODAY - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(7)]
@@ -129,7 +162,8 @@ CURRENT TRAINING STATUS:
 - Week {current_week} of 10 ({WEEK_PHASES.get(current_week, 'Build')} phase)
 - Week focus: {WEEK_FOCUS.get(current_week, '')}
 - Week TSS: {week_actual} of {week_target} target ({week_pct}% complete)
-- Typical weekly schedule: Mon=swim, Tue=ROUVY bike+brick+tri club run, Wed=ROUVY bike+brick+swim, Thu=6mi run, Fri=swim, Sat=long ride 50-60mi, Sun=long run+open water swim
+- This week's schedule: {schedule_line}
+- TODAY ({DAY_OF_WEEK}) planned session: {today_planned}
 - Total activities in build: {overall.get('totalActs', 0)} ({total_bike} bike, {total_swim} swim, {total_run} run)
 - Total bike TSS: {total_bike_tss}
 - Brick workouts completed: {len(brick_days)} (dates: {', '.join(brick_days) if brick_days else 'none yet'})
@@ -145,6 +179,8 @@ LAST 7 NIGHTS SLEEP:
 7-day avg sleep score: {avg_score}/100
 7-day avg SpO2: {avg_spo2}%
 Nights below 92% SpO2: {low_spo2_nights} (note: may be affected by night sweating)
+
+When writing todayRecommendation, base it on the TODAY planned session listed above — do not assume a different workout.
 
 Please provide a structured daily coaching analysis in JSON format with exactly these fields:
 
