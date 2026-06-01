@@ -1,26 +1,26 @@
 {
-  "date": "May 31, 2026",
+  "date": "June 01, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday's 37.1mi ROUVY ride delivered 70 TSS at low HR (128 bpm), appropriate for recovery week. However, this was Saturday's workout done a day late, disrupting the typical Sat=long ride/Sun=long run schedule. The conservative effort aligns well with the 35% volume reduction target for this recovery week.",
-  "todayRecommendation": "Complete a short easy run (30-45min, HR <130) plus open water swim if possible to maintain Sunday routine and hit weekly TSS target of 260 (currently at 237, need 23 TSS). Keep both sessions easy and recovery-focused given last night's poor sleep score of 48.",
-  "weekProgress": "Week is at 91% of TSS target (237/260) with only today remaining. Discipline balance is severely disrupted: only 2 bikes, 1 swim, and 3 runs completed versus typical 3-4 bikes, 3+ swims, 4+ runs. No brick workouts this recovery week, which is appropriate given the volume reduction focus.",
-  "keyInsight": "Last night's sleep score of 48 with elevated RHR (58) and minimal REM (43min) suggests inadequate recovery despite being in a designated recovery week\u2014prioritize sleep quality and consider light activity only today.",
+  "yesterdayAnalysis": "Sunday completed a solid double with 1.1mi pool swim (TSS 23, HR 121) and 5.2mi run (TSS 45, HR 139). Total daily TSS of 68 is appropriate for a Sunday, though notably lighter than typical long run days. HR averaging 139 on the run suggests good aerobic control, staying well below race intensity.",
+  "todayRecommendation": "Today is Monday swim day per your schedule. Keep this aerobic and technique-focused given the poor sleep scores (40/100 last night, 48 the night before). Consider 1500-2000m with drill work rather than intensity, and monitor fatigue levels closely.",
+  "weekProgress": "Week 7 begins at 0 of 460 TSS target. This is peak phase week requiring race-specific Oregon ROUVY sim work at NP 145-152w plus brick sessions. Only 4 brick workouts completed in entire build (last one May 24) - need to prioritize Tuesday and Wednesday brick opportunities this week to dial in race-specific execution.",
+  "keyInsight": "Sleep quality has crashed with back-to-back scores of 40 and 48, showing 0min REM last night and elevated RHR at 60 - this is your body signaling recovery debt during peak phase when execution quality matters most.",
   "alerts": [
-    "Sleep score 48 last night\u2014lowest of the week with only 43min REM",
-    "Weekly schedule disrupted\u2014Saturday ride done Sunday, missing typical Sunday long run",
-    "Swim volume very low\u2014only 1 session this week vs typical 3",
-    "Run volume light\u20143 sessions vs typical 4+"
+    "Critical: 0min REM sleep last night with sleep score 40/100",
+    "No brick workouts in past 7 days (last: May 24)",
+    "7-day avg sleep score 59/100 - significantly below optimal",
+    "Only 8 bike sessions total in build with 48 days to Oregon 70.3"
   ],
   "positives": [
-    "TSS tracking well at 91% with one day remaining in recovery week",
-    "Bike efforts appropriately conservative (HR 115-128) matching recovery week intent",
-    "Most nights showing good SpO2 (94.3% avg) with no drops below 92%"
+    "HR control excellent on yesterday's run at 139 avg - staying well within aerobic zones",
+    "SpO2 maintaining above 92% threshold despite sleep quality issues",
+    "Conservative pacing discipline evident in recent training - mirroring successful Oceanside strategy"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-05-31",
-  "daysToRace": 49,
-  "currentWeek": 6,
-  "weekPhase": "Recovery"
+  "generatedAt": "2026-06-01",
+  "daysToRace": 48,
+  "currentWeek": 7,
+  "weekPhase": "Peak"
 }
