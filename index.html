@@ -674,6 +674,22 @@ var WEEKLY_SCHEDULE = {
   6:{rest:false,planned:[{disc:'bike',label:'Long ride',note:'50-60mi outdoor'},{disc:'swim',label:'Pool or OW swim',note:'optional'}]}
 };
 
+// ── WEEK-SPECIFIC SCHEDULE OVERRIDES ────────────────────────────────────────
+// Keyed by the Monday (ISO date) of the week. Any week/day not listed here
+// falls back to WEEKLY_SCHEDULE above. To set a future week, add another
+// 'YYYY-MM-DD' block with the same day-of-week structure (0=Sun … 6=Sat).
+var WEEK_OVERRIDES = {
+  '2026-06-01':{
+    1:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'with brick'},{disc:'brick',label:'Brick run',note:'off the bike'}]},
+    2:{rest:false,planned:[{disc:'swim',label:'Swim',note:'morning'},{disc:'run',label:'Run Club',note:'group run'}]},
+    3:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'with brick'},{disc:'brick',label:'Brick run',note:'off the bike'}]},
+    4:{rest:false,planned:[{disc:'run',label:'Run',note:'steady'}]},
+    5:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'with brick'},{disc:'brick',label:'Brick run',note:'off the bike'}]},
+    6:{rest:false,planned:[{disc:'bike',label:'Long bike ride',note:'endurance'},{disc:'swim',label:'Swim',note:'aerobic'}]},
+    0:{rest:false,planned:[{disc:'run',label:'Long run',note:'endurance'}]}
+  }
+};
+
 var recapWeekOffset = 0;
 
 function buildWeeklyRecap(){
@@ -732,6 +748,9 @@ function buildWeeklyRecap(){
   var pillColors = {swim:'dpill-swim',bike:'dpill-bike',run:'dpill-run',brick:'dpill-brick',rest:'dpill-rest'};
   var pillIcons  = {swim:'🏊',bike:'🚴',run:'🏃',brick:'⚡',rest:'😴'};
 
+  // Active schedule for this week (override if present, else template)
+  var weekOverride = WEEK_OVERRIDES[weekStart] || null;
+
   // Build day rows
   var dayRowsHtml = weekDates.map(function(d){
     var ds = d.toISOString().slice(0,10);
@@ -744,7 +763,7 @@ function buildWeeklyRecap(){
 
     var acts = actsByDate[ds] || [];
     var dayTSS = Math.round(acts.reduce(function(s,a){ return s+a.tss; },0));
-    var sched = WEEKLY_SCHEDULE[dow];
+    var sched = (weekOverride && weekOverride[dow]) ? weekOverride[dow] : WEEKLY_SCHEDULE[dow];
 
     var pillsHtml = '';
     if(acts.length > 0){
@@ -866,9 +885,17 @@ function buildDashboard(){
   const elLU = document.getElementById('lastUpdated'); if(elLU) elLU.textContent = overall.lastUpdated || 'Not yet synced';
   const elAC = document.getElementById('sc-acts'); if(elAC) elAC.textContent = overall.totalActs;
 
-  // Summary stats
-  var weeksWithData = Math.max(weeks.filter(w=>w.actual>0).length, overall.weeksComplete||0);
-  var curWeekNum = overall.currentWeek || 4;
+  // Summary stats — current week & weeks completed derived from the calendar (self-updating)
+  // Anchor: Week 7 of the build begins Monday Jun 1, 2026. Each Monday rolls forward one week.
+  // "Weeks logged" = every week fully completed up to now (incl. weeks 1–2 whose data never synced).
+  var _wkAnchorMon = new Date('2026-06-01T00:00:00');
+  var _thisMon = new Date(today);
+  var _td = today.getDay();
+  _thisMon.setDate(today.getDate() + (_td===0 ? -6 : 1 - _td));
+  _thisMon.setHours(0,0,0,0);
+  var curWeekNum = 7 + Math.round((_thisMon - _wkAnchorMon) / 6048e5);
+  curWeekNum = Math.max(1, Math.min(10, curWeekNum));
+  var weeksWithData = Math.max(0, curWeekNum - 1);
   var curWeek = weeks[curWeekNum-1] || weeks[3];
   var avgNP = overall.avgBikeNP || 0;
 
