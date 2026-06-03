@@ -617,6 +617,17 @@
   },
   {
     "date": "2026-06-02",
+    "title": "Carlsbad Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 69.0,
+    "np": 0,
+    "avgHR": 145.0,
+    "distance": 11297.6,
+    "duration": 3760.0
+  },
+  {
+    "date": "2026-06-02",
     "title": "Pool Swim",
     "type": "Swim",
     "disc": "swim",
@@ -625,5 +636,16 @@
     "avgHR": 108.0,
     "distance": 2550.0,
     "duration": 3425.0
+  },
+  {
+    "date": "2026-06-03",
+    "title": "ROUVY - IRONMAN 70.3 Taupo 2021 40 km",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 38.0,
+    "np": 0,
+    "avgHR": 124.0,
+    "distance": 40000.2,
+    "duration": 4473.0
   }
 ]
