@@ -2,19 +2,19 @@
   "date": "June 04, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Wednesday completed 86 TSS across three bike sessions totaling 60.7 miles, with mixed quality. The outdoor cycle logged 0 TSS (data issue?), while the ROUVY Taupo course at HR 124 and standalone ride at HR 135 provided moderate intensity work. However, the planned brick run was missing \u2014 this breaks the week's race-specific brick emphasis with Oregon 70.3 just 45 days out.",
-  "todayRecommendation": "Execute today's planned run session with focus on sub-9:10 pace tolerance despite compromised sleep (score 66). Target 5-7 miles at easy-to-moderate effort (HR 135-145) to accumulate TSS without overreaching given the sleep debt accumulation this week.",
-  "weekProgress": "Week is 55% complete on TSS (251/460) with 3 days remaining, requiring 70 TSS/day average to hit target. Critical gap: only 1 brick run completed this week (Monday) despite plan calling for bricks Mon/Wed/Fri \u2014 race-specific preparation is falling short in the peak phase.",
-  "keyInsight": "Sleep quality collapse (avg 58/100 over 7 days, four nights below 50) is undermining training adaptation in peak phase with three consecutive nights of poor REM/deep sleep \u2014 recovery protocols need immediate attention.",
+  "yesterdayAnalysis": "Wednesday delivered 86 TSS across multiple bike sessions totaling 42.8 miles, including the Oregon-relevant Taupo ROUVY sim. However, the schedule called for a brick run following the bike work, which was not completed. Heart rates were appropriately controlled (124-135 bpm) for the race-specific intensity week, but missing the brick component undermines the race-simulation focus.",
+  "todayRecommendation": "Execute today's planned run session with focus on Z2 aerobic development and mechanical efficiency. Given the poor sleep quality (score 66, minimal REM at 36min) and consecutive training days, keep intensity conservative at MAF heart rate or below to avoid digging a recovery hole mid-peak week.",
+  "weekProgress": "Week tracking at 55% TSS completion (251/460) with 3 days remaining, requiring 70 TSS/day to hit target. Bike volume is strong with race-specific simulations, but missing 2 of 3 planned brick runs so far (Mon and Wed) is a critical gap during race-simulation week. Swim and run disciplines need attention to balance the week.",
+  "keyInsight": "Sleep quality has collapsed this week (avg 58/100, down from 75-78 peak scores) with severely disrupted REM patterns\u2014this is your biggest limiter right now, not fitness.",
   "alerts": [
-    "Wednesday brick run was skipped \u2014 only 1 of 3 planned bricks completed this week",
-    "Sleep score critically low: 5 of last 7 nights below 66, avg 58/100",
-    "REM sleep deficit: 0min on June 1, only 36min last night",
-    "Need 209 TSS over 3 remaining days (70/day avg) to hit weekly target"
+    "Sleep score critically low: 4 of last 5 nights below 50/100",
+    "REM sleep disrupted: only 36min last night, 0min on June 1st",
+    "Missing 2 of 3 brick runs this week despite race-sim focus",
+    "209 TSS needed over 3 remaining days to hit weekly target"
   ],
   "positives": [
-    "Bike consistency strong: 3 quality rides in last 4 days, maintaining race-specific effort zones",
-    "Tuesday Run Club 7mi at HR 145 showed solid aerobic capacity",
+    "Bike NP execution controlled and race-specific on ROUVY sims",
+    "Tuesday Run Club delivered solid 69 TSS at appropriate HR 145",
     "SpO2 stable at 94.1% 7-day average with no concerning drops"
   ],
   "recoveryScore": 4,
