@@ -1,26 +1,25 @@
 {
-  "date": "June 04, 2026",
+  "date": "June 05, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Wednesday delivered 86 TSS across multiple bike sessions totaling 42.8 miles, including the Oregon-relevant Taupo ROUVY sim. However, the schedule called for a brick run following the bike work, which was not completed. Heart rates were appropriately controlled (124-135 bpm) for the race-specific intensity week, but missing the brick component undermines the race-simulation focus.",
-  "todayRecommendation": "Execute today's planned run session with focus on Z2 aerobic development and mechanical efficiency. Given the poor sleep quality (score 66, minimal REM at 36min) and consecutive training days, keep intensity conservative at MAF heart rate or below to avoid digging a recovery hole mid-peak week.",
-  "weekProgress": "Week tracking at 55% TSS completion (251/460) with 3 days remaining, requiring 70 TSS/day to hit target. Bike volume is strong with race-specific simulations, but missing 2 of 3 planned brick runs so far (Mon and Wed) is a critical gap during race-simulation week. Swim and run disciplines need attention to balance the week.",
-  "keyInsight": "Sleep quality has collapsed this week (avg 58/100, down from 75-78 peak scores) with severely disrupted REM patterns\u2014this is your biggest limiter right now, not fitness.",
+  "yesterdayAnalysis": "Solid 6.0-mile run at moderate HR (144 bpm) contributing 56 TSS \u2014 good aerobic base work. This was a standalone run day as scheduled (Thursday), properly executed at controlled intensity. HR suggests good pace control without overextension, which aligns with building durability for the sub-9:10/mi race target.",
+  "todayRecommendation": "Complete today's planned bike + brick run as scheduled \u2014 focus on hitting race-specific NP 145-152w during the bike portion and executing a quality transition run. With 97 TSS still needed to reach the 460 target and only 2 days remaining, today's brick session is critical for both TSS accumulation and race simulation.",
+  "weekProgress": "Week is tracking at 79% of TSS target (363/460) with 2 days remaining including today. Brick workouts are on schedule with yesterday's completed (June 5th Avenue of the Giants + 1mi run). Need approximately 97 TSS over today and tomorrow to hit weekly target \u2014 Saturday's long bike + swim and today's brick should close this gap if executed as planned.",
+  "keyInsight": "Sleep quality remains concerningly low (59/100 avg, multiple nights sub-50) during peak phase training \u2014 this is the primary limiter to performance adaptation right now, not the training stimulus itself.",
   "alerts": [
-    "Sleep score critically low: 4 of last 5 nights below 50/100",
-    "REM sleep disrupted: only 36min last night, 0min on June 1st",
-    "Missing 2 of 3 brick runs this week despite race-sim focus",
-    "209 TSS needed over 3 remaining days to hit weekly target"
+    "Sleep quality critically low: 5 of last 7 nights scored below 50/100",
+    "97 TSS still needed with only 2 days remaining this week",
+    "REM sleep was 0 minutes on June 1st \u2014 significant recovery deficit"
   ],
   "positives": [
-    "Bike NP execution controlled and race-specific on ROUVY sims",
-    "Tuesday Run Club delivered solid 69 TSS at appropriate HR 145",
-    "SpO2 stable at 94.1% 7-day average with no concerning drops"
+    "Brick workout execution consistent: 7 completed including yesterday's session",
+    "Bike intensity well-controlled: recent rides averaging HR 125-135 bpm (race-appropriate zones)",
+    "Run volume building appropriately: 6mi and 7mi runs completed this week at controlled HR"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-04",
-  "daysToRace": 45,
+  "generatedAt": "2026-06-05",
+  "daysToRace": 44,
   "currentWeek": 7,
   "weekPhase": "Peak"
 }
