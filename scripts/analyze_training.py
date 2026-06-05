@@ -78,7 +78,7 @@ WEEK_OVERRIDES = {
         "Thursday":  "Run",
         "Friday":    "Bike ride + brick run",
         "Saturday":  "Long bike ride + swim",
-        "Sunday":    "Long run",
+        "Sunday":    "Easy long run — scaled to ~60-70% of planned, all easy aerobic; cut shorter or skip if morning RHR is still elevated",
     },
 }
 
