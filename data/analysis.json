@@ -1,21 +1,22 @@
 {
   "date": "June 05, 2026",
   "overallStatus": "Recovery Mode",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Solid 6.0mi run at moderate HR 144, delivering 56 TSS \u2014 good aerobic effort aligned with the week's scaled-back recovery protocol. This follows the plan's directive to keep sessions easy and aerobic given elevated fatigue markers. The consistent mid-140s HR shows controlled effort without pushing into threshold work.",
-  "todayRecommendation": "Execute today's planned bike + brick run at strictly easy aerobic intensity (HR <135 on bike, <145 on run). Given sleep debt (59/100 avg, RHR at 61 vs. baseline ~52-58), keep the brick run short (1.0-1.5mi max) to accumulate neuromuscular benefits without adding significant fatigue with 97 TSS still needed to hit weekly target.",
-  "weekProgress": "Week TSS at 79% (363/460) with 2 days remaining \u2014 on track to hit target. However, only 1 brick workout completed this week (June 5th) despite multiple planned sessions Mon/Wed/Fri. Swim volume absent this week (0 sessions vs. planned Sat swim). Running and cycling distribution reasonable but intensity appropriately scaled back.",
-  "keyInsight": "Sleep quality remains significantly compromised (5 of last 7 nights scored \u226450, averaging 59/100) indicating incomplete recovery \u2014 continue scaled sessions through weekend and prioritize sleep hygiene over hitting exact TSS targets.",
+  "statusColor": "blue",
+  "yesterdayAnalysis": "Solid 6.0mi run at 144 avg HR (56 TSS) \u2014 good aerobic pace work that stayed controlled. This was appropriate for the recovery-focused week adjustment. Heart rate discipline was excellent, keeping effort conversational and building run endurance without excessive stress.",
+  "todayRecommendation": "Execute today's planned bike + brick run at very conservative intensity \u2014 keep bike NP under 140w and brick run to 1 mile at easy pace. Morning RHR of 61 (up from recent lows of 52-59) confirms you're still in recovery mode from the previous training block.",
+  "weekProgress": "Week TSS at 363/460 (79%) with 2 days remaining reflects the appropriate scaling to 60-70% volume due to elevated RHR. You've completed 7 of 9 planned sessions so far this week including yesterday's brick. Discipline balance is good with bike, run, and one swim logged. The conservative approach is exactly right given sleep quality issues.",
+  "keyInsight": "Your sleep scores have been concerning (59 avg, multiple nights in 40s range) and RHR is elevated \u2014 this recovery week scaling is preventing overreach before your final taper into Oregon 70.3 in 44 days.",
   "alerts": [
-    "Sleep score averaged 59/100 over 7 days (5 nights \u226450)",
-    "RHR elevated to 61 (baseline range 52-58)",
-    "No swim sessions this week yet (Sat planned)",
-    "Only 1 brick completed this week vs. 3 planned (Mon/Wed/Fri)"
+    "Sleep quality poor: 5 of last 7 nights scored 50 or below",
+    "Morning RHR elevated at 61 (baseline appears to be 52-58)",
+    "Deep sleep and REM highly variable \u2014 0min REM on June 1st",
+    "Week TSS intentionally reduced but monitor fatigue closely"
   ],
   "positives": [
-    "Consistent HR control in aerobic zones showing disciplined execution of recovery protocol",
-    "Good volume consistency despite fatigue \u2014 6mi run yesterday, 19.9mi + brick on June 5th",
-    "Last night's sleep improved significantly (79 score, 8.6h duration, RHR dropped to 61)"
+    "Excellent heart rate discipline on recent runs (139-145 avg HR)",
+    "Brick workout consistency strong with 7th brick completed June 5th",
+    "Smart adaptation: scaling volume appropriately in response to recovery signals",
+    "Last night's sleep improved significantly (79 score, 8.6h duration)"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
