@@ -2,21 +2,21 @@
   "date": "June 06, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Friday's brick workout showed solid execution with a 19.9mi bike (TSS 39) at moderate HR 131 followed by a 1.0mi run off the bike. The open water swim (1.0mi) was a good race-specific session. However, the combined workload came after consecutive brick days (Mon/Wed/Fri), and HR 163 on the 1-mile brick run suggests significant fatigue accumulation.",
-  "todayRecommendation": "Proceed with today's long bike and swim but keep it strictly aerobic at 60-70% planned effort as prescribed. Morning RHR of 56 is acceptable, but sleep score dropped to 63 with very low REM (26min), signaling recovery debt from the week's race-intensity load.",
-  "weekProgress": "Week is at 395 of 460 TSS (86%) with one day remaining, putting you slightly behind target. The focus on race-specific intensity was well executed with 3 solid brick sessions this week at target power zones, but the accumulated fatigue is evident in degraded sleep quality and elevated brick run HRs.",
-  "keyInsight": "You've successfully completed the race-intensity work this week, but sleep quality has deteriorated (avg 56/100, minimal REM last night) \u2014 today's scaled aerobic session is critical for absorbing this training block before next week.",
+  "yesterdayAnalysis": "Yesterday delivered a solid brick session: 19.9mi ROUVY ride at 131 HR (very controlled), 1mi OWS, and 1mi brick run at elevated HR 163. Total TSS of 88 keeps you comfortably over weekly target. The run HR spike to 163 post-bike suggests good race-specific stress, though the effort was appropriately short at just 1 mile.",
+  "todayRecommendation": "Execute today's long bike + swim at 60-70% intensity as prescribed due to last night's poor sleep score (63, RHR 56). Monitor morning RHR before starting\u2014if elevated, consider cutting the bike short or making it purely aerobic recovery. You've already hit 112% of weekly TSS target, so backing off today protects tomorrow's long run.",
+  "weekProgress": "Week 7 complete at 515 TSS vs 460 target (112%)\u2014excellent adherence despite scaling recommendation. You've logged 3 brick workouts this week (6/1, 6/5, 6/6) hitting race-specific prep targets. Swim volume solid with 2 sessions. Run mileage lighter than typical but appropriate given brick focus and fatigue management in peak phase.",
+  "keyInsight": "Sleep quality has declined significantly this week (avg 56/100, lowest 40) with insufficient REM and deep sleep\u2014this is your primary limiter right now, not fitness, with Oregon 43 days out.",
   "alerts": [
-    "Sleep score 63 with only 26min REM last night",
-    "7-day avg sleep score low at 56/100",
-    "Slightly behind weekly TSS target (86% complete)",
-    "Three consecutive brick days (Mon/Wed/Fri) shows accumulation"
+    "Sleep score 63 last night with only 26min REM\u2014well below recovery needs",
+    "7-day average sleep score dangerously low at 56/100",
+    "Weekly TSS already 112% complete\u2014no need to push today",
+    "REM sleep critically low on 6/1 (0min) and 6/6 (26min)"
   ],
   "positives": [
-    "Executed 3 quality brick workouts this week at race-specific intensity",
-    "Bike power zones well controlled (HR 124-135 on steady rides)",
-    "Open water swimming integrated successfully (1.0mi yesterday)",
-    "Morning RHR remains stable at 56 despite training load"
+    "Excellent Oregon race simulation on 6/6: 55.7mi at 143 HR, 109 TSS\u2014dialed in race-specific pacing",
+    "Three quality brick sessions this week building neuromuscular adaptation for run-off-bike",
+    "Bike HR discipline outstanding: all sessions 124-143 bpm staying in aerobic zones",
+    "Week TSS target exceeded while following scaled intensity guidance"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
