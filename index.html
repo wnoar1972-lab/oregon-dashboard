@@ -745,7 +745,7 @@ function buildWeeklyRecap(){
   var runN  = weekActs.filter(function(a){ return a.disc==='run'; }).length;
   var brickDone = weekActs.some(function(a){ return a.disc==='bike'; }) && weekActs.some(function(a){ return a.disc==='run'; });
   var pct = weekTarget>0 ? Math.min(100,Math.round(totalTSS/weekTarget*100)) : 0;
-  var daysLeft = weekDates.filter(function(d){ return _isoLocal(d)>todayStr; }).length;
+  var daysLeft = weekDates.filter(function(d){ return _isoLocal(d)>=todayStr; }).length;
 
   var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   var wLabel = months[weekDates[0].getMonth()]+' '+weekDates[0].getDate()+' – '+months[weekDates[6].getMonth()]+' '+weekDates[6].getDate();
@@ -819,7 +819,7 @@ function buildWeeklyRecap(){
       +'<div class="rscard"><div class="rscard-lbl">TSS</div><div class="rscard-val">'+totalTSS+'</div><div class="rscard-sub">of '+weekTarget+' target</div></div>'
       +'<div class="rscard"><div class="rscard-lbl">Sessions</div><div class="rscard-val">'+(swimN+bikeN+runN)+'</div><div class="rscard-sub">swim '+swimN+' · bike '+bikeN+' · run '+runN+'</div></div>'
       +'<div class="rscard"><div class="rscard-lbl">Brick</div><div class="rscard-val" style="color:'+(brickDone?'#059669':'#dc2626')+'">'+(brickDone?'Yes':'No')+'</div><div class="rscard-sub">'+(brickDone?'completed':'due this week')+'</div></div>'
-      +'<div class="rscard"><div class="rscard-lbl">Days left</div><div class="rscard-val">'+daysLeft+'</div><div class="rscard-sub">in this week</div></div>'
+      +'<div class="rscard"><div class="rscard-lbl">Days left</div><div class="rscard-val">'+daysLeft+'</div><div class="rscard-sub">incl. today</div></div>'
     +'</div>'
     +'<div class="recap-prog-row"><span>Weekly progress</span><span>'+totalTSS+' / '+weekTarget+' TSS ('+pct+'%)</span></div>'
     +'<div class="recap-prog-bg"><div class="recap-prog-fill" style="width:'+pct+'%;background:'+(pct>=100?'#34d399':pct>=75?'#38bdf8':'#fb923c')+'"></div></div>'
