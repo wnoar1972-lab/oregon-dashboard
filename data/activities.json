@@ -683,6 +683,17 @@
   },
   {
     "date": "2026-06-05",
+    "title": "San Diego Open Water Swimming",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 32.0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 1576.0,
+    "duration": 2435.0
+  },
+  {
+    "date": "2026-06-05",
     "title": "Oceanside Running",
     "type": "Run",
     "disc": "run",

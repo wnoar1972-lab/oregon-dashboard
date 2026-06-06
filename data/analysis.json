@@ -1,27 +1,26 @@
 {
-  "date": "June 05, 2026",
+  "date": "June 06, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Solid 6.0mi run at 144 avg HR (56 TSS) \u2014 good aerobic pace work that stayed controlled. This was appropriate for the recovery-focused week adjustment. Heart rate discipline was excellent, keeping effort conversational and building run endurance without excessive stress.",
-  "todayRecommendation": "Execute today's planned bike + brick run at very conservative intensity \u2014 keep bike NP under 140w and brick run to 1 mile at easy pace. Morning RHR of 61 (up from recent lows of 52-59) confirms you're still in recovery mode from the previous training block.",
-  "weekProgress": "Week TSS at 363/460 (79%) with 2 days remaining reflects the appropriate scaling to 60-70% volume due to elevated RHR. You've completed 7 of 9 planned sessions so far this week including yesterday's brick. Discipline balance is good with bike, run, and one swim logged. The conservative approach is exactly right given sleep quality issues.",
-  "keyInsight": "Your sleep scores have been concerning (59 avg, multiple nights in 40s range) and RHR is elevated \u2014 this recovery week scaling is preventing overreach before your final taper into Oregon 70.3 in 44 days.",
+  "yesterdayAnalysis": "Yesterday delivered a solid brick workout: 19.9mi bike on ROUVY (TSS 39, HR 131) followed by 1mi brick run (TSS 17, HR 163), plus open water swim (TSS 32). The bike HR of 131 shows good aerobic control, though the run HR spiked to 163 - normal brick run response. Total daily TSS of 88 pushed cumulative week TSS to 395/460 (86%). This was your 6th brick workout in the build, maintaining race-specific neuromuscular patterning.",
+  "todayRecommendation": "Execute today's long bike + swim at strictly aerobic intensity given the poor sleep score (63) and elevated RHR (56 vs recent avg ~59). Target 60-70% of planned bike volume with HR capped at 130-135, and keep the swim easy technical work. Monitor morning RHR - if still elevated tomorrow, consider making Sunday's long run optional or very short.",
+  "weekProgress": "Week 7 sits at 395/460 TSS (86% complete) with 1 day remaining - you're tracking well but should finish conservative today given recovery signals. All three disciplines represented: 6 bike sessions (227 TSS), multiple runs with good brick integration, and consistent swim volume. The race-specific Oregon ROUVY sim work and NP 145-152w targets have been practiced effectively through the week.",
+  "keyInsight": "Sleep quality has crashed (score 63, minimal REM at 26min, elevated RHR 56) after a demanding brick day - today requires strict volume reduction and intensity discipline to avoid digging a recovery hole 43 days from Oregon.",
   "alerts": [
-    "Sleep quality poor: 5 of last 7 nights scored 50 or below",
-    "Morning RHR elevated at 61 (baseline appears to be 52-58)",
-    "Deep sleep and REM highly variable \u2014 0min REM on June 1st",
-    "Week TSS intentionally reduced but monitor fatigue closely"
+    "Sleep score 63 with only 26min REM - significant recovery deficit",
+    "RHR elevated to 56 (vs recent 57-61 range)",
+    "Deep sleep adequate (38min) but REM severely suppressed",
+    "Week TSS at 86% - risk of overreaching if today isn't managed conservatively"
   ],
   "positives": [
-    "Excellent heart rate discipline on recent runs (139-145 avg HR)",
-    "Brick workout consistency strong with 7th brick completed June 5th",
-    "Smart adaptation: scaling volume appropriately in response to recovery signals",
-    "Last night's sleep improved significantly (79 score, 8.6h duration)"
+    "6 brick workouts completed in build - excellent race-specific preparation",
+    "Bike HR control remains strong (131 avg yesterday, 124-135 recent range)",
+    "Week TSS progression steady at 395 with disciplined execution across all three sports"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-05",
-  "daysToRace": 44,
+  "generatedAt": "2026-06-06",
+  "daysToRace": 43,
   "currentWeek": 7,
   "weekPhase": "Peak"
 }
