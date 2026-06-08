@@ -80,6 +80,15 @@ WEEK_OVERRIDES = {
         "Saturday":  "Long bike ride + swim",
         "Sunday":    "Easy long run — scaled to ~60-70% of planned, all easy aerobic; cut shorter or skip if morning RHR is still elevated",
     },
+    "2026-06-08": {
+        "Monday":    "Bike ride + brick run",
+        "Tuesday":   "Swim + Run Club run",
+        "Wednesday": "Bike ride + brick run",
+        "Thursday":  "Long run",
+        "Friday":    "Swim",
+        "Saturday":  "Long bike ride",
+        "Sunday":    "Run + open water swim",
+    },
 }
 
 # Monday (ISO) of the current week — used to look up any override for this week
