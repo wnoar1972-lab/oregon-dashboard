@@ -1,27 +1,26 @@
 {
-  "date": "June 07, 2026",
-  "overallStatus": "Recovery Mode",
+  "date": "June 08, 2026",
+  "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday delivered a strong 55.7-mile Oregon race simulation at 109 TSS with HR 143 (right on target), followed by a 1-mile brick run at HR 146. This was your 7th brick workout and a key race-specific session. However, the cumulative load is showing \u2014 last night's sleep scored just 49/100 with elevated RHR at 57 and poor REM (80min) despite 8.6h duration, indicating incomplete recovery.",
-  "todayRecommendation": "Skip or heavily scale today's easy long run. Your TSS is already at 121% of weekly target (556/460), RHR remains elevated at 57, and sleep quality is poor (49 score). Prioritize active recovery or complete rest to allow adaptation before next week's training block.",
-  "weekProgress": "Week complete at 121% TSS target with excellent race-specific work: 3 brick sessions, Oregon course simulation completed, and solid swim volume (3 sessions, 4.1mi total). All planned sessions executed, but cumulative fatigue is evident in degraded sleep metrics (7-day avg: 57/100) and you're carrying significant load into recovery.",
-  "keyInsight": "You've successfully completed peak-phase race simulation work, but accumulated fatigue (121% TSS, poor sleep scores 3 of last 4 nights) requires immediate recovery prioritization to avoid overreaching with 42 days to race.",
+  "yesterdayAnalysis": "1.5mi open water swim in San Diego with 41 TSS was a solid aerobic session. This continues good swim volume consistency heading into peak week. The open water practice is valuable for race preparation, though HR data wasn't captured.",
+  "todayRecommendation": "Execute the planned 3,000m pool swim focusing on aerobic efficiency and technique. Keep intensity low given poor sleep quality (score 59, only 5.8h duration, critically low 9min REM). This kicks off your biggest volume week, so conserve energy.",
+  "weekProgress": "Week just started with 0 of 500 TSS target completed. This is peak week with ambitious targets: 9,000m swim total, 2hr outdoor brick, and 50-60mi long ride Saturday. Sleep quality entering this week is concerning for handling peak volume.",
+  "keyInsight": "Your sleep quality has declined significantly (59 avg score, last night only 5.8h with 9min REM) entering your highest volume week \u2014 this is a red flag for absorbing 500 TSS.",
   "alerts": [
-    "Sleep quality degraded: 49 score last night, 7-day avg only 57/100",
-    "RHR elevated at 57 \u2014 up from 56 yesterday",
-    "Weekly TSS 21% over target (556/460)",
-    "Deep sleep critically low: only 38min Friday, 63min last night"
+    "Critical sleep deficit: only 5.8h last night with 9min REM entering peak week",
+    "7-day avg sleep score 59/100 \u2014 well below optimal for peak training",
+    "Peak week (500 TSS) starts today with suboptimal recovery metrics",
+    "Low SpO2 trend: 7-day avg 94.1%, last night 94%"
   ],
   "positives": [
-    "Oregon race simulation completed successfully: 55.7mi at target HR 143",
-    "7 brick workouts completed \u2014 excellent neuromuscular adaptation",
-    "Consistent swim volume: 3 sessions totaling 4.1mi this week",
-    "Heart rate control strong during key sessions (131-146 avg)"
+    "Excellent swim consistency: 3 OW sessions in last 7 days building race-specific fitness",
+    "Strong brick execution: completed 7 total brick workouts in build phase",
+    "Good bike pacing practice: completed IRONMAN 70.3 Oregon course simulation (55.7mi, 109 TSS)"
   ],
-  "recoveryScore": 3,
+  "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-07",
-  "daysToRace": 42,
-  "currentWeek": 7,
+  "generatedAt": "2026-06-08",
+  "daysToRace": 41,
+  "currentWeek": 8,
   "weekPhase": "Peak"
 }
