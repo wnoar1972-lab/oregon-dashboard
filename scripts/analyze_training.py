@@ -84,7 +84,7 @@ WEEK_OVERRIDES = {
         "Monday":    "Bike ride + brick run",
         "Tuesday":   "Swim + Run Club run",
         "Wednesday": "Bike ride + brick run",
-        "Thursday":  "Long run",
+        "Thursday":  "Long run — 9-10 miles easy aerobic, well under 9:10 race pace; first long run after a gap, so cut to 8 if hip or legs feel off",
         "Friday":    "Swim",
         "Saturday":  "Long bike ride",
         "Sunday":    "Run + open water swim",
@@ -167,8 +167,8 @@ RACE TARGETS:
 - Overall goal: sub-6:00
 
 CURRENT TRAINING STATUS:
-- Today is {DAY_OF_WEEK} — Day {DAYS_INTO_WEEK} of 7 in this training week ({DAYS_LEFT_IN_WEEK} days remaining including today)
-- Week {current_week} of 10 ({WEEK_PHASES.get(current_week, 'Build')} phase)
+- Today is {DAY_OF_WEEK}. {DAYS_LEFT_IN_WEEK} day(s) remain in this training week, including today.
+- This is WEEK {current_week} OF 10 in the build ({WEEK_PHASES.get(current_week, 'Build')} phase). The build is always 10 weeks total — do not use any other total.
 - Week focus: {WEEK_FOCUS.get(current_week, '')}
 - Week TSS: {week_actual} of {week_target} target ({week_pct}% complete)
 - This week's schedule: {schedule_line}
@@ -199,7 +199,7 @@ Please provide a structured daily coaching analysis in JSON format with exactly 
   "statusColor": "one of: green / yellow / red / blue",
   "yesterdayAnalysis": "2-3 sentences analyzing yesterday's workout — what was done, how it fits the plan, any concerns or positives",
   "todayRecommendation": "1-2 sentences on what today's training should focus on based on fatigue, plan, and week targets",
-  "weekProgress": "1-2 sentences on how the week is tracking vs targets — TSS completion, discipline balance, anything missing",
+  "weekProgress": "1-2 sentences on how the week is tracking vs targets — TSS completion, discipline balance, anything missing. Always describe the current week as 'Week {current_week} of 10' — never a different week number and never a total other than 10.",
   "keyInsight": "1 sentence — the single most important coaching observation right now",
   "alerts": ["array of short alert strings if anything needs attention — e.g. 'No brick workout yet this week', 'Run volume light', 'SpO2 below 92% last night' — empty array if all good"],
   "positives": ["array of 2-3 short positive observations from recent training"],
