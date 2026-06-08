@@ -2,19 +2,21 @@
   "date": "June 08, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Completed 1.5mi open water swim with 41 TSS, solid execution for race-specific prep. However, this followed a big Saturday brick (109 TSS bike + 1mi run) which may be contributing to accumulated fatigue. The swim workout was appropriate but the overall training load over the weekend was significant entering peak week.",
-  "todayRecommendation": "Execute the planned bike + brick run conservatively today \u2014 target zone 2 efforts on the bike (140-155 HR based on recent data) and keep the brick run short and controlled. Sleep quality is compromised (59 score, only 5.8h, critically low 9min REM) so prioritize recovery within the session rather than pushing intensity.",
-  "weekProgress": "Week 1 of 7 complete with 0 of 500 TSS target \u2014 on schedule to start peak volume week. This is the biggest week in the build with 9000m swim target and 2hr outdoor brick planned. Critical to manage fatigue carefully given poor sleep recovery heading into this demanding block.",
-  "keyInsight": "Last night's catastrophically low REM sleep (9min vs 80min the night before) combined with only 5.8h total creates significant acute fatigue risk entering your peak volume week \u2014 today's brick must prioritize form and sustainability over intensity.",
+  "yesterdayAnalysis": "Solid 1.5mi open water swim with 41 TSS completed in San Diego, maintaining swim volume during peak week. Good discipline execution coming off Saturday's 2-hour brick (109 TSS bike + 1mi run). However, last night's sleep was concerning: only 5.8 hours with severely compromised REM (9 minutes) despite adequate deep sleep.",
+  "todayRecommendation": "Proceed with planned bike + brick run but monitor energy levels closely given the 5.8hr sleep deficit and minimal REM recovery. Consider shortening the brick run if legs feel flat, prioritizing quality over volume since this is Week 8 of 10 peak phase and Thursday's 9-10mi long run is the critical session.",
+  "weekProgress": "Week 8 of 10 shows 0 of 500 TSS target with 6 days remaining. This peak volume week requires disciplined execution: 2hr outdoor brick Saturday, 9000m swim total, and Thursday's return to long running. Brick workout scheduled today aligns with plan, but sleep deficit from last night creates execution risk for the week's ambitious targets.",
+  "keyInsight": "Last night's severe REM deprivation (9 minutes vs. 80+ on prior nights) signals inadequate recovery entering the biggest training week of the build\u2014conservative pacing today protects Thursday's critical long run return.",
   "alerts": [
-    "Critical sleep deficit: 5.8h with only 9min REM last night",
-    "Peak week starting with compromised recovery (score 59/100)",
-    "Entering biggest volume week with 3 consecutive training days behind you"
+    "Last night: only 5.8hr sleep with 9min REM (vs 80min two nights ago)",
+    "7-day avg sleep score: 59/100 - below optimal for peak week",
+    "First week of new training block: 0% TSS complete",
+    "Thursday marks return to long running after gap - hip monitoring essential"
   ],
   "positives": [
-    "Saturday's Oregon 70.3 course simulation (109 TSS, 55.7mi) was excellent race-specific prep",
-    "Consistent brick execution: 8th brick workout about to be completed today",
-    "Open water swim volume trending well (1.5mi yesterday, 1.0mi on 6/5) for race readiness"
+    "Completed 7 brick workouts in build, establishing solid bike-to-run transition fitness",
+    "Saturday's 2hr brick (109 TSS) executed well with conservative HR avg 143bpm",
+    "Open water swim consistency: 1.5mi yesterday following 1.0mi Thursday",
+    "RHR remains stable at 58bpm despite training load"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
