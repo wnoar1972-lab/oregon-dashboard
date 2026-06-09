@@ -2,19 +2,15 @@
   "date": "June 09, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Monday's ROUVY session delivered 71 TSS over 37 miles with excellent HR control at 121 bpm \u2014 well within Z2 aerobic range. This indoor bike session positioned you perfectly for the planned brick workout, maintaining race-specific fitness at conservative intensity. The controlled effort aligns with your Oceanside learning: disciplined pacing pays dividends.",
-  "todayRecommendation": "Execute today's swim + Run Club session as planned \u2014 you've already banked 28 TSS from the swim (1.4mi + 0.6mi), so focus on the Run Club workout with controlled effort, staying conversational. With 5 days remaining and only 99/500 TSS completed, today's run is critical for weekly volume.",
-  "weekProgress": "Week 8 of 10 shows concerning progress at only 20% TSS completion (99/500) with 5 days remaining in this peak volume week. The swim discipline is tracking well (28 TSS today), but you need substantial bike and run volume Wed-Sun to hit targets. The 2hr outdoor brick Wednesday and long Saturday ride will be decisive for reaching 500 TSS.",
-  "keyInsight": "You're significantly behind TSS pace in your biggest peak week, but the heavy hitters (2hr brick, 9-10mi run, long Saturday ride) are still ahead \u2014 execute these fully to salvage the week's training stimulus.",
-  "alerts": [
-    "TSS tracking 80% below target with 5 days remaining",
-    "Sleep quality volatile \u2014 3 nights scored 63 or below in past 7 days",
-    "Low REM sleep (9min) on June 8th indicates incomplete recovery"
-  ],
+  "yesterdayAnalysis": "Completed the Monday brick workout as planned: 37.1mi bike on ROUVY (TSS 71) at a conservative HR of 121 bpm, followed by two swim sessions totaling 2.0mi (TSS 28). The bike effort was appropriately controlled \u2014 well below threshold \u2014 perfect for week 8 peak volume. Combined TSS of 99 for the day represents the largest single training day of the build so far.",
+  "todayRecommendation": "Execute the planned swim + Run Club session. Keep the run conversational and controlled \u2014 this is a recovery/social run between yesterday's big brick and tomorrow's Wednesday brick. Focus on movement quality and staying loose for Thursday's 9-10 mile long run.",
+  "weekProgress": "Week 8 of 10: Currently at 99 TSS of 500 target (20%) with 5 days remaining including today. This is perfectly on-track given the heavily back-loaded schedule \u2014 the Saturday long ride and Wednesday brick will account for the majority of weekly volume. Monday's brick workout was completed successfully, establishing a strong foundation for the peak week.",
+  "keyInsight": "Sleep quality is inconsistent (64/100 avg, 3 nights below 60) during peak week \u2014 prioritize 8+ hours and sleep hygiene to support the high training load ahead, especially before Thursday's first long run in weeks.",
+  "alerts": [],
   "positives": [
-    "Excellent HR discipline on Monday's ride (121 bpm) demonstrates aerobic base building",
-    "Strong swim volume today (2.0mi total) advances toward 9000m weekly target",
-    "7 brick workouts completed in build phase establishing race-ready transitions"
+    "Yesterday's 99 TSS represents the biggest single training day of the entire build \u2014 huge milestone",
+    "Bike pacing discipline excellent: HR 121 on 37mi ride shows proper Zone 2 execution aligned with Oceanside 70.3 race strategy",
+    "Seven brick workouts completed in the build demonstrates strong discipline on race-specific training"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
