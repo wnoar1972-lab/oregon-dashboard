@@ -1,27 +1,25 @@
 {
-  "date": "June 08, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Completed a solid 1.5mi open water swim in San Diego with 41 TSS, maintaining swim fitness during peak phase. This follows a strong Saturday brick (109 TSS bike + 1mi run), showing good weekend execution. However, the swim-only Sunday represents a deviation from the planned run + OWS combination, potentially leaving run volume short heading into this critical week.",
-  "todayRecommendation": "Execute today's planned bike + brick run as scheduled \u2014 this is your first of two bricks this week (Wed is second) and critical for race-specific preparation 41 days out. Keep bike NP in the 145-152w race target zone and focus on smooth transitions given last night's poor sleep recovery.",
-  "weekProgress": "Week 8 of 10 starts fresh at 0 of 500 TSS target (0% complete). This is your peak volume week with aggressive targets: 9000m swim total and a 2hr outdoor brick on Saturday. With 6 days remaining, you need Mon/Wed bricks executed, Thursday's crucial 9-10mi long run (first in a gap), Friday swim, and Saturday's long ride to hit targets. No margin for missed sessions.",
-  "keyInsight": "Last night's sleep was severely compromised (59 score, only 5.8h duration, 9min REM) heading into your biggest training week \u2014 monitor energy closely today and be prepared to adjust Thursday's long run to 8mi if fatigue compounds.",
+  "date": "June 09, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Solid indoor bike session on ROUVY completing 37.1mi at 71 TSS with controlled HR of 121 bpm. This moderate-intensity ride fits well within the peak volume week plan and maintains aerobic base without excessive fatigue. The conservative HR approach aligns with your successful Oceanside pacing strategy.",
+  "todayRecommendation": "Execute today's planned Swim + Run Club run as scheduled. Target 2000m+ in the pool to continue building toward this week's 9000m swim target, then keep the run club effort conversational and well under race pace given the long run Thursday.",
+  "weekProgress": "Week 8 of 10 is at 20% TSS completion (99 of 500) with 5 days remaining. Swim volume is strong with 2000m already logged today. Need to accumulate ~400 TSS over next 5 days including the 2hr outdoor brick Wednesday and long bike Saturday to hit peak volume targets.",
+  "keyInsight": "Sleep quality is inconsistent (64/100 avg, scores ranging 49-79) during your biggest build week \u2014 prioritize sleep hygiene to support the heavy training load ahead.",
   "alerts": [
-    "Poor sleep last night: 59 score, only 5.8h duration, critically low 9min REM",
-    "7-day avg sleep score only 59/100 \u2014 well below optimal for peak training",
-    "Week 8 peak volume demands (500 TSS) require excellent execution with current sleep deficit",
-    "SpO2 trending at 94.1% avg \u2014 stable but monitor for drops below 92%"
+    "Sleep score averaged only 64/100 last 7 days with 3 nights below 60",
+    "Low REM sleep on June 8 (only 9 min) may impact recovery",
+    "Large TSS deficit remains with big workouts still ahead this week"
   ],
   "positives": [
-    "Strong Saturday brick execution: 109 TSS bike + race course simulation on ROUVY Oregon course",
-    "Consistent OWS practice: 2 sessions in 3 days building open water confidence",
-    "7 brick workouts completed in build phase demonstrates strong race-specific preparation",
-    "RHR stable at 58 despite training load \u2014 TRT protocol supporting recovery"
+    "Excellent swim consistency with 4 sessions in last 7 days totaling ~4.5 miles",
+    "2000m pool swim completed today contributing to 9000m weekly target",
+    "HR control remains strong - yesterday's 121 bpm shows good aerobic efficiency"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-08",
-  "daysToRace": 41,
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-06-09",
+  "daysToRace": 40,
   "currentWeek": 8,
   "weekPhase": "Peak"
 }

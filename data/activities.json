@@ -746,5 +746,38 @@
     "avgHR": 0,
     "distance": 2412.1,
     "duration": 4032.0
+  },
+  {
+    "date": "2026-06-08",
+    "title": "ROUVY - IRONMAN South Africa African Cha",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 71.0,
+    "np": 0,
+    "avgHR": 121.0,
+    "distance": 59767.5,
+    "duration": 6931.0
+  },
+  {
+    "date": "2026-06-09",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 25.0,
+    "np": 0,
+    "avgHR": 115.0,
+    "distance": 2331.7,
+    "duration": 3252.0
+  },
+  {
+    "date": "2026-06-09",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 3.0,
+    "np": 0,
+    "avgHR": 106.0,
+    "distance": 900.0,
+    "duration": 580.0
   }
 ]
