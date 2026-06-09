@@ -2,19 +2,19 @@
   "date": "June 09, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Solid indoor bike session on ROUVY completing 37.1mi at 71 TSS with controlled HR of 121 bpm. This moderate-intensity ride fits well within the peak volume week plan and maintains aerobic base without excessive fatigue. The conservative HR approach aligns with your successful Oceanside pacing strategy.",
-  "todayRecommendation": "Execute today's planned Swim + Run Club run as scheduled. Target 2000m+ in the pool to continue building toward this week's 9000m swim target, then keep the run club effort conversational and well under race pace given the long run Thursday.",
-  "weekProgress": "Week 8 of 10 is at 20% TSS completion (99 of 500) with 5 days remaining. Swim volume is strong with 2000m already logged today. Need to accumulate ~400 TSS over next 5 days including the 2hr outdoor brick Wednesday and long bike Saturday to hit peak volume targets.",
-  "keyInsight": "Sleep quality is inconsistent (64/100 avg, scores ranging 49-79) during your biggest build week \u2014 prioritize sleep hygiene to support the heavy training load ahead.",
+  "yesterdayAnalysis": "Monday's ROUVY session delivered 71 TSS over 37 miles with excellent HR control at 121 bpm \u2014 well within Z2 aerobic range. This indoor bike session positioned you perfectly for the planned brick workout, maintaining race-specific fitness at conservative intensity. The controlled effort aligns with your Oceanside learning: disciplined pacing pays dividends.",
+  "todayRecommendation": "Execute today's swim + Run Club session as planned \u2014 you've already banked 28 TSS from the swim (1.4mi + 0.6mi), so focus on the Run Club workout with controlled effort, staying conversational. With 5 days remaining and only 99/500 TSS completed, today's run is critical for weekly volume.",
+  "weekProgress": "Week 8 of 10 shows concerning progress at only 20% TSS completion (99/500) with 5 days remaining in this peak volume week. The swim discipline is tracking well (28 TSS today), but you need substantial bike and run volume Wed-Sun to hit targets. The 2hr outdoor brick Wednesday and long Saturday ride will be decisive for reaching 500 TSS.",
+  "keyInsight": "You're significantly behind TSS pace in your biggest peak week, but the heavy hitters (2hr brick, 9-10mi run, long Saturday ride) are still ahead \u2014 execute these fully to salvage the week's training stimulus.",
   "alerts": [
-    "Sleep score averaged only 64/100 last 7 days with 3 nights below 60",
-    "Low REM sleep on June 8 (only 9 min) may impact recovery",
-    "Large TSS deficit remains with big workouts still ahead this week"
+    "TSS tracking 80% below target with 5 days remaining",
+    "Sleep quality volatile \u2014 3 nights scored 63 or below in past 7 days",
+    "Low REM sleep (9min) on June 8th indicates incomplete recovery"
   ],
   "positives": [
-    "Excellent swim consistency with 4 sessions in last 7 days totaling ~4.5 miles",
-    "2000m pool swim completed today contributing to 9000m weekly target",
-    "HR control remains strong - yesterday's 121 bpm shows good aerobic efficiency"
+    "Excellent HR discipline on Monday's ride (121 bpm) demonstrates aerobic base building",
+    "Strong swim volume today (2.0mi total) advances toward 9000m weekly target",
+    "7 brick workouts completed in build phase establishing race-ready transitions"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
