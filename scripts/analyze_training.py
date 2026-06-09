@@ -82,9 +82,9 @@ WEEK_OVERRIDES = {
     },
     "2026-06-08": {
         "Monday":    "Bike ride + brick run",
-        "Tuesday":   "Swim + Run Club run",
-        "Wednesday": "Bike ride + brick run",
-        "Thursday":  "Long run — 9-10 miles easy aerobic, well under 9:10 race pace; first long run after a gap, so cut to 8 if hip or legs feel off",
+        "Tuesday":   "Swim (morning) + LONG RUN ~10 miles easy at Run Club tonight — well under 9:10 race pace; first long run after a gap, cut to 8 if hip or legs object",
+        "Wednesday": "Bike ride + SHORT easy brick run (trimmed because the 10-mile long run was done Tuesday night)",
+        "Thursday":  "REST DAY — complete rest (long run was moved to Tuesday). Walk/mobility and good food only, no training stress",
         "Friday":    "Swim",
         "Saturday":  "Long bike ride",
         "Sunday":    "Run + open water swim",
