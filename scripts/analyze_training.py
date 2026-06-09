@@ -170,7 +170,7 @@ CURRENT TRAINING STATUS:
 - Today is {DAY_OF_WEEK}. {DAYS_LEFT_IN_WEEK} day(s) remain in this training week, including today.
 - This is WEEK {current_week} OF 10 in the build ({WEEK_PHASES.get(current_week, 'Build')} phase). The build is always 10 weeks total — do not use any other total.
 - Week focus: {WEEK_FOCUS.get(current_week, '')}
-- Week TSS: {week_actual} of {week_target} target ({week_pct}% complete)
+- Week TSS so far: {week_actual} of {week_target} target ({week_pct}% complete). IMPORTANT: weekly TSS is heavily back-loaded — the Saturday long ride and the midweek brick are by far the largest sessions — so being at a LOW percentage of the weekly target on {DAY_OF_WEEK} (with {DAYS_LEFT_IN_WEEK} days still left including today) is NORMAL and on-track, NOT a concern. Do NOT describe the week as "concerning", "behind", or "at risk" based on cumulative percentage alone. Only flag the week if a scheduled session was actually skipped, or if it is Thursday or later AND the remaining days realistically cannot reach the target.
 - This week's schedule: {schedule_line}
 - TODAY ({DAY_OF_WEEK}) planned session: {today_planned}
 - Total activities in build: {overall.get('totalActs', 0)} ({total_bike} bike, {total_swim} swim, {total_run} run)
@@ -199,9 +199,9 @@ Please provide a structured daily coaching analysis in JSON format with exactly 
   "statusColor": "one of: green / yellow / red / blue",
   "yesterdayAnalysis": "2-3 sentences analyzing yesterday's workout — what was done, how it fits the plan, any concerns or positives",
   "todayRecommendation": "1-2 sentences on what today's training should focus on based on fatigue, plan, and week targets",
-  "weekProgress": "1-2 sentences on how the week is tracking vs targets — TSS completion, discipline balance, anything missing. Always describe the current week as 'Week {current_week} of 10' — never a different week number and never a total other than 10.",
+  "weekProgress": "1-2 sentences on how the week is tracking vs targets — TSS completion, discipline balance, anything missing. Always describe the current week as 'Week {current_week} of 10' — never a different week number and never a total other than 10. Judge progress relative to how many days have elapsed and the back-loaded schedule; a low cumulative TSS percentage early in the week (Mon-Wed) is expected and should be framed as on-track, not behind.",
   "keyInsight": "1 sentence — the single most important coaching observation right now",
-  "alerts": ["array of short alert strings if anything needs attention — e.g. 'No brick workout yet this week', 'Run volume light', 'SpO2 below 92% last night' — empty array if all good"],
+  "alerts": ["array of short alert strings if anything needs attention — e.g. 'No brick workout yet this week', 'Run volume light', 'SpO2 below 92% last night' — empty array if all good. Do NOT add a 'behind on TSS' / 'low weekly volume' style alert before Thursday unless a scheduled session was actually skipped."],
   "positives": ["array of 2-3 short positive observations from recent training"],
   "recoveryScore": number from 1-10 based on sleep quality and training load (10 = fully recovered),
   "trainingLoadStatus": "one of: Fresh / Optimal / Fatigued / Overreached"
