@@ -1,21 +1,24 @@
 {
-  "date": "June 09, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Monday's ROUVY ride covered 37.1 miles at TSS 71 with controlled HR of 121 bpm \u2014 solid aerobic work that likely included the planned brick run component. The effort level was appropriate for early-week base volume building. This positions you well for today's bigger session.",
-  "todayRecommendation": "Complete the morning swim (already done: 1.4mi at TSS 25) and tonight's 10-mile long run at Run Club keeping effort conversational and well under 9:10 pace. This is your first long run after a gap, so listen to the right hip \u2014 cutting to 8 miles is smart if needed, especially with Wednesday's brick still ahead.",
-  "weekProgress": "Week 8 of 10 is tracking perfectly at 99 TSS of 500 target (20%) with 5 days remaining including today. This low percentage on Tuesday is exactly on-plan given the heavily back-loaded schedule \u2014 Saturday's long ride and today's long run will deliver the majority of weekly volume. All scheduled sessions completed so far.",
-  "keyInsight": "Tonight's 10-mile run is a critical reintroduction of long run volume in peak phase \u2014 prioritize completion over pace, and monitor hip response closely given the Perthes history.",
-  "alerts": [],
-  "positives": [
-    "Sleep rebounded to 79/100 last night with 7.6h and good SpO2 at 96%",
-    "Yesterday's swim added 2.0 miles total with controlled effort across two sessions",
-    "Week is unfolding exactly as planned with all scheduled sessions completed"
+  "date": "June 10, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Solid execution of the rescheduled 10.2-mile long run at Carlsbad Run Club with HR 144 (well-controlled aerobic effort) earning 102 TSS \u2014 this was the first long run after a gap and sets proper endurance foundation. Combined with morning pool work (2.0mi total, 28 TSS), yesterday delivered 130 TSS. The run pacing appears conservative and appropriate given it's the first extended effort in this block.",
+  "todayRecommendation": "Execute the planned SHORT easy brick run as scheduled \u2014 keep it truly easy (30-40min bike, 10-15min jog max) since yesterday's 10-miler was significant stress. This is a neuromuscular primer, not a load session, so respect the recovery need before Thursday's full rest day.",
+  "weekProgress": "Week 8 of 10 shows 201 TSS through Tuesday (40% of 500 target with 4 days remaining including today). This is on-track given the back-loaded structure \u2014 Saturday's long ride and the completed brick Monday will carry the volume. Swim target (9000m) needs 5500m more across Friday/Sunday sessions.",
+  "keyInsight": "Sleep quality remains inconsistent (68/100 avg, scores of 49 and 59 this week) during peak volume week \u2014 prioritize sleep hygiene tonight and tomorrow to maximize adaptation from the 10-mile run and prepare for Saturday's long ride.",
+  "alerts": [
+    "Sleep scores highly variable (49-84 range) with poor REM on 6/8 (9min)",
+    "Swim volume at 3500m \u2014 needs 5500m more by Sunday to hit 9000m target"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-06-09",
-  "daysToRace": 40,
+  "positives": [
+    "10.2-mile long run executed at controlled HR 144 \u2014 excellent aerobic discipline",
+    "Last night's sleep rebounded strongly (84 score, 8.1h, good REM/deep balance)",
+    "Brick consistency maintained with 7 completed sessions in build phase"
+  ],
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-06-10",
+  "daysToRace": 39,
   "currentWeek": 8,
   "weekPhase": "Peak"
 }
