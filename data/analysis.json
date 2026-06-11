@@ -2,16 +2,15 @@
   "date": "June 11, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Wednesday delivered a solid 26-mile indoor bike (TSS 50, HR 111) followed by a conservative 1-mile brick run (TSS 9, HR 138). The reduced brick run volume was appropriate given Tuesday's 10.2-mile long run completion. Heart rates stayed controlled across both sessions, indicating good recovery management after the big run effort.",
-  "todayRecommendation": "Today is a scheduled complete REST DAY following Tuesday's 10-mile run return. Focus on mobility work for the hip, walk/stretch only, and prioritize nutrition to prepare for Friday's swim and Saturday's long ride.",
-  "weekProgress": "Week 8 of 10: Currently at 289 TSS of 500 target (58%) with 3 days remaining including today's rest day. This is exactly on-track given the back-loaded schedule \u2014 Saturday's long bike and Tuesday's 10-mile run (TSS 102) anchor the week. Friday swim and Saturday's big ride will complete the peak volume week as planned.",
-  "keyInsight": "The 10.2-mile long run on Tuesday (first in a gap) was executed well at easy pace with HR 144, demonstrating strong aerobic fitness while respecting the conservative pacing lesson from Oceanside 70.3.",
+  "yesterdayAnalysis": "Completed a solid 26-mile indoor bike ride (TSS 50) followed by a conservative 1-mile brick run (TSS 9, HR 138). This was the planned Mon/Wed-style brick session with appropriate intensity \u2014 bike HR of 111 shows excellent restraint in keeping effort aerobic. The short brick run continues to reinforce neuromuscular adaptation without overloading the right hip.",
+  "todayRecommendation": "Execute the REST DAY as planned \u2014 complete rest with only walking and mobility work. After Tuesday's 10.2-mile long run (your first extended run in this block), recovery is essential before Friday's swim and Saturday's big ride. Focus on nutrition, hydration, and passive recovery.",
+  "weekProgress": "Week 8 of 10 is tracking perfectly at 289 TSS through Wednesday with 3 days remaining. This is exactly on schedule given the heavily back-loaded structure \u2014 Saturday's long ride will be the TSS anchor. All key sessions executed: Tuesday's breakthrough 10-mile run (TSS 102), Wednesday's brick, and swim volume building toward the 9000m week target.",
+  "keyInsight": "The 10.2-mile run on Tuesday (HR 144, well under threshold) marks a successful return to long-run volume without hip issues \u2014 this is a critical confidence builder 38 days from race day.",
   "alerts": [],
   "positives": [
-    "10.2-mile long run completed successfully after a training gap, showing solid endurance base",
-    "Sleep quality rebounding with 84 score and 8.1h duration on 6/10 after recent poor nights",
-    "Brick workout #8 completed Wednesday with excellent controlled heart rates (111 bike, 138 run)",
-    "SpO2 stable at 94.9% 7-day average with no nights below 92%"
+    "Tuesday's 10.2-mile run executed at easy HR (144 avg) demonstrates strong aerobic base without hip stress",
+    "Sleep quality rebounding well \u2014 84 score with 8.1 hours last night after Tuesday's long effort",
+    "Bike pacing discipline excellent across all recent rides \u2014 HR staying in 111-143 range, reinforcing the Oceanside conservative strategy"
   ],
   "recoveryScore": 7,
   "trainingLoadStatus": "Optimal",
