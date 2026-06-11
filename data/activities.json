@@ -790,5 +790,38 @@
     "avgHR": 106.0,
     "distance": 900.0,
     "duration": 580.0
+  },
+  {
+    "date": "2026-06-10",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 9.0,
+    "np": 0,
+    "avgHR": 138.0,
+    "distance": 1619.1,
+    "duration": 574.0
+  },
+  {
+    "date": "2026-06-10",
+    "title": "ROUVY - Lake Tahoe | California | USA",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 50.0,
+    "np": 0,
+    "avgHR": 111.0,
+    "distance": 41902.0,
+    "duration": 6689.0
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 29.0,
+    "np": 0,
+    "avgHR": 115.0,
+    "distance": 2743.2,
+    "duration": 3815.0
   }
 ]
