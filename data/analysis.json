@@ -1,21 +1,25 @@
 {
-  "date": "June 11, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Completed a solid 26-mile indoor bike (TSS 50, HR 111 avg) followed by a short 1-mile brick run (TSS 9, HR 138), demonstrating good discipline on the planned midweek brick. Heart rates were appropriately controlled \u2014 bike stayed well below threshold at 111 bpm, and the brick run HR of 138 shows good neuromuscular work without excessive stress. This was the appropriate scaled-down brick after Tuesday's 10.2-mile long run.",
-  "todayRecommendation": "Honor the planned REST DAY completely \u2014 no swimming, biking, or running. Focus on walking, mobility work, hydration, and quality nutrition to absorb Tuesday's 10-miler and Wednesday's brick before Friday's swim and Saturday's critical long ride.",
-  "weekProgress": "Week 8 of 10: Currently at 289 TSS of 500 target (58%) with 3 days remaining including today's rest day. This is perfectly on-track given the heavily back-loaded schedule \u2014 Saturday's long ride and Sunday's run will deliver the bulk of remaining TSS. Major sessions completed: 10.2-mile long run Tuesday (102 TSS), quality brick Wednesday (59 TSS combined), and Monday's bike/brick (likely ~80+ TSS based on pattern).",
-  "keyInsight": "The strategic move of the long run to Tuesday night is paying off \u2014 you're properly rested mid-week and positioned for the peak weekend volume that defines this build phase.",
-  "alerts": [],
-  "positives": [
-    "Successfully completed 10.2-mile long run at 144 bpm average \u2014 first long run back and well-controlled HR",
-    "Brick workout count now at 9 total (including yesterday) \u2014 excellent consistency through the build",
-    "Sleep recovery trending up: 77-84 scores last 3 nights after the 49-59 dip, with good REM rebound"
+  "date": "June 12, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Solid 1.7-mile pool swim (TSS 29) at controlled HR 115 \u2014 excellent aerobic development work. This was the second swim session this week, keeping you on track for the 9000m weekly target in this peak volume week. Form and technique work at this HR zone is exactly what's needed before Saturday's big ride.",
+  "todayRecommendation": "Complete today's planned swim session but monitor energy carefully given last night's poor sleep (score 57, only 4.7 hours). Keep intensity conversational and consider shortening if you feel flat \u2014 tomorrow's long ride is the critical session this week and cannot be compromised.",
+  "weekProgress": "Week 8 of 10: Currently at 289 TSS of 500 target (58% complete) with 2 days remaining including today. This is exactly on track \u2014 the week is heavily back-loaded with Saturday's long ride and Sunday's sessions accounting for the bulk of remaining TSS. All scheduled sessions completed: Monday brick, Tuesday 10.2-mile long run (huge milestone), Wednesday bike/brick, Thursday rest day, yesterday's swim. Saturday and Sunday will deliver the remaining ~210 TSS needed.",
+  "keyInsight": "Last night's severely disrupted sleep (4.7 hours, score 57, only 16min REM) creates real risk for tomorrow's critical long ride \u2014 today must prioritize recovery and early bedtime over training stress.",
+  "alerts": [
+    "Sleep crisis: 4.7 hours last night (score 57) \u2014 worst of the week",
+    "Critically low REM sleep: only 16min vs 72min the night before",
+    "Saturday long ride at risk if sleep doesn't improve tonight"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-06-11",
-  "daysToRace": 38,
+  "positives": [
+    "Breakthrough 10.2-mile long run Tuesday at HR 144 \u2014 first long run back, excellent pacing control",
+    "Swim volume building perfectly: 1.4mi + 1.7mi this week toward 9000m target",
+    "Smart schedule adjustment: moved long run to Tuesday, took full rest Thursday to manage load"
+  ],
+  "recoveryScore": 4,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-06-12",
+  "daysToRace": 37,
   "currentWeek": 8,
   "weekPhase": "Peak"
 }
