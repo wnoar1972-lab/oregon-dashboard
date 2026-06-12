@@ -2,19 +2,19 @@
   "date": "June 12, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Solid 1.7-mile pool swim (TSS 29) at controlled HR 115 \u2014 excellent aerobic development work. This was the second swim session this week, keeping you on track for the 9000m weekly target in this peak volume week. Form and technique work at this HR zone is exactly what's needed before Saturday's big ride.",
-  "todayRecommendation": "Complete today's planned swim session but monitor energy carefully given last night's poor sleep (score 57, only 4.7 hours). Keep intensity conversational and consider shortening if you feel flat \u2014 tomorrow's long ride is the critical session this week and cannot be compromised.",
-  "weekProgress": "Week 8 of 10: Currently at 289 TSS of 500 target (58% complete) with 2 days remaining including today. This is exactly on track \u2014 the week is heavily back-loaded with Saturday's long ride and Sunday's sessions accounting for the bulk of remaining TSS. All scheduled sessions completed: Monday brick, Tuesday 10.2-mile long run (huge milestone), Wednesday bike/brick, Thursday rest day, yesterday's swim. Saturday and Sunday will deliver the remaining ~210 TSS needed.",
-  "keyInsight": "Last night's severely disrupted sleep (4.7 hours, score 57, only 16min REM) creates real risk for tomorrow's critical long ride \u2014 today must prioritize recovery and early bedtime over training stress.",
+  "yesterdayAnalysis": "Completed a 1.7-mile pool swim with TSS 29 at a controlled HR of 115 bpm. This was the scheduled Friday swim session executed one day early, maintaining consistency in the swim volume buildup toward the 9000m weekly target. Form and pacing remained aerobic and appropriate for peak phase volume work.",
+  "todayRecommendation": "Today's scheduled swim was completed yesterday (Thursday). With last night's poor sleep (score 57, only 4.7h, minimal REM at 16min), prioritize rest and recovery today. Consider light mobility work for the hip and full nutrition focus to prepare for tomorrow's critical long bike session.",
+  "weekProgress": "Week 8 of 10 shows 289 TSS of 500 target (58%) with 2 days remaining including today. This is on-track given the heavily back-loaded schedule with Saturday's long ride still ahead. Key sessions completed: Monday brick, Tuesday 10.2-mile long run (excellent return to distance), Wednesday bike+brick, and swim volume progressing well toward 9000m target.",
+  "keyInsight": "Last night's severely compromised sleep (4.7h, only 16min REM) following Tuesday's 10-mile run comeback creates significant recovery debt heading into tomorrow's peak volume long ride \u2014 rest today is non-negotiable.",
   "alerts": [
-    "Sleep crisis: 4.7 hours last night (score 57) \u2014 worst of the week",
-    "Critically low REM sleep: only 16min vs 72min the night before",
-    "Saturday long ride at risk if sleep doesn't improve tonight"
+    "Critical sleep deficit: 57 score, only 4.7h duration, 16min REM last night",
+    "Today's swim was completed yesterday - no training stress scheduled for today",
+    "Saturday long ride must proceed despite fatigue - watch for hip response"
   ],
   "positives": [
-    "Breakthrough 10.2-mile long run Tuesday at HR 144 \u2014 first long run back, excellent pacing control",
-    "Swim volume building perfectly: 1.4mi + 1.7mi this week toward 9000m target",
-    "Smart schedule adjustment: moved long run to Tuesday, took full rest Thursday to manage load"
+    "Successful 10.2-mile long run Tuesday at 144 bpm avg - first long run back, well-executed pacing",
+    "Consistent swim volume: 1.4mi + 0.6mi Monday, 1.5mi OWS Saturday, 1.7mi Thursday",
+    "Monday and Wednesday brick workouts completed as scheduled, maintaining race-specific fitness"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
