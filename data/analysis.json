@@ -1,25 +1,21 @@
 {
-  "date": "June 12, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Completed a 1.7-mile pool swim with TSS 29 at a controlled HR of 115 bpm. This was the scheduled Friday swim session executed one day early, maintaining consistency in the swim volume buildup toward the 9000m weekly target. Form and pacing remained aerobic and appropriate for peak phase volume work.",
-  "todayRecommendation": "Today's scheduled swim was completed yesterday (Thursday). With last night's poor sleep (score 57, only 4.7h, minimal REM at 16min), prioritize rest and recovery today. Consider light mobility work for the hip and full nutrition focus to prepare for tomorrow's critical long bike session.",
-  "weekProgress": "Week 8 of 10 shows 289 TSS of 500 target (58%) with 2 days remaining including today. This is on-track given the heavily back-loaded schedule with Saturday's long ride still ahead. Key sessions completed: Monday brick, Tuesday 10.2-mile long run (excellent return to distance), Wednesday bike+brick, and swim volume progressing well toward 9000m target.",
-  "keyInsight": "Last night's severely compromised sleep (4.7h, only 16min REM) following Tuesday's 10-mile run comeback creates significant recovery debt heading into tomorrow's peak volume long ride \u2014 rest today is non-negotiable.",
-  "alerts": [
-    "Critical sleep deficit: 57 score, only 4.7h duration, 16min REM last night",
-    "Today's swim was completed yesterday - no training stress scheduled for today",
-    "Saturday long ride must proceed despite fatigue - watch for hip response"
-  ],
+  "date": "June 13, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Pool swim session yesterday delivered 23 TSS with controlled HR averaging 107 bpm across 1.7 miles. This was the second swim in the week's planned 9000m target volume, maintaining the aerobic base without excessive stress. Recovery-focused execution appropriate for the day before the peak week's long bike ride.",
+  "todayRecommendation": "Execute today's long bike ride with disciplined pacing in Zone 2, targeting 150-180 TSS to anchor this peak volume week. Focus on race-simulation nutrition and maintaining power at 145-152w NP to practice the conservative bike strategy that earned you the 16-min run PR at Oceanside.",
+  "weekProgress": "Week 8 of 10 tracking well at 312 TSS with the critical Saturday long ride still ahead \u2014 exactly as designed for this back-loaded schedule. Tuesday's 10.2-mile long run (102 TSS) and Wednesday's brick completed key sessions; today's long bike will be the week's anchor workout toward the 500 TSS target with Sunday's run/OWS still to come.",
+  "keyInsight": "Peak week execution is on schedule with all major sessions completed or queued; last night's excellent 82-score sleep (8.1h, 93min REM) positions you perfectly for today's longest bike effort of the build.",
+  "alerts": [],
   "positives": [
-    "Successful 10.2-mile long run Tuesday at 144 bpm avg - first long run back, well-executed pacing",
-    "Consistent swim volume: 1.4mi + 0.6mi Monday, 1.5mi OWS Saturday, 1.7mi Thursday",
-    "Monday and Wednesday brick workouts completed as scheduled, maintaining race-specific fitness"
+    "Tuesday's 10.2-mile run at 144 bpm HR shows strong aerobic endurance returning after the gap in long runs",
+    "Sleep rebounded to 82/100 last night with strong REM (93min) after Thursday's poor night, demonstrating good recovery adaptation",
+    "Swim volume on track toward 9000m weekly target with consistent sub-115 bpm average heart rates showing excellent aerobic efficiency"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-12",
-  "daysToRace": 37,
+  "recoveryScore": 8,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-06-13",
+  "daysToRace": 36,
   "currentWeek": 8,
   "weekPhase": "Peak"
 }
