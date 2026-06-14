@@ -837,17 +837,6 @@
   },
   {
     "date": "2026-06-13",
-    "title": "Afternoon Ride",
-    "type": "Ride",
-    "disc": "bike",
-    "tss": 0,
-    "np": 0,
-    "avgHR": 0,
-    "distance": 97059.5,
-    "duration": 13440.0
-  },
-  {
-    "date": "2026-06-13",
     "title": "Cycling",
     "type": "Ride",
     "disc": "bike",
