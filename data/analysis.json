@@ -2,18 +2,19 @@
   "date": "June 14, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Solid 60.3-mile long ride delivering 136 TSS at controlled HR 124 bpm \u2014 excellent execution of the week's biggest session. The distance and TSS are exactly what's needed in this peak volume week, and the heart rate suggests good pacing discipline. This session alone represents 27% of the weekly target, confirming the back-loaded structure is on track.",
-  "todayRecommendation": "Complete today's planned run + open water swim to finish the week strong, but monitor closely given last night's poor sleep (59 score, low REM at 24min). Keep the run conversational and the swim focused on sighting/navigation practice rather than hard intervals \u2014 prioritize execution quality over intensity.",
-  "weekProgress": "Week 8 of 10 is tracking well at 448/500 TSS (90% complete) with 0 days remaining. The Saturday long ride was successfully executed, and Tuesday's 10.2-mile long run (102 TSS) plus Wednesday's brick are major completions. Today's final session should close the gap to target, making this the planned peak volume week.",
-  "keyInsight": "Sleep quality crashed last night (59 score, only 24min REM) immediately following the big ride \u2014 classic peak-week fatigue pattern that demands careful recovery prioritization heading into the taper.",
+  "yesterdayAnalysis": "Saturday's 60.3-mile long ride delivered 136 TSS at steady HR 124 bpm \u2014 excellent aerobic work and the cornerstone weekly session completed successfully. Power and pacing discipline appear solid based on the controlled heart rate throughout this 4+ hour effort. This was the critical session for Week 8's peak volume target.",
+  "todayRecommendation": "Complete today's planned run + open water swim, but monitor closely given last night's poor sleep (59 score, only 24min REM). Consider shortening the run if legs feel heavy \u2014 quality over volume today, and you've already banked the week's key TSS from yesterday's long ride.",
+  "weekProgress": "Week 8 of 10 is complete at 516 TSS versus 500 target (103%) \u2014 peak volume week successfully executed. All major sessions hit: Tuesday 10.2-mile long run (102 TSS), Wednesday brick, Saturday 60-mile ride (136 TSS), plus 9000m total swim volume across the week. Excellent discipline balance and brick work maintained.",
+  "keyInsight": "Sleep quality has crashed post-peak weekend (59 score, 24min REM) after delivering 204 TSS across yesterday's long ride and today's 7-mile run \u2014 recovery monitoring is critical heading into the taper phase.",
   "alerts": [
-    "Last night's sleep significantly degraded: 59 score, only 24min REM vs 93min two nights ago",
-    "REM sleep dropped 74% from Thursday to Saturday night \u2014 recovery quality concern"
+    "Last night sleep score 59 with only 24min REM after heavy training block",
+    "Second poor sleep night in 7 days (also June 12: 57 score, 4.7h duration)"
   ],
   "positives": [
-    "Nailed the 10.2-mile long run Tuesday (102 TSS, HR 144) \u2014 first long run back after gap, no cutback needed",
-    "Saturday's 60-mile ride perfectly executed at controlled HR 124 \u2014 race-pacing discipline holding",
-    "8 brick sessions completed in the build \u2014 excellent race-specific preparation"
+    "Peak week executed perfectly: 516 TSS achieved with all major sessions completed",
+    "Saturday's 60.3-mile long ride maintained excellent HR control (124 bpm avg)",
+    "9th brick workout completed this build (June 10) \u2014 race-specific prep on target",
+    "Tuesday night 10.2-mile long run at 144 HR shows controlled aerobic pacing"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
