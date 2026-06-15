@@ -41,7 +41,7 @@ weeks       = summary.get("weeks", [])
 # ── TRAINING PLAN ─────────────────────────────────────────────────────────────
 WEEK_TARGETS = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:290,10:380,11:420,12:200,13:150}
 WEEK_PHASES  = {1:"Recovery",2:"Build",3:"Build",4:"Build",5:"Build",
-                6:"Recovery",7:"Peak",8:"Peak",9:"Taper",10:"Build",
+                6:"Recovery",7:"Peak",8:"Peak",9:"Recovery",10:"Build",
                 11:"Build",12:"Taper",13:"Race Week"}
 WEEK_FOCUS   = {
     1:"Recovery — easy aerobic only, no intensity",
@@ -52,7 +52,7 @@ WEEK_FOCUS   = {
     6:"Recovery week — volume drops 35%, no intensity",
     7:"Race-specific intensity — Oregon ROUVY sim NP 145-152w, bricks",
     8:"Peak volume week — biggest week, 2hr outdoor brick, 9000m swim",
-    9:"Taper — volume drops 40%, short sharp efforts",
+    9:"Recovery — absorb back-to-back peak weeks, all easy, no intensity",
     10:"Build continues — Oregon ROUVY segment NP 145-152w, brick, still 3 weeks to race",
     11:"Final quality week — last race-pace efforts, 4x200 swim, short brick, nothing hard after Wed",
     12:"True taper — volume -60%, bike packed Thu, drive to Salem Sun Jul 13",
