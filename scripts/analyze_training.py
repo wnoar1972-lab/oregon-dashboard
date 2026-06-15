@@ -39,10 +39,10 @@ overall     = summary.get("overall", {})
 weeks       = summary.get("weeks", [])
 
 # ── TRAINING PLAN ─────────────────────────────────────────────────────────────
-WEEK_TARGETS = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:290,10:380,11:420,12:200,13:150}
+WEEK_TARGETS = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:320,10:380,11:340,12:200,13:150}
 WEEK_PHASES  = {1:"Recovery",2:"Build",3:"Build",4:"Build",5:"Build",
-                6:"Recovery",7:"Peak",8:"Peak",9:"Recovery",10:"Build",
-                11:"Build",12:"Taper",13:"Race Week"}
+                6:"Recovery",7:"Peak",8:"Peak",9:"Transition",10:"Build",
+                11:"Sharpener",12:"Taper",13:"Race Week"}
 WEEK_FOCUS   = {
     1:"Recovery — easy aerobic only, no intensity",
     2:"First volume step-up — Oregon ROUVY sim, long run",
@@ -52,9 +52,9 @@ WEEK_FOCUS   = {
     6:"Recovery week — volume drops 35%, no intensity",
     7:"Race-specific intensity — Oregon ROUVY sim NP 145-152w, bricks",
     8:"Peak volume week — biggest week, 2hr outdoor brick, 9000m swim",
-    9:"Recovery — absorb back-to-back peak weeks, all easy, no intensity",
-    10:"Build continues — Oregon ROUVY segment NP 145-152w, brick, still 3 weeks to race",
-    11:"Final quality week — last race-pace efforts, 4x200 swim, short brick, nothing hard after Wed",
+    9:"Transition — volume -35%, one quality swim set, step down not shutdown",
+    10:"Final build — Oregon ROUVY full course at race NP 145-152w + brick run",
+    11:"Sharpener — last race-pace efforts, 4x200 swim, 3x8min bike, nothing hard after Wed",
     12:"True taper — volume -60%, bike packed Thu, drive to Salem Sun Jul 13",
     13:"Race week — arrive Salem Jul 13, race Jul 19"
 }
@@ -172,7 +172,7 @@ RACE TARGETS:
 
 CURRENT TRAINING STATUS:
 - Today is {DAY_OF_WEEK}. {DAYS_LEFT_IN_WEEK} day(s) remain in this training week, including today.
-- This is WEEK {current_week} OF 13 in the build ({WEEK_PHASES.get(current_week, 'Build')} phase). The build is always 13 weeks total — do not use any other total.
+- This is WEEK {current_week} OF 13 in the build ({WEEK_PHASES.get(current_week, 'Build')} phase). The build is always 13 weeks total — do not use any other total. No long runs — max 5mi to protect hip (Perthes Disease). Race NP target 145-152w.
 - Week focus: {WEEK_FOCUS.get(current_week, '')}
 - Week TSS so far: {week_actual} of {week_target} target ({week_pct}% complete). IMPORTANT: weekly TSS is heavily back-loaded — the Saturday long ride and the midweek brick are by far the largest sessions — so being at a LOW percentage of the weekly target on {DAY_OF_WEEK} (with {DAYS_LEFT_IN_WEEK} days still left including today) is NORMAL and on-track, NOT a concern. Do NOT describe the week as "concerning", "behind", or "at risk" based on cumulative percentage alone. Only flag the week if a scheduled session was actually skipped, or if it is Thursday or later AND the remaining days realistically cannot reach the target.
 - This week's schedule: {schedule_line}
