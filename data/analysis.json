@@ -1,24 +1,25 @@
 {
   "date": "June 15, 2026",
-  "overallStatus": "Recovery Mode",
-  "statusColor": "blue",
-  "yesterdayAnalysis": "Completed a solid 7.0mi run at 145 avg HR for 68 TSS, closing out the second consecutive peak week. The effort level and HR suggest appropriate execution for a Sunday long run. This caps two demanding weeks (Week 7 and 8) before entering the recovery week.",
-  "todayRecommendation": "Execute the planned 3,000m pool swim at easy aerobic effort. This is a recovery week, so keep intensity minimal and focus on technique and feel. Poor sleep last night (score 46, low REM) makes today's low-intensity session perfectly timed.",
-  "weekProgress": "Week 9 of 10 is just beginning with 0 of 290 TSS completed, which is exactly on track for Monday with 6 days remaining. The schedule is heavily back-loaded with Saturday's 50-60mi ride and Sunday's 9-11mi run accounting for the bulk of weekly volume. All sessions remain ahead as planned.",
-  "keyInsight": "Last night's poor sleep (46 score, only 34min REM, 92% SpO2) after two peak weeks signals the body needs this recovery week\u2014stick to the easy aerobic plan strictly.",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Yesterday's 7-mile run at 145 HR averaged was solid endurance work, accumulating 68 TSS. However, this exceeded the weekly run volume cap you should be maintaining to protect your Perthes hip \u2014 the plan calls for max 5mi runs during the build phase. The effort level was appropriate for base-building, but volume discipline is critical given your hip condition.",
+  "todayRecommendation": "Execute today's scheduled 3,000m pool swim as an aerobic recovery session. Keep effort conversational and use this to flush fatigue from yesterday's run while addressing the poor sleep quality (score 46) from last night. Focus on technique and rhythm, not intensity.",
+  "weekProgress": "Week 9 of 10 has just begun with 0 TSS accumulated toward the 320 target, which is completely normal for Monday with 6 days remaining. The schedule is heavily back-loaded with Tuesday's brick session, Wednesday's bike+run+swim combo, and Saturday's 50-60mi long ride representing the bulk of weekly volume. On track to hit targets if planned sessions execute as scheduled.",
+  "keyInsight": "Last night's sleep score of 46 with reduced REM (34min) and elevated RHR (59) signals incomplete recovery from yesterday's run \u2014 prioritize today's swim as active recovery and monitor tonight's sleep quality closely.",
   "alerts": [
-    "Poor sleep last night: 46 score with low REM (34min) and elevated RHR (59)",
-    "7-day average sleep score is moderate at 69/100"
+    "Sleep score 46 last night \u2014 poorest of the week",
+    "Yesterday's 7mi run exceeded 5mi cap for hip protection",
+    "RHR elevated to 59 from 56 baseline"
   ],
   "positives": [
-    "Successfully completed back-to-back peak weeks with 10.2mi run (TSS 102) and 60.3mi ride (TSS 136)",
-    "8 brick workouts completed through the build maintains excellent race-specific preparation",
-    "HR control on yesterday's 7mi run (145 avg) shows good aerobic discipline"
+    "Saturday's 60.3mi ride at 136 TSS was excellent long-ride execution",
+    "Brick workout cadence strong: 8 completed in build phase",
+    "7-day sleep average of 69 shows general recovery consistency despite last night's dip"
   ],
-  "recoveryScore": 4,
+  "recoveryScore": 5,
   "trainingLoadStatus": "Fatigued",
   "generatedAt": "2026-06-15",
   "daysToRace": 34,
   "currentWeek": 9,
-  "weekPhase": "Recovery"
+  "weekPhase": "Transition"
 }

@@ -27,8 +27,7 @@
       "bikeN": 0,
       "runN": 0,
       "avgNP": 0,
-      "done": true,
-      "phase": "Logged"
+      "done": true
     },
     {
       "week": 2,
@@ -43,8 +42,7 @@
       "bikeN": 0,
       "runN": 0,
       "avgNP": 0,
-      "done": true,
-      "phase": "Logged"
+      "done": true
     },
     {
       "week": 3,
@@ -59,8 +57,7 @@
       "bikeN": 0,
       "runN": 1,
       "avgNP": 0,
-      "done": true,
-      "phase": "Logged"
+      "done": true
     },
     {
       "week": 4,
@@ -75,8 +72,7 @@
       "bikeN": 2,
       "runN": 5,
       "avgNP": 0,
-      "done": true,
-      "phase": "Build"
+      "done": true
     },
     {
       "week": 5,
@@ -91,8 +87,7 @@
       "bikeN": 4,
       "runN": 4,
       "avgNP": 0,
-      "done": true,
-      "phase": "Build"
+      "done": true
     },
     {
       "week": 6,
@@ -107,8 +102,7 @@
       "bikeN": 2,
       "runN": 4,
       "avgNP": 0,
-      "done": true,
-      "phase": "Recovery"
+      "done": true
     },
     {
       "week": 7,
@@ -123,8 +117,7 @@
       "bikeN": 6,
       "runN": 5,
       "avgNP": 0,
-      "done": true,
-      "phase": "Peak"
+      "done": true
     },
     {
       "week": 8,
@@ -139,14 +132,13 @@
       "bikeN": 3,
       "runN": 3,
       "avgNP": 0,
-      "done": true,
-      "phase": "Peak"
+      "done": true
     },
     {
       "week": 9,
       "start": "2026-06-15",
       "end": "2026-06-21",
-      "target": 320,
+      "target": 290,
       "actual": 0,
       "bikeTSS": 0,
       "swimTSS": 0,
@@ -155,8 +147,7 @@
       "bikeN": 0,
       "runN": 0,
       "avgNP": 0,
-      "done": false,
-      "phase": "Transition"
+      "done": false
     },
     {
       "week": 10,
@@ -171,14 +162,13 @@
       "bikeN": 0,
       "runN": 0,
       "avgNP": 0,
-      "done": false,
-      "phase": "Build"
+      "done": false
     },
     {
       "week": 11,
       "start": "2026-06-29",
       "end": "2026-07-05",
-      "target": 340,
+      "target": 420,
       "actual": 0,
       "bikeTSS": 0,
       "swimTSS": 0,
@@ -187,8 +177,7 @@
       "bikeN": 0,
       "runN": 0,
       "avgNP": 0,
-      "done": false,
-      "phase": "Sharpener"
+      "done": false
     },
     {
       "week": 12,
@@ -203,8 +192,7 @@
       "bikeN": 0,
       "runN": 0,
       "avgNP": 0,
-      "done": false,
-      "phase": "Taper"
+      "done": false
     },
     {
       "week": 13,
@@ -219,8 +207,7 @@
       "bikeN": 0,
       "runN": 0,
       "avgNP": 0,
-      "done": false,
-      "phase": "Race"
+      "done": false
     }
   ]
 }
