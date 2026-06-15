@@ -1,25 +1,24 @@
 {
-  "date": "June 14, 2026",
+  "date": "June 15, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Saturday's 60.3-mile long ride delivered 136 TSS at steady HR 124 bpm \u2014 excellent aerobic work and the cornerstone weekly session completed successfully. Power and pacing discipline appear solid based on the controlled heart rate throughout this 4+ hour effort. This was the critical session for Week 8's peak volume target.",
-  "todayRecommendation": "Complete today's planned run + open water swim, but monitor closely given last night's poor sleep (59 score, only 24min REM). Consider shortening the run if legs feel heavy \u2014 quality over volume today, and you've already banked the week's key TSS from yesterday's long ride.",
-  "weekProgress": "Week 8 of 10 is complete at 516 TSS versus 500 target (103%) \u2014 peak volume week successfully executed. All major sessions hit: Tuesday 10.2-mile long run (102 TSS), Wednesday brick, Saturday 60-mile ride (136 TSS), plus 9000m total swim volume across the week. Excellent discipline balance and brick work maintained.",
-  "keyInsight": "Sleep quality has crashed post-peak weekend (59 score, 24min REM) after delivering 204 TSS across yesterday's long ride and today's 7-mile run \u2014 recovery monitoring is critical heading into the taper phase.",
+  "yesterdayAnalysis": "Strong 7-mile run at 145 bpm average HR for 68 TSS yesterday \u2014 solid aerobic endurance work. The effort level was appropriate for this taper phase, maintaining fitness without accumulating excessive fatigue. This follows Saturday's substantial 60-mile ride (136 TSS), indicating good recovery between key sessions.",
+  "todayRecommendation": "Execute the planned 3,000m aerobic pool swim focusing on technique and smooth rhythm, not intensity. Given last night's poor sleep score (46) with low REM (34min) and elevated RHR (59), keep this truly aerobic and use it as active recovery to prepare for tomorrow's brick session.",
+  "weekProgress": "Week 9 of 10: Currently at 0 of 290 TSS target with 6 days remaining including today. This is completely normal \u2014 the week is heavily back-loaded with the Tuesday brick, Wednesday brick/swim combo, and Saturday's 50-60 mile long ride accounting for the majority of weekly volume. On track for taper phase execution.",
+  "keyInsight": "Last night's sleep quality (score 46, lowest of the week, elevated RHR to 59) suggests incomplete recovery from weekend training load \u2014 prioritize sleep hygiene tonight before the demanding Tuesday brick session.",
   "alerts": [
-    "Last night sleep score 59 with only 24min REM after heavy training block",
-    "Second poor sleep night in 7 days (also June 12: 57 score, 4.7h duration)"
+    "Sleep score 46 last night with only 34min REM and RHR elevated to 59",
+    "SpO2 dropped to 92% last night (lowest this week)"
   ],
   "positives": [
-    "Peak week executed perfectly: 516 TSS achieved with all major sessions completed",
-    "Saturday's 60.3-mile long ride maintained excellent HR control (124 bpm avg)",
-    "9th brick workout completed this build (June 10) \u2014 race-specific prep on target",
-    "Tuesday night 10.2-mile long run at 144 HR shows controlled aerobic pacing"
+    "Excellent 10.2-mile run on June 9 (102 TSS) demonstrates strong run fitness 34 days from race",
+    "8 brick workouts completed in build with two more scheduled this week",
+    "7-day average SpO2 of 93.9% remains stable with no concerning drops below 92%"
   ],
-  "recoveryScore": 4,
+  "recoveryScore": 5,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-14",
-  "daysToRace": 35,
-  "currentWeek": 8,
-  "weekPhase": "Peak"
+  "generatedAt": "2026-06-15",
+  "daysToRace": 34,
+  "currentWeek": 9,
+  "weekPhase": "Taper"
 }
