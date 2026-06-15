@@ -194,9 +194,10 @@ week_ranges = [
     (3,"2026-05-04","2026-05-10"),(4,"2026-05-11","2026-05-17"),
     (5,"2026-05-18","2026-05-24"),(6,"2026-05-25","2026-05-31"),
     (7,"2026-06-01","2026-06-07"),(8,"2026-06-08","2026-06-14"),
-    (9,"2026-06-15","2026-06-21"),(10,"2026-07-13","2026-07-19")
+    (9,"2026-06-15","2026-06-21"),(10,"2026-06-22","2026-06-28"),
+    (11,"2026-06-29","2026-07-05"),(12,"2026-07-06","2026-07-12"),(13,"2026-07-13","2026-07-19")
 ]
-wt = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:290,10:150}
+wt = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:290,10:380,11:420,12:200,13:150}
 
 weeks = []
 for wn, ws, we in week_ranges:
@@ -224,7 +225,7 @@ overall = {
     "lastUpdated":   TODAY.strftime("%B %d, %Y"),
     "totalActs":     len(activities),
     "avgBikeNP":     round(sum(bn_all)/len(bn_all),1) if bn_all else 0,
-    "currentWeek":   next((w["week"] for w in weeks if not w["done"]),10),
+    "currentWeek":   next((w["week"] for w in weeks if not w["done"]),13),
     "weeksComplete": sum(1 for w in weeks if w["done"] and w["actual"]>0),
     "daysToRace":    (date(2026,7,19)-TODAY).days,
     "totalSwimTSS":  round(sum(a["tss"] for a in activities if a["disc"]=="swim")),
