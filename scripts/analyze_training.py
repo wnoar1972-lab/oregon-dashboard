@@ -93,6 +93,15 @@ WEEK_OVERRIDES = {
         "Saturday":  "Long bike ride",
         "Sunday":    "Run + open water swim",
     },
+    "2026-06-15": {
+        "Monday":    "Bike 45 min + brick run 20 min off the bike (easy pace)",
+        "Tuesday":   "Pool swim 2,000m aerobic (morning or after Run Club)",
+        "Wednesday": "Bike 50 min + brick run 20 min off the bike (easy pace)",
+        "Thursday":  "Pool swim 2,500m — 4x100 at race pace, stay sharp",
+        "Friday":    "Easy run 3–4mi (protect hip, no intensity) + open water swim 1,500m at La Jolla Shores",
+        "Saturday":  "Long bike 50–55mi outdoor (NP under 150w) + brick run 20 min easy",
+        "Sunday":    "Easy run 3–4mi — all easy, protect hip",
+    },
 }
 
 # Monday (ISO) of the current week — used to look up any override for this week
