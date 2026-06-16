@@ -1,25 +1,21 @@
 {
-  "date": "June 15, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday's 7-mile run at 145 HR averaged was solid endurance work, accumulating 68 TSS. However, this exceeded the weekly run volume cap you should be maintaining to protect your Perthes hip \u2014 the plan calls for max 5mi runs during the build phase. The effort level was appropriate for base-building, but volume discipline is critical given your hip condition.",
-  "todayRecommendation": "Execute today's scheduled 3,000m pool swim as an aerobic recovery session. Keep effort conversational and use this to flush fatigue from yesterday's run while addressing the poor sleep quality (score 46) from last night. Focus on technique and rhythm, not intensity.",
-  "weekProgress": "Week 9 of 10 has just begun with 0 TSS accumulated toward the 320 target, which is completely normal for Monday with 6 days remaining. The schedule is heavily back-loaded with Tuesday's brick session, Wednesday's bike+run+swim combo, and Saturday's 50-60mi long ride representing the bulk of weekly volume. On track to hit targets if planned sessions execute as scheduled.",
-  "keyInsight": "Last night's sleep score of 46 with reduced REM (34min) and elevated RHR (59) signals incomplete recovery from yesterday's run \u2014 prioritize today's swim as active recovery and monitor tonight's sleep quality closely.",
-  "alerts": [
-    "Sleep score 46 last night \u2014 poorest of the week",
-    "Yesterday's 7mi run exceeded 5mi cap for hip protection",
-    "RHR elevated to 59 from 56 baseline"
-  ],
+  "date": "June 17, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Monday's pool swim (3,000m aerobic, TSS 28) completed as scheduled with solid HR control at 116 bpm, meeting the transition week's aerobic focus. This was the prescribed easy volume session to start the week. The low cumulative TSS (79 total) reflects normal week structure where major sessions (Sat long ride, today's brick) are still ahead.",
+  "todayRecommendation": "Execute today's full brick session: ROUVY ride followed by brick run, then tri club run for 6-7mi total. This is your key midweek volume day and should add ~100-120 TSS. Focus on bike NP around 145-152w during ROUVY, then controlled pace on runs to protect the hip while building run endurance.",
+  "weekProgress": "Week 9 of 10 is tracking normally with 79 TSS completed through Monday (25% of 320 target). This percentage is expected since the week is heavily back-loaded\u2014today's brick and Saturday's 50-60mi ride are the primary TSS drivers. All scheduled sessions completed so far.",
+  "keyInsight": "With excellent sleep recovery last night (82 score, 7.4h, good deep/REM split), you're optimally positioned for today's significant brick workout\u2014the largest midweek session of your transition week.",
+  "alerts": [],
   "positives": [
-    "Saturday's 60.3mi ride at 136 TSS was excellent long-ride execution",
-    "Brick workout cadence strong: 8 completed in build phase",
-    "7-day sleep average of 69 shows general recovery consistency despite last night's dip"
+    "Strong sleep rebound to 82 score with 91min deep and 61min REM after two suboptimal nights",
+    "Perfect execution of Monday's aerobic swim with controlled HR at 116 bpm",
+    "Last Saturday's 60mi ride (TSS 136) demonstrated solid endurance at target power zones"
   ],
-  "recoveryScore": 5,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-15",
-  "daysToRace": 34,
+  "recoveryScore": 8,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-06-16",
+  "daysToRace": 33,
   "currentWeek": 9,
   "weekPhase": "Transition"
 }
