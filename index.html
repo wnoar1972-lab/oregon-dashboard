@@ -852,9 +852,9 @@ function buildWeeklyRecap(){
 async function loadAll(){
   try {
     const [sumRes, actRes, slpRes] = await Promise.all([
-      fetch('data/summary.json').catch(()=>null),
-      fetch('data/activities.json').catch(()=>null),
-      fetch('data/sleep.json').catch(()=>null)
+      fetch('data/summary.json?v=' + Date.now()).catch(()=>null),
+      fetch('data/activities.json?v=' + Date.now()).catch(()=>null),
+      fetch('data/sleep.json?v=' + Date.now()).catch(()=>null)
     ]);
 
     if(sumRes && sumRes.ok) summaryData = await sumRes.json();
@@ -869,7 +869,7 @@ async function loadAll(){
 
     // Analysis is optional - don\'t break if missing
     try {
-      const anlRes = await fetch('data/analysis.json');
+      const anlRes = await fetch('data/analysis.json?v=' + Date.now());
       if(anlRes && anlRes.ok) analysisData = await anlRes.json();
     } catch(e) {
       console.log('No analysis data yet');
