@@ -881,6 +881,17 @@
   },
   {
     "date": "2026-06-16",
+    "title": "Carlsbad Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 43.0,
+    "np": 0,
+    "avgHR": 146.0,
+    "distance": 6539.1,
+    "duration": 2194.0
+  },
+  {
+    "date": "2026-06-16",
     "title": "Pool Swim",
     "type": "Swim",
     "disc": "swim",
