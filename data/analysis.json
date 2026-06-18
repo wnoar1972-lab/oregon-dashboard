@@ -2,15 +2,18 @@
   "date": "June 18, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Wednesday's 40km ROUVY session delivered 44 TSS at controlled HR 122, followed by today's swim completing the planned brick structure. The bike effort was appropriately conservative at race simulation intensity, reinforcing the pacing discipline that earned you a 16-min run PR at Oceanside. Brick execution remains consistent with 9 completed this build.",
-  "todayRecommendation": "Execute the planned 2,500m pool swim with 4x100 race pace intervals to maintain speed sharpness during this transition week. Focus on technique and turnover\u2014this is your quality swim set for the week, so treat the 100s at 70.3 race effort.",
-  "weekProgress": "Week 9 of 10 tracking perfectly at 198/320 TSS (62%) with 3 days remaining. This is exactly on pace given the back-loaded schedule\u2014Saturday's 50-55mi long ride will contribute ~120+ TSS alone. All planned sessions completed through today: Mon/Wed bricks done, Tue/Thu swims executed.",
-  "keyInsight": "Sleep quality rebounded strongly to 91 score last night with excellent REM/Deep balance (118/54min) and RHR 50\u2014optimal recovery heading into Friday's double and Saturday's long ride.",
-  "alerts": [],
+  "yesterdayAnalysis": "Completed a 40km ROUVY ride generating 44 TSS at controlled HR 122 bpm over 24.9 miles. This was the Wednesday brick bike session (50 min planned), though the brick run component doesn't appear logged. The moderate TSS and controlled heart rate align well with transition week volume reduction.",
+  "todayRecommendation": "Execute the planned 2,500m pool swim with 4x100 at race pace intervals to maintain swim speed during this transition week. This is your key quality swim set for the week \u2014 stay sharp on pacing but don't overcook the effort.",
+  "weekProgress": "Week 9 of 10 tracking well at 198 TSS of 320 target (62%) with 3 days remaining including today. This is normal progress given the heavily back-loaded schedule \u2014 Saturday's 50-55mi long ride will contribute the largest single TSS block. Mon/Wed bike sessions and swim work completed on schedule.",
+  "keyInsight": "Sleep quality rebounded strongly to 91/100 last night with excellent metrics (7.8h, RHR 50, strong REM/deep sleep) after a rough mid-week stretch \u2014 you're recovering well heading into the final transition week sessions.",
+  "alerts": [
+    "Wednesday brick run (20 min easy) not logged after bike session",
+    "7-day average sleep score at 71/100 shows inconsistent recovery patterns"
+  ],
   "positives": [
-    "Sleep score jumped to 91 with 7.8h duration and RHR at 50\u2014best night this week",
-    "All brick sessions executed as planned this week (Mon/Wed complete)",
-    "Bike HR consistently controlled at 122-124 during race simulation efforts"
+    "Last night's sleep was excellent: 91 score, 7.8h duration, RHR dropped to 50 bpm",
+    "Consistent bike execution at appropriate HR (122-124 bpm) across all sessions this week",
+    "Swim volume on track with 1.7mi sessions maintaining aerobic base"
   ],
   "recoveryScore": 8,
   "trainingLoadStatus": "Optimal",
