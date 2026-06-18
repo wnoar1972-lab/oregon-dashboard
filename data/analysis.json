@@ -1,21 +1,21 @@
 {
-  "date": "June 17, 2026",
+  "date": "June 18, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Tuesday executed a solid double day with a 4.1-mile run at Run Club (TSS 43, HR 146 \u2014 excellent aerobic effort) followed by a 1.7-mile pool swim (TSS 28). The run pacing and heart rate indicate good aerobic development without overreaching, and the swim volume aligns perfectly with the transition week's aerobic focus. Total daily TSS of 71 keeps loading appropriate for a step-down week.",
-  "todayRecommendation": "Complete today's scheduled 50-minute bike + 20-minute brick run at easy effort. Focus on smooth pedaling rhythm and controlled HR on the bike (target NP under 150w), then execute the brick transition with relaxed running form to continue building race-day neural patterns without stressing the hip.",
-  "weekProgress": "Week 9 of 10 is tracking perfectly with 166 TSS completed (52% of 320 target) and 4 days remaining including today. This completion rate is exactly where it should be on Wednesday given the heavily back-loaded structure \u2014 Saturday's 50-55 mile ride alone will deliver ~180-200 TSS, plus today's brick (~60 TSS) and remaining sessions easily reach the target. All scheduled sessions completed so far.",
-  "keyInsight": "Sleep quality has rebounded strongly with back-to-back 81-82 scores after mid-week dips, positioning you well for the quality work remaining this week and Saturday's long ride.",
+  "yesterdayAnalysis": "Wednesday's 40km ROUVY session delivered 44 TSS at controlled HR 122, followed by today's swim completing the planned brick structure. The bike effort was appropriately conservative at race simulation intensity, reinforcing the pacing discipline that earned you a 16-min run PR at Oceanside. Brick execution remains consistent with 9 completed this build.",
+  "todayRecommendation": "Execute the planned 2,500m pool swim with 4x100 race pace intervals to maintain speed sharpness during this transition week. Focus on technique and turnover\u2014this is your quality swim set for the week, so treat the 100s at 70.3 race effort.",
+  "weekProgress": "Week 9 of 10 tracking perfectly at 198/320 TSS (62%) with 3 days remaining. This is exactly on pace given the back-loaded schedule\u2014Saturday's 50-55mi long ride will contribute ~120+ TSS alone. All planned sessions completed through today: Mon/Wed bricks done, Tue/Thu swims executed.",
+  "keyInsight": "Sleep quality rebounded strongly to 91 score last night with excellent REM/Deep balance (118/54min) and RHR 50\u2014optimal recovery heading into Friday's double and Saturday's long ride.",
   "alerts": [],
   "positives": [
-    "Nine brick workouts completed through the build \u2014 excellent race-specific preparation with another scheduled today",
-    "Tuesday's run club effort at HR 146 shows strong aerobic efficiency at 4.1 miles with controlled intensity",
-    "Sleep recovery solid with 7+ hours and score 81 last night, RHR stable at 55 bpm"
+    "Sleep score jumped to 91 with 7.8h duration and RHR at 50\u2014best night this week",
+    "All brick sessions executed as planned this week (Mon/Wed complete)",
+    "Bike HR consistently controlled at 122-124 during race simulation efforts"
   ],
   "recoveryScore": 8,
-  "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-06-17",
-  "daysToRace": 32,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-06-18",
+  "daysToRace": 31,
   "currentWeek": 9,
   "weekPhase": "Transition"
 }
