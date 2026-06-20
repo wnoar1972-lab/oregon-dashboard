@@ -2,18 +2,19 @@
   "date": "June 20, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Completed the planned 1,500m open water swim at La Jolla Shores (39 TSS), providing excellent race-specific practice 29 days out from IM 70.3 Oregon. This was the Friday OWS component paired with the easy run. Sleep quality after this session was poor (score 48), with elevated RHR (57 vs 50-54 range), minimal REM (37min), and reduced SpO2 (93%).",
-  "todayRecommendation": "Execute today's long ride (50-55mi, NP <150w) and brick run, but monitor carefully given last night's poor sleep recovery. Consider shortening to 50mi if fatigue is evident, prioritizing quality pacing over distance. The brick run discipline remains critical with 10 completed so far.",
-  "weekProgress": "Week 9 of 10 is complete at 374 of 320 TSS target (117%). All scheduled sessions executed successfully through Friday including two brick workouts (Mon, Wed), two quality swims (Tue, Thu), the Friday easy run + OWS, and today's long ride completes the week. Volume properly stepped down by ~35% as planned for transition phase.",
-  "keyInsight": "Poor sleep recovery (48 score) following yesterday's OWS with elevated RHR and minimal REM suggests accumulated fatigue going into today's long ride \u2014 monitor closely and prioritize conservative pacing over distance completion.",
+  "yesterdayAnalysis": "Completed 1.2mi open water swim at La Jolla Shores (39 TSS) as scheduled for Friday. This was the planned easy swim paired with the Friday easy run. Good execution of the taper week's reduced volume approach \u2014 open water practice valuable 29 days out from Oregon 70.3.",
+  "todayRecommendation": "Execute today's long ride 50-55mi keeping NP strictly under 150w, followed by the 20-min easy brick run. Already at 117% of weekly TSS target (374/320), so discipline on power today is critical \u2014 this is a taper week, not a stress week. Treat the ride as race rehearsal pacing, not fitness building.",
+  "weekProgress": "Week 9 of 10 is complete at 374 TSS of 320 target (117%). All key sessions executed: Monday and Wednesday bricks done, Thursday quality swim completed (2500m with 4x100 race pace), Friday easy run and OWS completed. Saturday long ride and brick completed yesterday (55.7mi, 114 TSS). Volume reduction achieved as planned for transition week.",
+  "keyInsight": "Already 17% over weekly TSS target with all major sessions complete \u2014 today should be true easy recovery only to honor the taper design and avoid accumulated fatigue 4 weeks from A-race.",
   "alerts": [
-    "Sleep score 48 last night \u2014 worst of the week with elevated RHR (57) and low REM (37min)",
-    "Already at 117% of weekly TSS target before Saturday long ride \u2014 risk of overreach"
+    "Sleep score 48/100 last night with elevated RHR (57) and low REM (37min) \u2014 fatigue indicator",
+    "Weekly TSS already 117% of target \u2014 risk of overtraining in taper week",
+    "SpO2 at 93% last night, below optimal recovery threshold"
   ],
   "positives": [
-    "All scheduled sessions completed through Friday with excellent discipline adherence",
-    "Two quality brick workouts executed this week (Mon, Wed) maintaining race-specific fitness",
-    "Open water swimming continues weekly with 1.2mi yesterday \u2014 strong race prep 29 days out"
+    "All scheduled quality sessions completed this week including Thursday's race-pace swim",
+    "Saturday long ride 55.7mi executed with solid 114 TSS and controlled HR (138)",
+    "Brick workout #11 completed successfully \u2014 maintaining run-off-bike adaptation"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
