@@ -933,5 +933,27 @@
     "avgHR": 0,
     "distance": 1995.0,
     "duration": 3134.0
+  },
+  {
+    "date": "2026-06-20",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 23.0,
+    "np": 0,
+    "avgHR": 175.0,
+    "distance": 1647.2,
+    "duration": 550.0
+  },
+  {
+    "date": "2026-06-20",
+    "title": "ROUVY - IRONMAN 70.3 Oregon",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 114.0,
+    "np": 0,
+    "avgHR": 138.0,
+    "distance": 89681.5,
+    "duration": 9928.0
   }
 ]
