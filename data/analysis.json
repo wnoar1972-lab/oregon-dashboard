@@ -1,24 +1,25 @@
 {
-  "date": "June 19, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Completed Thursday's 2,500m pool swim with 32 TSS at controlled HR 118 bpm. This was the week's quality swim session with race pace 100s to maintain sharpness during the transition week. Solid execution of the scheduled workout with appropriate intensity control.",
-  "todayRecommendation": "Execute today's easy run 3-4mi at truly conversational pace (protect the hip per Perthes protocol), followed by the 1,500m open water swim at La Jolla Shores. Keep run HR under 140 and focus on form, not pace\u2014this is active recovery heading into tomorrow's long ride.",
-  "weekProgress": "Week 9 of 10: Currently at 198 of 320 TSS target (62%) with 2 days remaining including today. This is exactly on track\u2014the schedule is heavily back-loaded with tomorrow's 50-55mi long ride representing the bulk of weekly TSS. All scheduled sessions completed so far: Mon brick, Tue swim, Wed brick, Thu quality swim.",
-  "keyInsight": "Sleep quality rebounded nicely mid-week (91 score on 6/18) but dropped to 69 last night with elevated RHR (56) and reduced SpO2 (93%)\u2014monitor recovery closely heading into tomorrow's long ride.",
+  "date": "June 20, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Completed 1.2mi open water swim at La Jolla Shores (39 TSS), exactly as scheduled for Friday. Good adherence to the transition week plan with appropriate volume reduction. Heart rate data unavailable for OWS (normal with wetsuit/open water conditions).",
+  "todayRecommendation": "Complete today's scheduled 50-55mi long ride keeping NP strictly under 150w, followed by 20min easy brick run. This is the week's anchor session and critical for hitting the 320 TSS target while maintaining race-specific aerobic endurance in the transition phase.",
+  "weekProgress": "Week 9 of 10 shows 237 TSS (74% of 320 target) with 1 day remaining including today's long ride. Schedule adherence is excellent \u2014 all sessions completed as planned Mon-Fri. Saturday's long bike + brick will add ~80-90 TSS, bringing weekly total near target, consistent with the intentionally back-loaded structure.",
+  "keyInsight": "Last night's sleep quality dropped significantly (score 48, lowest REM at 37min, elevated RHR to 57) heading into today's most demanding session of the week \u2014 monitor energy levels closely during the long ride.",
   "alerts": [
-    "Last night sleep score dropped to 69 with elevated RHR to 56\u2014monitor fatigue today",
-    "SpO2 at 93% last night, down from 97% previous night"
+    "Sleep score 48 last night \u2014 well below 7-day average of 68",
+    "REM sleep only 37min (vs 7-day avg ~65min) indicates poor recovery",
+    "RHR elevated to 57 from recent baseline of 50-56"
   ],
   "positives": [
-    "All scheduled workouts completed this week\u2014perfect adherence to transition phase plan",
-    "Excellent swim execution: 3 pool sessions totaling 4.1mi with controlled HR averaging 117 bpm",
-    "Last Saturday's 60mi ride (136 TSS) demonstrated strong endurance at target power zones"
+    "Perfect training adherence all week \u2014 no missed sessions",
+    "OWS execution at La Jolla Shores building race-day swim confidence",
+    "Strong sleep performance mid-week (score 91 on 6/18) shows good recovery capacity"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-06-19",
-  "daysToRace": 30,
+  "recoveryScore": 5,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-06-20",
+  "daysToRace": 29,
   "currentWeek": 9,
   "weekPhase": "Transition"
 }
