@@ -1,24 +1,24 @@
 {
-  "date": "June 21, 2026",
+  "date": "June 22, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Saturday's long ride delivered exactly what the transition week called for: 55.7mi on the ROUVY Oregon course preview at 114 TSS, keeping intensity controlled (HR 138). The 1-mile brick run at HR 175 was brief but completed the key back-loaded session. This was the week's anchor workout and it hit all targets perfectly for race-specific preparation.",
-  "todayRecommendation": "Complete today's easy 3-4mi run at pure aerobic effort to close out the transition week. Given last night's poor sleep (score 49, elevated RHR 59) and the week's volume already at 117% of target, keep this truly easy and hip-protective \u2014 no intensity whatsoever.",
-  "weekProgress": "Week 9 of 10 is complete at 374 of 320 TSS (117%), perfectly executing the transition week taper strategy. All prescribed sessions were completed: both brick workouts (Mon/Wed/Sat), both quality swims (Thu pool with race pace, Fri open water), and the critical 50-55mi Saturday ride. The -35% volume reduction from build weeks was implemented as planned while maintaining sharpness.",
-  "keyInsight": "Two consecutive nights of poor sleep (scores 48 and 49) following the Saturday long ride suggest incomplete recovery \u2014 today's easy run must remain strictly aerobic to avoid digging a hole before next week's final Oregon 70.3 tune-up.",
+  "yesterdayAnalysis": "Solid 4.1mi recovery run in San Diego at 39 TSS with controlled HR of 145 bpm. This easy aerobic effort appropriately followed Saturday's big brick session (114 TSS bike + 1mi run) and supports active recovery while maintaining run volume. Pace and effort look well-managed for a recovery day.",
+  "todayRecommendation": "Execute the planned 3,000m pool swim focusing on smooth aerobic technique. This low-intensity swim session properly starts the final build week before Oregon, allowing legs to recover while maintaining swim fitness.",
+  "weekProgress": "Week 10 of 10: Currently 0 of 380 TSS target with 6 days remaining including today. This is perfectly on-track given the heavily back-loaded schedule \u2014 Tuesday's ROUVY brick, Wednesday's bike+brick+swim double, and Saturday's 50-60mi long ride will deliver the majority of weekly volume. All scheduled sessions remain ahead.",
+  "keyInsight": "Sleep quality has been inconsistent (3 nights scoring below 70 in the past week) heading into the final critical build week \u2014 prioritize sleep hygiene to maximize training adaptation with Oregon 27 days out.",
   "alerts": [
-    "Sleep quality degraded: 2 consecutive nights under 50 score",
-    "Elevated RHR last night (59 vs 50-57 recent range)"
+    "Sleep score 68 last night \u2014 below 70 for 3rd time in 7 days",
+    "SpO2 at 91% last night \u2014 lowest of the week"
   ],
   "positives": [
-    "Completed full Oregon 70.3 course preview ride maintaining disciplined pacing (HR 138)",
-    "Week TSS target exceeded while honoring taper volume (-35% reduction)",
-    "10 total brick workouts completed in build \u2014 excellent run-off-bike preparation"
+    "Completed 10 brick workouts total in the build \u2014 excellent race-specific preparation",
+    "Saturday's full Oregon course ROUVY session (55.7mi, 114 TSS) executed successfully at race-specific effort",
+    "Run HR control excellent yesterday (145 bpm) showing good recovery discipline"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-21",
-  "daysToRace": 28,
-  "currentWeek": 9,
-  "weekPhase": "Transition"
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-06-22",
+  "daysToRace": 27,
+  "currentWeek": 10,
+  "weekPhase": "Build"
 }
