@@ -556,7 +556,7 @@ var PLAN = [
   {n:13,dates:'Jul 13–19',title:'Race Week — Salem Oregon',img:'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=900&q=80',focus:['Arrive Sun Jul 13','Rest and activate','Race day Sun Jul 19'],sw:'Mon: 1,500m easy\nWed: 800m + 4x50 race pace\nFri: shakeout at Willamette',bk:'Tue: 30 min spin\nThu: 20 min + 3x1 min sharp\nSat: 10 min post check-in',rn:'Mon: 20 min easy\nWed: 15 min + 4 strides\nSun Jul 19: RACE DAY',note:'Shallow first 200m — do NOT stand, let current carry you. Bike NP 145–152w max. Trust your Oceanside run legs.'}
 ];
 
-var WEEK_TARGETS = [211,396,284,380,420,260,460,500,320,380,340,200,150];
+var WEEK_TARGETS = [211,396,284,380,420,260,460,500,320,300,340,200,150];
 var WEEK_COLORS  = {done:'#34d399',build:'#38bdf8',peak:'#a78bfa',taper:'#2dd4bf',race:'#fbbf24'};
 var WEEK_PHASES  = ['Logged','Logged','Logged','Build','Build','Recovery','Peak','Peak','Transition','Build','Sharpener','Taper','Race'];
 
@@ -703,12 +703,30 @@ var WEEK_OVERRIDES = {
   },
   '2026-06-15':{
     1:{rest:false,planned:[{disc:'bike',label:'Bike 45 min',note:'with brick'},{disc:'brick',label:'Brick run 20 min',note:'off the bike · easy pace'}]},
-    2:{rest:false,planned:[{disc:'run',label:'Run Club',note:'easy group run'},{disc:'swim',label:'Pool swim 2,000m',note:'aerobic · after Run Club'}]},
+    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'aerobic · after Run Club'}]},
     3:{rest:false,planned:[{disc:'bike',label:'Bike 50 min',note:'with brick'},{disc:'brick',label:'Brick run 20 min',note:'off the bike · easy pace'}]},
     4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 at race pace · stay sharp'}]},
     5:{rest:false,planned:[{disc:'run',label:'Easy run 3–4mi',note:'protect hip · no intensity'},{disc:'swim',label:'Open water 1,500m',note:'La Jolla Shores · aerobic'}]},
     6:{rest:false,planned:[{disc:'bike',label:'Long bike 50–55mi',note:'moderate effort · NP under 150w'},{disc:'brick',label:'Brick run 20 min',note:'off the bike · easy pace'}]},
     0:{rest:false,planned:[{disc:'run',label:'Easy run 3–4mi',note:'all easy · protect hip'}]}
+  },
+  '2026-06-22':{
+    1:{rest:false,planned:[{disc:'bike',label:'Bike 50–55 min',note:'easy-moderate ROUVY · no brick · no Run Club'}]},
+    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 at race pace · stay sharp'}]},
+    3:{rest:false,planned:[{disc:'bike',label:'Bike 45 min',note:'with short brick'},{disc:'brick',label:'Brick run 15 min',note:'easy off the bike'}]},
+    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'easy · stay loose · no intensity'}]},
+    5:{rest:true,planned:[{disc:'rest',label:'Complete rest',note:'protect everything for Sunday'}]},
+    6:{rest:false,planned:[{disc:'bike',label:'Shakeout spin 20 min',note:'easy only · save the legs'},{disc:'run',label:'Easy jog 10 min',note:'shakeout · nothing more'}]},
+    0:{rest:false,planned:[{disc:'race',label:'SDIT Race Day',note:'International · 1K swim / 30K bike / 10K run · goal sub-2:15'}]}
+  },
+  '2026-06-29':{
+    1:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'post-SDIT recovery · walk & stretch only'}]},
+    2:{rest:false,planned:[{disc:'bike',label:'Easy spin 30 min',note:'recovery only · no intensity'}]},
+    3:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m easy',note:'light return to training'},{disc:'run',label:'Easy run 3mi',note:'only if hip & legs feel ready'}]},
+    4:{rest:false,planned:[{disc:'bike',label:'Bike 45 min',note:'3x8 min at race effort NP 145–152w · last stimulus'}]},
+    5:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'4x200 at 70.3 race pace · finish strong'}]},
+    6:{rest:false,planned:[{disc:'run',label:'Easy run 3mi',note:'4x30 sec surges · controlled · not a time trial'}]},
+    0:{rest:false,planned:[{disc:'bike',label:'Easy spin 30 min',note:'nothing hard after Wednesday'}]}
   }
 };
 
