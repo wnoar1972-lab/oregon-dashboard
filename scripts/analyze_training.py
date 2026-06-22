@@ -39,7 +39,7 @@ overall     = summary.get("overall", {})
 weeks       = summary.get("weeks", [])
 
 # ── TRAINING PLAN ─────────────────────────────────────────────────────────────
-WEEK_TARGETS = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:320,10:380,11:340,12:200,13:150}
+WEEK_TARGETS = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:320,10:300,11:340,12:200,13:150}
 WEEK_PHASES  = {1:"Recovery",2:"Build",3:"Build",4:"Build",5:"Build",
                 6:"Recovery",7:"Peak",8:"Peak",9:"Transition",10:"Build",
                 11:"Sharpener",12:"Taper",13:"Race Week"}
@@ -101,6 +101,24 @@ WEEK_OVERRIDES = {
         "Friday":    "Easy run 3–4mi (protect hip, no intensity) + open water swim 1,500m at La Jolla Shores",
         "Saturday":  "Long bike 50–55mi outdoor (NP under 150w) + brick run 20 min easy",
         "Sunday":    "Easy run 3–4mi — all easy, protect hip",
+    },
+    "2026-06-22": {
+        "Monday":    "Bike 50–55 min easy-moderate on ROUVY — no brick, spin the legs fresh (no Run Club this week)",
+        "Tuesday":   "Pool swim 2,500m — 4x100 at race pace, stay sharp",
+        "Wednesday": "Bike 45 min + short brick run 15 min easy off the bike",
+        "Thursday":  "Pool swim 2,000m easy — stay loose, no intensity",
+        "Friday":    "Complete REST — protect everything for Sunday's race",
+        "Saturday":  "Shakeout only: 20 min easy spin + 10 min easy jog — nothing more, save the legs",
+        "Sunday":    "RACE DAY — San Diego International Triathlon (SDIT). International distance: 1K swim / 30K bike / 10K run. Hilly bike course ~1,112ft gain over 2 loops. Goal sub-2:15. Push swim hard from the gun, ride controlled on climbs (don't blow up T2 legs), run strong. This is a dress rehearsal for Oregon execution.",
+    },
+    "2026-06-29": {
+        "Monday":    "Full REST — post-SDIT recovery. Walk, stretch, eat well. No training stress.",
+        "Tuesday":   "Easy recovery spin 30 min only — legs should feel heavy, that is normal. No intensity.",
+        "Wednesday": "Pool swim 2,000m easy + short run 3mi easy — back to light training if hip and legs feel ready",
+        "Thursday":  "Bike 45 min with 3x8 min at race effort NP 145–152w — last race-pace bike stimulus before Oregon taper",
+        "Friday":    "Pool swim 2,000m — 4x200 at 70.3 race pace, finish strong",
+        "Saturday":  "Easy run 3mi with 4x30 sec surges — controlled and quick, not a time trial",
+        "Sunday":    "30 min easy spin only — nothing hard after Wednesday this week",
     },
 }
 
