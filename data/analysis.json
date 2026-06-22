@@ -2,21 +2,18 @@
   "date": "June 22, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Solid 4.1mi recovery run in San Diego at 39 TSS with controlled HR of 145 bpm. This easy aerobic effort appropriately followed Saturday's big brick session (114 TSS bike + 1mi run) and supports active recovery while maintaining run volume. Pace and effort look well-managed for a recovery day.",
-  "todayRecommendation": "Execute the planned 3,000m pool swim focusing on smooth aerobic technique. This low-intensity swim session properly starts the final build week before Oregon, allowing legs to recover while maintaining swim fitness.",
-  "weekProgress": "Week 10 of 10: Currently 0 of 380 TSS target with 6 days remaining including today. This is perfectly on-track given the heavily back-loaded schedule \u2014 Tuesday's ROUVY brick, Wednesday's bike+brick+swim double, and Saturday's 50-60mi long ride will deliver the majority of weekly volume. All scheduled sessions remain ahead.",
-  "keyInsight": "Sleep quality has been inconsistent (3 nights scoring below 70 in the past week) heading into the final critical build week \u2014 prioritize sleep hygiene to maximize training adaptation with Oregon 27 days out.",
-  "alerts": [
-    "Sleep score 68 last night \u2014 below 70 for 3rd time in 7 days",
-    "SpO2 at 91% last night \u2014 lowest of the week"
-  ],
+  "yesterdayAnalysis": "Strong 4.1-mile run in San Diego at 39 TSS with controlled HR of 145 bpm. This completes the key running work for the week before Sunday's race. Good execution of the volume cap (under 5 miles) to protect the hip while maintaining aerobic fitness.",
+  "todayRecommendation": "Execute the planned 50-55 minute easy-moderate ROUVY spin with no brick. Keep power conversational (Zone 2, ~140-165w), legs fresh, and avoid any intensity. This is pure race-week prep, not a training stimulus.",
+  "weekProgress": "Week 10 of 10 is properly structured as race week taper for Sunday's SDIT. With 6 days remaining including today, 0 of 300 TSS is exactly on schedule\u2014this week is intentionally light with Friday full rest and Saturday shakeout only. The plan is working as designed.",
+  "keyInsight": "Race week execution is paramount: today's easy spin keeps the legs turning without fatigue, setting up Sunday's International tri as the true Oregon dress rehearsal for swim-hard, bike-controlled, run-strong pacing strategy.",
+  "alerts": [],
   "positives": [
-    "Completed 10 brick workouts total in the build \u2014 excellent race-specific preparation",
-    "Saturday's full Oregon course ROUVY session (55.7mi, 114 TSS) executed successfully at race-specific effort",
-    "Run HR control excellent yesterday (145 bpm) showing good recovery discipline"
+    "Friday Oregon full-course brick (114 TSS, 55.7mi) nailed race NP execution and built race-specific confidence",
+    "Yesterday's 4.1mi run at HR 145 shows controlled effort and good aerobic economy heading into race week",
+    "Sleep quality rebounded to 68 score last night after three consecutive sub-50 nights\u2014timing is perfect for race week freshness"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Optimal",
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Fresh",
   "generatedAt": "2026-06-22",
   "daysToRace": 27,
   "currentWeek": 10,
