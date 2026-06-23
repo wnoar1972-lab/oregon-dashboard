@@ -2,15 +2,15 @@
   "date": "June 23, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Rest day executed perfectly on June 22nd, providing critical recovery after Friday's big Oregon course simulation (114 TSS) and Saturday's brick run. The complete day off allowed adaptation before this week's race-prep taper begins, and sleep quality rebounded to 80/100 with excellent deep sleep (110min) and normalized RHR (54bpm).",
-  "todayRecommendation": "Execute the planned 2,500m pool swim with 4x100 at race pace to dial in Sunday's SDIT swim intensity. Keep the effort controlled but sharp \u2014 this is about rehearsing race feel, not breaking yourself 5 days out from competition.",
-  "weekProgress": "Week 10 of 10 is on-plan at 42 TSS (14% of 300 target) with 5 days remaining including today. This low percentage is completely normal \u2014 the week is intentionally front-loaded with recovery (rest day yesterday) before Sunday's race, with only moderate swim sessions Tuesday/Thursday and minimal volume Friday/Saturday. No missed sessions.",
-  "keyInsight": "This is a race week taper to SDIT on Sunday \u2014 the 300 TSS target includes race day itself, so training volume should stay light and sharp, not push toward arbitrary accumulated stress.",
+  "yesterdayAnalysis": "Rest day executed as planned on Monday (June 22), providing recovery after Friday's 55.7mi Oregon course ride (TSS 114) and Saturday's brick run. This rest day was strategically placed to allow fresh legs for this week's race-week taper leading into Sunday's SDIT dress rehearsal.",
+  "todayRecommendation": "Execute the planned 2,500m pool swim with 4x100 at race pace to stay sharp without overloading. Keep intensity controlled \u2014 this is about maintaining feel and turnover, not breaking through fitness 5 days before racing.",
+  "weekProgress": "Week 10 of 10: Currently at 42 TSS (14%) with 5 days remaining including today. This is exactly on-track for a race week with Sunday's SDIT as the primary load and minimal training volume to preserve freshness. Monday's easy 40km ROUVY (TSS 42) completed as planned.",
+  "keyInsight": "Race week taper is executing perfectly \u2014 controlled volume, strategic rest, and Sunday's international-distance dress rehearsal will test race execution under controlled stress before Oregon in 26 days.",
   "alerts": [],
   "positives": [
-    "Sleep rebounded strongly to 80/100 last night with 110min deep sleep after prior nights' recovery deficit",
-    "Monday's Eagleman ride executed perfectly at easy-moderate intensity (TSS 42, HR 124) for taper legs",
-    "Last week's Oregon full-course simulation delivered solid 114 TSS at controlled HR 138 \u2014 race execution dialed in"
+    "Monday's easy 40km ROUVY ride completed at appropriate HR 124 and TSS 42 \u2014 perfect taper intensity",
+    "Sleep score rebounded to 80 last night with solid 7h duration and 110min deep sleep after two rough nights",
+    "Last week's Oregon full-course simulation (55.7mi, TSS 114) demonstrated race-readiness at appropriate HR 138"
   ],
   "recoveryScore": 8,
   "trainingLoadStatus": "Fresh",
