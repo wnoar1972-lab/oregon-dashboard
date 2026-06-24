@@ -969,6 +969,17 @@
   },
   {
     "date": "2026-06-23",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 40.0,
+    "np": 0,
+    "avgHR": 144.0,
+    "distance": 6669.9,
+    "duration": 2164.0
+  },
+  {
+    "date": "2026-06-23",
     "title": "ROUVY - IRONMAN 70.3 Eagleman 2021 40km",
     "type": "VirtualR",
     "disc": "bike",

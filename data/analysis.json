@@ -1,21 +1,27 @@
 {
-  "date": "June 23, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Rest day executed as planned on Monday (June 22), providing recovery after Friday's 55.7mi Oregon course ride (TSS 114) and Saturday's brick run. This rest day was strategically placed to allow fresh legs for this week's race-week taper leading into Sunday's SDIT dress rehearsal.",
-  "todayRecommendation": "Execute the planned 2,500m pool swim with 4x100 at race pace to stay sharp without overloading. Keep intensity controlled \u2014 this is about maintaining feel and turnover, not breaking through fitness 5 days before racing.",
-  "weekProgress": "Week 10 of 10: Currently at 42 TSS (14%) with 5 days remaining including today. This is exactly on-track for a race week with Sunday's SDIT as the primary load and minimal training volume to preserve freshness. Monday's easy 40km ROUVY (TSS 42) completed as planned.",
-  "keyInsight": "Race week taper is executing perfectly \u2014 controlled volume, strategic rest, and Sunday's international-distance dress rehearsal will test race execution under controlled stress before Oregon in 26 days.",
-  "alerts": [],
-  "positives": [
-    "Monday's easy 40km ROUVY ride completed at appropriate HR 124 and TSS 42 \u2014 perfect taper intensity",
-    "Sleep score rebounded to 80 last night with solid 7h duration and 110min deep sleep after two rough nights",
-    "Last week's Oregon full-course simulation (55.7mi, TSS 114) demonstrated race-readiness at appropriate HR 138"
+  "date": "June 24, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Yesterday delivered a solid brick session: 24.9mi bike at HR 124 (TSS 42) followed by 4.1mi run at HR 144 (TSS 40). The combined 82 TSS is quality work, and the run heart rate suggests good effort control off the bike. This was brick workout #11 in the build, maintaining critical neuromuscular patterning for Oregon.",
+  "todayRecommendation": "Execute today's planned 45-min bike + 15-min brick run, but monitor energy carefully given last night's poor sleep (score 64, only 6.3h, low REM at 24min). Keep the bike easy-moderate and the run truly easy \u2014 this is about movement quality before Sunday's race, not fitness gains.",
+  "weekProgress": "Week 10 of 10 sits at 82 TSS of 300 target (27%) with 4 days remaining including today. This is expected and on-track given the back-loaded schedule \u2014 Sunday's SDIT race will be the week's anchor session. All scheduled sessions completed so far.",
+  "keyInsight": "Last night's compromised sleep (64 score, 6.3h, 24min REM, 91% SpO2) creates a recovery deficit heading into Sunday's International distance race \u2014 today's session must be conservative to preserve race-day sharpness.",
+  "alerts": [
+    "Sleep score 64 last night \u2014 well below 7-day avg of 67",
+    "Only 6.3h sleep duration vs 7+ needed for recovery",
+    "REM sleep critically low at 24min (previous night was 58min)",
+    "SpO2 at 91% \u2014 below optimal threshold",
+    "Race in 3 days \u2014 recovery window narrowing"
   ],
-  "recoveryScore": 8,
-  "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-06-23",
-  "daysToRace": 26,
+  "positives": [
+    "11 brick workouts completed in build \u2014 excellent race-specific preparation",
+    "Yesterday's brick execution was controlled (HR 124 bike, 144 run)",
+    "Oregon full course rehearsal completed Friday (114 TSS, 55.7mi) at race-like intensity"
+  ],
+  "recoveryScore": 4,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-06-24",
+  "daysToRace": 25,
   "currentWeek": 10,
   "weekPhase": "Build"
 }
