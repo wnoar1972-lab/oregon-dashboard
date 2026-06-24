@@ -2,15 +2,18 @@
   "date": "June 24, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Solid brick session executing the Eagleman course at 42 TSS (HR 124) followed by a strong 4.1mi run at 40 TSS (HR 144). The bike effort was appropriately controlled, and the run maintained steady aerobic intensity \u2014 textbook brick execution 11 days out from Oregon. This was your 11th brick of the build, demonstrating excellent consistency in race-specific preparation.",
-  "todayRecommendation": "Execute the planned easy 2,000m pool swim with zero intensity \u2014 stay loose and maintain feel for the water. With SDIT racing Sunday, this is purely maintenance work to keep rhythm without adding fatigue.",
-  "weekProgress": "Week 10 of 13 tracking perfectly at 82 TSS (27% of 300 target) with 4 days remaining including today. The schedule is intentionally front-loaded with lighter sessions (Mon bike 50-55min, Tue/Wed swims) before Sunday's SDIT race \u2014 cumulative percentage is exactly where it should be midweek.",
-  "keyInsight": "With a race on Sunday serving as dress rehearsal for Oregon execution, this week's TSS target (300) will come primarily from the race itself \u2014 the training volume is appropriately reduced to arrive fresh.",
-  "alerts": [],
+  "yesterdayAnalysis": "Completed a solid brick workout: 24.9mi bike on ROUVY Eagleman course (TSS 42, HR 124) followed by 4.1mi run (TSS 40, HR 144). Total session TSS of 82 represents all the weekly volume so far \u2014 exactly as planned with the back-loaded schedule. Heart rates appropriate for both disciplines, good execution of the brick format 11 days out from your final tune-up race.",
+  "todayRecommendation": "Execute the planned 2,000m easy pool swim with zero intensity \u2014 this is pure maintenance and muscle loosening 4 days before Sunday's SDIT race rehearsal. Stay completely aerobic, focus on feel and rhythm.",
+  "weekProgress": "Week 10 of 13: Currently at 82 TSS of 300 target (27%) with 4 days remaining including today. This is perfectly on-track \u2014 yesterday's brick was the only significant session scheduled Mon-Wed. The week is intentionally light with Sunday's San Diego International Triathlon as the centerpiece, plus complete rest Friday and shakeout Saturday.",
+  "keyInsight": "Sleep quality dropped significantly last night (score 64, only 6.3h, REM crashed to 24min from 58min) \u2014 prioritize recovery protocols tonight to ensure you're sharp for Sunday's race dress rehearsal.",
+  "alerts": [
+    "Sleep score only 64 last night with minimal REM (24min)",
+    "SpO2 dropped to 91% last night after two good nights"
+  ],
   "positives": [
-    "11 brick workouts completed in build \u2014 excellent race-specific preparation",
-    "Yesterday's brick demonstrated controlled bike effort (HR 124) with strong run execution (HR 144)",
-    "Sleep rebounded to 80/100 on 6/23 with solid deep sleep (110min) and REM (58min)"
+    "Brick workout execution remains consistent \u2014 11 completed in the build",
+    "Run HR steady at 144-145 across recent sessions showing good fitness stability",
+    "Two consecutive nights of 92%+ SpO2 before last night's dip"
   ],
   "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
