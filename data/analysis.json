@@ -1,25 +1,24 @@
 {
-  "date": "June 25, 2026",
+  "date": "June 26, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Yesterday delivered two solid recovery sessions: a 14.5mi easy bike (TSS 24, HR 110) and a 1.7mi pool swim (TSS 22, HR 109). Both stayed appropriately easy at 2 days out from Sunday's SDIT race. Combined TSS of 46 keeps you fresh while maintaining movement \u2014 exactly what's needed in race week.",
-  "todayRecommendation": "Execute today's scheduled 45min bike + 15min brick run easy. Keep HR under 120 on the bike, jog the brick very easy \u2014 this is just a neuromuscular reminder, not fitness building. Final check of race-day transitions before Sunday.",
-  "weekProgress": "Week 10 of 13 sits at 175 TSS of 300 target (58%) with 3 days remaining including today. This is race week tapering into Sunday's SDIT \u2014 the back-loaded structure is intentionally flipped to prioritize freshness. Friday rest and Saturday shakeout are already scheduled light, so being at this percentage is exactly on plan.",
-  "keyInsight": "Sleep quality has dropped (64 avg, 2 nights below 92% SpO2) heading into race week \u2014 prioritize 8+ hours tonight and tomorrow to maximize Sunday performance.",
+  "yesterdayAnalysis": "Thursday's bike+brick session was completed as a 45-minute ROUVY Chattanooga ride (TSS 47, HR 113) at easy effort, perfectly appropriate as the final quality session before Sunday's race. Heart rate stayed controlled and the ride maintained active recovery without digging into race-day reserves. This was the correct execution for race week.",
+  "todayRecommendation": "Complete rest day as scheduled \u2014 no workout. Focus on hydration, nutrition timing, race prep logistics, and mental visualization for Sunday's SDIT race. Protect your taper.",
+  "weekProgress": "Week 10 of 13: TSS at 175/300 (58%) with 2 days remaining is exactly on track for a race-week taper. Monday's easy spin, Tuesday's pool swim with race-pace work, Wednesday's easy swim, and Thursday's brick are all completed as planned. Saturday's shakeout and Sunday's race will round out the week perfectly.",
+  "keyInsight": "This is textbook race-week execution \u2014 controlled workouts, appropriate taper volume, and Sunday's SDIT will serve as the critical dress rehearsal for Oregon pacing discipline in 23 days.",
   "alerts": [
-    "Sleep score averaging only 64/100 this week",
-    "SpO2 below 92% on 2 of last 7 nights",
-    "REM sleep critically low: 24min last 2 nights (target 90+ min)"
+    "Sleep score trending below optimal (65 avg) \u2014 prioritize early bedtime tonight and Saturday",
+    "SpO2 at 92.9% 7-day average with 2 nights below 92% \u2014 monitor for recovery impact"
   ],
   "positives": [
-    "Full Oregon 70.3 course simulation completed 6/20 at race NP (114 TSS, 55.7mi)",
-    "Brick discipline strong: 11 completed in build, most recent 6/23",
-    "Training intensity appropriately tapered this week \u2014 staying fresh for SDIT dress rehearsal"
+    "All race-week sessions executed exactly as prescribed with excellent discipline",
+    "Thursday brick kept HR at 113 \u2014 perfect controlled effort without overreach",
+    "11 brick workouts completed in build demonstrates strong race-specific preparation"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-06-25",
-  "daysToRace": 24,
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-06-26",
+  "daysToRace": 23,
   "currentWeek": 10,
   "weekPhase": "Build"
 }
