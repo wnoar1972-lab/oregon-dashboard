@@ -1,24 +1,22 @@
 {
-  "date": "June 26, 2026",
+  "date": "June 27, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Thursday's bike+brick session was completed as a 45-minute ROUVY Chattanooga ride (TSS 47, HR 113) at easy effort, perfectly appropriate as the final quality session before Sunday's race. Heart rate stayed controlled and the ride maintained active recovery without digging into race-day reserves. This was the correct execution for race week.",
-  "todayRecommendation": "Complete rest day as scheduled \u2014 no workout. Focus on hydration, nutrition timing, race prep logistics, and mental visualization for Sunday's SDIT race. Protect your taper.",
-  "weekProgress": "Week 10 of 13: TSS at 175/300 (58%) with 2 days remaining is exactly on track for a race-week taper. Monday's easy spin, Tuesday's pool swim with race-pace work, Wednesday's easy swim, and Thursday's brick are all completed as planned. Saturday's shakeout and Sunday's race will round out the week perfectly.",
-  "keyInsight": "This is textbook race-week execution \u2014 controlled workouts, appropriate taper volume, and Sunday's SDIT will serve as the critical dress rehearsal for Oregon pacing discipline in 23 days.",
-  "alerts": [
-    "Sleep score trending below optimal (65 avg) \u2014 prioritize early bedtime tonight and Saturday",
-    "SpO2 at 92.9% 7-day average with 2 nights below 92% \u2014 monitor for recovery impact"
-  ],
+  "yesterdayAnalysis": "Solid 1.2mi open water swim at Carlsbad (36 TSS) \u2014 excellent race-specific preparation with tomorrow's SDIT 1K swim in mind. Open water exposure this close to race day builds confidence and dialed sighting/navigation skills. Kept intensity controlled, preserving energy for race day.",
+  "todayRecommendation": "Execute the planned shakeout: 20min easy spin + 10min easy jog, nothing more. This is all about neuromuscular activation and flushing legs, not fitness. Save every ounce of energy for tomorrow's SDIT race rehearsal.",
+  "weekProgress": "Week 10 of 13: at 211 TSS with 1 day remaining (70% complete). Schedule is appropriately tapered for tomorrow's race \u2014 Monday easy spin (no brick), Tuesday 2,500m sharp swim, Wednesday recovery swim, Thursday short brick, Friday complete rest, today shakeout. Perfect race-week execution for SDIT dress rehearsal.",
+  "keyInsight": "This is a textbook race-week taper \u2014 every session has been purpose-built around tomorrow's SDIT performance as a critical Oregon execution rehearsal.",
+  "alerts": [],
   "positives": [
-    "All race-week sessions executed exactly as prescribed with excellent discipline",
-    "Thursday brick kept HR at 113 \u2014 perfect controlled effort without overreach",
-    "11 brick workouts completed in build demonstrates strong race-specific preparation"
+    "Open water swim exposure 1 day before race \u2014 race-ready preparation",
+    "Perfect adherence to taper protocol all week",
+    "Sleep bounced back to 82 score last night with 9.9h duration after several tough nights",
+    "11 brick workouts completed in build \u2014 neuromuscular patterns well-established"
   ],
-  "recoveryScore": 7,
+  "recoveryScore": 8,
   "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-06-26",
-  "daysToRace": 23,
+  "generatedAt": "2026-06-27",
+  "daysToRace": 22,
   "currentWeek": 10,
   "weekPhase": "Build"
 }

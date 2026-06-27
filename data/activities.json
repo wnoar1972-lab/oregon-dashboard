@@ -1021,5 +1021,16 @@
     "avgHR": 113.0,
     "distance": 40000.2,
     "duration": 4752.0
+  },
+  {
+    "date": "2026-06-26",
+    "title": "Carlsbad Open Water Swimming",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 36.0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 1939.0,
+    "duration": 3102.0
   }
 ]
