@@ -1,22 +1,25 @@
 {
-  "date": "June 27, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Solid 1.2mi open water swim at Carlsbad (36 TSS) \u2014 excellent race-specific preparation with tomorrow's SDIT 1K swim in mind. Open water exposure this close to race day builds confidence and dialed sighting/navigation skills. Kept intensity controlled, preserving energy for race day.",
-  "todayRecommendation": "Execute the planned shakeout: 20min easy spin + 10min easy jog, nothing more. This is all about neuromuscular activation and flushing legs, not fitness. Save every ounce of energy for tomorrow's SDIT race rehearsal.",
-  "weekProgress": "Week 10 of 13: at 211 TSS with 1 day remaining (70% complete). Schedule is appropriately tapered for tomorrow's race \u2014 Monday easy spin (no brick), Tuesday 2,500m sharp swim, Wednesday recovery swim, Thursday short brick, Friday complete rest, today shakeout. Perfect race-week execution for SDIT dress rehearsal.",
-  "keyInsight": "This is a textbook race-week taper \u2014 every session has been purpose-built around tomorrow's SDIT performance as a critical Oregon execution rehearsal.",
-  "alerts": [],
-  "positives": [
-    "Open water swim exposure 1 day before race \u2014 race-ready preparation",
-    "Perfect adherence to taper protocol all week",
-    "Sleep bounced back to 82 score last night with 9.9h duration after several tough nights",
-    "11 brick workouts completed in build \u2014 neuromuscular patterns well-established"
+  "date": "June 28, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Full rest day before race \u2014 exactly what was prescribed for Friday and correctly executed. The 9.9h sleep on Friday night (score 82) was excellent pre-race recovery, showing the body was primed and ready. Yesterday's rest allowed full glycogen restoration and neuromuscular freshness for today's International distance race.",
+  "todayRecommendation": "Race hard but smart: push the swim from the gun, stay controlled on the hilly bike (1,112ft over 2 loops \u2014 don't spike watts on climbs), then execute a strong run off the bike. This is your final dress rehearsal for Oregon 70.3 pacing discipline in 21 days \u2014 treat it as data collection for race execution, not just a time trial.",
+  "weekProgress": "Week 10 of 13: Currently at 211 TSS of 300 target (70% complete) with 0 days remaining including today. The race itself should add 60-75 TSS, bringing the week to ~275-286 TSS (92-95% of target) \u2014 acceptable for a taper week leading into a B-race. All planned sessions completed: Mon easy spin, Tue pool intervals, Wed easy swim, Thu brick, Fri rest, Sat shakeout executed correctly.",
+  "keyInsight": "Today's race will reveal whether conservative bike pacing translates to strong run execution on a hilly course \u2014 critical validation 3 weeks before Oregon 70.3.",
+  "alerts": [
+    "Last night sleep catastrophic: 5.2h duration, score 56, only 10min REM sleep",
+    "Race day with severely compromised sleep \u2014 manage expectations and focus on pacing discipline over time goal",
+    "SpO2 at 95% last night but previous nights show instability (2 nights below 92% this week)"
   ],
-  "recoveryScore": 8,
-  "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-06-27",
-  "daysToRace": 22,
+  "positives": [
+    "Perfect taper execution: rest day + shakeout completed as prescribed",
+    "Friday night 9.9h sleep (score 82, 124min REM) provided excellent pre-race banking",
+    "11 brick workouts completed in build \u2014 motor pattern is well-established for bike-to-run transitions"
+  ],
+  "recoveryScore": 4,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-06-28",
+  "daysToRace": 21,
   "currentWeek": 10,
   "weekPhase": "Build"
 }
