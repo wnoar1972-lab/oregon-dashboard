@@ -1032,5 +1032,71 @@
     "avgHR": 0,
     "distance": 1939.0,
     "duration": 3102.0
+  },
+  {
+    "date": "2026-06-28",
+    "title": "San Diego Multisport",
+    "type": "Run",
+    "disc": "run",
+    "tss": 58.0,
+    "np": 0,
+    "avgHR": 147.0,
+    "distance": 10006.5,
+    "duration": 3052.0
+  },
+  {
+    "date": "2026-06-28",
+    "title": "Activity",
+    "type": "",
+    "disc": "other",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 0,
+    "duration": 0
+  },
+  {
+    "date": "2026-06-28",
+    "title": "San Diego Multisport",
+    "type": "Transiti",
+    "disc": "other",
+    "tss": 1.0,
+    "np": 0,
+    "avgHR": 99.0,
+    "distance": 156.4,
+    "duration": 120.0
+  },
+  {
+    "date": "2026-06-28",
+    "title": "San Diego Multisport",
+    "type": "Ride",
+    "disc": "bike",
+    "tss": 7.0,
+    "np": 0,
+    "avgHR": 83.0,
+    "distance": 27196.4,
+    "duration": 2991.0
+  },
+  {
+    "date": "2026-06-28",
+    "title": "San Diego Multisport",
+    "type": "Transiti",
+    "disc": "other",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 95.0,
+    "distance": 267.9,
+    "duration": 98.0
+  },
+  {
+    "date": "2026-06-28",
+    "title": "San Diego Multisport",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 25.0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 1019.5,
+    "duration": 1430.0
   }
 ]
