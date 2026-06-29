@@ -1,24 +1,23 @@
 {
   "date": "June 29, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Full rest day as planned before Sunday's race. This was critical preparation for SDIT, allowing complete recovery after the brick workout on 6/23 and the ROUVY sessions earlier in the week. The 9.9h sleep (score 82) on Friday night shows excellent pre-race recovery response.",
-  "todayRecommendation": "Execute SDIT as planned: push the swim from the gun, ride controlled on the climbs (don't overcook the legs on those 1,112ft over 2 loops), then run strong off the bike. This is your Oregon execution dress rehearsal \u2014 nail the conservative bike pacing that earned you the 16-min run PR at Oceanside.",
-  "weekProgress": "Week 10 of 13 is complete at 302 TSS (101% of 300 target). Perfect taper week execution: light Monday spin, swim maintenance Tuesday/Wednesday, Thursday brick, Friday rest, Saturday shakeout, Sunday race. All sessions completed as scheduled with appropriate load distribution for race week.",
-  "keyInsight": "Poor sleep last night (5.2h, score 56, only 10min REM) after yesterday's race is typical post-competition arousal \u2014 monitor tonight's recovery closely and prioritize deep sleep strategies heading into the Oregon taper phase.",
+  "overallStatus": "Recovery Mode",
+  "statusColor": "blue",
+  "yesterdayAnalysis": "Yesterday was the San Diego International Triathlon (SDIT) \u2014 a full Olympic-distance race with 0.6mi swim, 16.9mi bike, and 6.2mi run totaling 91 TSS. HR of 147 on the run shows solid race effort. This was a critical brick workout (#12) and final race rehearsal before the Oregon 70.3 taper begins, executed exactly as planned 20 days out from race day.",
+  "todayRecommendation": "Full REST day as prescribed \u2014 this is post-race recovery, not training. Focus on nutrition, hydration, gentle walking, and stretching. Do not add any training stress today; your body needs this recovery window to absorb yesterday's race stimulus.",
+  "weekProgress": "Week 11 of 13: Currently at 0 TSS of 340 target (0% complete) with 6 days remaining including today. This is exactly on track \u2014 Monday is a planned zero-TSS rest day, and the weekly schedule is heavily back-loaded with Thursday's race-pace bike intervals and Saturday's final quality sessions before the taper. No sessions have been skipped.",
+  "keyInsight": "You're entering the final sharpening phase post-SDIT with 20 days to Oregon 70.3 \u2014 this week's focus is nailing the last race-pace efforts Wed-Fri, then shutting down all hard work to arrive fresh at the start line.",
   "alerts": [
-    "Post-race sleep was poor (5.2h, score 56, only 10min REM)",
-    "SpO2 dropped to 95% last night (down from recent 94-92% range)"
+    "Sleep on 6/28 was only 5.2h with minimal REM (10min) \u2014 likely race-night adrenaline, but monitor tonight's recovery"
   ],
   "positives": [
-    "Completed all planned taper sessions this week without missing a workout",
-    "Friday's 9.9h sleep (score 82) showed excellent pre-race recovery capacity",
-    "Executed brick workout on 6/23 (42 TSS bike + 40 TSS run) maintaining your steady brick rhythm (13th brick of build)"
+    "Completed SDIT Olympic race as planned \u2014 12th brick workout of the build and final race rehearsal executed",
+    "Rebounded with excellent 8.9h sleep last night (score 81) after poor race-night rest",
+    "7-day average sleep score of 73/100 with good SpO2 at 93.6% shows solid recovery capacity heading into taper"
   ],
-  "recoveryScore": 5,
+  "recoveryScore": 6,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-28",
-  "daysToRace": 21,
-  "currentWeek": 10,
-  "weekPhase": "Build"
+  "generatedAt": "2026-06-29",
+  "daysToRace": 20,
+  "currentWeek": 11,
+  "weekPhase": "Sharpener"
 }
