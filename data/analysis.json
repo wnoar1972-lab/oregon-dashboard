@@ -1,24 +1,21 @@
 {
-  "date": "June 29, 2026",
-  "overallStatus": "Recovery Mode",
-  "statusColor": "blue",
-  "yesterdayAnalysis": "Excellent execution of the San Diego International Triathlon sprint race (0.6mi swim, 16.9mi bike, 6.2mi run) with total TSS of 91. Heart rate data shows controlled effort across disciplines (swim unmeasured, bike HR 83, run HR 147), suggesting good pacing discipline. This was your 12th brick session of the build and serves as a final race-simulation tune-up 20 days out from Oregon 70.3.",
-  "todayRecommendation": "Execute the planned full REST day \u2014 no training stress whatsoever. Focus on walking, stretching, hydration, and nutrition to support post-race recovery. Last night's excellent 8.9h sleep (score 81) is exactly what you need; prioritize another quality sleep tonight.",
-  "weekProgress": "Week 11 of 13 starts strong post-race. Currently 0 of 340 TSS target with 6 days remaining is perfectly on-track given the back-loaded schedule (Saturday long ride and Thursday race-pace bike intervals carry the week's heavy load). Monday rest is prescribed and appropriate after yesterday's race effort.",
-  "keyInsight": "Post-race recovery is critical this week \u2014 the plan wisely keeps you completely off Monday-Tuesday and easy through Wednesday, with only one race-pace bike effort Thursday before full taper mode begins.",
-  "alerts": [
-    "SpO2 dropped to 91% on June 24 (lowest of week)",
-    "Only 10min REM sleep on June 28 post-race (score 56) \u2014 likely race excitement/fatigue"
-  ],
+  "date": "June 30, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Monday was a scheduled full rest day post-SDIT (San Diego International Triathlon on 6/28), which was executed perfectly with no training stress logged. This strategic recovery day was essential after completing the 91 TSS race simulation that included swim, bike, and run disciplines. The complete rest aligns with the sharpener phase protocol of minimizing fatigue before Oregon 70.3.",
+  "todayRecommendation": "Execute the planned 30-minute easy recovery spin only \u2014 expect legs to feel heavy and resist any temptation to add intensity. This is active recovery to promote blood flow while preserving freshness for Thursday's critical 3x8min race-pace bike intervals.",
+  "weekProgress": "Week 11 of 13 is on track with 0 of 340 TSS target through two days. This is exactly as planned \u2014 the week is heavily back-loaded with Thursday's race-pace bike session, Saturday's surge run, and supporting swim work still ahead. Monday rest and Tuesday recovery spin were both scheduled low-stress sessions.",
+  "keyInsight": "With 19 days to Oregon 70.3, this is the final race-pace stimulus week before taper \u2014 Thursday's 3x8min at 145-152w NP is the priority session that must be executed fresh.",
+  "alerts": [],
   "positives": [
-    "Successfully completed 12th brick workout with controlled pacing in sprint race format",
-    "Rebounded to 8.9h sleep with 111min REM last night (score 81) \u2014 excellent recovery response",
-    "Run HR of 147 in race shows good aerobic control, consistent with conservative pacing strategy that earned 16min PR at Oceanside"
+    "SDIT race simulation on 6/28 delivered solid execution across all three disciplines with 91 total TSS",
+    "Sleep quality rebounded excellently: 81 score with 8.9h duration and 111min REM on 6/29 after race day",
+    "12 brick workouts completed in build demonstrates strong race-specific preparation heading into sharpener phase"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-06-29",
-  "daysToRace": 20,
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-06-30",
+  "daysToRace": 19,
   "currentWeek": 11,
   "weekPhase": "Sharpener"
 }
