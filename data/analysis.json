@@ -1,21 +1,24 @@
 {
-  "date": "June 30, 2026",
+  "date": "July 01, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Monday was a scheduled full rest day post-SDIT (San Diego International Triathlon on 6/28), which was executed perfectly with no training stress logged. This strategic recovery day was essential after completing the 91 TSS race simulation that included swim, bike, and run disciplines. The complete rest aligns with the sharpener phase protocol of minimizing fatigue before Oregon 70.3.",
-  "todayRecommendation": "Execute the planned 30-minute easy recovery spin only \u2014 expect legs to feel heavy and resist any temptation to add intensity. This is active recovery to promote blood flow while preserving freshness for Thursday's critical 3x8min race-pace bike intervals.",
-  "weekProgress": "Week 11 of 13 is on track with 0 of 340 TSS target through two days. This is exactly as planned \u2014 the week is heavily back-loaded with Thursday's race-pace bike session, Saturday's surge run, and supporting swim work still ahead. Monday rest and Tuesday recovery spin were both scheduled low-stress sessions.",
-  "keyInsight": "With 19 days to Oregon 70.3, this is the final race-pace stimulus week before taper \u2014 Thursday's 3x8min at 145-152w NP is the priority session that must be executed fresh.",
-  "alerts": [],
-  "positives": [
-    "SDIT race simulation on 6/28 delivered solid execution across all three disciplines with 91 total TSS",
-    "Sleep quality rebounded excellently: 81 score with 8.9h duration and 111min REM on 6/29 after race day",
-    "12 brick workouts completed in build demonstrates strong race-specific preparation heading into sharpener phase"
+  "yesterdayAnalysis": "Completed a 6.1mi run with TSS 66 at HR 145 \u2014 this appears to have been Monday's planned full rest day shifted, or an unscheduled session. Given the plan called for full rest Monday and easy 30min spin Tuesday, this run volume (6.1mi vs today's planned 3mi) is higher than the sharpener phase prescription. The effort level was moderate (HR 145) but acceptable if legs felt ready.",
+  "todayRecommendation": "Execute today's prescribed 2,000m easy pool swim plus 3mi easy run only if hip and legs feel recovered from yesterday's 6.1mi effort. Keep the run truly easy \u2014 this is controlled aerobic work in the sharpener phase, not a tempo effort. Tomorrow's 3x8min race-pace bike intervals are the key stimulus this week.",
+  "weekProgress": "Week 11 of 13 shows 108 TSS of 340 target (32%) with 4 days remaining including today. This is perfectly on-track given the heavily back-loaded schedule \u2014 Saturday's long ride and Thursday's brick intervals will contribute the bulk of weekly TSS. The schedule rhythm is appropriate for the sharpener phase with nothing hard after Wednesday.",
+  "keyInsight": "Yesterday's 6.1mi run exceeded the prescribed easy volume for this taper phase \u2014 monitor hip response closely today and ensure Thursday's race-pace bike intervals aren't compromised by residual fatigue.",
+  "alerts": [
+    "Yesterday's run volume (6.1mi) was double today's planned 3mi \u2014 verify hip feels stable",
+    "Sleep score last night dropped to 67 with only 6.6h duration and just 30min REM"
   ],
-  "recoveryScore": 7,
+  "positives": [
+    "TSS pacing is ideal for a back-loaded sharpener week with key sessions Thursday-Saturday still ahead",
+    "12 brick workouts completed in build \u2014 excellent race-specific preparation",
+    "Avg sleep score of 72/100 over 7 days with zero nights below 92% SpO2 shows good recovery baseline"
+  ],
+  "recoveryScore": 6,
   "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-06-30",
-  "daysToRace": 19,
+  "generatedAt": "2026-07-01",
+  "daysToRace": 18,
   "currentWeek": 11,
   "weekPhase": "Sharpener"
 }

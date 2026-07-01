@@ -1098,5 +1098,27 @@
     "avgHR": 0,
     "distance": 1019.5,
     "duration": 1430.0
+  },
+  {
+    "date": "2026-06-30",
+    "title": "Carlsbad Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 66.0,
+    "np": 0,
+    "avgHR": 145.0,
+    "distance": 9855.7,
+    "duration": 3600.0
+  },
+  {
+    "date": "2026-07-01",
+    "title": "ROUVY - IRONMAN Cairns 2021 40km",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 42.0,
+    "np": 0,
+    "avgHR": 119.0,
+    "distance": 40000.1,
+    "duration": 4663.0
   }
 ]
