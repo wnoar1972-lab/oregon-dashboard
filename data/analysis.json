@@ -1,24 +1,24 @@
 {
-  "date": "July 02, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday delivered a solid recovery day per plan with an easy 1.7mi pool swim (TSS 21, HR 106) and easy indoor bike (TSS 42, HR 119, 24.9mi). Heart rates were appropriately low for easy efforts. However, the schedule called for Wednesday to be swim + 3mi easy run, and no run was logged \u2014 this shifts some volume forward.",
-  "todayRecommendation": "Execute today's key session: 45min bike with 3x8min intervals at race NP 145-152w. This is your final race-pace bike stimulus before Oregon taper begins \u2014 hit the power targets precisely, stay relaxed, and treat it as a race rehearsal. Fresh legs from Monday's full rest should support good execution.",
-  "weekProgress": "Week 11 of 13 sits at 187/340 TSS (55%) with 3 days remaining including today. The back-loaded schedule means this is on-track, BUT Wednesday's planned 3mi run was not completed. Today's race-pace bike session (likely ~50 TSS) and Friday's 4x200 swim will add significant load, keeping the week viable if Saturday's easy run and Sunday's spin are completed.",
-  "keyInsight": "Today's 3x8min race-effort bike workout is the last hard session before Oregon \u2014 execution quality matters more than adding volume, especially with the missed Wednesday run.",
+  "date": "July 03, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Yesterday's 6.4mi run with TSS 58 and HR 141 was unscheduled \u2014 the plan called for Thursday's bike session with 3x8min race-pace intervals. This run appears to have replaced or pushed the critical bike workout. With only 16 days to Oregon and the plan specifically calling for 'last race-pace bike stimulus before Oregon taper' on Thursday, missing that structured bike session is a concern for race-specific sharpening.",
+  "todayRecommendation": "Complete today's planned pool swim: 2,000m with 4x200 at 70.3 race pace. This is your final intensity swim before the taper window \u2014 execute the 200s at target effort (should feel controlled-hard, conversational between reps) and finish feeling sharp, not depleted.",
+  "weekProgress": "Week 11 of 13: Currently at 187 TSS of 340 target (55%) with 2 days remaining. This percentage is normal for Friday given the back-loaded schedule with Saturday's long ride still ahead. However, Thursday's scheduled bike workout (3x8min race-pace intervals) appears to have been replaced by an unscheduled run, which disrupts the sharpening focus for Oregon.",
+  "keyInsight": "The substitution of Thursday's race-pace bike workout with a run compromises the final bike-specific sharpening before Oregon \u2014 consider if tomorrow's easy 3mi run with surges could partially incorporate a short bike check-in to validate race NP feel.",
   "alerts": [
-    "Wednesday's planned 3mi easy run was not completed",
-    "Sleep quality variable: 67 score on 7/1 with only 30min REM, recovered to 76 on 7/2"
+    "Thursday's scheduled bike workout (3x8min at race NP) appears missed/replaced",
+    "Sleep varied significantly this week (scores 56-95, avg 76)"
   ],
   "positives": [
-    "12 brick workouts completed in this build \u2014 excellent race-specific preparation",
-    "Recovery heart rates appropriately low on yesterday's easy sessions (106 swim, 119 bike)",
-    "Monday's full rest day properly honored post-SDIT recovery protocol"
+    "Excellent sleep recovery last night: 95 score with 8.1h duration, 120min REM, RHR 53",
+    "Consistent training volume maintained through sharpener phase with 187 TSS accumulated",
+    "Strong brick workout execution pattern: 12 completed sessions throughout build"
   ],
-  "recoveryScore": 7,
+  "recoveryScore": 8,
   "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-07-02",
-  "daysToRace": 17,
+  "generatedAt": "2026-07-03",
+  "daysToRace": 16,
   "currentWeek": 11,
   "weekPhase": "Sharpener"
 }
