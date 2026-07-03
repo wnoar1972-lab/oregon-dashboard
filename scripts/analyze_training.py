@@ -116,9 +116,9 @@ WEEK_OVERRIDES = {
         "Tuesday":   "Easy recovery spin 30 min only — legs should feel heavy, that is normal. No intensity.",
         "Wednesday": "Pool swim 2,000m easy + short run 3mi easy — back to light training if hip and legs feel ready",
         "Thursday":  "Bike 45 min with 3x8 min at race effort NP 145–152w — last race-pace bike stimulus before Oregon taper",
-        "Friday":    "Pool swim 2,000m — 4x200 at 70.3 race pace, finish strong",
-        "Saturday":  "Easy run 3mi with 4x30 sec surges — controlled and quick, not a time trial",
-        "Sunday":    "30 min easy spin only — nothing hard after Wednesday this week",
+        "Friday":    "Bike ride easy-moderate — shake out the legs, no intensity, save it for tomorrow's 10K.",
+        "Saturday":  "4th of July 10K RACE — strong tempo effort, target 8:00–8:15/mi. Not all-out — Oregon is 15 days away. Protect the hip on any downhills.",
+        "Sunday":    "Open water swim — easy aerobic, La Jolla Shores. Enjoy it, no intensity, recover from Saturday 10K.",
     },
 }
 
