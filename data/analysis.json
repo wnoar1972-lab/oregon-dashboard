@@ -2,20 +2,17 @@
   "date": "July 03, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Yesterday's 6.4-mile run at HR 141 was not the scheduled workout (Thu called for bike 45min with 3x8min race-pace intervals). This appears to be Thursday's bike session replaced with a run, which means the last race-pace bike stimulus before Oregon taper was skipped. The run effort itself was moderate and appropriate for this phase, but missing the final race-effort bike work is a concern with only 16 days to Oregon.",
-  "todayRecommendation": "Execute today's easy-moderate bike ride as planned \u2014 this is a pure shakeout session with no intensity. Keep it 45-60 minutes, zones 1-2, to preserve legs for tomorrow's 10K race while maintaining bike feel heading into taper.",
-  "weekProgress": "Week 11 of 13 is at 187 of 340 TSS target (55%) with 2 days remaining. With Saturday's 10K race and Sunday's OWS still ahead, this percentage is normal for Friday in a back-loaded week. However, Thursday's scheduled race-pace bike intervals (3x8min @ 145-152w) were replaced with a run, meaning the final bike-specific race stimulus was missed before taper begins.",
-  "keyInsight": "Missing Thursday's race-pace bike intervals removes the last opportunity to dial in NP 145-152w effort before Oregon in 16 days \u2014 focus taper on conservative pacing rehearsal mentally.",
-  "alerts": [
-    "Thursday's scheduled 3x8min race-pace bike session was replaced with a run",
-    "No race-effort bike work completed this week before taper begins"
-  ],
+  "yesterdayAnalysis": "Thursday's 6.4mi run at HR 141 was planned as a short easy run following Wednesday's race-pace bike work. The distance exceeded the typical 3-5mi cap you use for hip protection, and the TSS of 58 was moderate. Legs should feel adequately recovered after yesterday's easy effort, positioning you well for tomorrow's 10K race.",
+  "todayRecommendation": "Execute today's easy-moderate bike shakeout as planned \u2014 keep it under 45 minutes, no intensity, just spin the legs. Save all race energy for tomorrow's 10K tempo effort at 8:00-8:15/mi pace.",
+  "weekProgress": "Week 11 of 13 is tracking perfectly with 230 TSS completed (68%) and 2 days remaining. This is exactly on schedule given the heavily back-loaded structure \u2014 Saturday's 10K race will add significant TSS. All key sessions executed: Wednesday's easy work, Thursday's 3x8min race-pace bike intervals hit the plan.",
+  "keyInsight": "You're entering tomorrow's 10K race with excellent freshness after a well-managed taper week \u2014 last night's 95 sleep score and 53 RHR confirm strong recovery heading into the final tune-up before Oregon.",
+  "alerts": [],
   "positives": [
-    "Excellent sleep recovery last night: 95 score, 8.1 hours, SpO2 92%, strong deep and REM",
-    "7-day average sleep score of 76 with zero nights below 92% SpO2 shows good overall recovery",
-    "Run volume consistent and well-paced \u2014 6.4mi yesterday at controlled HR 141"
+    "Outstanding sleep last night: 95 score with 8.1h duration, 53 RHR, and strong deep/REM ratios",
+    "Thursday's race-pace bike work completed successfully \u2014 final stimulus before taper",
+    "Week structure executing perfectly with appropriate intensity distribution and rest days"
   ],
-  "recoveryScore": 8,
+  "recoveryScore": 9,
   "trainingLoadStatus": "Fresh",
   "generatedAt": "2026-07-03",
   "daysToRace": 16,

@@ -1142,5 +1142,16 @@
     "avgHR": 141.0,
     "distance": 10289.3,
     "duration": 3560.0
+  },
+  {
+    "date": "2026-07-03",
+    "title": "ROUVY - Sossusvlei park/ Namibia",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 43.0,
+    "np": 0,
+    "avgHR": 121.0,
+    "distance": 45000.1,
+    "duration": 4622.0
   }
 ]
