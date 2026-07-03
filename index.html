@@ -33,7 +33,6 @@ body{font-family:'DM Sans',sans-serif;background:#f0f4f8;color:#1a2535;min-heigh
 .tab.t-health.on{border-bottom-color:#7c3aed}.tab.t-health.on .tab-lbl{color:#7c3aed}
 .tab.t-performance.on{border-bottom-color:#ea580c}.tab.t-performance.on .tab-lbl{color:#ea580c}
 .tab.t-course.on{border-bottom-color:#059669}.tab.t-course.on .tab-lbl{color:#059669}
-.tab.t-races.on{border-bottom-color:#dc2626}.tab.t-races.on .tab-lbl{color:#dc2626}
 
 .page{display:none}.page.on{display:block}
 .main{max-width:1080px;margin:0 auto;padding:1.75rem 1.5rem}
@@ -338,7 +337,6 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
   <div class="tab t-health" onclick="showTab('health',this)"><div class="tab-inner"><div class="tab-icon">💤</div><div class="tab-lbl">Sleep</div></div></div>
   <div class="tab t-performance" onclick="showTab('performance',this)"><div class="tab-inner"><div class="tab-icon">📊</div><div class="tab-lbl">Performance</div></div></div>
   <div class="tab t-course" onclick="showTab('course',this)"><div class="tab-inner"><div class="tab-icon">🗺️</div><div class="tab-lbl">Course</div></div></div>
-  <div class="tab t-races" onclick="showTab('races',this)"><div class="tab-inner"><div class="tab-icon">🏁</div><div class="tab-lbl">Races</div></div></div>
 </div>
 
 <!-- SUMMARY -->
@@ -820,9 +818,9 @@ var WEEK_OVERRIDES = {
     2:{rest:false,planned:[{disc:'bike',label:'Easy spin 30 min',note:'recovery only · no intensity'}]},
     3:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m easy',note:'light return to training'},{disc:'run',label:'Easy run 3mi',note:'only if hip & legs feel ready'}]},
     4:{rest:false,planned:[{disc:'bike',label:'Bike 45 min',note:'3x8 min at race effort NP 145–152w · last stimulus'}]},
-    5:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'4x200 at 70.3 race pace · finish strong'}]},
-    6:{rest:false,planned:[{disc:'run',label:'Easy run 3mi',note:'4x30 sec surges · controlled · not a time trial'}]},
-    0:{rest:false,planned:[{disc:'bike',label:'Easy spin 30 min',note:'nothing hard after Wednesday'}]}
+    5:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'easy-moderate · shake out the legs · no intensity · save it for tomorrow'}]},
+    6:{rest:false,planned:[{disc:'race',label:'4th of July 10K 🇺🇸',note:'strong tempo effort · 8:00–8:15/mi · not all-out · 15 days to Oregon'}]},
+    0:{rest:false,planned:[{disc:'swim',label:'Open water swim',note:'easy aerobic · La Jolla Shores · enjoy it · no intensity · recover from 10K'}]}
   }
 };
 
