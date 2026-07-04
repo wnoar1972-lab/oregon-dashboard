@@ -309,7 +309,7 @@
   },
   {
     "date": "2026-05-14",
-    "title": "Morning Run",
+    "title": "Carlsbad Running",
     "type": "Run",
     "disc": "run",
     "tss": 43.0,
@@ -1153,5 +1153,16 @@
     "avgHR": 121.0,
     "distance": 45000.1,
     "duration": 4622.0
+  },
+  {
+    "date": "2026-07-04",
+    "title": "San Diego Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 52.0,
+    "np": 0,
+    "avgHR": 142.0,
+    "distance": 10238.5,
+    "duration": 3074.0
   }
 ]

@@ -1,17 +1,17 @@
 {
   "overall": {
-    "lastUpdated": "July 03, 2026",
-    "totalActs": 105,
+    "lastUpdated": "July 04, 2026",
+    "totalActs": 106,
     "avgBikeNP": 0,
     "currentWeek": 11,
     "weeksComplete": 8,
-    "daysToRace": 16,
+    "daysToRace": 15,
     "totalSwimTSS": 627,
     "totalBikeTSS": 1268,
-    "totalRunTSS": 1387,
+    "totalRunTSS": 1439,
     "totalBikeSessions": 26,
     "totalSwimSessions": 22,
-    "totalRunSessions": 30
+    "totalRunSessions": 31
   },
   "weeks": [
     {
@@ -169,13 +169,13 @@
       "start": "2026-06-29",
       "end": "2026-07-05",
       "target": 340,
-      "actual": 230,
+      "actual": 282,
       "bikeTSS": 85,
       "swimTSS": 21,
-      "runTSS": 124,
+      "runTSS": 176,
       "swimN": 1,
       "bikeN": 2,
-      "runN": 2,
+      "runN": 3,
       "avgNP": 0,
       "done": false
     },
