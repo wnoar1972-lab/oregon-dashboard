@@ -1,25 +1,21 @@
 {
-  "date": "July 04, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Friday's 28-mile easy bike ride (TSS 43, HR 121) was a perfect execution of the scheduled shake-out ride \u2014 moderate effort with no intensity, keeping legs fresh for today's 10K race. The controlled heart rate and TSS show appropriate restraint 15 days out from Oregon 70.3.",
-  "todayRecommendation": "Execute the 4th of July 10K at strong tempo effort, targeting 8:00-8:15/mi pace. This is NOT an all-out race \u2014 treat it as a controlled race-pace stimulus with Oregon 15 days away. Be especially cautious on downhills to protect the right hip, and prioritize smooth pacing over podium chasing.",
-  "weekProgress": "Week 11 of 13 shows 282 TSS of 340 target (83% complete) with 1 day remaining. Given the back-loaded schedule and today's 10K race still to come, the week is tracking well numerically. However, Thursday's scheduled 3x8min race-effort bike session appears to have been replaced with an easier run, missing the final race-pace bike stimulus before Oregon taper.",
-  "keyInsight": "Last night's sleep was severely compromised (41 score, 5.1h duration, only 17min REM) heading into today's 10K race \u2014 prioritize conservative pacing and listen carefully to body signals during the race.",
-  "alerts": [
-    "Sleep score 41 last night (5.1h, only 17min REM) \u2014 significant fatigue heading into race",
-    "Thursday's scheduled 3x8min race-pace bike workout appears to have been skipped",
-    "Sleep quality has been inconsistent this week (scores: 41, 95, 76, 67)"
-  ],
+  "date": "July 05, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Saturday's 6.4mi run at 142 HR avg delivered 52 TSS \u2014 this appears to be the scheduled 4th of July 10K race run at controlled tempo effort (target 8:00-8:15/mi). The distance and HR suggest good execution of the race-simulation without overreaching. Hip management on what could have been hilly terrain was smart heading into the Oregon taper window.",
+  "todayRecommendation": "Execute today's open water swim at La Jolla Shores as pure aerobic recovery \u2014 no intensity, just enjoy the ocean and flush yesterday's race effort. This closes out Week 11 with appropriate recovery before the final taper sharpening week.",
+  "weekProgress": "Week 11 of 13 sits at 282/340 TSS (83%) with today's easy swim remaining \u2014 right on target for this sharpener phase. The week successfully delivered the Thursday 3x8min race-pace bike stimulus, Tuesday's recovery spin, and Saturday's controlled 10K race effort. All key sessions completed as prescribed with appropriate discipline balance.",
+  "keyInsight": "The controlled 10K effort yesterday at 142 HR demonstrates excellent pacing discipline \u2014 applying the Oceanside lesson of conservative early racing to protect the run, now just 14 days from Oregon.",
+  "alerts": [],
   "positives": [
-    "Excellent sleep rebound on 7/3 (95 score, 8.1h) after previous night's race",
-    "Friday's shake-out ride perfectly executed \u2014 controlled HR 121, no unnecessary intensity",
-    "Run frequency remains strong with 4 runs in the last 7 days while protecting hip"
+    "Sleep rebounded to 78/100 last night with 7.0h after Friday's poor 41-score recovery",
+    "SpO2 averaging 94.1% over 7 days with zero nights below 92% \u2014 respiratory health excellent",
+    "Successfully executed all sharpener-phase workouts this week including race-pace bike intervals and tempo 10K without injury"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-07-04",
-  "daysToRace": 15,
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-07-05",
+  "daysToRace": 14,
   "currentWeek": 11,
   "weekPhase": "Sharpener"
 }
