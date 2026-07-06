@@ -120,6 +120,24 @@ WEEK_OVERRIDES = {
         "Saturday":  "4th of July 10K RACE — strong tempo effort, target 8:00–8:15/mi. Not all-out — Oregon is 15 days away. Protect the hip on any downhills.",
         "Sunday":    "Open water swim — easy aerobic, La Jolla Shores. Enjoy it, no intensity, recover from Saturday 10K.",
     },
+    "2026-07-06": {
+        "Monday":    "Bike 40 min easy-moderate ROUVY (NP under 140w) + short brick run 15 min off the bike. Easy pace, no intensity.",
+        "Tuesday":   "Pool swim 2,000m with 4x100 at race pace, stay sharp. Then Run Club — easy group run, enjoy it.",
+        "Wednesday": "Bike 40 min easy ROUVY (NP under 140w) + pool swim 1,500m easy aerobic. Stay loose.",
+        "Thursday":  "Bike 30 min very easy spin only. Skip the run — protect the legs heading into race week.",
+        "Friday":    "Complete rest. No training stress. Protect everything.",
+        "Saturday":  "Open water swim 1,500m easy aerobic at La Jolla Shores. No intensity.",
+        "Sunday":    "Easy run 2–3mi. Very easy, final tune-up, nothing more.",
+    },
+    "2026-07-13": {
+        "Monday":    "Pool swim 1,500m easy with 4x50 at race pace. Stay sharp. Last pool session before Oregon.",
+        "Tuesday":   "Easy spin 20 min very easy + easy run 2mi with 4x20 sec strides. Feel fast, no effort.",
+        "Wednesday": "OW swim 1,000m easy open water. Last swim before Oregon — confidence builder.",
+        "Thursday":  "TRAVEL DAY ✈️ — fly to Oregon. Stay off your feet, hydrate well, arrive ready.",
+        "Friday":    "QR Kilo reassembly and bike check — short 20 min spin to confirm shifting and brakes are dialed.",
+        "Saturday":  "Athlete briefing and course preview swim if available. Race rehearsal — goggles, wetsuit, nutrition check.",
+        "Sunday":    "RACE EVE — full rest. Gear laid out, nutrition prepped, goggles prepped, sleep early. RACE TOMORROW.",
+    },
 }
 
 # Monday (ISO) of the current week — used to look up any override for this week
