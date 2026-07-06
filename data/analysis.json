@@ -1,21 +1,21 @@
 {
-  "date": "July 05, 2026",
+  "date": "July 06, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Saturday's 6.4mi run at 142 HR avg delivered 52 TSS \u2014 this appears to be the scheduled 4th of July 10K race run at controlled tempo effort (target 8:00-8:15/mi). The distance and HR suggest good execution of the race-simulation without overreaching. Hip management on what could have been hilly terrain was smart heading into the Oregon taper window.",
-  "todayRecommendation": "Execute today's open water swim at La Jolla Shores as pure aerobic recovery \u2014 no intensity, just enjoy the ocean and flush yesterday's race effort. This closes out Week 11 with appropriate recovery before the final taper sharpening week.",
-  "weekProgress": "Week 11 of 13 sits at 282/340 TSS (83%) with today's easy swim remaining \u2014 right on target for this sharpener phase. The week successfully delivered the Thursday 3x8min race-pace bike stimulus, Tuesday's recovery spin, and Saturday's controlled 10K race effort. All key sessions completed as prescribed with appropriate discipline balance.",
-  "keyInsight": "The controlled 10K effort yesterday at 142 HR demonstrates excellent pacing discipline \u2014 applying the Oceanside lesson of conservative early racing to protect the run, now just 14 days from Oregon.",
+  "yesterdayAnalysis": "Solid 1.5mi open water swim with 45 TSS completed in San Diego. This session provides excellent race-specific preparation 13 days out from Oregon 70.3, maintaining swim fitness while keeping intensity appropriate for taper phase. The open water exposure is valuable for race confidence and sighting practice.",
+  "todayRecommendation": "Execute the planned 3,000m pool swim focusing on aerobic endurance and technique refinement. Keep intensity controlled (Zone 2) to honor the taper philosophy while maintaining feel for the water. This session starts the week appropriately with low-stress volume.",
+  "weekProgress": "Week 12 of 13 tracking perfectly with 0 TSS of 200 target and 6 days remaining including today. This is completely on-track given the back-loaded schedule \u2014 Tuesday's brick (bike + 6-7mi run), Wednesday's brick, and Saturday's 50-60mi long ride will deliver the bulk of weekly TSS. No scheduled sessions have been missed.",
+  "keyInsight": "Sleep quality rebounded strongly (83 score, 7.8h duration) after the poor 41-score night on July 4th \u2014 recovery metrics are stable entering final taper week before race.",
   "alerts": [],
   "positives": [
-    "Sleep rebounded to 78/100 last night with 7.0h after Friday's poor 41-score recovery",
-    "SpO2 averaging 94.1% over 7 days with zero nights below 92% \u2014 respiratory health excellent",
-    "Successfully executed all sharpener-phase workouts this week including race-pace bike intervals and tempo 10K without injury"
+    "Last night's sleep exceptional: 83 score with 7.8h duration and good deep sleep (89min)",
+    "7-day SpO2 average of 93.9% with zero nights below 92% indicates strong respiratory health",
+    "Recent training shows excellent discipline balance: 3 bikes, 3 runs, 2 swims over last 7 days with appropriate taper volume"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-07-05",
-  "daysToRace": 14,
-  "currentWeek": 11,
-  "weekPhase": "Sharpener"
+  "recoveryScore": 8,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-07-06",
+  "daysToRace": 13,
+  "currentWeek": 12,
+  "weekPhase": "Taper"
 }
