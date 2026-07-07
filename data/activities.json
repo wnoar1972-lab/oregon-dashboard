@@ -1079,6 +1079,17 @@
   },
   {
     "date": "2026-06-28",
+    "title": "OTHER",
+    "type": "Ride",
+    "disc": "bike",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 27315.2,
+    "duration": 3049.0
+  },
+  {
+    "date": "2026-06-28",
     "title": "San Diego Multisport",
     "type": "Transiti",
     "disc": "other",
@@ -1175,5 +1186,60 @@
     "avgHR": 0,
     "distance": 2409.5,
     "duration": 3848.0
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Evening Ride",
+    "type": "Ride",
+    "disc": "bike",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 25105.8,
+    "duration": 3082.0
+  },
+  {
+    "date": "2026-07-06",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 8.0,
+    "np": 0,
+    "avgHR": 137.0,
+    "distance": 1641.9,
+    "duration": 514.0
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Activity",
+    "type": "",
+    "disc": "other",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 0,
+    "duration": 0
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 19.0,
+    "np": 0,
+    "avgHR": 111.0,
+    "distance": 2057.4,
+    "duration": 2816.0
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Activity",
+    "type": "",
+    "disc": "other",
+    "tss": 0,
+    "np": 0,
+    "avgHR": 0,
+    "distance": 0,
+    "duration": 0
   }
 ]

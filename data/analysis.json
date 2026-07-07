@@ -1,21 +1,21 @@
 {
-  "date": "July 06, 2026",
+  "date": "July 07, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Yesterday's 1.5mi open water swim at San Diego (45 TSS) was a solid aerobic session that maintained swim fitness while keeping load appropriate for taper week. The workout aligns perfectly with the reduced volume strategy (-60%) heading into race week, and open water exposure is valuable race prep with Oregon 70.3 just 13 days out.",
-  "todayRecommendation": "Execute today's 40-minute easy-moderate ROUVY ride (NP under 140w) followed by the 15-minute brick run exactly as planned. Focus on neuromuscular activation and race feel, not fitness building\u2014keep the bike NP well under 140w and run at conversational pace.",
-  "weekProgress": "Week 12 of 13 is tracking perfectly with 0 TSS of 200 target after just one day. This is completely expected given the back-loaded structure\u2014Monday's brick session will add meaningful TSS, and the schedule appropriately emphasizes sharpness over volume in this true taper week before the drive to Salem.",
-  "keyInsight": "You're in textbook taper mode 13 days out from Oregon 70.3\u2014the focus has correctly shifted from building fitness to preserving freshness while maintaining race-specific feel through short bricks and quality swim sessions.",
+  "yesterdayAnalysis": "Monday's brick workout was executed perfectly for taper week \u2014 15.6 mile easy ride with no recorded power stress followed by a conservative 1-mile run at HR 137 (8 TSS). This was exactly the prescribed 40-min easy-moderate bike + 15-min brick run. The low intensity and volume are appropriate 12 days out from race day, maintaining touch without adding fatigue.",
+  "todayRecommendation": "Execute the planned 2,000m pool swim with 4x100 at race pace to maintain swim sharpness, then enjoy Run Club as an easy social run. Keep effort conversational and ignore any temptation to push pace \u2014 this is about neural activation, not fitness building.",
+  "weekProgress": "Week 12 of 13 is progressing on schedule with 27 TSS completed (14% of 200 target) through 2 days. This low percentage is completely normal and expected given the heavy back-loading toward Saturday's long ride and midweek brick sessions. All scheduled sessions have been completed as prescribed with appropriate taper intensity.",
+  "keyInsight": "Taper execution is excellent \u2014 you're honoring the volume reduction while maintaining race-specific touches, exactly what's needed 12 days out from IM 70.3 Oregon.",
   "alerts": [],
   "positives": [
-    "Sleep rebounded strongly to 83/100 with 7.8h duration after the poor 41-score night on July 4th",
-    "Last week's training demonstrated excellent discipline with appropriate taper volume (TSS 327 across 6 sessions)",
-    "Twelve brick workouts completed during the build provides strong bike-to-run adaptation heading into race day"
+    "Sleep quality rebounded nicely with 78-score night after the July 4th disruption (41-score)",
+    "Perfect brick workout adherence \u2014 13 completed through the build with yesterday's session maintaining the pattern",
+    "Monday's run HR of 137 shows excellent aerobic control and recovery adaptation heading into taper"
   ],
   "recoveryScore": 8,
   "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-06",
-  "daysToRace": 13,
+  "generatedAt": "2026-07-07",
+  "daysToRace": 12,
   "currentWeek": 12,
   "weekPhase": "Taper"
 }
