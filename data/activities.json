@@ -1211,6 +1211,17 @@
   },
   {
     "date": "2026-07-07",
+    "title": "Carlsbad Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 59.0,
+    "np": 0,
+    "avgHR": 142.0,
+    "distance": 9826.7,
+    "duration": 3320.0
+  },
+  {
+    "date": "2026-07-07",
     "title": "Activity",
     "type": "",
     "disc": "other",
