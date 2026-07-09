@@ -1252,5 +1252,38 @@
     "avgHR": 0,
     "distance": 0,
     "duration": 0
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 16.0,
+    "np": 0,
+    "avgHR": 114.0,
+    "distance": 1463.0,
+    "duration": 2138.0
+  },
+  {
+    "date": "2026-07-08",
+    "title": "ROUVY - IRONMAN 70.3 Florida 2021 40km",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 22.0,
+    "np": 0,
+    "avgHR": 117.0,
+    "distance": 25453.1,
+    "duration": 3017.0
+  },
+  {
+    "date": "2026-07-09",
+    "title": "ROUVY - IRONMAN 70.3 Oregon",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 29.0,
+    "np": 0,
+    "avgHR": 113.0,
+    "distance": 29288.2,
+    "duration": 3628.0
   }
 ]

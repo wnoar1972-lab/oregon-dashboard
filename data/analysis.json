@@ -1,26 +1,22 @@
 {
-  "date": "July 08, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday's session exceeded the plan significantly: ran 6.1mi at 142bpm average (59 TSS) when the plan called for 15min easy brick run off the bike. The ROUVY bike session appears to have been skipped entirely (0 TSS recorded). The pool swim was executed well at 1.3mi (19 TSS). Running over-distance this close to race day (11 days out) during taper introduces unnecessary fatigue risk, especially with Perthes hip considerations.",
-  "todayRecommendation": "Execute today's plan exactly as written: 40min easy ROUVY ride (NP under 140w) + 1,500m easy pool swim. After yesterday's unplanned run volume, discipline and restraint are critical today \u2014 stay aerobic, protect the legs, and resist any urge to add intensity or duration.",
-  "weekProgress": "Week 12 of 13 shows 86 TSS of 200 target (43% complete) with 4 days remaining including today. Given the back-loaded schedule and Mon's brick run deviation, progress is reasonable but requires adherence to remaining sessions. Monday's bike was skipped, which cost ~30 TSS. Thu bike spin, Sat OWS, and Sun easy run remain to complete the taper week.",
-  "keyInsight": "Taper discipline was compromised yesterday \u2014 running 6.1mi instead of the prescribed 15min brick run while skipping the bike session contradicts the taper strategy that worked at Oceanside (conservative pacing = 16min run PR).",
-  "alerts": [
-    "Monday's 40min ROUVY bike session was skipped",
-    "Yesterday's run exceeded plan by ~5mi during critical taper week",
-    "Last night's sleep: only 5.7h with 72 score \u2014 prioritize sleep tonight",
-    "SpO2 at 92% last night (borderline threshold)"
-  ],
+  "date": "July 09, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Wednesday's session perfectly executed the taper plan: 40-minute easy ROUVY ride (TSS 22, HR 117) paired with a 0.9mi pool swim (TSS 16, HR 114). Combined TSS of 38 kept stress minimal while maintaining feel and rhythm. Heart rates stayed comfortably aerobic, exactly what's needed 10 days out from race day.",
+  "todayRecommendation": "Complete today's 30-minute very easy spin as planned \u2014 this is purely about leg turnover and staying loose, not fitness. Skip the run entirely as prescribed to protect your hip and preserve freshness for race week.",
+  "weekProgress": "Week 12 of 13 shows 153 TSS of 200 target (76%) with 3 days remaining including today. This is perfectly on-track for a true taper week where volume is intentionally reduced by 60%. The remaining schedule (today's easy spin, Friday rest, Saturday OWS, Sunday short run) will safely reach target while maximizing freshness for Salem.",
+  "keyInsight": "Your taper discipline is excellent \u2014 all sessions executed at prescribed low intensity (HR 113-117 on bike, 111-114 swim) while bike is packed tomorrow for race week travel.",
+  "alerts": [],
   "positives": [
-    "13 brick workouts completed across the build \u2014 excellent discipline overall",
-    "Yesterday's pool swim HR (111bpm) shows good aerobic control",
-    "7-day average sleep score of 75 with SpO2 at 93% demonstrates reasonable recovery capacity"
+    "Sleep rebounded to 79 score last night with 6.9h and strong REM (93min) after Tuesday's dip",
+    "Yesterday's ROUVY course was the actual IM 70.3 Oregon route \u2014 perfect race visualization and course familiarity",
+    "Heart rate discipline outstanding all week: all bike sessions at 113-121 bpm, well below aerobic threshold",
+    "13 brick workouts completed through the build demonstrates excellent race-specific preparation"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-07-08",
-  "daysToRace": 11,
+  "recoveryScore": 8,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-07-09",
+  "daysToRace": 10,
   "currentWeek": 12,
   "weekPhase": "Taper"
 }
