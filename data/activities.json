@@ -1277,6 +1277,17 @@
   },
   {
     "date": "2026-07-09",
+    "title": "San Diego Open Water Swimming",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 26.0,
+    "np": 0,
+    "avgHR": 117.0,
+    "distance": 2041.4,
+    "duration": 2974.0
+  },
+  {
+    "date": "2026-07-09",
     "title": "ROUVY - IRONMAN 70.3 Oregon",
     "type": "VirtualR",
     "disc": "bike",

@@ -598,5 +598,15 @@
     "spo2": 96.0,
     "rhr": 49,
     "quality": "Fair"
+  },
+  {
+    "date": "2026-07-10",
+    "score": 85,
+    "total": 8.0,
+    "deep": 43,
+    "rem": 114,
+    "spo2": 94.0,
+    "rhr": 53,
+    "quality": "Good"
   }
 ]

@@ -1,21 +1,21 @@
 {
-  "date": "July 09, 2026",
+  "date": "July 10, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Completed Wednesday's planned 40-minute easy ROUVY ride (TSS 22, HR 117, NP well under 140w target) plus the 1,500m pool swim (TSS 16, HR 114). Both sessions hit the aerobic targets perfectly with controlled heart rates. Excellent adherence to the taper protocol with no unnecessary stress \u2014 exactly what's needed 10 days from race.",
-  "todayRecommendation": "Today calls for 30 minutes very easy spin only, skipping the run to protect your legs heading into race week. Keep NP under 130w, HR easy conversational. This is pure maintenance \u2014 bike gets packed after this session for Sunday's drive to Salem.",
-  "weekProgress": "Week 12 of 13 tracking perfectly at 153 TSS of 200 target (76% complete) with 3 days remaining. The schedule is intentionally front-loaded this week for early taper sessions before bike packing Thursday. Monday's brick, Tuesday's swim/run club, and Wednesday's double all executed cleanly. Friday rest, Saturday OWS, and Sunday tune-up run remain \u2014 all low-stress sessions by design.",
-  "keyInsight": "Taper execution is textbook \u2014 controlled intensity, protecting the hip, and maintaining aerobic stimulus without accumulating fatigue 10 days out from Oregon 70.3.",
+  "yesterdayAnalysis": "Yesterday delivered a perfect taper protocol: easy open water swim (1.3mi, HR 117) for 26 TSS, followed by a light course preview ride on ROUVY simulating the Oregon 70.3 route (18.2mi, HR 113) for just 29 TSS. Combined 55 TSS kept stress minimal while maintaining race-specific feel and familiarity with the course terrain\u2014ideal execution 9 days out.",
+  "todayRecommendation": "Complete rest as planned. No training stress today. This is your final zero day before race week begins\u2014protect the taper, let adaptations solidify, and prioritize sleep quality heading into tomorrow's open water swim at La Jolla Shores.",
+  "weekProgress": "Week 12 of 13: Currently at 179 of 200 TSS target (90% complete) with 2 days remaining. This is right on schedule\u2014tomorrow's open water swim (1,500m) and Sunday's easy 2-3mi tune-up run will close the gap perfectly. Taper volume reduction (-60%) is being executed as designed with bike packed Thursday for Sunday's drive to Salem.",
+  "keyInsight": "Nine days from race day with taper dialed in perfectly\u2014training stress controlled, course preview completed, and recovery metrics strong with last night's 85 sleep score and 8.0h duration setting you up ideally for race week.",
   "alerts": [],
   "positives": [
-    "All taper sessions executed with precise intensity control \u2014 HRs in 113-117 range, no spikes",
-    "Sleep rebounding well with 79 score last night (6.9h) and 96% SpO2 after Tuesday's dip",
-    "Race-specific ROUVY course preview completed today (IRONMAN 70.3 Oregon route) \u2014 excellent mental preparation"
+    "Sleep rebounding strongly: 85 score with 8.0h duration and RHR 53 last night after mid-week dip",
+    "Taper execution flawless: yesterday's 55 TSS split between course preview and open water kept intensity minimal while maintaining race readiness",
+    "All 7 nights this week above 92% SpO2\u2014respiratory health stable heading into race week"
   ],
-  "recoveryScore": 8,
+  "recoveryScore": 9,
   "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-09",
-  "daysToRace": 10,
+  "generatedAt": "2026-07-10",
+  "daysToRace": 9,
   "currentWeek": 12,
   "weekPhase": "Taper"
 }
