@@ -1210,6 +1210,17 @@
     "duration": 514.0
   },
   {
+    "date": "2026-07-06",
+    "title": "Cycling",
+    "type": "Ride",
+    "disc": "bike",
+    "tss": 30.0,
+    "np": 0,
+    "avgHR": 125.0,
+    "distance": 25106.7,
+    "duration": 3050.0
+  },
+  {
     "date": "2026-07-07",
     "title": "Carlsbad Running",
     "type": "Run",
