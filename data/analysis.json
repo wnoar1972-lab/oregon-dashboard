@@ -1,21 +1,21 @@
 {
-  "date": "July 10, 2026",
+  "date": "July 11, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Thursday's double session executed perfectly for race week taper: OWS 1.3mi at easy HR 117 (TSS 26) followed by ROUVY course recon at 18.2mi with HR 113 (TSS 29). Total 55 TSS kept stress minimal while you visualized the Oregon bike course. This was smart final prep before today's complete rest.",
-  "todayRecommendation": "Complete rest as planned \u2014 no training stress whatsoever. You're 9 days out from Oregon 70.3 with 179 TSS banked and bike already packed. Focus on hydration, nutrition dialing, and mental prep for race weekend.",
-  "weekProgress": "Week 12 of 13: sitting at 179 of 200 TSS target (90%) with 2 days remaining including today. This is perfectly on track for a true taper week with today's rest day and tomorrow's easy 1,500m OWS at La Jolla Shores (est. 20 TSS). The 60% volume reduction is executing as designed heading into race week.",
-  "keyInsight": "Taper discipline is exceptional \u2014 you've kept all sessions under 140w NP and avoided the common mistake of cramming intensity into race week; body is fresh and primed for Salem.",
+  "yesterdayAnalysis": "Complete rest day as planned on Friday \u2014 exactly what you need 8 days out from Oregon 70.3. This was strategic zero training stress to allow full recovery and freshness going into race week. Bike was packed Thursday as scheduled, and you're protecting everything for the taper.",
+  "todayRecommendation": "Execute today's easy 1,500m open water swim at La Jolla Shores with zero intensity \u2014 purely aerobic feel work to stay loose and confident in the swim. Keep HR under 120 and enjoy the ocean conditions as final race-simulation exposure.",
+  "weekProgress": "Week 12 of 13: At 179 TSS of 200 target (90%) with today's swim remaining \u2014 perfectly on track for true taper week. Volume appropriately cut 60% as planned, bike packed Thursday, and you've maintained discipline across all three sports while protecting the legs and hip. Sunday's easy 2-3mi run will close out the week right on target.",
+  "keyInsight": "Sleep quality rebounding excellently (89 score, 8.2h duration, good REM/deep split last night) \u2014 you're arriving at race week fresh, recovered, and ready to execute the conservative bike strategy that earned you the 16-min run PR at Oceanside.",
   "alerts": [],
   "positives": [
-    "Sleep rebounded to 85 score with 8.0h duration last night \u2014 excellent pre-race recovery",
-    "All bike sessions this week stayed under 140w NP target, protecting legs while maintaining feel",
-    "Thursday's Oregon course visualization on ROUVY was smart race prep without excess stress"
+    "Sleep score trending up sharply: 85\u219289 last two nights with strong duration (8.0h, 8.2h) and REM recovery (114\u2192144min)",
+    "Taper discipline perfect: true rest Friday, bike packed Thursday, zero junk miles added",
+    "SpO2 stable at 94% with RHR dropping to 52 \u2014 showing excellent cardiovascular recovery heading into race week"
   ],
   "recoveryScore": 9,
   "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-10",
-  "daysToRace": 9,
+  "generatedAt": "2026-07-11",
+  "daysToRace": 8,
   "currentWeek": 12,
   "weekPhase": "Taper"
 }
