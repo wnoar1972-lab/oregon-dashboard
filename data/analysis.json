@@ -2,15 +2,15 @@
   "date": "July 13, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Yesterday's 4.1-mile run at HR 142 and TSS 40 was a solid final run session before race week taper. The distance and intensity align perfectly with your Perthes-aware protocol (keeping runs \u22645 miles) while maintaining run fitness. HR of 142 suggests controlled effort without digging into reserves six days before Oregon.",
-  "todayRecommendation": "Execute today's 1,500m pool swim with 4x50 at race pace as planned. Keep the main set easy and treat the race-pace 50s as sharpeners, not hammers. This is about neural activation and confidence, not fitness gains\u2014you're already there.",
-  "weekProgress": "Week 13 of 13: Currently at 20 TSS of 150 target (13%) with 6 days remaining including today. This is perfectly on-track for a race week taper\u2014today's swim, tomorrow's short brick, and Wednesday's OW swim will efficiently build toward your target while prioritizing freshness. The schedule is appropriately front-loaded this week given travel Thursday.",
-  "keyInsight": "You're in the textbook taper position: sleep quality is strong (83 last night, 79 avg), fitness is banked from 13 weeks of work including 13 brick sessions, and the conservative pacing lesson from Oceanside (4:32 bike \u2192 16-min run PR) is your race day blueprint.",
+  "yesterdayAnalysis": "Solid 4.1mi run at HR 142 generating 40 TSS \u2014 appropriately controlled effort for race week minus 7 days. Pace and heart rate suggest good aerobic fitness without overextension. This run fits perfectly into the taper protocol, maintaining sharpness while protecting the hip.",
+  "todayRecommendation": "Execute today's planned 1,500m pool swim with 4x50 at race pace as scheduled. Keep the main set easy, use the race-pace pickups just to remind your body what T-pace feels like. This is about confidence and feel, not fitness gain.",
+  "weekProgress": "Week 13 of 13 shows 20 TSS of 150 target (13%) with 6 days remaining including today. This is exactly on-track for race week's back-loaded structure \u2014 short sharpening sessions early week (Mon-Wed), then travel Thu, bike check Fri, briefing Sat, and race Sun. No sessions missed, taper progressing as designed.",
+  "keyInsight": "You're 6 days out from Oregon 70.3 with excellent sleep recovery (83 score last night, 8.2h), controlled training load in the taper window, and a proven conservative bike strategy from Oceanside \u2014 stay the course and trust the 13-week build.",
   "alerts": [],
   "positives": [
-    "Excellent sleep rebound: 83 score last night with 8.2h duration after mid-week dip",
-    "SpO2 averaging 94.1% over 7 days with zero nights below 92%\u2014respiratory system is healthy",
-    "13 brick workouts completed in build with final one on July 6\u2014race-specific fitness is dialed"
+    "Sleep quality rebounded to 83 score with 8.2h duration and strong REM (133min) after mid-week dip",
+    "Yesterday's run HR of 142 shows good aerobic control without over-stressing in race week",
+    "Course preview ride completed Jul 13 (20 TSS, HR 118) demonstrates smart pre-race reconnaissance"
   ],
   "recoveryScore": 8,
   "trainingLoadStatus": "Fresh",
