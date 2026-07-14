@@ -131,7 +131,7 @@ WEEK_OVERRIDES = {
     },
     "2026-07-13": {
         "Monday":    "Pool swim 1,500m easy with 4x50 at race pace. Stay sharp. Last pool session before Oregon.",
-        "Tuesday":   "Easy spin 20 min very easy + easy run 2mi with 4x20 sec strides. Feel fast, no effort.",
+        "Tuesday":   "Pool swim 2,000yd easy aerobic, stay loose + easy run 3mi easy pace. Feel fresh, no effort.",
         "Wednesday": "OW swim 1,000m easy open water. Last swim before Oregon — confidence builder.",
         "Thursday":  "TRAVEL DAY ✈️ — fly to Oregon. Stay off your feet, hydrate well, arrive ready.",
         "Friday":    "QR Kilo reassembly and bike check — short 20 min spin to confirm shifting and brakes are dialed.",
