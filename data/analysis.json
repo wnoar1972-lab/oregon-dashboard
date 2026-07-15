@@ -1,24 +1,21 @@
 {
-  "date": "July 14, 2026",
+  "date": "July 15, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "Easy 14.6mi ROUVY course preview ride at TSS 20, HR 118 \u2014 perfectly aligned with race week protocol. Low intensity (HR well below race effort) while familiarizing with the Oregon course terrain is exactly what's needed 5 days out. This keeps legs loose without accumulating fatigue.",
-  "todayRecommendation": "Execute the planned 2,000yd easy aerobic swim plus easy 3mi run exactly as prescribed. Keep HR low (under 130), prioritize feeling fresh over any intensity. This is about maintaining neural patterns and confidence, not fitness gains.",
-  "weekProgress": "Week 13 of 13: Currently at 33 TSS of 150 target (22%) with 5 days remaining including today. This is perfectly on-track for race week \u2014 the taper schedule is intentionally front-loaded with easy sessions before travel Thursday. Monday's pool session and today's swim+run are maintaining sharpness while preserving energy for race day Sunday.",
-  "keyInsight": "Race week execution is textbook so far \u2014 low-stress course preview, controlled HR, maintaining movement patterns without fatigue accumulation ahead of your 70.3 tuneup race.",
-  "alerts": [
-    "Last night's sleep dropped to 6.6h with score 76 \u2014 prioritize 8+ hours tonight",
-    "SpO2 at 91% last night (lowest of the week) \u2014 monitor hydration and sleep position"
-  ],
+  "yesterdayAnalysis": "Tuesday's double session was textbook race week execution: 2,000yd pool swim at easy aerobic intensity (HR 104) followed by a 3-mile easy run (HR 120). Both sessions kept you in Zone 1-2, allowing neural patterns to stay sharp without adding fatigue. The HR data confirms you're truly holding back \u2014 exactly what's needed 5 days out from Oregon.",
+  "todayRecommendation": "Complete today's 1,000m open water swim as planned \u2014 this is your final confidence builder before race day. Keep it truly easy, focus on sighting practice, and confirm your wetsuit/goggle setup feels dialed. This is about mental readiness, not fitness.",
+  "weekProgress": "Week 13 of 13 shows 59 TSS through Tuesday \u2014 perfectly on-track for a race week taper. The schedule is intentionally front-loaded with short, sharp sessions (Mon-Wed swimming/easy runs) before travel Thursday. No heavy bike or brick sessions are planned this week, which is appropriate 4 days from racing. Execution has been disciplined and precise.",
+  "keyInsight": "Your race week taper is being executed with excellent discipline \u2014 every session has stayed in the prescribed low-intensity zones, and sleep quality is rebounding nicely (84 score last night with 8.1h duration).",
+  "alerts": [],
   "positives": [
-    "Course preview rides completed on ROUVY (Oregon 2x, Florida) building race day confidence",
-    "HR discipline excellent across all sessions \u2014 staying well below threshold during taper",
-    "13 brick workouts completed in build phase demonstrating strong bike-to-run preparation"
+    "Sleep quality rebounded strongly to 84/100 with 8.1h duration and excellent REM (89min) \u2014 critical for race week readiness",
+    "All taper sessions staying in true easy zones (HR 104-120) \u2014 showing excellent restraint and race discipline",
+    "13 brick workouts completed across the build, with consistent bike TSS accumulation (1370 total) \u2014 you've put in the work"
   ],
-  "recoveryScore": 7,
+  "recoveryScore": 8,
   "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-14",
-  "daysToRace": 5,
+  "generatedAt": "2026-07-15",
+  "daysToRace": 4,
   "currentWeek": 13,
   "weekPhase": "Race Week"
 }
