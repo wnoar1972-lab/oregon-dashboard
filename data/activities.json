@@ -1373,5 +1373,16 @@
     "avgHR": 104.0,
     "distance": 1828.8,
     "duration": 2552.0
+  },
+  {
+    "date": "2026-07-15",
+    "title": "ROUVY - IRONMAN 70.3 Oregon",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 18.0,
+    "np": 0,
+    "avgHR": 115.0,
+    "distance": 22171.7,
+    "duration": 2712.0
   }
 ]
