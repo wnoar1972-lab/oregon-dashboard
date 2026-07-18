@@ -1,21 +1,24 @@
 {
-  "date": "July 17, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Travel day rest was executed perfectly\u2014no activities logged, allowing full recovery before race weekend. This strategic zero-stress day after Thursday's flight to Oregon positions you ideally for tomorrow's race. Smart discipline to stay off your feet and let the taper work.",
-  "todayRecommendation": "Execute the planned 20-minute QR Kilo bike check exactly as prescribed\u2014confirm shifting, brakes, and bike handling after reassembly. Keep it purely mechanical (easy spin, no effort), then get off your feet and focus on hydration and mental preparation.",
-  "weekProgress": "Week 13 of 13: Race week executing flawlessly at 77 TSS with 2 days remaining. The sharp taper protocol (Mon-Wed swims with race pace touches, easy 3mi run Tuesday, then travel/rest) has you arriving in Salem fresh and race-ready. No long sessions this week by design\u2014textbook race week structure.",
-  "keyInsight": "You're arriving at Oregon 70.3 with excellent sleep (80 avg score, 8.4h avg duration), perfectly tapered legs, and the Oceanside lesson locked in: conservative bike pacing at 145-152w will set up your sub-6:00 goal.",
-  "alerts": [],
-  "positives": [
-    "Sleep quality outstanding during race week: 76-89 scores with strong REM recovery (avg 114min)",
-    "Perfect taper execution\u2014no junk miles, strategic race-pace touches in Monday's 4x50 swim",
-    "13 brick workouts completed in build with strong bike TSS foundation (1388 total)\u2014confidence in bike-to-run transition is earned"
+  "date": "July 18, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Full rest day yesterday, which was appropriate as the planned recovery day before race morning. This aligns perfectly with the race eve protocol to maximize freshness. However, last night's sleep was severely compromised with only 3.4 hours and a poor score of 34, which is concerning 24 hours before race start.",
+  "todayRecommendation": "Complete the light athlete briefing and optional course preview swim as planned \u2014 keep it easy and focused on mental preparation, not physical effort. Prioritize relaxation, hydration, and creating conditions for exceptional sleep tonight. Consider a brief nap this afternoon if possible to offset last night's deficit.",
+  "weekProgress": "Week 13 of 13 race week taper has proceeded exactly as planned with 77 TSS accumulated through pre-race sharpeners and travel prep. The light TSS target of 150 reflects proper race week volume reduction. All scheduled sessions completed appropriately: pool swims with race pace touches, easy run, travel day, and bike check all executed. Protocol has been followed perfectly.",
+  "keyInsight": "Sleep disruption last night (3.4h, score 34) on race eve is the single biggest concern \u2014 tonight's sleep quality will directly impact tomorrow's 70.3 performance and recovery heading into the A-race 13 weeks out.",
+  "alerts": [
+    "Critical: Only 3.4h sleep last night (score 34) \u2014 race eve sleep is compromised",
+    "SpO2 at 90% last night, below optimal threshold"
   ],
-  "recoveryScore": 9,
+  "positives": [
+    "Race week taper executed flawlessly \u2014 all prep sessions completed as scheduled",
+    "Excellent sleep nights on 7/16 (9.3h, score 83) and 7/15 (8.1h, score 84) built strong sleep bank",
+    "13 brick workouts completed in build \u2014 race-specific fitness is dialed"
+  ],
+  "recoveryScore": 6,
   "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-17",
-  "daysToRace": 2,
+  "generatedAt": "2026-07-18",
+  "daysToRace": 1,
   "currentWeek": 13,
   "weekPhase": "Race Week"
 }
