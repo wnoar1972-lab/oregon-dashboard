@@ -1384,5 +1384,16 @@
     "avgHR": 115.0,
     "distance": 22171.7,
     "duration": 2712.0
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Salem Open Water Swimming",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 17.0,
+    "np": 0,
+    "avgHR": 125.0,
+    "distance": 1900.6,
+    "duration": 1698.0
   }
 ]

@@ -1,24 +1,27 @@
 {
-  "date": "July 18, 2026",
+  "date": "July 19, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Full rest day yesterday, which was appropriate as the planned recovery day before race morning. This aligns perfectly with the race eve protocol to maximize freshness. However, last night's sleep was severely compromised with only 3.4 hours and a poor score of 34, which is concerning 24 hours before race start.",
-  "todayRecommendation": "Complete the light athlete briefing and optional course preview swim as planned \u2014 keep it easy and focused on mental preparation, not physical effort. Prioritize relaxation, hydration, and creating conditions for exceptional sleep tonight. Consider a brief nap this afternoon if possible to offset last night's deficit.",
-  "weekProgress": "Week 13 of 13 race week taper has proceeded exactly as planned with 77 TSS accumulated through pre-race sharpeners and travel prep. The light TSS target of 150 reflects proper race week volume reduction. All scheduled sessions completed appropriately: pool swims with race pace touches, easy run, travel day, and bike check all executed. Protocol has been followed perfectly.",
-  "keyInsight": "Sleep disruption last night (3.4h, score 34) on race eve is the single biggest concern \u2014 tonight's sleep quality will directly impact tomorrow's 70.3 performance and recovery heading into the A-race 13 weeks out.",
+  "yesterdayAnalysis": "Final pre-race swim completed yesterday with 1.2mi open water at low HR (125 bpm), delivering 17 TSS. This was the planned confidence-builder in race venue conditions, allowing for wetsuit and sighting practice. The easy effort and controlled heart rate indicate proper taper execution with minimal stress added.",
+  "todayRecommendation": "RACE DAY - Ironman 70.3 Oregon. Execute the proven conservative bike strategy from Oceanside: hold 145-152w NP (66-69% FTP), protect the hip, and set yourself up for a strong sub-9:10/mi run to the sub-6:00 finish. Trust your 13-week build and 13 brick sessions.",
+  "weekProgress": "Week 13 of 13 (Race Week) delivered 94 TSS through strategic pre-race sharpening sessions. The taper was properly executed with easy course preview rides (18-20 TSS each), an easy 3mi run, pool work, and yesterday's open water swim. Volume and intensity correctly reduced to arrive fresh.",
+  "keyInsight": "Sleep disruption on July 18 (score 34, only 3.4 hours, SpO2 90%) represents critical pre-race stress that may impact today's performance - focus on controlled pacing early in the race to compensate for compromised recovery.",
   "alerts": [
-    "Critical: Only 3.4h sleep last night (score 34) \u2014 race eve sleep is compromised",
-    "SpO2 at 90% last night, below optimal threshold"
+    "RACE DAY - Ironman 70.3 Oregon TODAY",
+    "Severe sleep disruption last night: 3.4h duration, score 34/100, SpO2 90%",
+    "Last night SpO2 below 92% (95% reported for today suggests data anomaly)",
+    "Pre-race sleep quality poor - anticipate slightly elevated RPE early in race"
   ],
   "positives": [
-    "Race week taper executed flawlessly \u2014 all prep sessions completed as scheduled",
-    "Excellent sleep nights on 7/16 (9.3h, score 83) and 7/15 (8.1h, score 84) built strong sleep bank",
-    "13 brick workouts completed in build \u2014 race-specific fitness is dialed"
+    "13-week build complete: 127 total sessions, 1388 bike TSS, 13 brick workouts",
+    "Taper executed perfectly with easy course previews and final confidence swim",
+    "Proven race strategy from Oceanside 70.3: conservative bike (4:32) yielded 16-min run PR",
+    "Heart rates throughout taper week remained controlled (104-125 bpm) indicating freshness"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-18",
-  "daysToRace": 1,
+  "recoveryScore": 4,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-07-19",
+  "daysToRace": 0,
   "currentWeek": 13,
   "weekPhase": "Race Week"
 }
