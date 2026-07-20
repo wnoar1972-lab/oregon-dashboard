@@ -1395,5 +1395,60 @@
     "avgHR": 125.0,
     "distance": 1900.6,
     "duration": 1698.0
+  },
+  {
+    "date": "2026-07-19",
+    "title": "Salem Multisport",
+    "type": "Run",
+    "disc": "run",
+    "tss": 212.0,
+    "np": 0,
+    "avgHR": 178.0,
+    "distance": 21245.5,
+    "duration": 7614.0
+  },
+  {
+    "date": "2026-07-19",
+    "title": "Salem Multisport",
+    "type": "Transiti",
+    "disc": "other",
+    "tss": 4.0,
+    "np": 0,
+    "avgHR": 156.0,
+    "distance": 311.1,
+    "duration": 148.0
+  },
+  {
+    "date": "2026-07-19",
+    "title": "Salem Multisport",
+    "type": "Ride",
+    "disc": "bike",
+    "tss": 134.0,
+    "np": 0,
+    "avgHR": 134.0,
+    "distance": 90109.2,
+    "duration": 10365.0
+  },
+  {
+    "date": "2026-07-19",
+    "title": "Salem Multisport",
+    "type": "Transiti",
+    "disc": "other",
+    "tss": 3.0,
+    "np": 0,
+    "avgHR": 118.0,
+    "distance": 707.1,
+    "duration": 272.0
+  },
+  {
+    "date": "2026-07-19",
+    "title": "Salem Multisport",
+    "type": "OpenWate",
+    "disc": "swim",
+    "tss": 12.0,
+    "np": 0,
+    "avgHR": 117.0,
+    "distance": 1853.0,
+    "duration": 1509.0
   }
 ]

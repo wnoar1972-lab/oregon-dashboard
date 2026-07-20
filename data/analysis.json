@@ -1,27 +1,25 @@
 {
-  "date": "July 19, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Final pre-race swim completed yesterday with 1.2mi open water at low HR (125 bpm), delivering 17 TSS. This was the planned confidence-builder in race venue conditions, allowing for wetsuit and sighting practice. The easy effort and controlled heart rate indicate proper taper execution with minimal stress added.",
-  "todayRecommendation": "RACE DAY - Ironman 70.3 Oregon. Execute the proven conservative bike strategy from Oceanside: hold 145-152w NP (66-69% FTP), protect the hip, and set yourself up for a strong sub-9:10/mi run to the sub-6:00 finish. Trust your 13-week build and 13 brick sessions.",
-  "weekProgress": "Week 13 of 13 (Race Week) delivered 94 TSS through strategic pre-race sharpening sessions. The taper was properly executed with easy course preview rides (18-20 TSS each), an easy 3mi run, pool work, and yesterday's open water swim. Volume and intensity correctly reduced to arrive fresh.",
-  "keyInsight": "Sleep disruption on July 18 (score 34, only 3.4 hours, SpO2 90%) represents critical pre-race stress that may impact today's performance - focus on controlled pacing early in the race to compensate for compromised recovery.",
+  "date": "July 20, 2026",
+  "overallStatus": "Recovery Mode",
+  "statusColor": "blue",
+  "yesterdayAnalysis": "Yesterday you completed Ironman 70.3 Oregon with a 56mi bike (134 TSS, avg HR 134), 13.2mi run (212 TSS, avg HR 178), and 1.2mi swim (12 TSS). Total race TSS of 365 represents a massive physiological load. The elevated run HR of 178 and run TSS of 212 indicate you pushed hard on the run \u2014 this was race effort, not training.",
+  "todayRecommendation": "Skip today's planned 3,000m pool swim. You raced yesterday and need active recovery only \u2014 light movement, hydration, nutrition, and sleep prioritization. Consider a very easy 20-30min walk or spin if you feel the need to move, but no structured training.",
+  "weekProgress": "Week 13 of 13 is complete \u2014 yesterday was race day at Ironman 70.3 Oregon. Weekly TSS hit 459 vs 150 target (306%), but this reflects the A-race effort. Focus now shifts entirely to recovery and preparation for the October Ironman California 140.6, which is 90 days away.",
+  "keyInsight": "You just completed a 70.3 race with significant run effort (HR 178) \u2014 prioritize 3-5 days of true recovery before resuming any structured training to avoid compromising adaptation and risking injury.",
   "alerts": [
-    "RACE DAY - Ironman 70.3 Oregon TODAY",
-    "Severe sleep disruption last night: 3.4h duration, score 34/100, SpO2 90%",
-    "Last night SpO2 below 92% (95% reported for today suggests data anomaly)",
-    "Pre-race sleep quality poor - anticipate slightly elevated RPE early in race"
+    "Sleep quality poor: 49/100 last night with only 7.7h after race effort",
+    "SpO2 at 92% last night \u2014 monitor for recovery impact",
+    "Elevated RHR at 58 (up from 54-57 baseline) indicates acute fatigue"
   ],
   "positives": [
-    "13-week build complete: 127 total sessions, 1388 bike TSS, 13 brick workouts",
-    "Taper executed perfectly with easy course previews and final confidence swim",
-    "Proven race strategy from Oceanside 70.3: conservative bike (4:32) yielded 16-min run PR",
-    "Heart rates throughout taper week remained controlled (104-125 bpm) indicating freshness"
+    "Completed Ironman 70.3 Oregon \u2014 major milestone achieved",
+    "56mi bike at avg HR 134 suggests controlled pacing consistent with conservative strategy",
+    "13.2mi run completed despite Perthes hip \u2014 hip held up under race stress"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-07-19",
-  "daysToRace": 0,
+  "recoveryScore": 3,
+  "trainingLoadStatus": "Overreached",
+  "generatedAt": "2026-07-20",
+  "daysToRace": -1,
   "currentWeek": 13,
   "weekPhase": "Race Week"
 }
