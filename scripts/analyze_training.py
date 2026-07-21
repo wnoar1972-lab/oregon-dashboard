@@ -153,22 +153,22 @@ WEEK_OVERRIDES = {
         "Wednesday": "ROUVY 60 min easy Z2 (NP 130–140w).",
         "Thursday":  "Pool swim 2,000m easy + easy run 3mi walk/run 9/1. Protect hip.",
         "Friday":    "Rest.",
-        "Saturday":  "ROUVY 75 min easy Z2 — longer base ride.",
+        "Saturday":  "Outdoor ride 60 min easy Z2 if weather allows — start getting aero position time on QR Kilo. ROUVY if necessary.",
         "Sunday":    "Easy run 3mi walk/run 9/1 — third run of week. Frequency is the goal.",
     },
     "2026-08-03": {
         "Monday":    "ROUVY 60 min (NP 135–145w) + easy run 3mi walk/run 9/1.",
         "Tuesday":   "Pool swim 2,500m (4x100 steady) + Run Club (walk/run protocol).",
-        "Wednesday": "ROUVY 75 min + brick run 25 min (walk/run 9/1) — first brick of Sacramento block.",
+        "Wednesday": "Outdoor ride 75 min + brick run 25 min (walk/run 9/1) — first brick of Sacramento block. Outdoor preferred — aero position conditioning starts now. ROUVY only if weather forces it.",
         "Thursday":  "Pool swim 2,500m (4x100 steady) + easy run 4mi walk/run 9/1.",
         "Friday":    "Rest.",
-        "Saturday":  "ROUVY 90 min Z2 — longest ride yet.",
+        "Saturday":  "Outdoor ride 90 min Z2 — get outside, aero position. Your back needs to adapt to 112mi in aero. ROUVY only if necessary.",
         "Sunday":    "Easy run 3mi walk/run 9/1.",
     },
     "2026-08-10": {
         "Monday":    "ROUVY 75 min (NP 140–148w) + easy run 4mi walk/run 9/1.",
         "Tuesday":   "Pool swim 3,000m (4x200 steady) + Run Club (walk/run protocol).",
-        "Wednesday": "ROUVY 90 min + brick run 30 min at 11:00/mi (walk/run 9/1) — groove Sacramento marathon pace.",
+        "Wednesday": "Outdoor ride 90 min + brick run 30 min at 11:00/mi (walk/run 9/1) — outdoor mandatory for aero conditioning. Back and hip flexors need time in aero position before the run.",
         "Thursday":  "Pool swim 3,000m + easy run 4mi walk/run 9/1. Protect hip.",
         "Friday":    "Rest.",
         "Saturday":  "Outdoor long ride 50mi at ~17mph — first post-bike-fit outdoor ride on QR Kilo.",
@@ -177,7 +177,7 @@ WEEK_OVERRIDES = {
     "2026-08-17": {
         "Monday":    "ROUVY 90 min (NP 140–148w) + easy run 4mi walk/run 9/1.",
         "Tuesday":   "Pool swim 3,000m (4x200 threshold) + Run Club (walk/run protocol).",
-        "Wednesday": "ROUVY 100 min + brick run 35 min at 11:00/mi (walk/run 9/1) — practice aid station walk every mile.",
+        "Wednesday": "Outdoor ride 100 min + brick run 35 min at 11:00/mi (walk/run 9/1) — outdoor mandatory. Aero position for 100 min then run — this is Sacramento simulation. Aid station walk every mile.",
         "Thursday":  "Pool swim 3,200m threshold sets + easy run 4mi walk/run 9/1.",
         "Friday":    "Rest — recovery before big weekend.",
         "Saturday":  "Outdoor long ride 60–65mi at ~17mph — practice Sacramento pacing, nutrition every 20 min.",
@@ -189,13 +189,13 @@ WEEK_OVERRIDES = {
         "Wednesday": "ROUVY 60 min easy — Z2 only, NP under 135w.",
         "Thursday":  "Pool swim 2,000m easy + easy run 3mi walk/run 9/1.",
         "Friday":    "Rest.",
-        "Saturday":  "ROUVY 60 min easy — no intensity, refresh the legs.",
+        "Saturday":  "Easy ride 60 min — outdoor if possible even in recovery week, keep the aero adaptation going. ROUVY if needed.",
         "Sunday":    "Easy run 3mi walk/run — conversational, recovery week run.",
     },
     "2026-08-31": {
         "Monday":    "ROUVY 90 min (NP 142–150w) + easy run 4mi walk/run 9/1.",
         "Tuesday":   "Pool swim 3,200m (4x200 race effort) + Run Club (walk/run, pick up effort).",
-        "Wednesday": "ROUVY 3hr sim at ~17mph + brick run 45 min at 11:00/mi (walk/run 9/1) — KEY SESSION.",
+        "Wednesday": "Outdoor ride 3hr at ~17mph + brick run 45 min at 11:00/mi (walk/run 9/1) — KEY SESSION. Must be outdoor — 3 hours in aero is the whole point. ROUVY cannot replicate this back and hip flexor load.",
         "Thursday":  "Pool swim 3,000m race effort + easy run 4mi walk/run 9/1. Recover from Wednesday.",
         "Friday":    "Rest — recovery before peak weekend.",
         "Saturday":  "Outdoor long ride 65mi at ~17mph — race-pace discipline, nutrition dialed.",
@@ -213,7 +213,7 @@ WEEK_OVERRIDES = {
     "2026-09-14": {
         "Monday":    "ROUVY 90 min (NP 142–150w) + easy run 4mi walk/run 9/1.",
         "Tuesday":   "Pool swim 3,000m (4x200 race effort) + Run Club (walk/run, peak week energy).",
-        "Wednesday": "ROUVY 90 min at ~17mph + brick run 50 min at 11:00/mi (walk/run 9/1) — full race nutrition practice.",
+        "Wednesday": "Outdoor ride 90 min at ~17mph + brick run 50 min at 11:00/mi (walk/run 9/1) — outdoor mandatory, full race nutrition practice. Aero for 90 min then run.",
         "Thursday":  "Pool swim 3,000m race effort + easy run 4mi walk/run 9/1.",
         "Friday":    "Rest.",
         "Saturday":  "Outdoor long ride 65mi at ~17mph — second consecutive peak long bike.",
@@ -222,16 +222,16 @@ WEEK_OVERRIDES = {
     "2026-09-21": {
         "Monday":    "ROUVY 75 min (NP 140–148w) + easy run 3mi walk/run 9/1.",
         "Tuesday":   "Pool swim 2,500m (4x100 race pace) + Run Club (walk/run, step down week).",
-        "Wednesday": "ROUVY 75 min + brick run 35 min at 11:00/mi (walk/run 9/1).",
+        "Wednesday": "Outdoor ride 75 min + brick run 35 min at 11:00/mi (walk/run 9/1) — outdoor preferred even in step-down week.",
         "Thursday":  "Pool swim 2,500m race pace + easy run 3mi walk/run 9/1.",
         "Friday":    "Rest.",
-        "Saturday":  "ROUVY 60 min easy effort — step down.",
+        "Saturday":  "Outdoor ride 60 min easy — step down week but keep the outdoor aero habit.",
         "Sunday":    "Easy run 3mi walk/run 9/1 — easy end to step down week.",
     },
     "2026-09-28": {
         "Monday":    "ROUVY 60 min (NP 140–148w) + easy run 3mi walk/run 9/1. Taper begins.",
         "Tuesday":   "Pool swim 2,000m (4x100 race pace) + Run Club (walk/run, taper week, enjoy it).",
-        "Wednesday": "ROUVY 45 min easy — taper, NP under 140w.",
+        "Wednesday": "Easy outdoor or ROUVY 45 min — taper, NP under 140w. Short enough that trainer is fine.",
         "Thursday":  "Pool swim 2,000m race pace + easy run 3mi walk/run, 4x30 sec strides, feel sharp.",
         "Friday":    "Rest.",
         "Saturday":  "OW swim easy 1,500m at La Jolla — easy aerobic, enjoy the water.",
@@ -316,26 +316,33 @@ sleep_summary = ""
 for s in sorted(last7_sleep, key=lambda x: x["date"], reverse=True):
     sleep_summary += f"- {s['date']} | Score: {s['score']} | Duration: {s['total']}h | SpO2: {s['spo2']}% | RHR: {s['rhr']} | Deep: {s['deep']}min | REM: {s['rem']}min\n"
 
-prompt = f"""You are an expert Ironman triathlon coach analyzing an athlete's daily training data.
+prompt = f"""You are an expert Ironman triathlon coach analyzing an athlete's daily training data. You are preparing this athlete for their first full Ironman — Sacramento 140.6 on October 18, 2026. 
+
+COACHING STYLE: Be direct, honest, and specific. Do not sugar-coat. Do not over-encourage. If the athlete is behind on training, say so clearly. If a session was weak, say so. If something is a red flag for Sacramento readiness, name it directly. This athlete needs accurate feedback to be ready for a full Ironman — false reassurance is more harmful than hard truths. At the same time, acknowledge genuine progress when it is earned. Think like a coach who wants this athlete to finish Sacramento strong, not just feel good day to day.
 
 ATHLETE PROFILE:
 - Age: 54 years old
 - Race: Ironman California 140.6, Sacramento CA, October 18 2026 ({overall.get('daysToRace', 89)} days away)
-- Oregon 70.3 COMPLETED July 20 2026: 5:39:04 PR. Bike 2:56:51, Run 2:07:01 (best ever). Now building for first full IM.
-- A-Race: Ironman California 140.6, Sacramento CA, October 18 2026
-- Bike: Quintana Roo Kilo tri bike
+- Oregon 70.3 COMPLETED July 20 2026: 5:39:04 PR (18:24 PR). Swim 25:05 (downstream current), T1 6:24, Bike 2:56:51 (19mph avg — ~6 min lost to handlebar stop mi 1-5 + bathroom stop), T2 3:44, Run 2:07:01 (61st division — best split placement). Run fade miles 10-13 caused by zero run calories (~130g carbs missing) + hip/back/foot pain from bike position. HR data was optical sensor artifact. Cardiovascular fitness held up well.
+- Now building for first full IM — Sacramento 140.6
+- Bike: Quintana Roo Kilo tri bike (needs professional bike fit before Sacramento build — back and foot pain on Oregon run traced to bike position)
 - Has Perthes Disease (right hip) — stable imaging, competing successfully
 - On TRT (Testosterone Cypionate, 3x weekly) and full supplement stack
-- Key insight: In 2026 Oceanside 70.3, conservative bike pacing (traded 4:32 on bike) earned a 16-min run PR
 
-RACE TARGETS:
-- Bike NP: 145-152w (FTP 221w = 66-69% effort)
-- Run pace: sub-9:10/mi
-- Overall goal: sub-6:00
+RACE TARGETS (Sacramento 140.6):
+- Swim: ~1:20 (2.4mi, wetsuit legal in October)
+- Bike: ~17mph / 6:37 (112mi, flat 2-loop course — patience is the key)
+- Run: ~4:45 with walk/run 9 min run / 1 min walk every mile + walk every aid station
+- Overall goal: sub-13:00
+- Bike NP target: TBD pending bike fit (old Oregon target of 145-152w does not apply)
+- Run pace target: 10:50-11:30/mi (walk/run protocol)
+- Key Sacramento fixes from Oregon: (1) professional bike fit to fix back and feet, (2) gels every 20-25 min on the run — zero run calories was the primary cause of the Oregon run fade, (3) walk/run 9/1 from mile 1 of the marathon
+- CRITICAL: Athlete has no aero bars on bike trainer (ROUVY). All Wednesday brick rides and Saturday long rides must be OUTDOOR on the QR Kilo to build aero position endurance. Lower back pain on Oregon run was partly caused by insufficient aero conditioning. Flag if scheduled outdoor rides are missed or replaced with ROUVY for long sessions.
 
 CURRENT TRAINING STATUS:
 - Today is {DAY_OF_WEEK}. {DAYS_LEFT_IN_WEEK} day(s) remain in this training week, including today.
-- Sacramento 140.6 build: WEEK {current_week} OF 13. Full Ironman — 2.4mi swim / 112mi bike / 26.2mi run. Goal: sub-13:00 (swim ~1:20, bike ~6:37 at 17mph, run ~4:45 with walk/run). Key focuses: (1) bike fit to fix back and foot pain, (2) run frequency 3x/week over distance, (3) brick consistency with 60min run off long bikes in peak weeks. Walk/run protocol: 9 min run / 1 min walk. Max single run 5mi to protect hip (Perthes Disease). Bike NP target TBD pending bike fit.
+- Sacramento 140.6 build: WEEK {current_week} OF 13. Full Ironman — 2.4mi swim / 112mi bike / 26.2mi run. Goal: sub-13:00. Key focuses: (1) bike fit to fix back and foot pain, (2) run frequency 3x/week over distance, (3) brick consistency with 60min run off long bikes in peak weeks. Walk/run protocol: 9 min run / 1 min walk. Max single run 5mi to protect hip (Perthes Disease). Bike NP target TBD pending bike fit.
+- WEEK 1 SPECIAL RULE: If current_week == 1, Week 1 (Jul 21-27) is MANDATORY POST-RACE RECOVERY after Oregon 70.3 on Jul 20. Low or zero TSS this week is 100% intentional and correct. Do NOT flag as concerning, behind, or at risk under any circumstances. The athlete is sore and resting — this is the plan. Do not suggest adding training. Only encourage rest, recovery, hydration, and booking a bike fit.
 - Week focus: {WEEK_FOCUS.get(current_week, '')}
 - Week TSS so far: {week_actual} of {week_target} target ({week_pct}% complete). IMPORTANT: weekly TSS is heavily back-loaded — the Saturday long ride and the midweek brick are by far the largest sessions — so being at a LOW percentage of the weekly target on {DAY_OF_WEEK} (with {DAYS_LEFT_IN_WEEK} days still left including today) is NORMAL and on-track, NOT a concern. Do NOT describe the week as "concerning", "behind", or "at risk" based on cumulative percentage alone. Only flag the week if a scheduled session was actually skipped, or if it is Thursday or later AND the remaining days realistically cannot reach the target.
 - This week's schedule: {schedule_line}
@@ -374,7 +381,7 @@ Please provide a structured daily coaching analysis in JSON format with exactly 
   "trainingLoadStatus": "one of: Fresh / Optimal / Fatigued / Overreached"
 }}
 
-Be specific and data-driven. Reference actual numbers from the data. Keep language direct and coaching-focused — not generic. Respond with valid JSON only, no other text."""
+Be specific and data-driven. Reference actual numbers from the data. Be direct and honest — do not soften bad news or over-praise average work. Sacramento is a full Ironman and the athlete needs accurate coaching to be ready. Respond with valid JSON only, no other text."""
 
 # ── CALL CLAUDE API ───────────────────────────────────────────────────────────
 print(f"Calling Claude API for training analysis ({TODAY})...")
