@@ -2,22 +2,22 @@
   "date": "July 21, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Rest day following the Oregon 70.3 race on July 20th where you delivered a 5:39:04 PR with exceptional run execution (2:07:01 best ever). Smart recovery protocol after a breakthrough race performance. The complete rest allows physiological adaptation from race stress.",
-  "todayRecommendation": "Execute today's ROUVY bike + brick run + tri club run (6-7mi total) at strictly easy aerobic intensity per Week 1 recovery protocol. Keep bike watts well below 145w and run pace conversational - this session is about movement and neural patterns, not stress.",
-  "weekProgress": "Week 1 of 13 is on schedule with 0 TSS through Monday (rest day). This is completely normal given the heavily back-loaded weekly structure where Tuesday's combined session, Saturday's 50-60mi ride, and Sunday's 9-11mi run comprise the bulk of the 250 TSS target. Recovery week intensity discipline is the priority.",
-  "keyInsight": "You're launching a 13-week Ironman build off a career-best 70.3 run performance - the key is protecting that run fitness while carefully building bike endurance without triggering the back/foot issues that necessitated the upcoming bike fit.",
+  "yesterdayAnalysis": "Yesterday was race day \u2014 Oregon 70.3 completed in 5:39:04 with a strong run split (61st division) despite zero run calories causing a fade miles 10-13. The bike position issues showed up as predicted with back and foot pain. No training logged post-race, which is exactly right.",
+  "todayRecommendation": "Skip today's planned session entirely. You raced 70.3 miles yesterday \u2014 your body needs rest, not a brick workout and 6-7 mile run. Walk, hydrate, eat well, and book that bike fit appointment. Recovery is the only job this week.",
+  "weekProgress": "Week 1 of 13: This is mandatory recovery week post-Oregon. Zero TSS logged so far is 100% correct and intentional. The 250 TSS target this week is flexible \u2014 listen to soreness levels and do not force volume. Sleep already rebounding (76 score last night vs 49 race night).",
+  "keyInsight": "You are one day post-race and scheduled training volume this week is too aggressive \u2014 recovery must override the plan or you will start the Sacramento build compromised.",
   "alerts": [
-    "Sleep quality highly variable (scores 34-84 past week, avg 64/100)",
-    "SpO2 dipped to 90% on July 18th",
-    "First structured training week after race - adherence to easy intensity critical"
+    "Planned Tuesday brick + 6-7mi run is inappropriate one day post-race",
+    "SpO2 dropped to 90% on July 18 and 92% on race night",
+    "Bike fit still not scheduled \u2014 this is the #1 priority for Sacramento success"
   ],
   "positives": [
-    "Oregon 70.3 delivered 16-minute run PR (2:07:01) - conservative bike pacing strategy validated",
-    "Sleep rebounded to 76 score last night with 7.5h duration and improved SpO2 (95%)",
-    "Clean recovery day post-race demonstrates disciplined training approach"
+    "Oregon 70.3 run was your best split placement (61st division) despite nutrition error \u2014 fitness is there",
+    "You identified the exact causes of the run fade (zero calories, bike position) \u2014 actionable fixes for Sacramento",
+    "Sleep score rebounded to 76 last night after race stress \u2014 body is responding to rest"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Fresh",
+  "recoveryScore": 4,
+  "trainingLoadStatus": "Overreached",
   "generatedAt": "2026-07-21",
   "daysToRace": 89,
   "currentWeek": 1,
