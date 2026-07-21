@@ -1,25 +1,26 @@
 {
-  "date": "July 20, 2026",
+  "date": "July 21, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Yesterday you completed Ironman 70.3 Oregon with a 56mi bike (134 TSS, avg HR 134), 13.2mi run (212 TSS, avg HR 178), and 1.2mi swim (12 TSS). Total race TSS of 365 represents a massive physiological load. The elevated run HR of 178 and run TSS of 212 indicate you pushed hard on the run \u2014 this was race effort, not training.",
-  "todayRecommendation": "Skip today's planned 3,000m pool swim. You raced yesterday and need active recovery only \u2014 light movement, hydration, nutrition, and sleep prioritization. Consider a very easy 20-30min walk or spin if you feel the need to move, but no structured training.",
-  "weekProgress": "Week 13 of 13 is complete \u2014 yesterday was race day at Ironman 70.3 Oregon. Weekly TSS hit 459 vs 150 target (306%), but this reflects the A-race effort. Focus now shifts entirely to recovery and preparation for the October Ironman California 140.6, which is 90 days away.",
-  "keyInsight": "You just completed a 70.3 race with significant run effort (HR 178) \u2014 prioritize 3-5 days of true recovery before resuming any structured training to avoid compromising adaptation and risking injury.",
+  "yesterdayAnalysis": "Rest day taken after Saturday's Ironman 70.3 Oregon race in Salem. This was a complete race effort with 365 TSS (swim 1.2mi, bike 56mi at 134 HR, run 13.2mi at 178 HR). The 24-hour recovery window post-race was appropriate and necessary given the full racing load.",
+  "todayRecommendation": "Skip or heavily modify today's planned ROUVY bike + brick run + tri club run session. You raced a full 70.3 just 2 days ago \u2014 your body needs continued recovery, not a 6-7 mile run load. Consider a light 20-30 min spin at <60% FTP and skip the run entirely, or take another full rest day.",
+  "weekProgress": "Week 13 of 13 is severely distorted \u2014 you've already logged 459 TSS against a 150 target (306%) because Saturday's race alone was 365 TSS. This appears to be data confusion: the race was July 19 (Saturday), which should have been Week 13, but you're now in Week 14 (post-race recovery). The scheduled sessions listed don't align with post-race recovery protocol.",
+  "keyInsight": "You're in immediate post-race recovery (48 hours after a 70.3) but the training plan is showing race week sessions \u2014 prioritize rest, nutrition, and sleep over any structured workouts for the next 3-5 days.",
   "alerts": [
-    "Sleep quality poor: 49/100 last night with only 7.7h after race effort",
-    "SpO2 at 92% last night \u2014 monitor for recovery impact",
-    "Elevated RHR at 58 (up from 54-57 baseline) indicates acute fatigue"
+    "Only 48 hours post-70.3 race \u2014 recovery should be priority",
+    "Sleep still compromised: score 49 on 7/20, 48 on race night",
+    "Today's planned 6-7mi run is inappropriate for post-race recovery",
+    "SpO2 dropped to 90% on 7/18 (pre-race night)"
   ],
   "positives": [
-    "Completed Ironman 70.3 Oregon \u2014 major milestone achieved",
-    "56mi bike at avg HR 134 suggests controlled pacing consistent with conservative strategy",
-    "13.2mi run completed despite Perthes hip \u2014 hip held up under race stress"
+    "Successfully completed Ironman 70.3 Oregon on 7/19",
+    "Race bike pacing disciplined: HR 134 avg across 56 miles",
+    "Sleep recovering: 76 score last night with 7.5h duration"
   ],
-  "recoveryScore": 3,
+  "recoveryScore": 4,
   "trainingLoadStatus": "Overreached",
-  "generatedAt": "2026-07-20",
-  "daysToRace": -1,
+  "generatedAt": "2026-07-21",
+  "daysToRace": -2,
   "currentWeek": 13,
   "weekPhase": "Race Week"
 }
