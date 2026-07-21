@@ -11,7 +11,7 @@ from datetime import date, timedelta
 
 import datetime as _dt
 TODAY = _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=-7))).date()
-START_DATE = date(2026, 4, 21)
+START_DATE = date(2026, 7, 21)  # Sacramento build start
 
 # ── CREDENTIALS ───────────────────────────────────────────────────────────────
 GARMIN_EMAIL    = os.environ.get("GARMIN_EMAIL")
@@ -190,14 +190,14 @@ if GARMIN_EMAIL and GARMIN_PASSWORD:
 
 # ── SUMMARY ───────────────────────────────────────────────────────────────────
 week_ranges = [
-    (1,"2026-04-21","2026-04-27"),(2,"2026-04-28","2026-05-03"),
-    (3,"2026-05-04","2026-05-10"),(4,"2026-05-11","2026-05-17"),
-    (5,"2026-05-18","2026-05-24"),(6,"2026-05-25","2026-05-31"),
-    (7,"2026-06-01","2026-06-07"),(8,"2026-06-08","2026-06-14"),
-    (9,"2026-06-15","2026-06-21"),(10,"2026-06-22","2026-06-28"),
-    (11,"2026-06-29","2026-07-05"),(12,"2026-07-06","2026-07-12"),(13,"2026-07-13","2026-07-19")
+    (1,"2026-07-21","2026-07-27"),(2,"2026-07-28","2026-08-03"),
+    (3,"2026-08-04","2026-08-10"),(4,"2026-08-11","2026-08-17"),
+    (5,"2026-08-18","2026-08-24"),(6,"2026-08-25","2026-08-31"),
+    (7,"2026-09-01","2026-09-07"),(8,"2026-09-08","2026-09-14"),
+    (9,"2026-09-15","2026-09-21"),(10,"2026-09-22","2026-09-28"),
+    (11,"2026-09-29","2026-10-05"),(12,"2026-10-06","2026-10-12"),(13,"2026-10-13","2026-10-19")
 ]
-wt = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:320,10:380,11:340,12:200,13:150}
+wt = {1:250,2:350,3:420,4:480,5:520,6:300,7:560,8:600,9:560,10:400,11:480,12:250,13:150}
 
 weeks = []
 for wn, ws, we in week_ranges:
@@ -227,7 +227,7 @@ overall = {
     "avgBikeNP":     round(sum(bn_all)/len(bn_all),1) if bn_all else 0,
     "currentWeek":   next((w["week"] for w in weeks if not w["done"]),13),
     "weeksComplete": sum(1 for w in weeks if w["done"] and w["actual"]>0),
-    "daysToRace":    (date(2026,7,19)-TODAY).days,
+    "daysToRace":    (date(2026,10,18)-TODAY).days,
     "totalSwimTSS":  round(sum(a["tss"] for a in activities if a["disc"]=="swim")),
     "totalBikeTSS":  round(sum(a["tss"] for a in activities if a["disc"]=="bike")),
     "totalRunTSS":   round(sum(a["tss"] for a in activities if a["disc"]=="run")),
