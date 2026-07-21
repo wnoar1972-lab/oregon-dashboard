@@ -39,10 +39,10 @@ overall     = summary.get("overall", {})
 weeks       = summary.get("weeks", [])
 
 # ── TRAINING PLAN ─────────────────────────────────────────────────────────────
-WEEK_TARGETS = {1:211,2:396,3:284,4:380,5:420,6:260,7:460,8:500,9:320,10:300,11:340,12:200,13:150}
-WEEK_PHASES  = {1:"Recovery",2:"Build",3:"Build",4:"Build",5:"Build",
-                6:"Recovery",7:"Peak",8:"Peak",9:"Transition",10:"Build",
-                11:"Sharpener",12:"Taper",13:"Race Week"}
+WEEK_TARGETS = {1:250,2:350,3:420,4:480,5:520,6:300,7:560,8:600,9:560,10:400,11:480,12:250,13:150}
+WEEK_PHASES  = {1:"Recovery",2:"Base",3:"Base",4:"Build",5:"Build",
+                6:"Recovery",7:"Peak",8:"Peak",9:"Peak",10:"Build",
+                11:"Taper",12:"Taper",13:"Race Week"}
 WEEK_FOCUS   = {
     1:"Recovery — easy aerobic only, no intensity",
     2:"First volume step-up — Oregon ROUVY sim, long run",
@@ -138,6 +138,123 @@ WEEK_OVERRIDES = {
         "Saturday":  "Athlete briefing and course preview swim if available. Race rehearsal — goggles, wetsuit, nutrition check.",
         "Sunday":    "RACE EVE — full rest. Gear laid out, nutrition prepped, goggles prepped, sleep early. RACE TOMORROW.",
     },
+    "2026-07-21": {
+        "Monday":    "Day 1 post-race — full rest. Walk only, eat well, celebrate 5:39:04 PR.",
+        "Tuesday":   "Day 2 — still sore. Full rest. Skip Run Club and swim. No training.",
+        "Wednesday": "Day 3 — full rest. Hydrate, sleep, let the body absorb the race.",
+        "Thursday":  "Day 4 — rest. Skip swim. Only move if feeling significantly better. Book bike fit this week.",
+        "Friday":    "Day 5 — first easy movement only if hip feels okay. Easy swim 20 min max. No intensity.",
+        "Saturday":  "Day 6 — easy OW swim 20 min at La Jolla Shores if feeling good. Aerobic only.",
+        "Sunday":    "Day 7 — easy spin 20 min or rest. Listen to the body. Sacramento build starts tomorrow.",
+    },
+    "2026-07-28": {
+        "Monday":    "ROUVY 60 min easy Z2 (NP 130–140w) + easy run 3mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 2,000m easy (4x100 steady) + Run Club (walk/run protocol).",
+        "Wednesday": "ROUVY 60 min easy Z2 (NP 130–140w).",
+        "Thursday":  "Pool swim 2,000m easy + easy run 3mi walk/run 9/1. Protect hip.",
+        "Friday":    "Rest.",
+        "Saturday":  "ROUVY 75 min easy Z2 — longer base ride.",
+        "Sunday":    "Easy run 3mi walk/run 9/1 — third run of week. Frequency is the goal.",
+    },
+    "2026-08-03": {
+        "Monday":    "ROUVY 60 min (NP 135–145w) + easy run 3mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 2,500m (4x100 steady) + Run Club (walk/run protocol).",
+        "Wednesday": "ROUVY 75 min + brick run 25 min (walk/run 9/1) — first brick of Sacramento block.",
+        "Thursday":  "Pool swim 2,500m (4x100 steady) + easy run 4mi walk/run 9/1.",
+        "Friday":    "Rest.",
+        "Saturday":  "ROUVY 90 min Z2 — longest ride yet.",
+        "Sunday":    "Easy run 3mi walk/run 9/1.",
+    },
+    "2026-08-10": {
+        "Monday":    "ROUVY 75 min (NP 140–148w) + easy run 4mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 3,000m (4x200 steady) + Run Club (walk/run protocol).",
+        "Wednesday": "ROUVY 90 min + brick run 30 min at 11:00/mi (walk/run 9/1) — groove Sacramento marathon pace.",
+        "Thursday":  "Pool swim 3,000m + easy run 4mi walk/run 9/1. Protect hip.",
+        "Friday":    "Rest.",
+        "Saturday":  "Outdoor long ride 50mi at ~17mph — first post-bike-fit outdoor ride on QR Kilo.",
+        "Sunday":    "Easy run 4mi walk/run 9/1 — third run of week.",
+    },
+    "2026-08-17": {
+        "Monday":    "ROUVY 90 min (NP 140–148w) + easy run 4mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 3,000m (4x200 threshold) + Run Club (walk/run protocol).",
+        "Wednesday": "ROUVY 100 min + brick run 35 min at 11:00/mi (walk/run 9/1) — practice aid station walk every mile.",
+        "Thursday":  "Pool swim 3,200m threshold sets + easy run 4mi walk/run 9/1.",
+        "Friday":    "Rest — recovery before big weekend.",
+        "Saturday":  "Outdoor long ride 60–65mi at ~17mph — practice Sacramento pacing, nutrition every 20 min.",
+        "Sunday":    "Easy run 5mi walk/run 9/1 — max distance, protect hip.",
+    },
+    "2026-08-24": {
+        "Monday":    "Rest — recovery week begins. Absorb 5 weeks of work.",
+        "Tuesday":   "Pool swim 2,000m easy aerobic + Run Club (easy, walk/run, enjoy it).",
+        "Wednesday": "ROUVY 60 min easy — Z2 only, NP under 135w.",
+        "Thursday":  "Pool swim 2,000m easy + easy run 3mi walk/run 9/1.",
+        "Friday":    "Rest.",
+        "Saturday":  "ROUVY 60 min easy — no intensity, refresh the legs.",
+        "Sunday":    "Easy run 3mi walk/run — conversational, recovery week run.",
+    },
+    "2026-08-31": {
+        "Monday":    "ROUVY 90 min (NP 142–150w) + easy run 4mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 3,200m (4x200 race effort) + Run Club (walk/run, pick up effort).",
+        "Wednesday": "ROUVY 3hr sim at ~17mph + brick run 45 min at 11:00/mi (walk/run 9/1) — KEY SESSION.",
+        "Thursday":  "Pool swim 3,000m race effort + easy run 4mi walk/run 9/1. Recover from Wednesday.",
+        "Friday":    "Rest — recovery before peak weekend.",
+        "Saturday":  "Outdoor long ride 65mi at ~17mph — race-pace discipline, nutrition dialed.",
+        "Sunday":    "Easy run 4mi walk/run 9/1.",
+    },
+    "2026-09-07": {
+        "Monday":    "ROUVY 100 min (NP 142–150w) + easy run 4mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 3,000m threshold sets + Run Club (walk/run, peak week).",
+        "Wednesday": "Outdoor 65mi at ~17mph + brick run 60 min at 11:00/mi (walk/run 9/1) — closest thing to Sacramento race day.",
+        "Thursday":  "Pool swim 3,000m race effort + easy run 4mi walk/run 9/1. Recover from Wednesday.",
+        "Friday":    "Rest — protect the legs before Sunday.",
+        "Saturday":  "ROUVY 90 min NP 142–150w — maintain stimulus.",
+        "Sunday":    "Easy run 5mi walk/run 9/1 — max distance, protect hip.",
+    },
+    "2026-09-14": {
+        "Monday":    "ROUVY 90 min (NP 142–150w) + easy run 4mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 3,000m (4x200 race effort) + Run Club (walk/run, peak week energy).",
+        "Wednesday": "ROUVY 90 min at ~17mph + brick run 50 min at 11:00/mi (walk/run 9/1) — full race nutrition practice.",
+        "Thursday":  "Pool swim 3,000m race effort + easy run 4mi walk/run 9/1.",
+        "Friday":    "Rest.",
+        "Saturday":  "Outdoor long ride 65mi at ~17mph — second consecutive peak long bike.",
+        "Sunday":    "Easy run 4mi walk/run 9/1 — end of peak block.",
+    },
+    "2026-09-21": {
+        "Monday":    "ROUVY 75 min (NP 140–148w) + easy run 3mi walk/run 9/1.",
+        "Tuesday":   "Pool swim 2,500m (4x100 race pace) + Run Club (walk/run, step down week).",
+        "Wednesday": "ROUVY 75 min + brick run 35 min at 11:00/mi (walk/run 9/1).",
+        "Thursday":  "Pool swim 2,500m race pace + easy run 3mi walk/run 9/1.",
+        "Friday":    "Rest.",
+        "Saturday":  "ROUVY 60 min easy effort — step down.",
+        "Sunday":    "Easy run 3mi walk/run 9/1 — easy end to step down week.",
+    },
+    "2026-09-28": {
+        "Monday":    "ROUVY 60 min (NP 140–148w) + easy run 3mi walk/run 9/1. Taper begins.",
+        "Tuesday":   "Pool swim 2,000m (4x100 race pace) + Run Club (walk/run, taper week, enjoy it).",
+        "Wednesday": "ROUVY 45 min easy — taper, NP under 140w.",
+        "Thursday":  "Pool swim 2,000m race pace + easy run 3mi walk/run, 4x30 sec strides, feel sharp.",
+        "Friday":    "Rest.",
+        "Saturday":  "OW swim easy 1,500m at La Jolla — easy aerobic, enjoy the water.",
+        "Sunday":    "Easy run 2mi walk/run — very easy, taper is working.",
+    },
+    "2026-10-05": {
+        "Monday":    "ROUVY 30 min easy + easy jog 2mi (4 strides, feel fresh). Race week prep begins.",
+        "Tuesday":   "Pool swim 1,500m (4x50 race pace) — last quality swim + Run Club (easy, last run club before Sacramento).",
+        "Wednesday": "Bike reassembly check 20 min — QR Kilo packed for Sacramento. Confirm shifting and brakes.",
+        "Thursday":  "Pool swim 1,000m easy shakeout + easy jog 15 min (4 strides, feel fast, no effort).",
+        "Friday":    "Travel to Sacramento — fly or drive, stay off feet, hydrate, arrive ready.",
+        "Saturday":  "Shakeout swim Sacramento River — preview swim course, easy 800m, wetsuit check.",
+        "Sunday":    "Easy jog 10 min. Athlete check-in, rack bike, transition setup. Rest all day.",
+    },
+    "2026-10-12": {
+        "Monday":    "Pool or OW swim 1,200m easy — 4x50 at race pace. Last swim before Sacramento.",
+        "Tuesday":   "Easy spin 20 min + easy jog 15 min (4x20 sec strides, feel fast, no effort).",
+        "Wednesday": "Sacramento River shakeout swim — easy 800m, final open water, confidence builder.",
+        "Thursday":  "Rest — off feet, hydrate, eat well, gear check.",
+        "Friday":    "Bike check 10 min — confirm shifting, brakes, nutrition loaded.",
+        "Saturday":  "Athlete briefing and course preview. Transition walk-through. Early night.",
+        "Sunday":    "RACE DAY — IM California! Swim 1:20, Bike 17mph, Run walk/run 9/1, sub-13:00. You have done the work.",
+    },
 }
 
 # Monday (ISO) of the current week — used to look up any override for this week
@@ -203,7 +320,8 @@ prompt = f"""You are an expert Ironman triathlon coach analyzing an athlete's da
 
 ATHLETE PROFILE:
 - Age: 54 years old
-- Race: Ironman 70.3 Oregon, Salem OR, July 19 2026 ({overall.get('daysToRace', 66)} days away)
+- Race: Ironman California 140.6, Sacramento CA, October 18 2026 ({overall.get('daysToRace', 89)} days away)
+- Oregon 70.3 COMPLETED July 20 2026: 5:39:04 PR. Bike 2:56:51, Run 2:07:01 (best ever). Now building for first full IM.
 - A-Race: Ironman California 140.6, Sacramento CA, October 18 2026
 - Bike: Quintana Roo Kilo tri bike
 - Has Perthes Disease (right hip) — stable imaging, competing successfully
@@ -217,7 +335,7 @@ RACE TARGETS:
 
 CURRENT TRAINING STATUS:
 - Today is {DAY_OF_WEEK}. {DAYS_LEFT_IN_WEEK} day(s) remain in this training week, including today.
-- This is WEEK {current_week} OF 13 in the build ({WEEK_PHASES.get(current_week, 'Build')} phase). The build is always 13 weeks total — do not use any other total. No long runs — max 5mi to protect hip (Perthes Disease). Race NP target 145-152w.
+- Sacramento 140.6 build: WEEK {current_week} OF 13. Full Ironman — 2.4mi swim / 112mi bike / 26.2mi run. Goal: sub-13:00 (swim ~1:20, bike ~6:37 at 17mph, run ~4:45 with walk/run). Key focuses: (1) bike fit to fix back and foot pain, (2) run frequency 3x/week over distance, (3) brick consistency with 60min run off long bikes in peak weeks. Walk/run protocol: 9 min run / 1 min walk. Max single run 5mi to protect hip (Perthes Disease). Bike NP target TBD pending bike fit.
 - Week focus: {WEEK_FOCUS.get(current_week, '')}
 - Week TSS so far: {week_actual} of {week_target} target ({week_pct}% complete). IMPORTANT: weekly TSS is heavily back-loaded — the Saturday long ride and the midweek brick are by far the largest sessions — so being at a LOW percentage of the weekly target on {DAY_OF_WEEK} (with {DAYS_LEFT_IN_WEEK} days still left including today) is NORMAL and on-track, NOT a concern. Do NOT describe the week as "concerning", "behind", or "at risk" based on cumulative percentage alone. Only flag the week if a scheduled session was actually skipped, or if it is Thursday or later AND the remaining days realistically cannot reach the target.
 - This week's schedule: {schedule_line}
@@ -314,7 +432,7 @@ except urllib.error.HTTPError as e:
         "yesterdayAnalysis": "Analysis temporarily unavailable — check back tomorrow.",
         "todayRecommendation": "Follow your scheduled training plan for today.",
         "weekProgress": f"Week {current_week} — {week_actual} of {week_target} TSS ({week_pct}% complete).",
-        "keyInsight": f"{overall.get('daysToRace', 66)} days to Oregon. Stay consistent.",
+        "keyInsight": f"{overall.get('daysToRace', 89)} days to Sacramento. First full IM. Oregon done 5:39:04 PR. Priority: bike fit, run frequency, brick consistency.",
         "alerts": [],
         "positives": ["Training is progressing", "Consistency is key"],
         "recoveryScore": 7,
