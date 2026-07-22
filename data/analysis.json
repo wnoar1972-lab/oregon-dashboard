@@ -2,21 +2,21 @@
   "date": "July 22, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Rest day post-Oregon 70.3 \u2014 exactly as planned for Week 1 recovery. Zero training is intentional and correct. The 5:39 PR race on Sunday was a solid effort that exposed two critical issues: bike position causing back/foot pain on the run, and zero run calories causing the mile 10-13 fade. This recovery week exists to heal and reset before the Sacramento build begins in earnest.",
-  "todayRecommendation": "Execute today's planned ROUVY bike + brick run + 3,000m pool swim at truly easy effort. Keep the bike conversational and the brick run short and loose. The swim should be aerobic form work only. If you're still sore from Sunday, cut volume \u2014 recovery is the only job this week.",
-  "weekProgress": "Week 1 of 13: 0 of 250 TSS with 4 days remaining including today. This is mandatory post-race recovery \u2014 low TSS is 100% intentional and on-plan. The focus is healing, not building fitness. Once recovery is complete, the real Sacramento work begins next week.",
-  "keyInsight": "You raced well on Sunday despite two fixable problems \u2014 get the bike fit scheduled immediately and drill the run nutrition protocol so Sacramento doesn't repeat Oregon's fade.",
+  "yesterdayAnalysis": "Rest day following Oregon 70.3 on Sunday. Zero training is exactly what Week 1 recovery demands \u2014 you raced a PR 70.3 two days ago and your body needs complete rest right now. Sleep score rebounded to 76 from race night's 49, which is a good sign recovery is beginning.",
+  "todayRecommendation": "Today's plan calls for ROUVY bike + brick run + 3,000m pool swim. That is way too much for Day 3 post-race recovery. Skip the brick entirely and do easy pool swimming only if you feel genuinely recovered \u2014 2,000-2,500m aerobic, no intervals. Your sleep is still normalizing and you should not be forcing volume this week.",
+  "weekProgress": "Week 1 of 13: 0 TSS of 150 target with 4 days remaining including today. This is mandatory post-race recovery \u2014 zero volume through Tuesday is 100% correct and exactly as planned. Do not chase the 150 TSS target this week if your body is telling you to rest more. Recovery trumps arbitrary numbers right now.",
+  "keyInsight": "You are 3 days post-PR at Oregon 70.3 \u2014 your only job this week is to recover fully, not hit TSS targets or maintain fitness.",
   "alerts": [
-    "Schedule professional bike fit ASAP \u2014 back and foot pain will sabotage Sacramento training if not addressed now",
-    "SpO2 dropped to 90% on Jul 18 (race week stress) and 92% on race day \u2014 monitor trend"
+    "Sleep score averaged 64/100 over 7 days with race week disruption (scores of 34, 48, 49) \u2014 continue prioritizing sleep this week",
+    "SpO2 dipped to 90% on July 18 and 92% on race night \u2014 monitor for pattern but likely race stress related"
   ],
   "positives": [
-    "Sleep rebounding well post-race: 84 score with 9.0h last night shows good recovery response",
-    "Oregon 70.3 PR (5:39:04) with best division placement on the run (61st) despite nutrition error \u2014 cardiovascular fitness is solid",
-    "RHR dropping back to 53 bpm after race spike to 58 \u2014 recovery progressing as expected"
+    "Oregon 70.3 PR of 5:39:04 with best run split placement (61st division) proves your fitness is real",
+    "Sleep rebounding well post-race: 76 and 84 scores last two nights with 7.5h and 9h duration",
+    "Zero training Mon-Tue shows discipline to follow the recovery plan instead of rushing back"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Fresh",
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Fatigued",
   "generatedAt": "2026-07-22",
   "daysToRace": 88,
   "currentWeek": 1,
