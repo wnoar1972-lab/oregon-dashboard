@@ -39,7 +39,7 @@ overall     = summary.get("overall", {})
 weeks       = summary.get("weeks", [])
 
 # ── TRAINING PLAN ─────────────────────────────────────────────────────────────
-WEEK_TARGETS = {1:250,2:350,3:420,4:480,5:520,6:300,7:560,8:600,9:560,10:400,11:480,12:250,13:150}
+WEEK_TARGETS = {1:150,2:350,3:420,4:480,5:520,6:300,7:560,8:600,9:560,10:400,11:480,12:250,13:150}
 WEEK_PHASES  = {1:"Recovery",2:"Base",3:"Base",4:"Build",5:"Build",
                 6:"Recovery",7:"Peak",8:"Peak",9:"Peak",10:"Build",
                 11:"Taper",12:"Taper",13:"Race Week"}
