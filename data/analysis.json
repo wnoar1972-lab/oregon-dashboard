@@ -2,15 +2,15 @@
   "date": "July 23, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Rest day \u2014 zero training logged. This is exactly what should happen 2 days post-Oregon 70.3. Your body is repairing from a 5:39 effort. The complete rest is appropriate and expected during Week 1 mandatory recovery.",
-  "todayRecommendation": "Easy 21-mile ROUVY ride completed at TSS 31 and HR 117 \u2014 perfect recovery spin. Keep everything conversational and resist any temptation to push. Focus on hydration and continuing to clear residual fatigue from Sunday's race.",
-  "weekProgress": "Week 1 of 13: 31 TSS of 150 target (21%). This is mandatory post-race recovery week \u2014 being at low TSS on Wednesday is 100% correct and intentional. You raced a 70.3 on Sunday. Rest is the work right now. Do not add training volume.",
-  "keyInsight": "You're executing the recovery plan correctly \u2014 stay disciplined and don't let guilt about low TSS push you into premature training.",
+  "yesterdayAnalysis": "Rest day as planned \u2014 exactly what you needed 2 days post-Oregon. Your body is still processing the 70.3 effort, and zero activity was the right call. Sleep improved to 84/100 with 9 hours and good REM recovery (139min), which shows the body is healing.",
+  "todayRecommendation": "Easy 21.2mi ROUVY ride completed at HR 117 \u2014 appropriate recovery intensity. TSS 31 is light aerobic stimulus without digging a hole. This is exactly the kind of gentle movement that aids recovery without impeding it.",
+  "weekProgress": "Week 1 of 13: 31 TSS of 150 target (21%) with 3 days remaining. This is MANDATORY post-race recovery week \u2014 low TSS is the plan, not a problem. You're following the recovery protocol correctly. The schedule shows big sessions still ahead (Thu run, Fri swim, Sat long ride), but do NOT feel obligated to hit 150 TSS this week if your body says otherwise.",
+  "keyInsight": "You're recovering intelligently from Oregon \u2014 sleep is rebounding, HR is controlled, and you're resisting the urge to jump back into hard training too soon.",
   "alerts": [],
   "positives": [
-    "Sleep rebounding well \u2014 88 score last night with 7.8h and strong REM (90min) shows recovery is progressing",
-    "Easy ride today at HR 117 was appropriately controlled for recovery week",
-    "RHR dropping from 58 on race night to 50 last night confirms body is settling back into baseline"
+    "Sleep quality climbing steadily: 49\u219276\u219284\u219288 over 4 nights post-race",
+    "Resting HR dropping from race peak (58) back toward baseline (50 last night)",
+    "Easy ride intensity discipline \u2014 HR 117 shows you're not pushing during recovery week"
   ],
   "recoveryScore": 7,
   "trainingLoadStatus": "Fresh",
