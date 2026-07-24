@@ -2,18 +2,21 @@
   "date": "July 24, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "Easy 21.2mi ROUVY ride at 117 HR \u2014 properly conservative recovery spin, TSS 31. This is exactly right for Week 1 post-race recovery. Athlete followed up with a 6.1mi run today at HR 143, which is slightly higher than ideal for pure recovery week but still aerobic and acceptable given you're 4 days post-race.",
-  "todayRecommendation": "Pool swim 3,000m aerobic as scheduled. Keep it smooth and easy \u2014 this is about movement and recovery, not fitness. Focus on form, not pace. Stay well-fueled and hydrated.",
-  "weekProgress": "Week 1 of 13: 93 TSS of 150 target with 2 days remaining including today. You're tracking fine \u2014 the schedule is back-loaded toward the weekend. This is mandatory recovery week post-Oregon, so the low volume is 100% intentional and correct. Rest is the work right now.",
-  "keyInsight": "Sleep is recovering well from race week (79-88 scores last 3 nights after the brutal 34-49 scores pre-race), which is exactly what you need \u2014 keep prioritizing it.",
-  "alerts": [],
+  "yesterdayAnalysis": "21.2mi ROUVY ride at TSS 31 and HR 117 \u2014 appropriately easy recovery spin. This is exactly what Week 1 post-race recovery calls for: low intensity, aerobic only, no grinding. The TSS and HR are in the right zone for active recovery 3 days after a 70.3 PR.",
+  "todayRecommendation": "Pool swim 3,000m as scheduled \u2014 keep it aerobic and loose. No tempo or threshold work. This is recovery week, and the sleep data shows you're still rebuilding (79 score last night, RHR normalizing). Execute the session easy and get back to rest.",
+  "weekProgress": "Week 1 of 13: 93 TSS of 150 target (62%) with 2 days remaining including today. This is exactly on track for a recovery week \u2014 the schedule is back-loaded with Saturday's long ride still ahead. You've completed the Thursday run (6.1mi, TSS 62) and Wednesday's easy bike. Week 1 is mandatory post-race recovery and the training load is appropriate.",
+  "keyInsight": "Sleep is improving post-race (79-88 scores last 2 nights vs. 34-49 race week), but RHR still elevated at 50 \u2014 keep recovery protocols dialed in and book that bike fit this week.",
+  "alerts": [
+    "No swim sessions logged yet this week \u2014 Friday's 3k swim is critical to hit",
+    "SpO2 dropped to 92% on race night (Jul 19-20) \u2014 monitor for pattern"
+  ],
   "positives": [
-    "Sleep rebounding nicely post-race: 79-88 scores last 3 nights vs 34-49 pre-race",
-    "Training discipline is solid \u2014 easy recovery rides and runs at appropriate intensity",
-    "RHR stable at 50-53 last 3 nights, showing good physiological recovery from Oregon"
+    "Thursday run 6.1mi at HR 143 shows solid aerobic recovery \u2014 no residual fatigue from Oregon",
+    "Sleep improving rapidly: 79-88 scores last 2 nights after race week crash",
+    "RHR normalizing: 50 bpm last 2 nights down from 58 on race night"
   ],
   "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
+  "trainingLoadStatus": "Fresh",
   "generatedAt": "2026-07-24",
   "daysToRace": 86,
   "currentWeek": 1,
