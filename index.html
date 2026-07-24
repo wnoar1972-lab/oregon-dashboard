@@ -1126,7 +1126,7 @@ var PLAN = [
 
 var WEEK_TARGETS = [150,350,420,480,520,300,560,600,560,400,480,250,150];
 var WEEK_COLORS  = {done:'#34d399',build:'#38bdf8',peak:'#a78bfa',taper:'#2dd4bf',race:'#fbbf24'};
-var WEEK_PHASES  = ['Logged','Logged','Logged','Build','Build','Recovery','Peak','Peak','Transition','Build','Sharpener','Taper','Race'];
+var WEEK_PHASES  = ['Recovery','Base','Base','Build','Build','Recovery','Peak','Peak','Peak','Build','Taper','Taper','Race Week'];
 
 // ── NAVIGATION ─────────────────────────────────────────────────────────────
 function showTab(id, el){
@@ -1237,13 +1237,13 @@ function buildAIAnalysis(){
 // ── WEEKLY SCHEDULE TEMPLATE ────────────────────────────────────────────────
 // DOW: 0=Sun,1=Mon,2=Tue,3=Wed,4=Thu,5=Fri,6=Sat
 var WEEKLY_SCHEDULE = {
-  0:{rest:false,planned:[{disc:'swim',label:'Open water swim',note:'OW when possible'},{disc:'run',label:'Long run',note:'9-11mi easy'}]},
-  1:{rest:false,planned:[{disc:'swim',label:'Pool swim',note:'3,000m aerobic'}]},
-  2:{rest:false,planned:[{disc:'bike',label:'ROUVY morning',note:'45-60 min Z2'},{disc:'brick',label:'Brick run',note:'20 min off bike'},{disc:'run',label:'Tri club run',note:'6-7mi evening'}]},
-  3:{rest:false,planned:[{disc:'bike',label:'ROUVY morning',note:'45-60 min Z2'},{disc:'brick',label:'Brick run',note:'20 min off bike'},{disc:'swim',label:'Pool swim',note:'3,000m aerobic'}]},
-  4:{rest:false,planned:[{disc:'run',label:'Run',note:'6mi easy-moderate'}]},
-  5:{rest:false,planned:[{disc:'swim',label:'Pool swim',note:'3,000m aerobic'}]},
-  6:{rest:false,planned:[{disc:'bike',label:'Long ride',note:'50-60mi outdoor'},{disc:'swim',label:'Pool or OW swim',note:'optional'}]}
+  0:{rest:false,planned:[{disc:'swim',label:'OW swim or easy spin',note:'easy aerobic · recovery day'}]},
+  1:{rest:false,planned:[{disc:'bike',label:'ROUVY 60 min',note:'Z2 · NP 130–145w'},{disc:'run',label:'Easy run 3–4mi',note:'walk/run 9/1'}]},
+  2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 steady'},{disc:'run',label:'Run Club',note:'walk/run protocol'}]},
+  3:{rest:false,planned:[{disc:'bike',label:'Outdoor ride + brick',note:'outdoor mandatory · aero conditioning'},{disc:'brick',label:'Brick run 25–45 min',note:'walk/run 9/1 · 11:00/mi'}]},
+  4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'race effort sets'},{disc:'run',label:'Easy run 3–4mi',note:'walk/run 9/1'}]},
+  5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery day'}]},
+  6:{rest:false,planned:[{disc:'bike',label:'Outdoor long ride',note:'outdoor mandatory · NP under 150w · aero conditioning'}]}
 };
 
 // ── WEEK-SPECIFIC SCHEDULE OVERRIDES ────────────────────────────────────────
@@ -1313,6 +1313,15 @@ var WEEK_OVERRIDES = {
     5:{rest:false,planned:[{disc:'bike',label:'Bike check 20 min',note:'QR Kilo reassembly · short spin to confirm shifting & brakes'}]},
     6:{rest:false,planned:[{disc:'swim',label:'Race rehearsal swim',note:'athlete briefing · course preview swim if available'}]},
     0:{rest:true,planned:[{disc:'rest',label:'Race Eve — full rest',note:'gear laid out · nutrition prepped · goggles prepped · sleep early · RACE TOMORROW'}]}
+  },
+  '2026-07-20':{
+    1:{rest:true,planned:[{disc:'rest',label:'Race Day',note:'IM 70.3 Oregon — 5:39:04 PR 🏁'}]},
+    2:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 1 post-race · walk only · celebrate 5:39:04 PR'}]},
+    3:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 2 · still sore · skip Run Club and swim · no training'}]},
+    4:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 3 · rest · hydrate · sleep · let the body absorb the race'}]},
+    5:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 4 · skip swim · rest if still sore · book bike fit this week'}]},
+    6:{rest:false,planned:[{disc:'swim',label:'Easy swim 20 min',note:'Day 5 · first easy movement only if hip feels okay · very easy · no intensity'}]},
+    0:{rest:false,planned:[{disc:'swim',label:'OW swim easy 20 min',note:'Day 6 · easy aerobic only · La Jolla Shores · enjoy the water · nothing structured'}]}
   },
   '2026-07-21':{
     1:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 1 post-race · walk only · eat well · celebrate 5:39:04 PR'}]},
@@ -1900,7 +1909,7 @@ function buildAnalysis(weeks, overall){
         +'<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:13px 15px">'
           +'<div style="font-size:13px;font-weight:700;color:#991b1b;margin-bottom:9px">⚠️ Areas of Concern</div>'
           +'<div class="concern-list">'
-            +'<div class="concern-item"><div class="ci-icon">🏃</div><div><div class="ci-title">Run volume light</div><div class="ci-text">Long run needs to reach 12–13mi by Week 8. Add 1 mile per week from now.</div></div></div>'
+            +'<div class="concern-item"><div class="ci-icon">🏃</div><div><div class="ci-title">Run frequency is key</div><div class="ci-text">Target 3x runs per week. Max 5mi per run to protect hip (Perthes). Walk/run 9/1 every session.</div></div></div>'
             +'<div class="concern-item"><div class="ci-icon">🧱</div><div><div class="ci-title">Zero dedicated brick workouts</div><div class="ci-text">First true brick due this week — 60 min ride → 20 min run immediately after.</div></div></div>'
             +'<div class="concern-item"><div class="ci-icon">🌤️</div><div><div class="ci-title">All riding is indoor</div><div class="ci-text">QR Kilo needs outdoor miles before Sacramento. Build outdoor long rides through peak weeks.</div></div></div>'
           +'</div>'
@@ -1916,7 +1925,7 @@ function buildAnalysis(weeks, overall){
       +'</div>'
       +'<div style="font-size:13px;font-weight:700;color:#1a2535;margin-bottom:9px">🎯 Top 3 Focus — Next 4 Weeks</div>'
       +'<div class="focus-grid">'
-        +'<div class="focus-card" style="border-color:#bbf7d0;background:#f0fdf4"><div class="focus-num" style="color:#059669">1</div><div class="focus-title">Run Volume</div><div class="focus-text">Long run 10mi → 13mi by Week 8. One tempo run per week at 8:45/mi.</div></div>'
+        +'<div class="focus-card" style="border-color:#bbf7d0;background:#f0fdf4"><div class="focus-num" style="color:#059669">1</div><div class="focus-title">Run Frequency</div><div class="focus-text">3x runs per week · max 5mi each · walk/run 9/1 · brick runs build full IM run durability.</div></div>'
         +'<div class="focus-card" style="border-color:#fed7aa;background:#fff7ed"><div class="focus-num" style="color:#ea580c">2</div><div class="focus-title">Brick Workouts</div><div class="focus-text">First brick this week. Build to 2hr ride → 30 min run by Week 8.</div></div>'
         +'<div class="focus-card" style="border-color:#bae6fd;background:#f0f9ff"><div class="focus-num" style="color:#0284c7">3</div><div class="focus-title">Outdoor Riding</div><div class="focus-text">First 45–50mi outdoor ride in Week 5. Practice race nutrition on that ride.</div></div>'
       +'</div>'
