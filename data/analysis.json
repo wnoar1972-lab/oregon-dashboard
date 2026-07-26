@@ -2,21 +2,23 @@
   "date": "July 26, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "4.1 mile easy run at HR 146 \u2014 appropriate recovery effort 5 days post-Oregon 70.3. The moderate HR and short distance are exactly right for Week 1 recovery protocol. No red flags, just letting the body rebuild after racing.",
-  "todayRecommendation": "Today's planned long run (9-11mi) + open water swim should be SKIPPED or shortened to 3-4 miles easy. You're in mandatory post-race recovery week \u2014 a long run today contradicts the Week 1 recovery plan and risks compromising the 12-week build ahead.",
-  "weekProgress": "Week 1 of 13: 136 TSS of 150 target (91% complete). This recovery week is intentionally light after Oregon 70.3. Three sessions completed (1 bike, 2 runs) with appropriate easy effort. The TSS completion is fine for a recovery week \u2014 the goal is rest, not volume.",
-  "keyInsight": "You're 5 days post-race in a mandatory recovery week \u2014 today's planned 9-11 mile long run directly conflicts with the Week 1 recovery protocol and should not be done.",
+  "yesterdayAnalysis": "4.1mi run at 146 avg HR \u2014 moderate effort for a recovery week. This is the third run in four days, which is solid frequency work but needs monitoring given this is supposed to be a post-race recovery week. The effort level (HR 146) suggests you're not fully resting \u2014 recovery runs should be strictly easy aerobic, closer to 130-135 HR.",
+  "todayRecommendation": "Skip today's scheduled long run and open water swim entirely. You've already logged 171 TSS this week when the target is 150 TSS for recovery, and you raced a 70.3 six days ago. Your body needs rest more than another 9-11 miles right now. Take the day completely off or do a light 20-30 min easy spin/walk if you must move.",
+  "weekProgress": "Week 1 of 13: You've exceeded the recovery week target at 171 of 150 TSS (114%). This is a post-race recovery week and you've already done too much. No swims logged yet, but three runs and one bike in four days is appropriate frequency \u2014 the issue is you're now over-target and still have today's long session scheduled.",
+  "keyInsight": "You're not recovering \u2014 you've turned a mandatory rest week into normal training volume and are scheduled to add more today.",
   "alerts": [
-    "Today's planned long run (9-11mi) contradicts Week 1 mandatory recovery \u2014 skip or cut to 3-4mi easy max",
-    "Last night sleep: 6.0h duration, score 60/100, only 13min REM \u2014 poor recovery night",
-    "No brick workouts yet (expected in recovery week, but will be critical starting Week 2)"
+    "TSS already 114% of recovery week target with today still scheduled",
+    "Sleep score dropped to 60 last night with only 6.0h duration \u2014 fatigue signal",
+    "Last night SpO2 at 94% but only 13min REM sleep \u2014 poor recovery quality",
+    "No swim sessions logged all week despite three scheduled",
+    "Running HR averaging 143-146 \u2014 too high for recovery week easy aerobic work"
   ],
   "positives": [
-    "91% of recovery week TSS target with appropriate easy efforts throughout",
-    "Thursday 6.1mi run and Friday 4.1mi run both at controlled HRs (143-146) \u2014 good discipline",
-    "5 days post-Oregon with no injury flags \u2014 hip, back, and feet holding up"
+    "Run frequency is strong: three runs in four days builds the consistency needed for full IM marathon prep",
+    "6.1mi run on Thursday shows you can handle the mileage volume",
+    "Resting HR holding steady at 50-56 despite training load"
   ],
-  "recoveryScore": 5,
+  "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
   "generatedAt": "2026-07-26",
   "daysToRace": 84,
