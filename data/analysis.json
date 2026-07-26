@@ -1,25 +1,25 @@
 {
-  "date": "July 25, 2026",
+  "date": "July 26, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "6.1mi run at 143 HR avg \u2014 solid aerobic session in recovery week after Oregon 70.3. Pace and distance appropriate for post-race recovery. HR controlled and suggests good adaptation. This was Thursday's planned 6mi easy-moderate run, executed correctly.",
-  "todayRecommendation": "Today is your long ride: 50-60mi OUTDOOR on the QR Kilo. This is critical \u2014 you need aero position time to condition your back for Sacramento, and you cannot replicate this on ROUVY without aero bars. Keep it easy aerobic, no heroics in recovery week.",
-  "weekProgress": "Week 1 of 13: 93 TSS of 150 target (62%). Normal progress \u2014 today's 50-60mi outdoor ride is the week's largest session and will close the gap. Two workouts completed, both on-plan. Recovery week execution is appropriate post-Oregon.",
-  "keyInsight": "This recovery week is going exactly as planned \u2014 rest is the training right now, and today's outdoor ride will build critical aero endurance you can't get indoors.",
+  "yesterdayAnalysis": "4.1 mile easy run at HR 146 \u2014 appropriate recovery effort 5 days post-Oregon 70.3. The moderate HR and short distance are exactly right for Week 1 recovery protocol. No red flags, just letting the body rebuild after racing.",
+  "todayRecommendation": "Today's planned long run (9-11mi) + open water swim should be SKIPPED or shortened to 3-4 miles easy. You're in mandatory post-race recovery week \u2014 a long run today contradicts the Week 1 recovery plan and risks compromising the 12-week build ahead.",
+  "weekProgress": "Week 1 of 13: 136 TSS of 150 target (91% complete). This recovery week is intentionally light after Oregon 70.3. Three sessions completed (1 bike, 2 runs) with appropriate easy effort. The TSS completion is fine for a recovery week \u2014 the goal is rest, not volume.",
+  "keyInsight": "You're 5 days post-race in a mandatory recovery week \u2014 today's planned 9-11 mile long run directly conflicts with the Week 1 recovery protocol and should not be done.",
   "alerts": [
-    "SpO2 below 92% last night (90%) \u2014 monitor tonight",
-    "No brick workout yet this week (normal for recovery week)",
-    "Sleep score dropped to 74 after trending up \u2014 watch fatigue"
+    "Today's planned long run (9-11mi) contradicts Week 1 mandatory recovery \u2014 skip or cut to 3-4mi easy max",
+    "Last night sleep: 6.0h duration, score 60/100, only 13min REM \u2014 poor recovery night",
+    "No brick workouts yet (expected in recovery week, but will be critical starting Week 2)"
   ],
   "positives": [
-    "Thursday run executed at controlled HR (143) \u2014 good aerobic discipline in recovery",
-    "Sleep quality rebounded well after Oregon (79-88 scores mid-week)",
-    "RHR trending down from race-day elevation (56 last night vs 58 on race day)"
+    "91% of recovery week TSS target with appropriate easy efforts throughout",
+    "Thursday 6.1mi run and Friday 4.1mi run both at controlled HRs (143-146) \u2014 good discipline",
+    "5 days post-Oregon with no injury flags \u2014 hip, back, and feet holding up"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-07-25",
-  "daysToRace": 85,
+  "recoveryScore": 5,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-07-26",
+  "daysToRace": 84,
   "currentWeek": 1,
   "weekPhase": "Recovery"
 }
