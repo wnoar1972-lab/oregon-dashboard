@@ -42,5 +42,16 @@
     "avgHR": 138.0,
     "distance": 5738.8,
     "duration": 2202.0
+  },
+  {
+    "date": "2026-07-27",
+    "title": "ROUVY - IRONMAN 70.3 Boulder (1st loop)",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 41.0,
+    "np": 0,
+    "avgHR": 114.0,
+    "distance": 44624.0,
+    "duration": 5719.0
   }
 ]
