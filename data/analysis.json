@@ -2,18 +2,15 @@
   "date": "July 27, 2026",
   "overallStatus": "Recovery Mode",
   "statusColor": "blue",
-  "yesterdayAnalysis": "3.6mi easy run at 138 HR \u2014 good aerobic recovery effort. This is Week 1 post-Oregon 70.3, so low-intensity work like this is exactly right. The HR and distance show you kept it truly easy, which is what your body needs right now after the PR effort last Sunday.",
-  "todayRecommendation": "Today's plan calls for a 3,000m pool swim at easy aerobic effort. Keep it conversational pace, focus on form and feel. You're at 212 TSS of a 150 target already \u2014 you've exceeded the recovery week plan. If you feel flat, skip this swim with zero guilt.",
-  "weekProgress": "Week 1 of 13: You're at 212 TSS of 150 target (141% complete) \u2014 you've already overshot the recovery week plan. This week is mandatory post-race recovery after Oregon, and you've done more than required. No bricks scheduled this week, no outdoor aero rides \u2014 that's intentional. Recovery is the entire point.",
-  "keyInsight": "You've already exceeded your recovery week TSS target \u2014 stop adding volume and focus on booking that professional bike fit before the real build starts next week.",
-  "alerts": [
-    "Sleep score dropped to 60 on 7/26 with only 6h duration and 13min REM \u2014 watch for fatigue accumulation",
-    "SpO2 hit 90% on 7/25 \u2014 likely night sweating but monitor trend"
-  ],
+  "yesterdayAnalysis": "Easy 3.6mi run at 138 avg HR \u2014 appropriate recovery effort in Week 1. This is exactly what you should be doing post-Oregon: low volume, aerobic pace, no stress. The session fits the mandatory recovery week plan perfectly.",
+  "todayRecommendation": "Pool swim 3,000m aerobic as scheduled. Keep it easy and technical \u2014 this is about movement and recovery, not fitness building. Stay in Zone 1-2, focus on form.",
+  "weekProgress": "Week 1 of 13: 212 TSS of 150 target (141% complete). You've already exceeded the recovery week target \u2014 this is fine since Week 1 is deliberately light. The mix is appropriate: 2 easy bikes, 3 easy runs, zero swimming logged yet. You're executing the recovery plan correctly.",
+  "keyInsight": "You're recovering properly after Oregon \u2014 this week is going exactly as it should, and you're actually ahead of the minimal TSS target.",
+  "alerts": [],
   "positives": [
-    "Properly executing easy recovery week after Oregon 70.3 PR",
-    "Run HR discipline excellent \u2014 138 avg shows true aerobic control",
-    "You've logged 5 activities in 7 days post-race without going hard \u2014 good volume management"
+    "Sleep averaging 77/100 with good duration (7.4h avg) \u2014 recovery is happening",
+    "Run volume appropriate for recovery week with no intensity pushed",
+    "Already exceeded Week 1 TSS target while keeping all sessions aerobic"
   ],
   "recoveryScore": 7,
   "trainingLoadStatus": "Optimal",
