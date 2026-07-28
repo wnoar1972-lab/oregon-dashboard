@@ -1,21 +1,21 @@
 {
-  "date": "July 27, 2026",
-  "overallStatus": "Recovery Mode",
-  "statusColor": "blue",
-  "yesterdayAnalysis": "Easy 3.6mi run at 138 avg HR \u2014 appropriate recovery effort in Week 1. This is exactly what you should be doing post-Oregon: low volume, aerobic pace, no stress. The session fits the mandatory recovery week plan perfectly.",
-  "todayRecommendation": "Pool swim 3,000m aerobic as scheduled. Keep it easy and technical \u2014 this is about movement and recovery, not fitness building. Stay in Zone 1-2, focus on form.",
-  "weekProgress": "Week 1 of 13: 212 TSS of 150 target (141% complete). You've already exceeded the recovery week target \u2014 this is fine since Week 1 is deliberately light. The mix is appropriate: 2 easy bikes, 3 easy runs, zero swimming logged yet. You're executing the recovery plan correctly.",
-  "keyInsight": "You're recovering properly after Oregon \u2014 this week is going exactly as it should, and you're actually ahead of the minimal TSS target.",
+  "date": "July 28, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "27.7 mile ROUVY ride at 114 HR avg, TSS 41 \u2014 light aerobic work as expected for Week 2 early volume. HR was appropriately controlled. However, this is indoor trainer work without aero bars. The scheduled Saturday long ride MUST be outdoor on the QR Kilo to build aero position endurance \u2014 you cannot prepare for 112 miles in aero on an indoor bike without aero bars.",
+  "todayRecommendation": "Today is ROUVY bike + brick run + tri club run (6-7 miles total run volume). This is your first brick of the build \u2014 execute the bike-to-run transition purposefully and lock in your walk/run protocol from step one. The tri club run will push total run volume to 6-7 miles; monitor right hip response but you handled 10+ at Oregon, so this is well within range.",
+  "weekProgress": "Week 2 of 13: 30 TSS of 350 target (9%) with 5 days remaining including today. This is exactly on-track \u2014 the week is heavily back-loaded with Saturday's outdoor long ride and today's brick sessions accounting for the bulk of weekly load. No sessions have been skipped. Swim, bike, and run disciplines are all represented.",
+  "keyInsight": "First brick workout of the build happens today \u2014 establish your transition discipline and walk/run rhythm now, because Sacramento's marathon starts at mile 114.4 of your day.",
   "alerts": [],
   "positives": [
-    "Sleep averaging 77/100 with good duration (7.4h avg) \u2014 recovery is happening",
-    "Run volume appropriate for recovery week with no intensity pushed",
-    "Already exceeded Week 1 TSS target while keeping all sessions aerobic"
+    "Sleep quality strong: 86/100 last night with 7.5h duration and RHR 52 \u2014 body is recovering well from early build load",
+    "Run volume ramping appropriately: 3.6mi, 4.1mi, 6.1mi over last week shows progressive adaptation without overreach",
+    "Training consistency excellent: 6 sessions in last 7 days with balanced discipline distribution"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-07-27",
-  "daysToRace": 83,
-  "currentWeek": 1,
-  "weekPhase": "Recovery"
+  "recoveryScore": 8,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-07-28",
+  "daysToRace": 82,
+  "currentWeek": 2,
+  "weekPhase": "Base"
 }
