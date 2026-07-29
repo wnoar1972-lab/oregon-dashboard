@@ -56,6 +56,17 @@
   },
   {
     "date": "2026-07-28",
+    "title": "Carlsbad Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 57.0,
+    "np": 0,
+    "avgHR": 142.0,
+    "distance": 9788.3,
+    "duration": 3209.0
+  },
+  {
+    "date": "2026-07-28",
     "title": "Pool Swim",
     "type": "Swim",
     "disc": "swim",
@@ -64,5 +75,16 @@
     "avgHR": 115.0,
     "distance": 2834.6,
     "duration": 3872.0
+  },
+  {
+    "date": "2026-07-29",
+    "title": "ROUVY - IRONMAN 70.3 Sunshine Coast (1st",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 42.0,
+    "np": 0,
+    "avgHR": 118.0,
+    "distance": 48799.2,
+    "duration": 6144.0
   }
 ]

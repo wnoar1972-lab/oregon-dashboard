@@ -1,21 +1,25 @@
 {
-  "date": "July 28, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "27.7 mile ROUVY ride at 114 HR avg, TSS 41 \u2014 light aerobic work as expected for Week 2 early volume. HR was appropriately controlled. However, this is indoor trainer work without aero bars. The scheduled Saturday long ride MUST be outdoor on the QR Kilo to build aero position endurance \u2014 you cannot prepare for 112 miles in aero on an indoor bike without aero bars.",
-  "todayRecommendation": "Today is ROUVY bike + brick run + tri club run (6-7 miles total run volume). This is your first brick of the build \u2014 execute the bike-to-run transition purposefully and lock in your walk/run protocol from step one. The tri club run will push total run volume to 6-7 miles; monitor right hip response but you handled 10+ at Oregon, so this is well within range.",
-  "weekProgress": "Week 2 of 13: 30 TSS of 350 target (9%) with 5 days remaining including today. This is exactly on-track \u2014 the week is heavily back-loaded with Saturday's outdoor long ride and today's brick sessions accounting for the bulk of weekly load. No sessions have been skipped. Swim, bike, and run disciplines are all represented.",
-  "keyInsight": "First brick workout of the build happens today \u2014 establish your transition discipline and walk/run rhythm now, because Sacramento's marathon starts at mile 114.4 of your day.",
-  "alerts": [],
-  "positives": [
-    "Sleep quality strong: 86/100 last night with 7.5h duration and RHR 52 \u2014 body is recovering well from early build load",
-    "Run volume ramping appropriately: 3.6mi, 4.1mi, 6.1mi over last week shows progressive adaptation without overreach",
-    "Training consistency excellent: 6 sessions in last 7 days with balanced discipline distribution"
+  "date": "July 29, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Tuesday's 6.1mi run at 142 HR and 1.8mi pool swim totaled 87 TSS \u2014 solid volume. However, this was supposed to be a ROUVY bike + brick run + tri club run session. The bike portion is missing. You did the run and swim, but skipped the scheduled bike. That's a pattern now \u2014 two days in a row of ROUVY-only sessions with no brick run attached, when the plan calls for bike-to-run transitions.",
+  "todayRecommendation": "Today's plan: ROUVY bike + brick run + 3,000m pool swim. You've already done the ROUVY bike this morning (42 TSS, 30.3mi). Now you need to complete the brick run off that bike and get the swim done. Do not skip the brick run \u2014 you have zero brick workouts logged in this build and Sacramento is 81 days out.",
+  "weekProgress": "Week 2 of 13: 129 TSS of 350 target (37% complete) with 4 days remaining including today. This is normal for Wednesday in a back-loaded week. However, you're missing brick runs. Tuesday's plan included a bike+brick, Wednesday (today) includes a bike+brick. So far, the bike portions are happening on ROUVY, but the brick runs are not. Saturday's long outdoor ride is critical \u2014 that must happen on the QR Kilo outdoors, not ROUVY.",
+  "keyInsight": "You are consistently skipping the brick run portion of your scheduled bike+brick sessions \u2014 this is a red flag for Sacramento marathon readiness.",
+  "alerts": [
+    "No brick workouts completed yet in Week 2 \u2014 brick runs are being skipped after bike sessions",
+    "Sleep quality dropped to 73 last night with only 6.3h duration \u2014 recovery compromised",
+    "Deep sleep only 60min last night \u2014 well below recent average"
   ],
-  "recoveryScore": 8,
-  "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-28",
-  "daysToRace": 82,
+  "positives": [
+    "Run volume is solid \u2014 6.1mi at controlled HR 142 shows good aerobic discipline",
+    "Swim consistency remains strong \u2014 1.8mi pool session completed as planned",
+    "Bike TSS accumulating steadily on ROUVY \u2014 114 total bike TSS so far in build"
+  ],
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-07-29",
+  "daysToRace": 81,
   "currentWeek": 2,
   "weekPhase": "Base"
 }
