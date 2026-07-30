@@ -1445,6 +1445,11 @@ var WEEK_OVERRIDES = {
 var recapWeekOffset = 0;
 
 function buildWeeklyRecap(){
+  var today = new Date();
+  var todayStr = today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+  var _wkAnchorMon2 = new Date('2026-07-21T00:00:00');
+  var _todayMon = new Date(today); _todayMon.setDate(today.getDate() + (today.getDay()===0?-6:1-today.getDay()));
+  var curWeekNum = Math.max(1, Math.min(13, 1 + Math.round((_todayMon - _wkAnchorMon2) / 6048e5)));
   var el = document.getElementById('weeklyRecap');
   if(!el) return;
 
@@ -1453,8 +1458,6 @@ function buildWeeklyRecap(){
   // making the week-specific override silently fall back to the template).
   function _isoLocal(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
 
-  var today = new Date();
-  var todayStr = _isoLocal(today);
 
   // Get Monday of target week
   var monday = new Date(today);
@@ -1477,10 +1480,10 @@ function buildWeeklyRecap(){
   if(summaryData && summaryData.weeks){
     planWeek = summaryData.weeks.find(function(w){ return w.start<=weekStart && w.end>=weekStart; });
   }
-  var weekTarget = planWeek ? planWeek.target : 420;
-  var weekPhaseIdx = planWeek ? planWeek.week-1 : 4;
+  var weekTarget = planWeek ? planWeek.target : WEEK_TARGETS[curWeekNum-1] || 350;
+  var weekPhaseIdx = planWeek ? planWeek.week-1 : curWeekNum-1;
   var weekPhase = WEEK_PHASES[weekPhaseIdx] || 'Build';
-  var weekNum = planWeek ? 'Week '+planWeek.week+' · ' : '';
+  var weekNum = planWeek ? 'Week '+planWeek.week+' · ' : 'Week '+curWeekNum+' · ';
 
   // Activities this week
   var weekActs = activitiesData.filter(function(a){ return a.date>=weekStart && a.date<=weekEnd; });
@@ -1500,13 +1503,15 @@ function buildWeeklyRecap(){
   var daysLeft = weekDates.filter(function(d){ return _isoLocal(d)>=todayStr; }).length;
 
   var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var wLabel = months[weekDates[0].getMonth()]+' '+weekDates[0].getDate()+' – '+months[weekDates[6].getMonth()]+' '+weekDates[6].getDate();
+  var wLabel = PLAN[curWeekNum-1] ? PLAN[curWeekNum-1].dates : months[weekDates[0].getMonth()]+' '+weekDates[0].getDate()+' \u2013 '+months[weekDates[6].getMonth()]+' '+weekDates[6].getDate();
 
   var pillColors = {swim:'dpill-swim',bike:'dpill-bike',run:'dpill-run',brick:'dpill-brick',rest:'dpill-rest',race:'dpill-bike'};
   var pillIcons  = {swim:'🏊',bike:'🚴',run:'🏃',brick:'⚡',rest:'😴',race:'🏁'};
 
   // Active schedule for this week (override if present, else template)
-  var weekOverride = WEEK_OVERRIDES[weekStart] || null;
+  // Check override by Monday key, then Tuesday key (build weeks start Tue Jul 21)
+  var tuesdayStr = _isoLocal(new Date(monday.getFullYear(), monday.getMonth(), monday.getDate()+1));
+  var weekOverride = WEEK_OVERRIDES[weekStart] || WEEK_OVERRIDES[tuesdayStr] || null;
 
   // Build day rows
   var dayRowsHtml = weekDates.map(function(d){
