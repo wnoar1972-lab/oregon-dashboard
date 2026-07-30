@@ -1480,10 +1480,10 @@ function buildWeeklyRecap(){
   if(summaryData && summaryData.weeks){
     planWeek = summaryData.weeks.find(function(w){ return w.start<=weekStart && w.end>=weekStart; });
   }
-  var weekTarget = planWeek ? planWeek.target : WEEK_TARGETS[curWeekNum-1] || 350;
-  var weekPhaseIdx = planWeek ? planWeek.week-1 : curWeekNum-1;
+  var weekTarget = WEEK_TARGETS[curWeekNum-1] || 350;
+  var weekPhaseIdx = curWeekNum-1;
   var weekPhase = WEEK_PHASES[weekPhaseIdx] || 'Build';
-  var weekNum = planWeek ? 'Week '+planWeek.week+' · ' : 'Week '+curWeekNum+' · ';
+  var weekNum = 'Week '+curWeekNum+' · ';
 
   // Activities this week
   var weekActs = activitiesData.filter(function(a){ return a.date>=weekStart && a.date<=weekEnd; });
@@ -1498,7 +1498,10 @@ function buildWeeklyRecap(){
   var swimN = weekActs.filter(function(a){ return a.disc==='swim'; }).length;
   var bikeN = weekActs.filter(function(a){ return a.disc==='bike'; }).length;
   var runN  = weekActs.filter(function(a){ return a.disc==='run'; }).length;
-  var brickDone = weekActs.some(function(a){ return a.disc==='bike'; }) && weekActs.some(function(a){ return a.disc==='run'; });
+  var brickDone = weekActs.some(function(a){
+    if(a.disc!=='bike') return false;
+    return weekActs.some(function(b){ return b.disc==='run' && b.date===a.date; });
+  });
   var pct = weekTarget>0 ? Math.min(100,Math.round(totalTSS/weekTarget*100)) : 0;
   var daysLeft = weekDates.filter(function(d){ return _isoLocal(d)>=todayStr; }).length;
 
