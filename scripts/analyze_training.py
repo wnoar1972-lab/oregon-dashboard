@@ -65,14 +65,18 @@ WEEK_FOCUS   = {
 # not listed falls back to DEFAULT_SCHEDULE. Keep this in sync with the
 # WEEK_OVERRIDES block in index.html so the dashboard and AI coaching match.
 DEFAULT_SCHEDULE = {
-    "Monday":    "Pool swim 3,000m aerobic",
-    "Tuesday":   "ROUVY bike + brick run + tri club run (6-7mi)",
-    "Wednesday": "ROUVY bike + brick run + pool swim 3,000m",
-    "Thursday":  "Run 6mi easy-moderate",
-    "Friday":    "Pool swim 3,000m aerobic",
-    "Saturday":  "Outdoor long ride at ~17mph -- aero conditioning on QR Kilo",
-    "Sunday":    "OW swim easy or rest -- recovery day",
+    "Monday":    "ROUVY or outdoor bike 60-90 min (Z2, aero position) + easy run 3-4mi walk/run 9/1 as separate session (NOT a brick)",
+    "Tuesday":   "Pool swim 2,500-3,000m + Run Club easy group run. THIS IS NOT A BRICK -- swim and run are separate sessions with no bike involved.",
+    "Wednesday": "Outdoor ride + BRICK RUN immediately off the bike (walk/run 9/1 at 11:00/mi). This IS the weekly brick session.",
+    "Thursday":  "Pool swim 2,500-3,000m + easy run 3-4mi walk/run 9/1 as separate session (NOT a brick)",
+    "Friday":    "Rest -- recovery day",
+    "Saturday":  "Outdoor long ride at ~17mph -- aero conditioning on QR Kilo (mandatory outdoor)",
+    "Sunday":    "Long run (progressive build per plan) walk/run 9/1",
 }
+
+# BRICK DEFINITION: A brick workout is ONLY when a run happens IMMEDIATELY off the bike
+# in the same session (within minutes). Monday run + Tuesday swim is NOT a brick.
+# Only Wednesday sessions are designated brick days in this build.
 
 WEEK_OVERRIDES = {
     "2026-06-01": {
@@ -337,7 +341,8 @@ RACE TARGETS (Sacramento 140.6):
 - Bike NP target: TBD pending bike fit (old Oregon target of 145-152w does not apply)
 - Run pace target: 10:50-11:30/mi (walk/run protocol)
 - Key Sacramento fixes from Oregon: (1) professional bike fit to fix back and feet, (2) gels every 20-25 min on the run — zero run calories was the primary cause of the Oregon run fade, (3) walk/run 9/1 from mile 1 of the marathon
-- CRITICAL: Athlete has no aero bars on bike trainer (ROUVY). All Wednesday brick rides and Saturday long rides must be OUTDOOR on the QR Kilo to build aero position endurance. Lower back pain on Oregon run was partly caused by insufficient aero conditioning. Flag if scheduled outdoor rides are missed or replaced with ROUVY for long sessions.
+- BRICK DEFINITION: A brick workout is ONLY when a run happens IMMEDIATELY off the bike in the same session. Monday has a bike + separate run (NOT a brick). Tuesday is swim + Run Club only (NO bike, NOT a brick). Wednesday is the ONLY designated brick day — outdoor ride followed immediately by a run. Do NOT count Monday's bike + Tuesday's run as a brick. Do NOT count any swim + run combination as a brick.
+- Weekly anchor sessions: Tuesday = Pool swim + Run Club (no bike). Thursday = Pool swim + easy run (no bike). Wednesday = outdoor brick (bike + immediate run). Saturday = long outdoor ride only.
 
 CURRENT TRAINING STATUS:
 - Today is {DAY_OF_WEEK}. {DAYS_LEFT_IN_WEEK} day(s) remain in this training week, including today.
