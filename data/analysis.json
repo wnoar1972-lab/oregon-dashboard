@@ -1,25 +1,25 @@
 {
-  "date": "July 29, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "Tuesday's 6.1mi run at 142 HR and 1.8mi pool swim totaled 87 TSS \u2014 solid volume. However, this was supposed to be a ROUVY bike + brick run + tri club run session. The bike portion is missing. You did the run and swim, but skipped the scheduled bike. That's a pattern now \u2014 two days in a row of ROUVY-only sessions with no brick run attached, when the plan calls for bike-to-run transitions.",
-  "todayRecommendation": "Today's plan: ROUVY bike + brick run + 3,000m pool swim. You've already done the ROUVY bike this morning (42 TSS, 30.3mi). Now you need to complete the brick run off that bike and get the swim done. Do not skip the brick run \u2014 you have zero brick workouts logged in this build and Sacramento is 81 days out.",
-  "weekProgress": "Week 2 of 13: 129 TSS of 350 target (37% complete) with 4 days remaining including today. This is normal for Wednesday in a back-loaded week. However, you're missing brick runs. Tuesday's plan included a bike+brick, Wednesday (today) includes a bike+brick. So far, the bike portions are happening on ROUVY, but the brick runs are not. Saturday's long outdoor ride is critical \u2014 that must happen on the QR Kilo outdoors, not ROUVY.",
-  "keyInsight": "You are consistently skipping the brick run portion of your scheduled bike+brick sessions \u2014 this is a red flag for Sacramento marathon readiness.",
+  "date": "July 30, 2026",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "ROUVY Sunshine Coast sim completed \u2014 30.3mi at 42 TSS with 118 bpm average. Low TSS for a planned 60-90 min bike session; this was closer to 60 min. Heart rate was appropriately easy Z2. This was supposed to be Monday's session (ROUVY or outdoor bike + separate easy run), but the run portion is missing \u2014 no run logged on 7/29.",
+  "todayRecommendation": "Execute the Thursday anchor session: pool swim 2,500-3,000m followed by an easy 3-4mi run with walk/run 9/1 protocol. The swim is already done (1.7mi/2,736m at 32 TSS \u2014 solid). Get the easy run done today to stay on schedule.",
+  "weekProgress": "Week 2 of 13: 161 TSS of 350 target (46%) with 3 days remaining including today. This is on-track \u2014 the week is back-loaded with Saturday's long ride and Sunday's long run carrying the bulk of volume. Wednesday's brick session is still missing, which is the primary gap. Monday's easy run was skipped.",
+  "keyInsight": "You're getting the swims done consistently, but you've missed an easy run (Monday) and haven't hit the Wednesday brick yet \u2014 those are the two sessions that matter most this week.",
   "alerts": [
-    "No brick workouts completed yet in Week 2 \u2014 brick runs are being skipped after bike sessions",
-    "Sleep quality dropped to 73 last night with only 6.3h duration \u2014 recovery compromised",
-    "Deep sleep only 60min last night \u2014 well below recent average"
+    "No brick workout completed yet this week (Wed is designated brick day)",
+    "Monday's easy run was not logged (bike done, run skipped)",
+    "Wednesday brick session still outstanding"
   ],
   "positives": [
-    "Run volume is solid \u2014 6.1mi at controlled HR 142 shows good aerobic discipline",
-    "Swim consistency remains strong \u2014 1.8mi pool session completed as planned",
-    "Bike TSS accumulating steadily on ROUVY \u2014 114 total bike TSS so far in build"
+    "Swim consistency is strong \u2014 both anchor sessions executed on schedule with good volume (1.7-1.8mi each)",
+    "Run quality remains solid when executed \u2014 6.1mi at 142 bpm on 7/28 shows good aerobic control",
+    "Sleep averaging 75/100 with RHR stable in low-to-mid 50s \u2014 recovery metrics are holding steady"
   ],
-  "recoveryScore": 6,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-07-29",
-  "daysToRace": 81,
+  "recoveryScore": 7,
+  "trainingLoadStatus": "Fresh",
+  "generatedAt": "2026-07-30",
+  "daysToRace": 80,
   "currentWeek": 2,
   "weekPhase": "Base"
 }
