@@ -1,25 +1,24 @@
 {
-  "date": "July 30, 2026",
+  "date": "July 31, 2026",
   "overallStatus": "On Track",
   "statusColor": "green",
-  "yesterdayAnalysis": "ROUVY Sunshine Coast sim completed \u2014 30.3mi at 42 TSS with 118 bpm average. Low TSS for a planned 60-90 min bike session; this was closer to 60 min. Heart rate was appropriately easy Z2. This was supposed to be Monday's session (ROUVY or outdoor bike + separate easy run), but the run portion is missing \u2014 no run logged on 7/29.",
-  "todayRecommendation": "Execute the Thursday anchor session: pool swim 2,500-3,000m followed by an easy 3-4mi run with walk/run 9/1 protocol. The swim is already done (1.7mi/2,736m at 32 TSS \u2014 solid). Get the easy run done today to stay on schedule.",
-  "weekProgress": "Week 2 of 13: 161 TSS of 350 target (46%) with 3 days remaining including today. This is on-track \u2014 the week is back-loaded with Saturday's long ride and Sunday's long run carrying the bulk of volume. Wednesday's brick session is still missing, which is the primary gap. Monday's easy run was skipped.",
-  "keyInsight": "You're getting the swims done consistently, but you've missed an easy run (Monday) and haven't hit the Wednesday brick yet \u2014 those are the two sessions that matter most this week.",
+  "yesterdayAnalysis": "Thursday delivered exactly what was scheduled: 1.7mi pool swim (2,500m+) and a 6.1mi easy run. The run was properly executed at HR 144 with walk/run protocol. Both sessions hit the TSS targets (32 swim, 64 run) and completed the week's second anchor swim+run day. This was solid execution of the plan with no deviations.",
+  "todayRecommendation": "Today is a scheduled rest/recovery day. Take it seriously \u2014 do nothing. Tomorrow is the long outdoor ride on the QR Kilo, which will be the week's biggest TSS contribution, followed by Sunday's 5-mile long run. Use today to hydrate, eat well, and prepare mentally for the weekend volume.",
+  "weekProgress": "Week 2 of 13 is tracking perfectly. With 225 TSS through Thursday and 2 days remaining (including today's rest), you're exactly where you should be in a back-loaded week. Saturday's long outdoor ride will add 100+ TSS alone, and Sunday's 5-mile long run adds another ~50. The 350 TSS target is well within reach. All scheduled sessions through Thursday were completed as prescribed.",
+  "keyInsight": "You still have not completed a single brick workout in this build \u2014 Wednesday's designated brick session has not happened yet, and you're now in Week 2 with zero bricks logged.",
   "alerts": [
-    "No brick workout completed yet this week (Wed is designated brick day)",
-    "Monday's easy run was not logged (bike done, run skipped)",
-    "Wednesday brick session still outstanding"
+    "No brick workouts completed in entire build (0 total) \u2014 Wednesday brick sessions are critical for IM run prep",
+    "REM sleep low last 2 nights (73min, 87min) \u2014 watch for cumulative fatigue"
   ],
   "positives": [
-    "Swim consistency is strong \u2014 both anchor sessions executed on schedule with good volume (1.7-1.8mi each)",
-    "Run quality remains solid when executed \u2014 6.1mi at 142 bpm on 7/28 shows good aerobic control",
-    "Sleep averaging 75/100 with RHR stable in low-to-mid 50s \u2014 recovery metrics are holding steady"
+    "All scheduled sessions completed through Thursday with zero skipped workouts",
+    "6.1mi easy runs executed at proper HR (142-144) with consistent pacing",
+    "Sleep score averaging 75/100 with mostly adequate duration (7+ hours on 4 of 7 nights)"
   ],
   "recoveryScore": 7,
-  "trainingLoadStatus": "Fresh",
-  "generatedAt": "2026-07-30",
-  "daysToRace": 80,
+  "trainingLoadStatus": "Optimal",
+  "generatedAt": "2026-07-31",
+  "daysToRace": 79,
   "currentWeek": 2,
   "weekPhase": "Base"
 }
