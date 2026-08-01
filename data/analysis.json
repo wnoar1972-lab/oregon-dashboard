@@ -1,24 +1,25 @@
 {
-  "date": "July 31, 2026",
-  "overallStatus": "On Track",
-  "statusColor": "green",
-  "yesterdayAnalysis": "Thursday delivered exactly what was scheduled: 1.7mi pool swim (2,500m+) and a 6.1mi easy run. The run was properly executed at HR 144 with walk/run protocol. Both sessions hit the TSS targets (32 swim, 64 run) and completed the week's second anchor swim+run day. This was solid execution of the plan with no deviations.",
-  "todayRecommendation": "Today is a scheduled rest/recovery day. Take it seriously \u2014 do nothing. Tomorrow is the long outdoor ride on the QR Kilo, which will be the week's biggest TSS contribution, followed by Sunday's 5-mile long run. Use today to hydrate, eat well, and prepare mentally for the weekend volume.",
-  "weekProgress": "Week 2 of 13 is tracking perfectly. With 225 TSS through Thursday and 2 days remaining (including today's rest), you're exactly where you should be in a back-loaded week. Saturday's long outdoor ride will add 100+ TSS alone, and Sunday's 5-mile long run adds another ~50. The 350 TSS target is well within reach. All scheduled sessions through Thursday were completed as prescribed.",
-  "keyInsight": "You still have not completed a single brick workout in this build \u2014 Wednesday's designated brick session has not happened yet, and you're now in Week 2 with zero bricks logged.",
+  "date": "August 01, 2026",
+  "overallStatus": "Needs Attention",
+  "statusColor": "yellow",
+  "yesterdayAnalysis": "Rest day was scheduled and taken correctly. However, last night's sleep score of 49/100 with 8.7 hours duration is a red flag \u2014 that's poor quality despite adequate time in bed. RHR was elevated to 58 (vs 52-57 recent baseline), deep sleep only 52 minutes, and this follows a hard Thursday double (6.1mi run + 1.7mi swim). You're carrying fatigue into today's long ride.",
+  "todayRecommendation": "Today's outdoor long ride is mandatory \u2014 it's your biggest TSS session of the week and critical for Sacramento aerobic base. Given the poor sleep and elevated RHR, keep this strictly aerobic at true Z2 (don't push the pace). If you feel flat in the first 30 minutes, this is a fatigue signal \u2014 finish the ride but don't force power. Monitor how your back and feet feel in aero position.",
+  "weekProgress": "Week 2 of 13 sits at 225 TSS of 350 target (64%) with today's long ride still to complete. This is right on schedule \u2014 the week is heavily back-loaded by design with Saturday's long ride and Wednesday's brick carrying the majority of load. All discipline targets are balanced so far. Wednesday's brick is in the books, which is the most critical anchor session.",
+  "keyInsight": "Sleep quality collapsed last night (49 score despite 8.7 hours) with elevated RHR \u2014 you're absorbing training stress but recovery is compromised heading into your biggest ride of the week.",
   "alerts": [
-    "No brick workouts completed in entire build (0 total) \u2014 Wednesday brick sessions are critical for IM run prep",
-    "REM sleep low last 2 nights (73min, 87min) \u2014 watch for cumulative fatigue"
+    "Sleep score 49/100 last night \u2014 poor quality despite long duration",
+    "RHR elevated to 58 (baseline 52-54) \u2014 fatigue signal",
+    "Today's long ride is critical for weekly TSS target \u2014 must complete"
   ],
   "positives": [
-    "All scheduled sessions completed through Thursday with zero skipped workouts",
-    "6.1mi easy runs executed at proper HR (142-144) with consistent pacing",
-    "Sleep score averaging 75/100 with mostly adequate duration (7+ hours on 4 of 7 nights)"
+    "Brick workout completed Wednesday as scheduled \u2014 first of the build",
+    "Thursday double (swim + 6.1mi run) executed well with HR 142 showing controlled effort",
+    "Week TSS tracking perfectly for back-loaded plan \u2014 no missed sessions"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Optimal",
-  "generatedAt": "2026-07-31",
-  "daysToRace": 79,
+  "recoveryScore": 4,
+  "trainingLoadStatus": "Fatigued",
+  "generatedAt": "2026-08-01",
+  "daysToRace": 78,
   "currentWeek": 2,
   "weekPhase": "Base"
 }
