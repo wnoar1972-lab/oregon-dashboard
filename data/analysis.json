@@ -1,25 +1,25 @@
 {
-  "date": "August 01, 2026",
+  "date": "August 02, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Rest day was scheduled and taken correctly. However, last night's sleep score of 49/100 with 8.7 hours duration is a red flag \u2014 that's poor quality despite adequate time in bed. RHR was elevated to 58 (vs 52-57 recent baseline), deep sleep only 52 minutes, and this follows a hard Thursday double (6.1mi run + 1.7mi swim). You're carrying fatigue into today's long ride.",
-  "todayRecommendation": "Today's outdoor long ride is mandatory \u2014 it's your biggest TSS session of the week and critical for Sacramento aerobic base. Given the poor sleep and elevated RHR, keep this strictly aerobic at true Z2 (don't push the pace). If you feel flat in the first 30 minutes, this is a fatigue signal \u2014 finish the ride but don't force power. Monitor how your back and feet feel in aero position.",
-  "weekProgress": "Week 2 of 13 sits at 225 TSS of 350 target (64%) with today's long ride still to complete. This is right on schedule \u2014 the week is heavily back-loaded by design with Saturday's long ride and Wednesday's brick carrying the majority of load. All discipline targets are balanced so far. Wednesday's brick is in the books, which is the most critical anchor session.",
-  "keyInsight": "Sleep quality collapsed last night (49 score despite 8.7 hours) with elevated RHR \u2014 you're absorbing training stress but recovery is compromised heading into your biggest ride of the week.",
+  "yesterdayAnalysis": "ROUVY sim of the Sacramento course first loop was solid \u2014 45.1mi at 45 TSS, HR 116 suggests good Z2 control. However, this was supposed to be Saturday's long outdoor ride (mandatory outdoor per plan), not a recovery-paced indoor sim. You ran the Oregon course ROUVY on Friday and now Sacramento loop on Saturday \u2014 you're avoiding the outdoor aero conditioning work the plan demands. Indoor sims don't replicate the sustained aero position stress you need for 112 miles in Sacramento.",
+  "todayRecommendation": "Today is your Week 2 long run \u2014 5 miles per the progressive build. Execute the 9/1 walk/run protocol from mile 1, target 11:00/mi pace on the run intervals. This is a test of your hip resilience and your ability to fuel properly after the Oregon disaster. Take gels every 25 minutes and see if you can hold pace without the fade you had at Oregon.",
+  "weekProgress": "Week 2 of 13 is at 270 of 350 TSS target (77% complete) with 0 days remaining including today. You've completed 4 bike sessions, 2 swims, and 4 runs so far. The problem: zero brick workouts completed \u2014 Wednesday's designated outdoor brick was skipped entirely. You're avoiding the outdoor riding and the bike-to-run transitions that are critical for Sacramento readiness. TSS is tracking okay, but session quality and type are not matching the plan.",
+  "keyInsight": "You're substituting indoor ROUVY sims for mandatory outdoor aero conditioning rides and skipping the weekly brick entirely \u2014 this is a pattern that will leave you unprepared for 112 miles in aero position followed by a marathon.",
   "alerts": [
-    "Sleep score 49/100 last night \u2014 poor quality despite long duration",
-    "RHR elevated to 58 (baseline 52-54) \u2014 fatigue signal",
-    "Today's long ride is critical for weekly TSS target \u2014 must complete"
+    "No brick workout completed this week \u2014 Wednesday outdoor brick was skipped",
+    "Saturday long ride was indoor ROUVY sim instead of mandatory outdoor aero conditioning",
+    "Sleep score 49/100 last night \u2014 8.7h duration but poor quality recovery"
   ],
   "positives": [
-    "Brick workout completed Wednesday as scheduled \u2014 first of the build",
-    "Thursday double (swim + 6.1mi run) executed well with HR 142 showing controlled effort",
-    "Week TSS tracking perfectly for back-loaded plan \u2014 no missed sessions"
+    "Completed both pool swim sessions with solid yardage (2,500m+ range)",
+    "Run volume is building appropriately \u2014 two 6+ mile runs this week",
+    "HR discipline on bike sessions is good \u2014 all Z2 work staying in 114-118 range"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-08-01",
-  "daysToRace": 78,
+  "generatedAt": "2026-08-02",
+  "daysToRace": 77,
   "currentWeek": 2,
   "weekPhase": "Base"
 }

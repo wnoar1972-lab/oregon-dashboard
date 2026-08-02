@@ -108,5 +108,16 @@
     "avgHR": 119.0,
     "distance": 2743.2,
     "duration": 3872.0
+  },
+  {
+    "date": "2026-08-01",
+    "title": "ROUVY - IRONMAN California (1st loop)",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 45.0,
+    "np": 0,
+    "avgHR": 116.0,
+    "distance": 72548.6,
+    "duration": 9010.0
   }
 ]
