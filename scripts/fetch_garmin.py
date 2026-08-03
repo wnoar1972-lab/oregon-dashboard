@@ -5,13 +5,20 @@ and sleep data from Garmin Connect, saves to data/ folder.
 """
 
 import json, os, sys, urllib.request, urllib.parse, base64, subprocess
-subprocess.run(['pip', 'install', 'requests', '-q'], check=False)
+subprocess.run([sys.executable, '-m', 'pip', 'install', 'requests', '-q'], check=False)
 import requests
 from datetime import date, timedelta
 
 import datetime as _dt
 TODAY = _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=-7))).date()
-START_DATE = date(2026, 7, 21)  # Sacramento build start
+
+with open("config/race_config.json") as f:
+    RACE_CONFIG = json.load(f)
+
+START_DATE = date.fromisoformat(RACE_CONFIG["build"]["start_date"])
+TOTAL_WEEKS = RACE_CONFIG["build"]["total_weeks"]
+WEEKLY_TSS_TARGETS = {int(k): v for k, v in RACE_CONFIG["weekly_tss_targets"].items()}
+RACE_DATE = date.fromisoformat(RACE_CONFIG["date"])
 
 # ── CREDENTIALS ───────────────────────────────────────────────────────────────
 GARMIN_EMAIL    = os.environ.get("GARMIN_EMAIL")
@@ -84,7 +91,12 @@ if INTERVALS_KEY and INTERVALS_ID:
         print(f"Intervals.icu error: {e}")
         import traceback; traceback.print_exc()
 else:
-    print("No Intervals.icu credentials — skipping activity fetch")
+    print("No Intervals.icu credentials — skipping activity fetch, reusing existing data/activities.json")
+    try:
+        with open("data/activities.json") as f:
+            activities = json.load(f)
+    except Exception:
+        activities = []
 
 # ── GARMIN SLEEP ──────────────────────────────────────────────────────────────
 sleep_data = []
@@ -189,15 +201,14 @@ if GARMIN_EMAIL and GARMIN_PASSWORD:
         import traceback; traceback.print_exc()
 
 # ── SUMMARY ───────────────────────────────────────────────────────────────────
-week_ranges = [
-    (1,"2026-07-21","2026-07-27"),(2,"2026-07-28","2026-08-03"),
-    (3,"2026-08-04","2026-08-10"),(4,"2026-08-11","2026-08-17"),
-    (5,"2026-08-18","2026-08-24"),(6,"2026-08-25","2026-08-31"),
-    (7,"2026-09-01","2026-09-07"),(8,"2026-09-08","2026-09-14"),
-    (9,"2026-09-15","2026-09-21"),(10,"2026-09-22","2026-09-28"),
-    (11,"2026-09-29","2026-10-05"),(12,"2026-10-06","2026-10-12"),(13,"2026-10-13","2026-10-19")
-]
-wt = {1:150,2:350,3:420,4:480,5:520,6:300,7:560,8:600,9:560,10:400,11:480,12:250,13:150}
+# Week boundaries are derived from config/race_config.json's build.start_date
+# and build.total_weeks -- not hardcoded here, so the build calendar has a
+# single source of truth.
+week_ranges = []
+for wn in range(1, TOTAL_WEEKS + 1):
+    ws = (START_DATE + timedelta(days=(wn - 1) * 7))
+    we = ws + timedelta(days=6)
+    week_ranges.append((wn, ws.strftime("%Y-%m-%d"), we.strftime("%Y-%m-%d")))
 
 weeks = []
 for wn, ws, we in week_ranges:
@@ -208,7 +219,7 @@ for wn, ws, we in week_ranges:
     run_tss  = round(sum(a["tss"] for a in wa if a["disc"]=="run"))
     total_tss = round(sum(a["tss"] for a in wa))
     weeks.append({
-        "week":wn,"start":ws,"end":we,"target":wt[wn],
+        "week":wn,"start":ws,"end":we,"target":WEEKLY_TSS_TARGETS.get(wn, 0),
         "actual":total_tss,
         "bikeTSS":bike_tss,
         "swimTSS":swim_tss,
@@ -227,7 +238,7 @@ overall = {
     "avgBikeNP":     round(sum(bn_all)/len(bn_all),1) if bn_all else 0,
     "currentWeek":   next((w["week"] for w in weeks if not w["done"]),13),
     "weeksComplete": sum(1 for w in weeks if w["done"] and w["actual"]>0),
-    "daysToRace":    (date(2026,10,18)-TODAY).days,
+    "daysToRace":    (RACE_DATE-TODAY).days,
     "totalSwimTSS":  round(sum(a["tss"] for a in activities if a["disc"]=="swim")),
     "totalBikeTSS":  round(sum(a["tss"] for a in activities if a["disc"]=="bike")),
     "totalRunTSS":   round(sum(a["tss"] for a in activities if a["disc"]=="run")),

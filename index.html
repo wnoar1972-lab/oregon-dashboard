@@ -309,9 +309,16 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
 .ai-list-item{font-size:12px;line-height:1.6;padding:4px 0;border-bottom:1px solid #f1f5f9;display:flex;gap:7px;align-items:flex-start}
 .ai-list-item:last-child{border-bottom:none}
 .ai-loading{padding:2rem;text-align:center;color:#94a3b8;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em}
+.rd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px;margin-bottom:12px}
+.rd-tile{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px 8px;text-align:center}
+.rd-tile-val{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:.02em;line-height:1;margin-bottom:2px}
+.rd-tile-lbl{font-size:9px;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;margin-bottom:2px}
+.rd-tile-status{font-size:9px;font-weight:600}
+.rd-confidence{font-size:10px;color:rgba(255,255,255,.5);font-family:'JetBrains Mono',monospace;letter-spacing:.04em;margin-top:2px}
 @media(max-width:480px){
   .ai-grid,.ai-lists{grid-template-columns:1fr}
   .ai-metrics{grid-template-columns:repeat(3,1fr)}
+  .rd-grid{grid-template-columns:repeat(3,1fr)}
 }
 
 </style>
@@ -397,7 +404,9 @@ footer{text-align:center;padding:1.25rem;font-family:'JetBrains Mono',monospace;
     </div>
     <div class="sec"><div class="sec-lbl">AI Daily Coaching Analysis</div><div class="sec-rule"></div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8">Updated daily · Powered by Claude</div></div>
     <div id="aiAnalysisSection"><div class="ai-loading">Loading analysis...</div></div>
-    
+    <div class="sec"><div class="sec-lbl">Race Readiness</div><div class="sec-rule"></div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#94a3b8">Multi-week evidence · not this week's completion %</div></div>
+    <div id="readinessSection"><div class="ai-loading">Loading readiness...</div></div>
+
 </div>
 </div>
 <!-- DAILY LOG PAGE -->
@@ -1145,6 +1154,7 @@ var activitiesData = [];
 var sleepData = [];
 
 var analysisData = null;
+var readinessData = null;
 
 function buildAIAnalysis(){
   var el = document.getElementById('aiAnalysisSection');
@@ -1176,6 +1186,29 @@ function buildAIAnalysis(){
   var positivesHtml = (a.positives||[]).map(function(p){
     return '<div class="ai-list-item"><span>💪</span><span>'+p+'</span></div>';
   }).join('');
+
+  var evidenceHtml = (a.evidence||[]).map(function(e){
+    return '<div class="ai-list-item"><span>📎</span><span>'+e+'</span></div>';
+  }).join('') || '<div class="ai-list-item" style="color:#94a3b8">No evidence sources listed</div>';
+
+  var contextHtml = (a.athlete_context_considered||[]).map(function(c){
+    return '<div class="ai-list-item"><span>🧬</span><span>'+c+'</span></div>';
+  }).join('') || '<div class="ai-list-item" style="color:#94a3b8">Not specified</div>';
+
+  var raceImplHtml = (a.race_implications||[]).map(function(r){
+    return '<div class="ai-section-text" style="margin-bottom:4px">🏁 '+r+'</div>';
+  }).join('') || '<div class="ai-section-text" style="color:#94a3b8">None specified</div>';
+
+  var adjustHtml = (a.recommended_adjustments||[]).map(function(r){
+    return '<div class="ai-section-text" style="margin-bottom:4px">🔧 '+r+'</div>';
+  }).join('') || '<div class="ai-section-text" style="color:#94a3b8">No adjustments recommended</div>';
+
+  var confidenceHtml = a.confidence ? (
+    '<div class="ai-section" style="grid-column:1/-1">'+
+      '<div class="ai-section-title">🎯 Confidence — '+(a.confidence.level||'unknown').toUpperCase()+'</div>'+
+      '<div class="ai-section-text">'+(a.confidence.reason||'')+'</div>'+
+    '</div>'
+  ) : '';
 
   el.innerHTML =
     '<div class="ai-card">'+
@@ -1229,218 +1262,108 @@ function buildAIAnalysis(){
             positivesHtml+
           '</div>'+
         '</div>'+
+        '<div class="ai-grid" style="margin-top:10px">'+
+          confidenceHtml+
+          '<div class="ai-section">'+
+            '<div class="ai-section-title">🏁 Race Implications</div>'+
+            raceImplHtml+
+          '</div>'+
+          '<div class="ai-section">'+
+            '<div class="ai-section-title">🔧 Recommended Adjustments</div>'+
+            adjustHtml+
+          '</div>'+
+        '</div>'+
+        '<div class="ai-lists" style="margin-top:10px">'+
+          '<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px">'+
+            '<div class="ai-list-title" style="color:#334155">📎 Evidence Used</div>'+
+            evidenceHtml+
+          '</div>'+
+          '<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px">'+
+            '<div class="ai-list-title" style="color:#334155">🧬 Athlete Context Considered</div>'+
+            contextHtml+
+          '</div>'+
+        '</div>'+
+      '</div>'+
+    '</div>';
+}
+
+// ── READINESS ENGINE DISPLAY ─────────────────────────────────────────────────
+function rdColor(score){
+  if(score==null) return '#94a3b8';
+  if(score>=85) return '#059669';
+  if(score>=70) return '#0284c7';
+  if(score>=55) return '#d97706';
+  return '#dc2626';
+}
+
+function buildReadiness(){
+  var el = document.getElementById('readinessSection');
+  if(!el) return;
+  if(!readinessData){
+    el.innerHTML = '<div class="ai-loading">No readiness data yet — will generate on next daily sync</div>';
+    return;
+  }
+  var r = readinessData;
+  var s = r.scores || {};
+  var order = ['swim','bike','run','recovery','nutrition','equipment'];
+  var icons = {swim:'🏊',bike:'🚴',run:'🏃',recovery:'💤',nutrition:'🍽️',equipment:'⚙️'};
+
+  var tilesHtml = '<div class="rd-tile" style="border:2px solid '+rdColor(r.overall_score)+'">'+
+      '<div class="rd-tile-val" style="color:'+rdColor(r.overall_score)+'">'+r.overall_score+'</div>'+
+      '<div class="rd-tile-lbl">Overall</div>'+
+      '<div class="rd-tile-status" style="color:'+rdColor(r.overall_score)+'">'+r.overall_status+'</div>'+
+    '</div>';
+  order.forEach(function(k){
+    var d = s[k];
+    if(!d) return;
+    tilesHtml += '<div class="rd-tile">'+
+        '<div class="rd-tile-val" style="color:'+rdColor(d.score)+'">'+(d.score!=null?d.score:'—')+'</div>'+
+        '<div class="rd-tile-lbl">'+icons[k]+' '+k+'</div>'+
+        '<div class="rd-tile-status" style="color:'+rdColor(d.score)+'">'+d.status+'</div>'+
+      '</div>';
+  });
+
+  el.innerHTML =
+    '<div class="ai-card">'+
+      '<div class="ai-header">'+
+        '<div class="ai-header-left">'+
+          '<h3>Race Readiness</h3>'+
+          '<p>Week '+r.current_week+' of '+r.total_weeks+' · calc v'+r.calculation_version+' · confidence: '+r.overall_confidence+'</p>'+
+        '</div>'+
+        '<span class="ai-status" style="background:'+rdColor(r.overall_score)+';color:#fff">'+r.overall_status+'</span>'+
+      '</div>'+
+      '<div class="ai-body">'+
+        '<div class="rd-grid">'+tilesHtml+'</div>'+
+        '<div class="ai-grid">'+
+          '<div class="ai-section">'+
+            '<div class="ai-section-title">💪 Strongest Factor</div>'+
+            '<div class="ai-section-text">'+r.strongest_positive_factor+'</div>'+
+          '</div>'+
+          '<div class="ai-section">'+
+            '<div class="ai-section-title">⚠️ Largest Limiter</div>'+
+            '<div class="ai-section-text">'+r.largest_limiter+'</div>'+
+          '</div>'+
+          '<div class="ai-section" style="grid-column:1/-1">'+
+            '<div class="ai-section-title">🎯 Next Action</div>'+
+            '<div class="ai-section-text">'+r.next_action+'</div>'+
+          '</div>'+
+        '</div>'+
+        '<div class="ai-section-text" style="color:#94a3b8;font-size:11px;margin-top:8px">'+r.note+'</div>'+
       '</div>'+
     '</div>';
 }
 
 
 // ── WEEKLY SCHEDULE TEMPLATE ────────────────────────────────────────────────
-// DOW: 0=Sun,1=Mon,2=Tue,3=Wed,4=Thu,5=Fri,6=Sat
-var WEEKLY_SCHEDULE = {
-  0:{rest:false,planned:[{disc:'swim',label:'OW swim or easy spin',note:'easy aerobic · recovery day'}]},
-  1:{rest:false,planned:[{disc:'bike',label:'ROUVY 60 min',note:'Z2 · NP 130–145w'},{disc:'run',label:'Easy run 3–4mi',note:'walk/run 9/1'}]},
-  2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 steady'},{disc:'run',label:'Run Club',note:'walk/run protocol'}]},
-  3:{rest:false,planned:[{disc:'bike',label:'Outdoor ride + brick',note:'outdoor mandatory · aero conditioning'},{disc:'brick',label:'Brick run 25–45 min',note:'walk/run 9/1 · 11:00/mi'}]},
-  4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'race effort sets'},{disc:'run',label:'Easy run 3–4mi',note:'walk/run 9/1'}]},
-  5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery day'}]},
-  6:{rest:false,planned:[{disc:'bike',label:'Outdoor long ride',note:'outdoor mandatory · NP under 150w · aero conditioning'}]}
-};
+// Populated at runtime from config/schedule.json (see loadAll()) -- this is
+// the single source of truth, shared with scripts/analyze_training.py and
+// scripts/readiness_engine.py. DOW: 0=Sun,1=Mon,2=Tue,3=Wed,4=Thu,5=Fri,6=Sat
+var WEEKLY_SCHEDULE = {};  // populated from config/schedule.json in loadAll()
 
 // ── WEEK-SPECIFIC SCHEDULE OVERRIDES ────────────────────────────────────────
 // Keyed by the Monday (ISO date) of the week. Any week/day not listed here
-// falls back to WEEKLY_SCHEDULE above. To set a future week, add another
-// 'YYYY-MM-DD' block with the same day-of-week structure (0=Sun … 6=Sat).
-var WEEK_OVERRIDES = {
-  '2026-06-01':{
-    1:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'with brick'},{disc:'brick',label:'Brick run',note:'off the bike'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Swim',note:'morning'},{disc:'run',label:'Run Club',note:'group run'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'with brick'},{disc:'brick',label:'Brick run',note:'off the bike'}]},
-    4:{rest:false,planned:[{disc:'run',label:'Run',note:'steady'}]},
-    5:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'with brick'},{disc:'brick',label:'Brick run',note:'off the bike'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Long bike ride',note:'endurance'},{disc:'swim',label:'Swim',note:'aerobic'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Easy long run',note:'scaled ~60-70%, all easy'}]}
-  },
-  '2026-06-08':{
-    1:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'with brick'},{disc:'brick',label:'Brick run',note:'off the bike'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Swim',note:'morning'},{disc:'run',label:'Long run 10mi',note:'Run Club · easy'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'easy'},{disc:'brick',label:'Brick run (short)',note:'short & easy'}]},
-    4:{rest:true,planned:[{disc:'rest',label:'Rest day'}]},
-    5:{rest:false,planned:[{disc:'swim',label:'Swim',note:'aerobic'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Long bike ride',note:'endurance'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Run',note:'steady'},{disc:'swim',label:'Swim',note:'OW if possible'}]}
-  },
-  '2026-06-15':{
-    1:{rest:false,planned:[{disc:'bike',label:'Bike 45 min',note:'with brick'},{disc:'brick',label:'Brick run 20 min',note:'off the bike · easy pace'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'aerobic · after Run Club'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Bike 50 min',note:'with brick'},{disc:'brick',label:'Brick run 20 min',note:'off the bike · easy pace'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 at race pace · stay sharp'}]},
-    5:{rest:false,planned:[{disc:'run',label:'Easy run 3–4mi',note:'protect hip · no intensity'},{disc:'swim',label:'Open water 1,500m',note:'La Jolla Shores · aerobic'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Long bike 50–55mi',note:'moderate effort · NP under 150w'},{disc:'brick',label:'Brick run 20 min',note:'off the bike · easy pace'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Easy run 3–4mi',note:'all easy · protect hip'}]}
-  },
-  '2026-06-22':{
-    1:{rest:false,planned:[{disc:'bike',label:'Bike 50–55 min',note:'easy-moderate ROUVY · no brick · no Run Club'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 at race pace · stay sharp'}]},
-    3:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'easy · stay loose · no intensity'}]},
-    4:{rest:false,planned:[{disc:'bike',label:'Bike 45 min',note:'with short brick'},{disc:'brick',label:'Brick run 15 min',note:'easy off the bike'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Complete rest',note:'protect everything for Sunday'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Shakeout spin 20 min',note:'easy only · save the legs'},{disc:'run',label:'Easy jog 10 min',note:'shakeout · nothing more'}]},
-    0:{rest:false,planned:[{disc:'race',label:'SDIT Race Day',note:'International · 1K swim / 30K bike / 10K run · goal sub-2:15'}]}
-  },
-  '2026-06-29':{
-    1:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'post-SDIT recovery · walk & stretch only'}]},
-    2:{rest:false,planned:[{disc:'bike',label:'Easy spin 30 min',note:'recovery only · no intensity'}]},
-    3:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m easy',note:'light return to training'},{disc:'run',label:'Easy run 3mi',note:'only if hip & legs feel ready'}]},
-    4:{rest:false,planned:[{disc:'bike',label:'Bike 45 min',note:'3x8 min at race effort NP 145–152w · last stimulus'}]},
-    5:{rest:false,planned:[{disc:'bike',label:'Bike ride',note:'easy-moderate · shake out the legs · no intensity · save it for tomorrow'}]},
-    6:{rest:false,planned:[{disc:'race',label:'4th of July 10K 🇺🇸',note:'strong tempo effort · 8:00–8:15/mi · not all-out · 15 days to Oregon — DONE'}]},
-    0:{rest:false,planned:[{disc:'swim',label:'Open water swim',note:'easy aerobic · La Jolla Shores · enjoy it · no intensity · recover from 10K'}]}
-  },
-  '2026-07-06':{
-    1:{rest:false,planned:[{disc:'bike',label:'Bike 40 min',note:'easy-moderate ROUVY · NP under 140w'},{disc:'brick',label:'Brick run 15 min',note:'short off the bike · easy pace · no intensity'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'4x100 at race pace · stay sharp'},{disc:'run',label:'Run Club',note:'easy group run · enjoy it'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Bike 40 min',note:'easy ROUVY · NP under 140w'},{disc:'swim',label:'Pool swim 1,500m',note:'easy aerobic · stay loose'}]},
-    4:{rest:false,planned:[{disc:'bike',label:'Bike 30 min easy',note:'very easy spin only · skip the run · protect the legs'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Complete rest',note:'protect everything · no training stress'}]},
-    6:{rest:false,planned:[{disc:'swim',label:'Open water swim',note:'easy aerobic · La Jolla Shores · 1,500m · no intensity'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Easy run 2–3mi',note:'very easy · final tune-up · nothing more'}]}
-  },
-  '2026-07-13':{
-    1:{rest:false,planned:[{disc:'swim',label:'Pool swim 1,500m',note:'easy · 4x50 at race pace · last pool session'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000yd',note:'easy aerobic · stay loose'},{disc:'run',label:'Easy run 3mi',note:'easy pace · feel fresh · no effort'}]},
-    3:{rest:false,planned:[{disc:'swim',label:'OW swim 1,000m',note:'easy open water · last swim before Oregon · confidence builder — DONE'}]},
-    4:{rest:true,planned:[{disc:'rest',label:'Travel day ✈️',note:'flew to Oregon · race completed 5:39:04 PR 🏁'}]},
-    5:{rest:false,planned:[{disc:'bike',label:'Bike check 20 min',note:'QR Kilo reassembly · short spin to confirm shifting & brakes'}]},
-    6:{rest:false,planned:[{disc:'swim',label:'Race rehearsal swim',note:'athlete briefing · course preview swim if available'}]},
-    0:{rest:true,planned:[{disc:'rest',label:'Race Eve — full rest',note:'gear laid out · nutrition prepped · goggles prepped · sleep early · RACE TOMORROW'}]}
-  },
-  '2026-07-20':{
-    1:{rest:true,planned:[{disc:'rest',label:'Race Day',note:'IM 70.3 Oregon — 5:39:04 PR 🏁'}]},
-    2:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 1 post-race · walk only · celebrate 5:39:04 PR'}]},
-    3:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 2 · still sore · skip Run Club and swim · no training'}]},
-    4:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 3 · rest · hydrate · sleep · let the body absorb the race'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 4 · skip swim · rest if still sore · book bike fit this week'}]},
-    6:{rest:false,planned:[{disc:'swim',label:'Easy swim 20 min',note:'Day 5 · first easy movement only if hip feels okay · very easy · no intensity'}]},
-    0:{rest:false,planned:[{disc:'swim',label:'OW swim easy 20 min',note:'Day 6 · easy aerobic only · La Jolla Shores · enjoy the water · nothing structured'}]}
-  },
-  '2026-07-21':{
-    1:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 1 post-race · walk only · eat well · celebrate 5:39:04 PR'}]},
-    2:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 2 · still sore · skip Run Club and swim · no training'}]},
-    3:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 3 · rest · hydrate · sleep · let the body absorb the race'}]},
-    4:{rest:true,planned:[{disc:'rest',label:'Full rest',note:'Day 4 · skip swim · rest if still sore · book bike fit this week'}]},
-    5:{rest:false,planned:[{disc:'swim',label:'Easy swim 20 min',note:'Day 5 · first easy movement only if hip feels okay · very easy · no intensity'}]},
-    6:{rest:false,planned:[{disc:'swim',label:'OW swim easy 20 min',note:'Day 6 · easy aerobic only · La Jolla Shores · enjoy the water · nothing structured'}]},
-    0:{rest:false,planned:[{disc:'bike',label:'Easy spin 20 min',note:'Day 7 · easy spin or rest · listen to the body · Sacramento build starts tomorrow'}]}
-  },
-  '2026-07-28':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 60 min',note:'easy Z2 · NP 130–140w · tri bike on trainer if set up'},{disc:'run',label:'Easy run 3mi',note:'walk/run 9/1 · conversational HR · first run of Sacramento build'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'easy aerobic · 4x100 steady'},{disc:'run',label:'Run Club',note:'easy group run · walk/run protocol'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'ROUVY 60 min',note:'easy Z2 · NP 130–140w · aero position on trainer'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'easy aerobic · build frequency'},{disc:'run',label:'Easy run 3mi',note:'walk/run 9/1 · protect hip · keep easy'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery day'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Outdoor ride 60 min',note:'easy Z2 · start aero position time on QR Kilo · ROUVY if weather forces it'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 5mi',note:'walk/run 9/1 · first long run of Sacramento build · note hip status after'}]}
-  },
-  '2026-08-03':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 60 min',note:'Z2 · NP 135–145w'},{disc:'run',label:'Easy run 3mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 at steady effort'},{disc:'run',label:'Run Club',note:'walk/run protocol'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Outdoor ride 75 min + brick',note:'outdoor preferred · aero conditioning · NP 135–145w'},{disc:'brick',label:'Brick run 25 min',note:'walk/run 9/1 · first brick of Sacramento block'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 steady · build endurance'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery day'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Outdoor ride 90 min',note:'Z2 · aero on QR Kilo · back needs to adapt to 112mi'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 6mi',note:'walk/run 9/1 · building distance · note hip status after'}]}
-  },
-  '2026-08-10':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 75 min',note:'NP 140–148w'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'4x200 at steady effort'},{disc:'run',label:'Run Club',note:'walk/run protocol'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Outdoor ride 90 min + brick',note:'outdoor mandatory · aero conditioning · NP 140–148w'},{disc:'brick',label:'Brick run 30 min',note:'walk/run 9/1 · groove Sacramento marathon pace 11:00/mi'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'4x200 steady · threshold introduced'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery before long run Sunday'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Outdoor long ride 50mi',note:'~17mph target · QR Kilo · first post-bike-fit outdoor ride'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 8mi',note:'walk/run 9/1 · first real hip test · note status carefully after'}]}
-  },
-  '2026-08-17':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 90 min',note:'NP 140–148w'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'4x200 threshold sets'},{disc:'run',label:'Run Club',note:'walk/run protocol'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Outdoor ride 100 min + brick',note:'outdoor mandatory · NP 140–148w · aero conditioning'},{disc:'brick',label:'Brick run 35 min',note:'walk/run 9/1 · 11:00/mi · walk every mile'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,200m',note:'threshold sets'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery before long run Sunday'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Outdoor long ride 60–65mi',note:'~17mph · practice Sacramento bike pacing · nutrition every 20 min'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 10mi',note:'walk/run 9/1 · Oregon proved this is doable · note hip status after'}]}
-  },
-  '2026-08-24':{
-    1:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery week begins · absorb 5 weeks of work'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'easy aerobic only'},{disc:'run',label:'Run Club',note:'easy · walk/run · enjoy it'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Easy ride 60 min',note:'Z2 only · NP under 135w · recovery week'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'easy aerobic'},{disc:'run',label:'Easy run 3mi',note:'walk/run 9/1 · keep very easy'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery day'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Easy ride 60 min',note:'recovery week · keep aero adaptation going'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 6mi',note:'walk/run 9/1 · recovery week long run · keep it easy'}]}
-  },
-  '2026-08-31':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 90 min',note:'NP 142–150w · race-specific intensity begins'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,200m',note:'4x200 at race effort'},{disc:'run',label:'Run Club',note:'walk/run · pick up effort slightly'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Outdoor 3hr ride + brick',note:'MUST be outdoor · 3hrs in aero is the point · ~17mph'},{disc:'brick',label:'Brick run 45 min',note:'walk/run 9/1 · walk every mile · KEY SESSION'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'4x200 race effort'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1 · recover from Wednesday brick'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery before long run Sunday'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Outdoor long ride 65mi',note:'~17mph · race-pace discipline · nutrition dialed'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 12mi',note:'walk/run 9/1 · key hip test · biggest run yet · note status carefully'}]}
-  },
-  '2026-09-07':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 100 min',note:'NP 142–150w · peak week begins'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'threshold sets'},{disc:'run',label:'Run Club',note:'walk/run · peak week'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Outdoor 65mi + brick',note:'~17mph · race-pace'},{disc:'brick',label:'Brick run 60 min',note:'walk/run 9/1 · walk every mile · closest thing to Sacramento run'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'4x200 race effort'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1 · recover from Wednesday brick'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'protect the legs before long run Sunday'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'ROUVY 90 min',note:'NP 142–150w · maintain stimulus'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 14mi',note:'walk/run 9/1 · peak long run · hip will be tested here · note everything'}]}
-  },
-  '2026-09-14':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 90 min',note:'NP 142–150w · second peak week'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'4x200 race effort'},{disc:'run',label:'Run Club',note:'walk/run · peak week energy'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Outdoor ride 90 min + brick',note:'~17mph · outdoor mandatory'},{disc:'brick',label:'Brick run 50 min',note:'walk/run 9/1 · full race nutrition practice'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 3,000m',note:'race effort sets'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery before long run Sunday'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Outdoor long ride 65mi',note:'~17mph · second consecutive peak long bike'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 16mi',note:'walk/run 9/1 · PEAK LONG RUN · if hip handles this you are ready for Sacramento · note everything'}]}
-  },
-  '2026-09-21':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 75 min',note:'NP 140–148w · step down begins'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'4x100 race pace'},{disc:'run',label:'Run Club',note:'walk/run · step down week'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Outdoor ride 75 min + brick',note:'outdoor preferred · step down but keep aero habit'},{disc:'brick',label:'Brick run 35 min',note:'walk/run 9/1'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,500m',note:'race pace sets'},{disc:'run',label:'Easy run 4mi',note:'walk/run 9/1'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'recovery before long run Sunday'}]},
-    6:{rest:false,planned:[{disc:'bike',label:'Easy ride 60 min',note:'step down · outdoor preferred'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 10mi',note:'walk/run 9/1 · step down from peak · legs should feel good'}]}
-  },
-  '2026-09-28':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 60 min',note:'NP 140–148w · taper begins'},{disc:'run',label:'Easy run 3mi',note:'walk/run 9/1'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'4x100 race pace'},{disc:'run',label:'Run Club',note:'walk/run · taper week · enjoy it'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Easy ride 45 min',note:'taper · NP under 140w · outdoor or trainer fine'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 2,000m',note:'race pace · feel fast'},{disc:'run',label:'Easy run 3mi',note:'walk/run · 4x30 sec strides · feel sharp'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Rest',note:'taper rest'}]},
-    6:{rest:false,planned:[{disc:'swim',label:'OW swim easy 1,500m',note:'La Jolla · easy aerobic'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Long run 8mi',note:'walk/run 9/1 · taper long run · legs should feel springy'}]}
-  },
-  '2026-10-05':{
-    1:{rest:false,planned:[{disc:'bike',label:'ROUVY 30 min easy',note:'very easy spin · race week prep'},{disc:'run',label:'Easy jog 3mi',note:'walk/run · 4 strides · feel fresh'}]},
-    2:{rest:false,planned:[{disc:'swim',label:'Pool swim 1,500m',note:'4x50 at race pace · last quality swim'},{disc:'run',label:'Run Club',note:'easy · last run club before Sacramento'}]},
-    3:{rest:false,planned:[{disc:'bike',label:'Bike reassembly check 20 min',note:'confirm shifting · brakes · nutrition loaded'}]},
-    4:{rest:false,planned:[{disc:'swim',label:'Pool swim 1,000m easy',note:'shakeout swim'},{disc:'run',label:'Easy jog 15 min',note:'4 strides · feel fast · no effort'}]},
-    5:{rest:true,planned:[{disc:'rest',label:'Travel to Sacramento',note:'fly or drive · stay off feet · hydrate · arrive ready'}]},
-    6:{rest:false,planned:[{disc:'swim',label:'Shakeout swim Sacramento River',note:'preview swim course · easy 800m · wetsuit check'}]},
-    0:{rest:false,planned:[{disc:'run',label:'Easy jog 3mi',note:'walk/run · last run before race week · easy'}]}
-  },
-  '2026-10-12':{
-    1:{rest:false,planned:[{disc:'swim',label:'Pool or OW swim 1,200m',note:'easy · 4x50 at race pace · last swim'}]},
-    2:{rest:false,planned:[{disc:'bike',label:'Easy spin 20 min',note:'very easy'},{disc:'run',label:'Easy jog 15 min',note:'4x20 sec strides · feel fast · no effort'}]},
-    3:{rest:false,planned:[{disc:'swim',label:'Sacramento River shakeout',note:'easy 800m · final open water · confidence builder'}]},
-    4:{rest:true,planned:[{disc:'rest',label:'Rest',note:'off feet · hydrate · eat well · gear check'}]},
-    5:{rest:false,planned:[{disc:'bike',label:'Bike check 10 min',note:'confirm shifting · brakes · nutrition loaded'}]},
-    6:{rest:false,planned:[{disc:'swim',label:'Athlete briefing · course preview',note:'transition walk-through · early night'}]},
-    0:{rest:true,planned:[{disc:'rest',label:'RACE DAY — IM California 🏁',note:'Swim 1:20 · Bike 17mph · Run walk/run 9/1 · sub-13:00 · YOU HAVE DONE THE WORK'}]}
-  }
-};
+// falls back to WEEKLY_SCHEDULE above. Populated from config/schedule.json.
+var WEEK_OVERRIDES = {};  // populated from config/schedule.json in loadAll()
 
 var recapWeekOffset = 0;
 
@@ -1596,10 +1519,11 @@ function buildWeeklyRecap(){
 
 async function loadAll(){
   try {
-    const [sumRes, actRes, slpRes] = await Promise.all([
+    const [sumRes, actRes, slpRes, schedRes] = await Promise.all([
       fetch('data/summary.json?v=' + Date.now()).catch(()=>null),
       fetch('data/activities.json?v=' + Date.now()).catch(()=>null),
-      fetch('data/sleep.json?v=' + Date.now()).catch(()=>null)
+      fetch('data/sleep.json?v=' + Date.now()).catch(()=>null),
+      fetch('config/schedule.json?v=' + Date.now()).catch(()=>null)
     ]);
 
     if(sumRes && sumRes.ok) summaryData = await sumRes.json();
@@ -1611,13 +1535,24 @@ async function loadAll(){
       var slpJson = await slpRes.json();
       sleepData = Array.isArray(slpJson) ? slpJson : [];
     }
+    if(schedRes && schedRes.ok) {
+      var schedJson = await schedRes.json();
+      WEEKLY_SCHEDULE = schedJson.weekly_template || {};
+      WEEK_OVERRIDES = schedJson.week_overrides || {};
+    }
 
-    // Analysis is optional - don\'t break if missing
+    // Analysis and readiness are optional - don't break if missing
     try {
       const anlRes = await fetch('data/analysis.json?v=' + Date.now());
       if(anlRes && anlRes.ok) analysisData = await anlRes.json();
     } catch(e) {
       console.log('No analysis data yet');
+    }
+    try {
+      const rdRes = await fetch('data/readiness.json?v=' + Date.now());
+      if(rdRes && rdRes.ok) readinessData = await rdRes.json();
+    } catch(e) {
+      console.log('No readiness data yet');
     }
 
     buildDashboard();
@@ -1696,6 +1631,7 @@ function buildDashboard(){
   // Analysis
   buildAIAnalysis();
   buildAnalysis(weeks, overall);
+  buildReadiness();
 
   // Show app
   document.getElementById('loading').style.display = 'none';

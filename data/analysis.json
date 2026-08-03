@@ -1,24 +1,30 @@
 {
   "date": "August 03, 2026",
-  "overallStatus": "Needs Attention",
-  "statusColor": "yellow",
-  "yesterdayAnalysis": "8-mile run at 143 HR \u2014 this was your scheduled Sunday long run and you hit the 8-mile target, which is 3 miles longer than the 5-mile plan for Week 2. That's aggressive volume stacking on top of last week's work. The effort looks controlled, but you're now carrying fatigue into Monday with two poor sleep nights (scores 43 and 49) immediately following this run.",
-  "todayRecommendation": "Complete today's planned 60-90min Z2 bike (ROUVY or outdoor) and 3-4mi easy run as separate sessions. Keep the bike truly Z2 \u2014 do not push given the sleep debt and yesterday's long run. The run should be easy walk/run 9/1 protocol, no heroics.",
-  "weekProgress": "Week 2 of 13: You're at 361 TSS of 350 target (103%) with 6 days remaining including today. You've front-loaded volume this week with an 8-mile run yesterday that exceeded the 5-mile Week 2 plan. The ROUVY California loop sim is done (45 TSS), but no brick workout has been completed yet \u2014 Wednesday's outdoor brick is the key session still ahead.",
-  "keyInsight": "You ran 8 miles yesterday when the Week 2 plan called for 5 miles \u2014 that's 60% more volume than prescribed, and it's showing up in your sleep quality (two consecutive terrible nights).",
+  "overallStatus": "On Track",
+  "statusColor": "green",
+  "yesterdayAnalysis": "Analysis temporarily unavailable -- check back tomorrow.",
+  "todayRecommendation": "Follow today's scheduled session: ROUVY 60 min (Z2 \u00b7 NP 135\u2013145w) + Easy run 3mi (walk/run 9/1).",
+  "weekProgress": "Week 2 of 13 -- 361 of 350 TSS (103% complete).",
+  "keyInsight": "76 days to Ironman California.",
   "alerts": [
-    "No brick workout yet this week \u2014 Wednesday outdoor brick is mandatory",
-    "Sleep scores 43 and 49 on Aug 1-2 \u2014 significant recovery deficit",
-    "SpO2 dropped to 89% last night (Aug 3) \u2014 monitor tonight",
-    "Yesterday's 8mi run was 3mi over Week 2 plan (5mi scheduled)"
+    "Claude API error 401 -- see workflow logs."
   ],
   "positives": [
-    "Hit 103% of weekly TSS target already \u2014 volume capacity is strong",
-    "8-mile run completed with controlled 143 HR \u2014 cardiovascular system handling load",
-    "ROUVY California sim completed \u2014 course familiarity building"
+    "Training is progressing",
+    "Consistency is key"
   ],
-  "recoveryScore": 4,
-  "trainingLoadStatus": "Fatigued",
+  "recoveryScore": 8,
+  "trainingLoadStatus": "Optimal",
+  "evidence": [
+    "Fallback -- Claude API unavailable"
+  ],
+  "confidence": {
+    "level": "low",
+    "reason": "Claude API error 401 -- see workflow logs."
+  },
+  "athlete_context_considered": [],
+  "race_implications": [],
+  "recommended_adjustments": [],
   "generatedAt": "2026-08-03",
   "daysToRace": 76,
   "currentWeek": 2,

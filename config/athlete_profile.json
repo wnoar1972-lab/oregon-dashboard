@@ -1,0 +1,83 @@
+{
+  "athlete_id": "seed-athlete-001",
+  "identity": {
+    "display_name": "William",
+    "age": 54,
+    "timezone": "America/Los_Angeles",
+    "units": "imperial"
+  },
+  "athletic_background": {
+    "primary_sports": ["triathlon"],
+    "race_history": [
+      {
+        "name": "IM 70.3 Oregon",
+        "date": "2026-07-20",
+        "result": "5:39:04 (18:24 PR)",
+        "splits": {
+          "swim": "25:05 (downstream current)",
+          "t1": "6:24",
+          "bike": "2:56:51 (19mph avg -- ~6 min lost to handlebar stop mi 1-5 + bathroom stop)",
+          "t2": "3:44",
+          "run": "2:07:01 (61st division -- best split placement)"
+        },
+        "lessons": [
+          "Run fade miles 10-13 caused by zero run calories (~130g carbs missing) plus hip/back/foot pain from bike position",
+          "HR data was optical sensor artifact -- cardiovascular fitness held up well",
+          "Back and foot pain on the run traced to bike position -- needs a professional bike fit before the next full distance build"
+        ]
+      },
+      {
+        "name": "San Diego International Triathlon (SDIT)",
+        "date": "2026-06-28",
+        "result": "dress rehearsal for Oregon execution",
+        "distance": "International: 1K swim / 30K bike / 10K run"
+      },
+      {
+        "name": "4th of July 10K",
+        "date": "2026-07-04",
+        "result": "tempo effort, target 8:00-8:15/mi"
+      }
+    ]
+  },
+  "medical_considerations": [
+    {
+      "id": "perthes-hip",
+      "category": "orthopedic",
+      "description": "Perthes disease, right hip -- stable imaging, competing successfully.",
+      "coaching_guardrails": [
+        "Treat as a coaching constraint, not a diagnosis to manage.",
+        "Caution against abrupt run-load increases; build long-run distance progressively.",
+        "Track hip pain/mobility notes and watch for associations with back-to-back run days or long-ride load.",
+        "Recommend athlete review or professional consultation if symptoms worsen -- never diagnose or contradict clinician guidance.",
+        "Label any load/symptom association as an association, not a proven cause."
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "name": "Testosterone Cypionate",
+      "purpose": "TRT (clinician-managed)",
+      "dosage_timing": "3x weekly",
+      "clinician_note": "Ongoing clinician-managed protocol.",
+      "athlete_reported_effect": null
+    }
+  ],
+  "equipment": [
+    {
+      "type": "bike",
+      "name": "Quintana Roo Kilo (tri bike)",
+      "fit_notes": "Back and foot pain during the Oregon run were traced to bike position -- professional bike fit completed ahead of the Sacramento build."
+    }
+  ],
+  "schedule_constraints": {
+    "preferred_training_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+    "rest_day_default": "Friday",
+    "recurring_commitments": ["Tuesday Run Club"]
+  },
+  "coaching_preferences": {
+    "tone": "direct, honest, specific -- do not sugar-coat, do not over-encourage",
+    "philosophy": "This athlete needs accurate feedback to be ready for a full Ironman -- false reassurance is more harmful than hard truths. Acknowledge genuine progress when it is earned.",
+    "walk_run_protocol": "9 min run / 1 min walk on all runs, plus a walk at every aid station on race day"
+  },
+  "manual_notes": []
+}
