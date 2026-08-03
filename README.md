@@ -11,21 +11,29 @@ Go to [github.com](https://github.com) and sign up for a free account if you don
 
 ### Step 2 — Create a New Repository
 1. Click the **+** button in the top right → **New repository**
-2. Name it: `oregon-dashboard`
+2. Name it: `training-dashboard`
 3. Set it to **Public** (required for free GitHub Pages hosting)
 4. Click **Create repository**
 
 ### Step 3 — Upload These Files
 In your new repository, upload all files from this folder maintaining the structure:
 ```
-oregon-dashboard/
+training-dashboard/
 ├── index.html
 ├── requirements.txt
 ├── .github/
 │   └── workflows/
 │       └── update.yml
 ├── scripts/
-│   └── fetch_garmin.py
+│   ├── fetch_garmin.py
+│   ├── readiness_engine.py
+│   ├── analyze_training.py
+│   └── schedule_lib.py
+├── config/
+│   ├── athlete_profile.json
+│   ├── race_config.json
+│   ├── schedule.json
+│   └── readiness_weights.json
 └── data/           ← will be created automatically
 ```
 
@@ -48,7 +56,7 @@ oregon-dashboard/
 3. Branch: **main** · Folder: **/ (root)**
 4. Click **Save**
 5. After ~2 minutes, your dashboard will be live at:
-   `https://YOUR-GITHUB-USERNAME.github.io/oregon-dashboard/`
+   `https://YOUR-GITHUB-USERNAME.github.io/training-dashboard/`
 
 ### Step 6 — Run Your First Update
 1. Go to **Actions** tab in your repository
