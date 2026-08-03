@@ -64,18 +64,18 @@
   },
   "week_focus": {
     "1": "Recovery -- easy aerobic only, no intensity",
-    "2": "First volume step-up -- Oregon ROUVY sim, long run",
+    "2": "First volume step-up -- Sacramento ROUVY sim, long run",
     "3": "Consistent build -- back to back bikes, swim consistency",
     "4": "First brick week -- 60 min ride then 20 min run, threshold swim sets",
     "5": "Outdoor ride + long run -- first 45-50mi outdoor ride, run 10-11mi",
     "6": "Recovery week -- volume drops 35%, no intensity",
-    "7": "Race-specific intensity -- Oregon ROUVY sim NP 145-152w, bricks",
+    "7": "Race-specific intensity -- Sacramento ROUVY sim at race-effort NP (see race strategy), bricks",
     "8": "Peak volume week -- biggest week, 2hr outdoor brick, 9000m swim",
     "9": "Transition -- volume -35%, one quality swim set, step down not shutdown",
-    "10": "Final build -- Oregon ROUVY full course at race NP 145-152w + brick run",
+    "10": "Final build -- Sacramento ROUVY full course at race-effort NP (see race strategy) + brick run",
     "11": "Sharpener -- last race-pace efforts, 4x200 swim, 3x8min bike, nothing hard after Wed",
-    "12": "True taper -- volume -60%, bike packed Thu, drive to Salem Sun Jul 13",
-    "13": "Race week -- arrive Salem Jul 13, race Jul 19"
+    "12": "True taper -- volume -60%, bike packed, travel to Sacramento",
+    "13": "Race week -- arrive Sacramento, race Oct 18"
   },
   "week1_special_rule": "If current_week == 1, this week (Jul 21-27) is mandatory post-race recovery after Oregon 70.3 on Jul 20. Low or zero TSS is 100% intentional and correct -- never flag as concerning, behind, or at risk. Only encourage rest, recovery, hydration, and booking a bike fit."
 }

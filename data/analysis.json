@@ -4,7 +4,7 @@
   "statusColor": "green",
   "yesterdayAnalysis": "Analysis temporarily unavailable -- check back tomorrow.",
   "todayRecommendation": "Follow today's scheduled session: ROUVY 60 min (Z2 \u00b7 NP 135\u2013145w) + Easy run 3mi (walk/run 9/1).",
-  "weekProgress": "Week 2 of 13 -- 361 of 350 TSS (103% complete).",
+  "weekProgress": "Week 3 of 13 -- 0 of 420 TSS (0% complete).",
   "keyInsight": "76 days to Ironman California.",
   "alerts": [
     "Claude API error 401 -- see workflow logs."
@@ -27,6 +27,6 @@
   "recommended_adjustments": [],
   "generatedAt": "2026-08-03",
   "daysToRace": 76,
-  "currentWeek": 2,
+  "currentWeek": 3,
   "weekPhase": "Base"
 }

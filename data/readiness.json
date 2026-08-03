@@ -2,12 +2,12 @@
   "date": "2026-08-03",
   "calculation_version": "1.0.0",
   "race_type": "full_distance_triathlon",
-  "current_week": 2,
+  "current_week": 3,
   "total_weeks": 13,
-  "overall_score": 70,
-  "overall_status": "On track",
+  "overall_score": 68,
+  "overall_status": "Needs attention",
   "overall_confidence": "low",
-  "strongest_positive_factor": "run (86/100): Race-distance exposure: longest run session is 8.0mi (31% of race distance).",
+  "strongest_positive_factor": "run (80/100): Race-distance exposure: longest run session is 8.0mi (31% of race distance).",
   "largest_limiter": "nutrition (60/100): No structured nutrition log (carb/hydration/sodium execution) exists yet.",
   "next_action": "Start logging carbohydrate/hydration execution on key sessions -- there's currently no evidence to score this from.",
   "weights_used": {
@@ -20,10 +20,10 @@
   },
   "scores": {
     "swim": {
-      "score": 61,
+      "score": 59,
       "status": "Needs attention",
       "top_factor": "Race-distance exposure: longest swim session is 2835m (73% of race distance).",
-      "top_limiter": "Volume: 62 TSS in the last 28 days vs. an expected ~280 for week 2.",
+      "top_limiter": "Volume: 62 TSS in the last 28 days vs. an expected ~336 for week 3.",
       "trend": "improving",
       "evidence_window_days": 28,
       "sessions_in_window": 2,
@@ -31,10 +31,10 @@
       "confidence": "low"
     },
     "bike": {
-      "score": 62,
+      "score": 60,
       "status": "Needs attention",
       "top_factor": "Race-distance exposure: longest bike session is 45.1mi (40% of race distance).",
-      "top_limiter": "Volume: 159 TSS in the last 28 days vs. an expected ~630 for week 2.",
+      "top_limiter": "Volume: 159 TSS in the last 28 days vs. an expected ~756 for week 3.",
       "trend": "improving",
       "evidence_window_days": 28,
       "sessions_in_window": 4,
@@ -42,10 +42,10 @@
       "confidence": "low"
     },
     "run": {
-      "score": 86,
-      "status": "Strong",
+      "score": 80,
+      "status": "On track",
       "top_factor": "Race-distance exposure: longest run session is 8.0mi (31% of race distance).",
-      "top_limiter": "Volume: 352 TSS in the last 28 days vs. an expected ~490 for week 2.",
+      "top_limiter": "Volume: 352 TSS in the last 28 days vs. an expected ~588 for week 3.",
       "trend": "improving",
       "evidence_window_days": 28,
       "sessions_in_window": 6,

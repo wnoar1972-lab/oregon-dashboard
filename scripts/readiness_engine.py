@@ -70,8 +70,15 @@ except Exception:
     BUILD_START = TODAY
 TOTAL_WEEKS = BUILD.get("total_weeks", 13)
 
+# Matches fetch_garmin.py's WEEK_ANCHOR: the schedule resolves every date to
+# its real Monday-Sunday calendar week, so the fallback week count (used
+# only if data/summary.json's currentWeek is missing) must snap to that same
+# Monday, not BUILD_START's literal weekday, or this would drift a day out
+# of sync with the schedule once BUILD_START isn't itself a Monday.
+WEEK_ANCHOR = BUILD_START - timedelta(days=BUILD_START.weekday())
+
 CURRENT_WEEK = overall_summary.get("currentWeek") or min(
-    TOTAL_WEEKS, max(1, (TODAY - BUILD_START).days // 7 + 1)
+    TOTAL_WEEKS, max(1, (TODAY - WEEK_ANCHOR).days // 7 + 1)
 )
 
 # Assumed discipline share of total weekly TSS -- a documented modeling

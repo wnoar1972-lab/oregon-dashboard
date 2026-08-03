@@ -20,6 +20,16 @@ TOTAL_WEEKS = RACE_CONFIG["build"]["total_weeks"]
 WEEKLY_TSS_TARGETS = {int(k): v for k, v in RACE_CONFIG["weekly_tss_targets"].items()}
 RACE_DATE = date.fromisoformat(RACE_CONFIG["date"])
 
+# The day-by-day schedule (config/schedule.json) resolves every date to the
+# Monday of its real calendar week (Mon-Sun), even for dates right after a
+# race where the override happens to be keyed a day later. TSS week windows
+# must snap to that same Monday-anchored calendar week -- anchoring strictly
+# to START_DATE itself (which can fall on any weekday) would silently drift
+# the TSS windows a day out of sync with what the schedule actually plans
+# for that week, once the build reaches a week whose Monday differs from
+# START_DATE's weekday. Week 13 lands exactly on RACE_DATE's Sunday.
+WEEK_ANCHOR = START_DATE - timedelta(days=START_DATE.weekday())
+
 # ── CREDENTIALS ───────────────────────────────────────────────────────────────
 GARMIN_EMAIL    = os.environ.get("GARMIN_EMAIL")
 GARMIN_PASSWORD = os.environ.get("GARMIN_PASSWORD")
@@ -201,12 +211,12 @@ if GARMIN_EMAIL and GARMIN_PASSWORD:
         import traceback; traceback.print_exc()
 
 # ── SUMMARY ───────────────────────────────────────────────────────────────────
-# Week boundaries are derived from config/race_config.json's build.start_date
-# and build.total_weeks -- not hardcoded here, so the build calendar has a
-# single source of truth.
+# Week boundaries are derived from WEEK_ANCHOR (see above) -- not hardcoded
+# here -- so the build calendar has a single source of truth shared with the
+# day-by-day schedule.
 week_ranges = []
 for wn in range(1, TOTAL_WEEKS + 1):
-    ws = (START_DATE + timedelta(days=(wn - 1) * 7))
+    ws = (WEEK_ANCHOR + timedelta(days=(wn - 1) * 7))
     we = ws + timedelta(days=6)
     week_ranges.append((wn, ws.strftime("%Y-%m-%d"), we.strftime("%Y-%m-%d")))
 
