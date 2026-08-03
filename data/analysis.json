@@ -2,22 +2,22 @@
   "date": "August 03, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "8-mile run at 143 HR \u2014 this was your scheduled Sunday long run and you hit the 8-mile target, which is 3 miles longer than the 5-mile plan for Week 2. That's aggressive volume stacking on top of last week's work. The effort looks controlled, but you're now carrying fatigue into Monday with two poor sleep nights (scores 43 and 49) immediately following this run.",
-  "todayRecommendation": "Complete today's planned 60-90min Z2 bike (ROUVY or outdoor) and 3-4mi easy run as separate sessions. Keep the bike truly Z2 \u2014 do not push given the sleep debt and yesterday's long run. The run should be easy walk/run 9/1 protocol, no heroics.",
-  "weekProgress": "Week 2 of 13: You're at 361 TSS of 350 target (103%) with 6 days remaining including today. You've front-loaded volume this week with an 8-mile run yesterday that exceeded the 5-mile Week 2 plan. The ROUVY California loop sim is done (45 TSS), but no brick workout has been completed yet \u2014 Wednesday's outdoor brick is the key session still ahead.",
-  "keyInsight": "You ran 8 miles yesterday when the Week 2 plan called for 5 miles \u2014 that's 60% more volume than prescribed, and it's showing up in your sleep quality (two consecutive terrible nights).",
+  "yesterdayAnalysis": "8.0mi run at 143 HR average (91 TSS) \u2014 this was significantly longer than the planned easy 3-4mi recovery run and pushes into Week 5 long run territory. You're in Week 2 of 13 and Sunday's long run is scheduled for only 5mi. Running 8 miles on a non-long-run day this early in the build is poor pacing and increases injury risk, especially with your Perthes hip and the bike fit issues still unresolved. This was not smart training.",
+  "todayRecommendation": "Today is ROUVY or outdoor bike 60-90min Z2 plus a SEPARATE easy 3-4mi run with 9/1 walk/run protocol. Given yesterday's 8-miler, keep today's run to exactly 3mi easy and monitor your hip closely. Do NOT exceed the planned volume again.",
+  "weekProgress": "Week 2 of 13: You've already banked 361 TSS against a 350 target (103% complete) with 6 days remaining. You're above target because yesterday's run was twice the prescribed distance. The week is structurally on-track but you're training without discipline \u2014 running long when the plan calls for easy/short compromises the progressive build and risks breaking down before Sacramento.",
+  "keyInsight": "You're exceeding prescribed volume in Week 2 of a 13-week build \u2014 this is how athletes get injured before race day, not how they arrive at the start line ready to execute.",
   "alerts": [
-    "No brick workout yet this week \u2014 Wednesday outdoor brick is mandatory",
-    "Sleep scores 43 and 49 on Aug 1-2 \u2014 significant recovery deficit",
-    "SpO2 dropped to 89% last night (Aug 3) \u2014 monitor tonight",
-    "Yesterday's 8mi run was 3mi over Week 2 plan (5mi scheduled)"
+    "Yesterday's 8mi run was 2x the prescribed 3-4mi easy run",
+    "No brick workout completed yet this week (Wed is scheduled)",
+    "SpO2 dropped to 89% last night \u2014 monitor for pattern",
+    "Sleep score 43 on Aug 2 after the excessive run volume"
   ],
   "positives": [
-    "Hit 103% of weekly TSS target already \u2014 volume capacity is strong",
-    "8-mile run completed with controlled 143 HR \u2014 cardiovascular system handling load",
-    "ROUVY California sim completed \u2014 course familiarity building"
+    "Week 1 TSS already at 103% with structural sessions still ahead (Wed brick, Sat long ride)",
+    "HR control remains solid \u2014 143 avg on yesterday's run shows aerobic fitness",
+    "ROUVY sim of Sacramento course (Aug 1) was good mental/positional prep"
   ],
-  "recoveryScore": 4,
+  "recoveryScore": 5,
   "trainingLoadStatus": "Fatigued",
   "generatedAt": "2026-08-03",
   "daysToRace": 76,
