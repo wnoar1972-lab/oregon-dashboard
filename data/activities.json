@@ -119,5 +119,16 @@
     "avgHR": 116.0,
     "distance": 72548.6,
     "duration": 9010.0
+  },
+  {
+    "date": "2026-08-02",
+    "title": "San Diego Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 91.0,
+    "np": 0,
+    "avgHR": 143.0,
+    "distance": 12900.0,
+    "duration": 5264.0
   }
 ]

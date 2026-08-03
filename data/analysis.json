@@ -1,25 +1,26 @@
 {
-  "date": "August 02, 2026",
+  "date": "August 03, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "ROUVY sim of the Sacramento course first loop was solid \u2014 45.1mi at 45 TSS, HR 116 suggests good Z2 control. However, this was supposed to be Saturday's long outdoor ride (mandatory outdoor per plan), not a recovery-paced indoor sim. You ran the Oregon course ROUVY on Friday and now Sacramento loop on Saturday \u2014 you're avoiding the outdoor aero conditioning work the plan demands. Indoor sims don't replicate the sustained aero position stress you need for 112 miles in Sacramento.",
-  "todayRecommendation": "Today is your Week 2 long run \u2014 5 miles per the progressive build. Execute the 9/1 walk/run protocol from mile 1, target 11:00/mi pace on the run intervals. This is a test of your hip resilience and your ability to fuel properly after the Oregon disaster. Take gels every 25 minutes and see if you can hold pace without the fade you had at Oregon.",
-  "weekProgress": "Week 2 of 13 is at 270 of 350 TSS target (77% complete) with 0 days remaining including today. You've completed 4 bike sessions, 2 swims, and 4 runs so far. The problem: zero brick workouts completed \u2014 Wednesday's designated outdoor brick was skipped entirely. You're avoiding the outdoor riding and the bike-to-run transitions that are critical for Sacramento readiness. TSS is tracking okay, but session quality and type are not matching the plan.",
-  "keyInsight": "You're substituting indoor ROUVY sims for mandatory outdoor aero conditioning rides and skipping the weekly brick entirely \u2014 this is a pattern that will leave you unprepared for 112 miles in aero position followed by a marathon.",
+  "yesterdayAnalysis": "8-mile run at 143 HR \u2014 this was your scheduled Sunday long run and you hit the 8-mile target, which is 3 miles longer than the 5-mile plan for Week 2. That's aggressive volume stacking on top of last week's work. The effort looks controlled, but you're now carrying fatigue into Monday with two poor sleep nights (scores 43 and 49) immediately following this run.",
+  "todayRecommendation": "Complete today's planned 60-90min Z2 bike (ROUVY or outdoor) and 3-4mi easy run as separate sessions. Keep the bike truly Z2 \u2014 do not push given the sleep debt and yesterday's long run. The run should be easy walk/run 9/1 protocol, no heroics.",
+  "weekProgress": "Week 2 of 13: You're at 361 TSS of 350 target (103%) with 6 days remaining including today. You've front-loaded volume this week with an 8-mile run yesterday that exceeded the 5-mile Week 2 plan. The ROUVY California loop sim is done (45 TSS), but no brick workout has been completed yet \u2014 Wednesday's outdoor brick is the key session still ahead.",
+  "keyInsight": "You ran 8 miles yesterday when the Week 2 plan called for 5 miles \u2014 that's 60% more volume than prescribed, and it's showing up in your sleep quality (two consecutive terrible nights).",
   "alerts": [
-    "No brick workout completed this week \u2014 Wednesday outdoor brick was skipped",
-    "Saturday long ride was indoor ROUVY sim instead of mandatory outdoor aero conditioning",
-    "Sleep score 49/100 last night \u2014 8.7h duration but poor quality recovery"
+    "No brick workout yet this week \u2014 Wednesday outdoor brick is mandatory",
+    "Sleep scores 43 and 49 on Aug 1-2 \u2014 significant recovery deficit",
+    "SpO2 dropped to 89% last night (Aug 3) \u2014 monitor tonight",
+    "Yesterday's 8mi run was 3mi over Week 2 plan (5mi scheduled)"
   ],
   "positives": [
-    "Completed both pool swim sessions with solid yardage (2,500m+ range)",
-    "Run volume is building appropriately \u2014 two 6+ mile runs this week",
-    "HR discipline on bike sessions is good \u2014 all Z2 work staying in 114-118 range"
+    "Hit 103% of weekly TSS target already \u2014 volume capacity is strong",
+    "8-mile run completed with controlled 143 HR \u2014 cardiovascular system handling load",
+    "ROUVY California sim completed \u2014 course familiarity building"
   ],
   "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
-  "generatedAt": "2026-08-02",
-  "daysToRace": 77,
+  "generatedAt": "2026-08-03",
+  "daysToRace": 76,
   "currentWeek": 2,
   "weekPhase": "Base"
 }
