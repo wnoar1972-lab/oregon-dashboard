@@ -1361,8 +1361,8 @@
         "planned": [
           {
             "disc": "bike",
-            "label": "Outdoor long ride 65mi",
-            "note": "~17mph \u00b7 race-pace discipline \u00b7 nutrition dialed"
+            "label": "Outdoor long ride 75mi",
+            "note": "~17mph \u00b7 first genuinely full-IM-length ride \u00b7 nutrition every 20 min"
           }
         ]
       },
@@ -1413,8 +1413,8 @@
         "planned": [
           {
             "disc": "bike",
-            "label": "Outdoor 65mi + brick",
-            "note": "~17mph \u00b7 race-pace"
+            "label": "Outdoor 45mi + brick",
+            "note": "~17mph \u00b7 race-pace \u00b7 moderated so Saturday's 90mi peak ride isn't stacked on a near-max midweek day"
           },
           {
             "disc": "brick",
@@ -1428,8 +1428,8 @@
         "planned": [
           {
             "disc": "swim",
-            "label": "Pool swim 3,000m",
-            "note": "4x200 race effort"
+            "label": "Open water swim 2,200m",
+            "note": "La Jolla Shores \u00b7 sustained open water \u00b7 sighting practice \u00b7 confidence for the 2.4mi Sacramento swim"
           },
           {
             "disc": "run",
@@ -1453,8 +1453,8 @@
         "planned": [
           {
             "disc": "bike",
-            "label": "ROUVY 90 min",
-            "note": "NP 142\u2013150w \u00b7 maintain stimulus"
+            "label": "Outdoor long ride 90mi",
+            "note": "~17mph \u00b7 peak ride of the build \u00b7 dial in full race fueling"
           }
         ]
       },
@@ -1545,8 +1545,8 @@
         "planned": [
           {
             "disc": "bike",
-            "label": "Outdoor long ride 65mi",
-            "note": "~17mph \u00b7 second consecutive peak long bike"
+            "label": "Outdoor long ride 95mi",
+            "note": "~17mph \u00b7 peak ride of the entire build (~5.6hrs) \u00b7 full race nutrition rehearsal"
           }
         ]
       },
