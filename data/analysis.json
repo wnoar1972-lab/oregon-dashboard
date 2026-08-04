@@ -2,25 +2,52 @@
   "date": "August 03, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "8.0mi run at 143 HR average (91 TSS) \u2014 this was significantly longer than the planned easy 3-4mi recovery run and pushes into Week 5 long run territory. You're in Week 2 of 13 and Sunday's long run is scheduled for only 5mi. Running 8 miles on a non-long-run day this early in the build is poor pacing and increases injury risk, especially with your Perthes hip and the bike fit issues still unresolved. This was not smart training.",
-  "todayRecommendation": "Today is ROUVY or outdoor bike 60-90min Z2 plus a SEPARATE easy 3-4mi run with 9/1 walk/run protocol. Given yesterday's 8-miler, keep today's run to exactly 3mi easy and monitor your hip closely. Do NOT exceed the planned volume again.",
-  "weekProgress": "Week 2 of 13: You've already banked 361 TSS against a 350 target (103% complete) with 6 days remaining. You're above target because yesterday's run was twice the prescribed distance. The week is structurally on-track but you're training without discipline \u2014 running long when the plan calls for easy/short compromises the progressive build and risks breaking down before Sacramento.",
-  "keyInsight": "You're exceeding prescribed volume in Week 2 of a 13-week build \u2014 this is how athletes get injured before race day, not how they arrive at the start line ready to execute.",
+  "yesterdayAnalysis": "8.0mi run at 143 HR is your longest session yet in this build -- 31% of race distance. That's solid progressive loading for someone 76 days out with a hip history. However, the last two nights of sleep (scores 43 and 49, minimal REM both nights) suggest inadequate recovery after a big effort, and one night showed SpO2 at 89%, well below your 7-day average of 93%.",
+  "todayRecommendation": "Execute today's planned 60min Z2 ride (NP 135-145w) and 3mi easy run as scheduled, but monitor closely: if fatigue is notable or hip discomfort appears, cut the run to 2mi or skip it entirely. Do not push through -- you have 6 more days this week to hit 420 TSS, and sacrificing recovery now risks the entire week.",
+  "weekProgress": "Week 3 of 13: 0 of 420 TSS complete (0%). This is Monday, so the low percentage is normal -- weekly TSS is back-loaded to the long ride Saturday and long run Sunday. Week is not yet behind, but sleep debt from the weekend is a red flag for absorbing this week's load.",
+  "keyInsight": "Your run is advancing well (8mi completed, 80/100 readiness), but two consecutive nights of poor sleep after your longest run suggest you're not recovering fast enough to absorb the planned volume safely.",
   "alerts": [
-    "Yesterday's 8mi run was 2x the prescribed 3-4mi easy run",
-    "No brick workout completed yet this week (Wed is scheduled)",
-    "SpO2 dropped to 89% last night \u2014 monitor for pattern",
-    "Sleep score 43 on Aug 2 after the excessive run volume"
+    "Two consecutive nights of poor sleep (scores 43, 49) with low REM after 8mi run",
+    "SpO2 dropped to 89% on Aug 3 -- monitor for pattern or night sweating",
+    "Nutrition readiness is 60/100 with no structured log yet -- this is the limiter that caused Oregon fade at mile 10"
   ],
   "positives": [
-    "Week 1 TSS already at 103% with structural sessions still ahead (Wed brick, Sat long ride)",
-    "HR control remains solid \u2014 143 avg on yesterday's run shows aerobic fitness",
-    "ROUVY sim of Sacramento course (Aug 1) was good mental/positional prep"
+    "8.0mi long run completed -- longest session of the build and 31% of marathon distance",
+    "Run readiness is 80/100, your strongest discipline heading into Sacramento",
+    "Last week averaged 7 activities with good discipline-balance (2 swim, 2 bike, 3 run)"
   ],
-  "recoveryScore": 5,
+  "recoveryScore": 4,
   "trainingLoadStatus": "Fatigued",
+  "evidence": [
+    "Readiness engine (run 80/100, nutrition 60/100, overall 68/100)",
+    "Garmin sleep scores (43, 49 last two nights, 7-day avg 69/100)",
+    "Yesterday's 8.0mi run at TSS 91",
+    "Planned schedule for Week 3 (420 TSS target)",
+    "SpO2 data (89% on Aug 3, avg 93%)"
+  ],
+  "confidence": {
+    "level": "moderate",
+    "reason": "7 days of training and sleep data are available, but no HRV data, no structured nutrition log, and no hip-specific symptom tracking yet -- gaps limit ability to correlate load with orthopedic response or fueling adequacy."
+  },
+  "athlete_context_considered": [
+    "Hip history (Perthes, right hip) -- progressive run loading constraint",
+    "Walk/run 9:1 protocol on all runs",
+    "Oregon lesson: run fade caused by missing 130g carbs",
+    "Age 54, TRT managed",
+    "76 days to Ironman California"
+  ],
+  "race_implications": [
+    "Run fitness is tracking well (80/100), but sleep debt will erode this if not addressed immediately",
+    "Nutrition remains the largest limiter (60/100) -- Oregon mile 10-13 fade will repeat in Sacramento without a structured log and practice",
+    "Two more race-rehearsal bricks are planned but none completed yet -- first brick is Wednesday, and fatigue state may compromise execution"
+  ],
+  "recommended_adjustments": [
+    "Start a structured nutrition log this week -- log carbs, hydration, sodium for every bike and run session to build the execution habit before taper",
+    "If sleep score is below 60 tomorrow (Tuesday), move Tuesday Run Club to an easy 3mi solo walk/run instead of any tempo work",
+    "Track hip status explicitly after today's run and Sunday's 6mi long run -- note any association between back-to-back run days (Mon/Tue/Thu) and discomfort"
+  ],
   "generatedAt": "2026-08-03",
   "daysToRace": 76,
-  "currentWeek": 2,
+  "currentWeek": 3,
   "weekPhase": "Base"
 }
