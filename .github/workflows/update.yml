@@ -39,6 +39,9 @@ jobs:
           INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
         run: python scripts/fetch_garmin.py
 
+      - name: Compute readiness scores
+        run: python scripts/readiness_engine.py
+
       - name: Generate AI training analysis
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

@@ -1,0 +1,1908 @@
+{
+  "_comment": "Single source of truth for the training schedule. day_of_week keys: 0=Sun..6=Sat. week_overrides keyed by the ISO Monday date of that week; any day/week not listed falls back to weekly_template. Sourced from index.html (richest/most current copy) on 2026-08-03; analyze_training.py's separate DEFAULT_SCHEDULE/WEEK_OVERRIDES copy is retired in favor of this file.",
+  "weekly_template": {
+    "0": {
+      "rest": false,
+      "planned": [
+        {
+          "disc": "swim",
+          "label": "OW swim or easy spin",
+          "note": "easy aerobic \u00b7 recovery day"
+        }
+      ]
+    },
+    "1": {
+      "rest": false,
+      "planned": [
+        {
+          "disc": "bike",
+          "label": "ROUVY 60 min",
+          "note": "Z2 \u00b7 NP 130\u2013145w"
+        },
+        {
+          "disc": "run",
+          "label": "Easy run 3\u20134mi",
+          "note": "walk/run 9/1"
+        }
+      ]
+    },
+    "2": {
+      "rest": false,
+      "planned": [
+        {
+          "disc": "swim",
+          "label": "Pool swim 2,500m",
+          "note": "4x100 steady"
+        },
+        {
+          "disc": "run",
+          "label": "Run Club",
+          "note": "walk/run protocol"
+        }
+      ]
+    },
+    "3": {
+      "rest": false,
+      "planned": [
+        {
+          "disc": "bike",
+          "label": "Outdoor ride + brick",
+          "note": "outdoor mandatory \u00b7 aero conditioning"
+        },
+        {
+          "disc": "brick",
+          "label": "Brick run 25\u201345 min",
+          "note": "walk/run 9/1 \u00b7 11:00/mi"
+        }
+      ]
+    },
+    "4": {
+      "rest": false,
+      "planned": [
+        {
+          "disc": "swim",
+          "label": "Pool swim 2,500m",
+          "note": "race effort sets"
+        },
+        {
+          "disc": "run",
+          "label": "Easy run 3\u20134mi",
+          "note": "walk/run 9/1"
+        }
+      ]
+    },
+    "5": {
+      "rest": true,
+      "planned": [
+        {
+          "disc": "rest",
+          "label": "Rest",
+          "note": "recovery day"
+        }
+      ]
+    },
+    "6": {
+      "rest": false,
+      "planned": [
+        {
+          "disc": "bike",
+          "label": "Outdoor long ride",
+          "note": "outdoor mandatory \u00b7 NP under 150w \u00b7 aero conditioning"
+        }
+      ]
+    }
+  },
+  "week_overrides": {
+    "2026-06-01": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike ride",
+            "note": "with brick"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run",
+            "note": "off the bike"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Swim",
+            "note": "morning"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "group run"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike ride",
+            "note": "with brick"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run",
+            "note": "off the bike"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Run",
+            "note": "steady"
+          }
+        ]
+      },
+      "5": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike ride",
+            "note": "with brick"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run",
+            "note": "off the bike"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Long bike ride",
+            "note": "endurance"
+          },
+          {
+            "disc": "swim",
+            "label": "Swim",
+            "note": "aerobic"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Easy long run",
+            "note": "scaled ~60-70%, all easy"
+          }
+        ]
+      }
+    },
+    "2026-06-08": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike ride",
+            "note": "with brick"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run",
+            "note": "off the bike"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Swim",
+            "note": "morning"
+          },
+          {
+            "disc": "run",
+            "label": "Long run 10mi",
+            "note": "Run Club \u00b7 easy"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike ride",
+            "note": "easy"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run (short)",
+            "note": "short & easy"
+          }
+        ]
+      },
+      "4": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest day"
+          }
+        ]
+      },
+      "5": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Swim",
+            "note": "aerobic"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Long bike ride",
+            "note": "endurance"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Run",
+            "note": "steady"
+          },
+          {
+            "disc": "swim",
+            "label": "Swim",
+            "note": "OW if possible"
+          }
+        ]
+      }
+    },
+    "2026-06-15": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 45 min",
+            "note": "with brick"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 20 min",
+            "note": "off the bike \u00b7 easy pace"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "aerobic \u00b7 after Run Club"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 50 min",
+            "note": "with brick"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 20 min",
+            "note": "off the bike \u00b7 easy pace"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,500m",
+            "note": "4x100 at race pace \u00b7 stay sharp"
+          }
+        ]
+      },
+      "5": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Easy run 3\u20134mi",
+            "note": "protect hip \u00b7 no intensity"
+          },
+          {
+            "disc": "swim",
+            "label": "Open water 1,500m",
+            "note": "La Jolla Shores \u00b7 aerobic"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Long bike 50\u201355mi",
+            "note": "moderate effort \u00b7 NP under 150w"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 20 min",
+            "note": "off the bike \u00b7 easy pace"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Easy run 3\u20134mi",
+            "note": "all easy \u00b7 protect hip"
+          }
+        ]
+      }
+    },
+    "2026-06-22": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 50\u201355 min",
+            "note": "easy-moderate ROUVY \u00b7 no brick \u00b7 no Run Club"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,500m",
+            "note": "4x100 at race pace \u00b7 stay sharp"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "easy \u00b7 stay loose \u00b7 no intensity"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 45 min",
+            "note": "with short brick"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 15 min",
+            "note": "easy off the bike"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Complete rest",
+            "note": "protect everything for Sunday"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Shakeout spin 20 min",
+            "note": "easy only \u00b7 save the legs"
+          },
+          {
+            "disc": "run",
+            "label": "Easy jog 10 min",
+            "note": "shakeout \u00b7 nothing more"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "race",
+            "label": "SDIT Race Day",
+            "note": "International \u00b7 1K swim / 30K bike / 10K run \u00b7 goal sub-2:15"
+          }
+        ]
+      }
+    },
+    "2026-06-29": {
+      "1": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "post-SDIT recovery \u00b7 walk & stretch only"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Easy spin 30 min",
+            "note": "recovery only \u00b7 no intensity"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m easy",
+            "note": "light return to training"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "only if hip & legs feel ready"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 45 min",
+            "note": "3x8 min at race effort NP 145\u2013152w \u00b7 last stimulus"
+          }
+        ]
+      },
+      "5": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike ride",
+            "note": "easy-moderate \u00b7 shake out the legs \u00b7 no intensity \u00b7 save it for tomorrow"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "race",
+            "label": "4th of July 10K \ud83c\uddfa\ud83c\uddf8",
+            "note": "strong tempo effort \u00b7 8:00\u20138:15/mi \u00b7 not all-out \u00b7 15 days to Oregon \u2014 DONE"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Open water swim",
+            "note": "easy aerobic \u00b7 La Jolla Shores \u00b7 enjoy it \u00b7 no intensity \u00b7 recover from 10K"
+          }
+        ]
+      }
+    },
+    "2026-07-06": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 40 min",
+            "note": "easy-moderate ROUVY \u00b7 NP under 140w"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 15 min",
+            "note": "short off the bike \u00b7 easy pace \u00b7 no intensity"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "4x100 at race pace \u00b7 stay sharp"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "easy group run \u00b7 enjoy it"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 40 min",
+            "note": "easy ROUVY \u00b7 NP under 140w"
+          },
+          {
+            "disc": "swim",
+            "label": "Pool swim 1,500m",
+            "note": "easy aerobic \u00b7 stay loose"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike 30 min easy",
+            "note": "very easy spin only \u00b7 skip the run \u00b7 protect the legs"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Complete rest",
+            "note": "protect everything \u00b7 no training stress"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Open water swim",
+            "note": "easy aerobic \u00b7 La Jolla Shores \u00b7 1,500m \u00b7 no intensity"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Easy run 2\u20133mi",
+            "note": "very easy \u00b7 final tune-up \u00b7 nothing more"
+          }
+        ]
+      }
+    },
+    "2026-07-13": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 1,500m",
+            "note": "easy \u00b7 4x50 at race pace \u00b7 last pool session"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000yd",
+            "note": "easy aerobic \u00b7 stay loose"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "easy pace \u00b7 feel fresh \u00b7 no effort"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "OW swim 1,000m",
+            "note": "easy open water \u00b7 last swim before Oregon \u00b7 confidence builder \u2014 DONE"
+          }
+        ]
+      },
+      "4": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Travel day \u2708\ufe0f",
+            "note": "flew to Oregon \u00b7 race completed 5:39:04 PR \ud83c\udfc1"
+          }
+        ]
+      },
+      "5": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike check 20 min",
+            "note": "QR Kilo reassembly \u00b7 short spin to confirm shifting & brakes"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Race rehearsal swim",
+            "note": "athlete briefing \u00b7 course preview swim if available"
+          }
+        ]
+      },
+      "0": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Race Eve \u2014 full rest",
+            "note": "gear laid out \u00b7 nutrition prepped \u00b7 goggles prepped \u00b7 sleep early \u00b7 RACE TOMORROW"
+          }
+        ]
+      }
+    },
+    "2026-07-20": {
+      "1": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Race Day",
+            "note": "IM 70.3 Oregon \u2014 5:39:04 PR \ud83c\udfc1"
+          }
+        ]
+      },
+      "2": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 1 post-race \u00b7 walk only \u00b7 celebrate 5:39:04 PR"
+          }
+        ]
+      },
+      "3": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 2 \u00b7 still sore \u00b7 skip Run Club and swim \u00b7 no training"
+          }
+        ]
+      },
+      "4": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 3 \u00b7 rest \u00b7 hydrate \u00b7 sleep \u00b7 let the body absorb the race"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 4 \u00b7 skip swim \u00b7 rest if still sore \u00b7 book bike fit this week"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Easy swim 20 min",
+            "note": "Day 5 \u00b7 first easy movement only if hip feels okay \u00b7 very easy \u00b7 no intensity"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "OW swim easy 20 min",
+            "note": "Day 6 \u00b7 easy aerobic only \u00b7 La Jolla Shores \u00b7 enjoy the water \u00b7 nothing structured"
+          }
+        ]
+      }
+    },
+    "2026-07-21": {
+      "1": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 1 post-race \u00b7 walk only \u00b7 eat well \u00b7 celebrate 5:39:04 PR"
+          }
+        ]
+      },
+      "2": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 2 \u00b7 still sore \u00b7 skip Run Club and swim \u00b7 no training"
+          }
+        ]
+      },
+      "3": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 3 \u00b7 rest \u00b7 hydrate \u00b7 sleep \u00b7 let the body absorb the race"
+          }
+        ]
+      },
+      "4": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Full rest",
+            "note": "Day 4 \u00b7 skip swim \u00b7 rest if still sore \u00b7 book bike fit this week"
+          }
+        ]
+      },
+      "5": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Easy swim 20 min",
+            "note": "Day 5 \u00b7 first easy movement only if hip feels okay \u00b7 very easy \u00b7 no intensity"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "OW swim easy 20 min",
+            "note": "Day 6 \u00b7 easy aerobic only \u00b7 La Jolla Shores \u00b7 enjoy the water \u00b7 nothing structured"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Easy spin 20 min",
+            "note": "Day 7 \u00b7 easy spin or rest \u00b7 listen to the body \u00b7 Sacramento build starts tomorrow"
+          }
+        ]
+      }
+    },
+    "2026-07-28": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 60 min",
+            "note": "easy Z2 \u00b7 NP 130\u2013140w \u00b7 tri bike on trainer if set up"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "walk/run 9/1 \u00b7 conversational HR \u00b7 first run of Sacramento build"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "easy aerobic \u00b7 4x100 steady"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "easy group run \u00b7 walk/run protocol"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 60 min",
+            "note": "easy Z2 \u00b7 NP 130\u2013140w \u00b7 aero position on trainer"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "easy aerobic \u00b7 build frequency"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "walk/run 9/1 \u00b7 protect hip \u00b7 keep easy"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery day"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor ride 60 min",
+            "note": "easy Z2 \u00b7 start aero position time on QR Kilo \u00b7 ROUVY if weather forces it"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 5mi",
+            "note": "walk/run 9/1 \u00b7 first long run of Sacramento build \u00b7 note hip status after"
+          }
+        ]
+      }
+    },
+    "2026-08-03": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 60 min",
+            "note": "Z2 \u00b7 NP 135\u2013145w"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,500m",
+            "note": "4x100 at steady effort"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run protocol"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor ride 75 min + brick",
+            "note": "outdoor preferred \u00b7 aero conditioning \u00b7 NP 135\u2013145w"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 25 min",
+            "note": "walk/run 9/1 \u00b7 first brick of Sacramento block"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,500m",
+            "note": "4x100 steady \u00b7 build endurance"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery day"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor ride 90 min",
+            "note": "Z2 \u00b7 aero on QR Kilo \u00b7 back needs to adapt to 112mi"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 6mi",
+            "note": "walk/run 9/1 \u00b7 building distance \u00b7 note hip status after"
+          }
+        ]
+      }
+    },
+    "2026-08-10": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 75 min",
+            "note": "NP 140\u2013148w"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,000m",
+            "note": "4x200 at steady effort"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run protocol"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor ride 90 min + brick",
+            "note": "outdoor mandatory \u00b7 aero conditioning \u00b7 NP 140\u2013148w"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 30 min",
+            "note": "walk/run 9/1 \u00b7 groove Sacramento marathon pace 11:00/mi"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,000m",
+            "note": "4x200 steady \u00b7 threshold introduced"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery before long run Sunday"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor long ride 50mi",
+            "note": "~17mph target \u00b7 QR Kilo \u00b7 first post-bike-fit outdoor ride"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 8mi",
+            "note": "walk/run 9/1 \u00b7 first real hip test \u00b7 note status carefully after"
+          }
+        ]
+      }
+    },
+    "2026-08-17": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 90 min",
+            "note": "NP 140\u2013148w"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,000m",
+            "note": "4x200 threshold sets"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run protocol"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor ride 100 min + brick",
+            "note": "outdoor mandatory \u00b7 NP 140\u2013148w \u00b7 aero conditioning"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 35 min",
+            "note": "walk/run 9/1 \u00b7 11:00/mi \u00b7 walk every mile"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,200m",
+            "note": "threshold sets"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery before long run Sunday"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor long ride 60\u201365mi",
+            "note": "~17mph \u00b7 practice Sacramento bike pacing \u00b7 nutrition every 20 min"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 10mi",
+            "note": "walk/run 9/1 \u00b7 Oregon proved this is doable \u00b7 note hip status after"
+          }
+        ]
+      }
+    },
+    "2026-08-24": {
+      "1": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery week begins \u00b7 absorb 5 weeks of work"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "easy aerobic only"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "easy \u00b7 walk/run \u00b7 enjoy it"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Easy ride 60 min",
+            "note": "Z2 only \u00b7 NP under 135w \u00b7 recovery week"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "easy aerobic"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "walk/run 9/1 \u00b7 keep very easy"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery day"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Easy ride 60 min",
+            "note": "recovery week \u00b7 keep aero adaptation going"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 6mi",
+            "note": "walk/run 9/1 \u00b7 recovery week long run \u00b7 keep it easy"
+          }
+        ]
+      }
+    },
+    "2026-08-31": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 90 min",
+            "note": "NP 142\u2013150w \u00b7 race-specific intensity begins"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,200m",
+            "note": "4x200 at race effort"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run \u00b7 pick up effort slightly"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor 3hr ride + brick",
+            "note": "MUST be outdoor \u00b7 3hrs in aero is the point \u00b7 ~17mph"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 45 min",
+            "note": "walk/run 9/1 \u00b7 walk every mile \u00b7 KEY SESSION"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,000m",
+            "note": "4x200 race effort"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1 \u00b7 recover from Wednesday brick"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery before long run Sunday"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor long ride 75mi",
+            "note": "~17mph \u00b7 first genuinely full-IM-length ride \u00b7 nutrition every 20 min"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 14mi",
+            "note": "walk/run 9/1 \u00b7 key hip test \u00b7 biggest run yet \u00b7 note status carefully"
+          }
+        ]
+      }
+    },
+    "2026-09-07": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 100 min",
+            "note": "NP 142\u2013150w \u00b7 peak week begins"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,000m",
+            "note": "threshold sets"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run \u00b7 peak week"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor 45mi + brick",
+            "note": "~17mph \u00b7 race-pace \u00b7 moderated so Saturday's 90mi peak ride isn't stacked on a near-max midweek day"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 60 min",
+            "note": "walk/run 9/1 \u00b7 walk every mile \u00b7 closest thing to Sacramento run"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Open water swim 2,200m",
+            "note": "La Jolla Shores \u00b7 sustained open water \u00b7 sighting practice \u00b7 confidence for the 2.4mi Sacramento swim"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1 \u00b7 recover from Wednesday brick"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "protect the legs before long run Sunday"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor long ride 90mi",
+            "note": "~17mph \u00b7 peak ride of the build \u00b7 dial in full race fueling"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 16mi",
+            "note": "walk/run 9/1 \u00b7 second-to-last build-up run \u00b7 hip will be tested here \u00b7 note everything"
+          }
+        ]
+      }
+    },
+    "2026-09-14": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 90 min",
+            "note": "NP 142\u2013150w \u00b7 second peak week"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,000m",
+            "note": "4x200 race effort"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run \u00b7 peak week energy"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor ride 90 min + brick",
+            "note": "~17mph \u00b7 outdoor mandatory"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 50 min",
+            "note": "walk/run 9/1 \u00b7 full race nutrition practice"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 3,000m",
+            "note": "race effort sets"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery before long run Sunday"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor long ride 95mi",
+            "note": "~17mph \u00b7 peak ride of the entire build (~5.6hrs) \u00b7 full race nutrition rehearsal"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 18mi",
+            "note": "walk/run 9/1 \u00b7 PEAK LONG RUN \u00b7 if hip handles this you are ready for Sacramento \u00b7 note everything"
+          }
+        ]
+      }
+    },
+    "2026-09-21": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 75 min",
+            "note": "NP 140\u2013148w \u00b7 step down begins"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,500m",
+            "note": "4x100 race pace"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run \u00b7 step down week"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Outdoor ride 75 min + brick",
+            "note": "outdoor preferred \u00b7 step down but keep aero habit"
+          },
+          {
+            "disc": "brick",
+            "label": "Brick run 35 min",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,500m",
+            "note": "race pace sets"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 4mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "recovery before long run Sunday"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Easy ride 60 min",
+            "note": "step down \u00b7 outdoor preferred"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 11mi",
+            "note": "walk/run 9/1 \u00b7 step down from peak \u00b7 legs should feel good"
+          }
+        ]
+      }
+    },
+    "2026-09-28": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 60 min",
+            "note": "NP 140\u2013148w \u00b7 taper begins"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "walk/run 9/1"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "4x100 race pace"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "walk/run \u00b7 taper week \u00b7 enjoy it"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Easy ride 45 min",
+            "note": "taper \u00b7 NP under 140w \u00b7 outdoor or trainer fine"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 2,000m",
+            "note": "race pace \u00b7 feel fast"
+          },
+          {
+            "disc": "run",
+            "label": "Easy run 3mi",
+            "note": "walk/run \u00b7 4x30 sec strides \u00b7 feel sharp"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "taper rest"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "OW swim easy 1,500m",
+            "note": "La Jolla \u00b7 easy aerobic"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Long run 9mi",
+            "note": "walk/run 9/1 \u00b7 taper long run \u00b7 legs should feel springy"
+          }
+        ]
+      }
+    },
+    "2026-10-05": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "ROUVY 30 min easy",
+            "note": "very easy spin \u00b7 race week prep"
+          },
+          {
+            "disc": "run",
+            "label": "Easy jog 3mi",
+            "note": "walk/run \u00b7 4 strides \u00b7 feel fresh"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 1,500m",
+            "note": "4x50 at race pace \u00b7 last quality swim"
+          },
+          {
+            "disc": "run",
+            "label": "Run Club",
+            "note": "easy \u00b7 last run club before Sacramento"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike reassembly check 20 min",
+            "note": "confirm shifting \u00b7 brakes \u00b7 nutrition loaded"
+          }
+        ]
+      },
+      "4": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool swim 1,000m easy",
+            "note": "shakeout swim"
+          },
+          {
+            "disc": "run",
+            "label": "Easy jog 15 min",
+            "note": "4 strides \u00b7 feel fast \u00b7 no effort"
+          }
+        ]
+      },
+      "5": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Travel to Sacramento",
+            "note": "fly or drive \u00b7 stay off feet \u00b7 hydrate \u00b7 arrive ready"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Shakeout swim Sacramento River",
+            "note": "preview swim course \u00b7 easy 800m \u00b7 wetsuit check"
+          }
+        ]
+      },
+      "0": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "run",
+            "label": "Easy jog 3mi",
+            "note": "walk/run \u00b7 last run before race week \u00b7 easy"
+          }
+        ]
+      }
+    },
+    "2026-10-12": {
+      "1": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Pool or OW swim 1,200m",
+            "note": "easy \u00b7 4x50 at race pace \u00b7 last swim"
+          }
+        ]
+      },
+      "2": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Easy spin 20 min",
+            "note": "very easy"
+          },
+          {
+            "disc": "run",
+            "label": "Easy jog 15 min",
+            "note": "4x20 sec strides \u00b7 feel fast \u00b7 no effort"
+          }
+        ]
+      },
+      "3": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Sacramento River shakeout",
+            "note": "easy 800m \u00b7 final open water \u00b7 confidence builder"
+          }
+        ]
+      },
+      "4": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "Rest",
+            "note": "off feet \u00b7 hydrate \u00b7 eat well \u00b7 gear check"
+          }
+        ]
+      },
+      "5": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "bike",
+            "label": "Bike check 10 min",
+            "note": "confirm shifting \u00b7 brakes \u00b7 nutrition loaded"
+          }
+        ]
+      },
+      "6": {
+        "rest": false,
+        "planned": [
+          {
+            "disc": "swim",
+            "label": "Athlete briefing \u00b7 course preview",
+            "note": "transition walk-through \u00b7 early night"
+          }
+        ]
+      },
+      "0": {
+        "rest": true,
+        "planned": [
+          {
+            "disc": "rest",
+            "label": "RACE DAY \u2014 IM California \ud83c\udfc1",
+            "note": "Swim 1:20 \u00b7 Bike 17mph \u00b7 Run walk/run 9/1 \u00b7 sub-13:00 \u00b7 YOU HAVE DONE THE WORK"
+          }
+        ]
+      }
+    }
+  }
+}

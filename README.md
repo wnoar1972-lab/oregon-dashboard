@@ -1,4 +1,4 @@
-# 🏊 IM 70.3 Oregon — Auto Dashboard
+# 🏊 IM California — Auto Dashboard
 
 Your training dashboard — auto-updated daily from Garmin Connect via GitHub Actions.
 
@@ -11,21 +11,29 @@ Go to [github.com](https://github.com) and sign up for a free account if you don
 
 ### Step 2 — Create a New Repository
 1. Click the **+** button in the top right → **New repository**
-2. Name it: `oregon-dashboard`
+2. Name it: `training-dashboard`
 3. Set it to **Public** (required for free GitHub Pages hosting)
 4. Click **Create repository**
 
 ### Step 3 — Upload These Files
 In your new repository, upload all files from this folder maintaining the structure:
 ```
-oregon-dashboard/
+training-dashboard/
 ├── index.html
 ├── requirements.txt
 ├── .github/
 │   └── workflows/
 │       └── update.yml
 ├── scripts/
-│   └── fetch_garmin.py
+│   ├── fetch_garmin.py
+│   ├── readiness_engine.py
+│   ├── analyze_training.py
+│   └── schedule_lib.py
+├── config/
+│   ├── athlete_profile.json
+│   ├── race_config.json
+│   ├── schedule.json
+│   └── readiness_weights.json
 └── data/           ← will be created automatically
 ```
 
@@ -48,7 +56,7 @@ oregon-dashboard/
 3. Branch: **main** · Folder: **/ (root)**
 4. Click **Save**
 5. After ~2 minutes, your dashboard will be live at:
-   `https://YOUR-GITHUB-USERNAME.github.io/oregon-dashboard/`
+   `https://YOUR-GITHUB-USERNAME.github.io/training-dashboard/`
 
 ### Step 6 — Run Your First Update
 1. Go to **Actions** tab in your repository
@@ -64,7 +72,7 @@ oregon-dashboard/
 1. Open your GitHub Pages URL in **Safari**
 2. Tap the **Share button** (box with arrow)
 3. Tap **Add to Home Screen**
-4. Name it **Oregon 70.3**
+4. Name it **IM California**
 5. Tap **Add**
 
 It now lives on your home screen and opens like an app.
@@ -75,7 +83,7 @@ It now lives on your home screen and opens like an app.
 
 Every morning at **6:00 AM Pacific Time**, GitHub automatically:
 1. Logs into your Garmin Connect account
-2. Pulls all activities since April 21, 2026
+2. Pulls all activities since the current build's start date (`config/race_config.json` → `build.start_date`)
 3. Pulls last 60 days of sleep data
 4. Updates the data files in your repository
 5. Dashboard refreshes next time you open it
@@ -122,8 +130,9 @@ If you want to force an update anytime:
 
 ## 🏁 Race Info
 
-- **IM 70.3 Oregon** · Salem, OR · July 19, 2026
-- **IM California 140.6** · Sacramento, CA · October 18, 2026
-- Bike NP target: **145–152w**
-- Run pace target: **sub-9:10/mi**
-- Overall goal: **Sub-6:00**
+**Active build — IM California 140.6** · Sacramento, CA · October 18, 2026
+- Bike NP target: **TBD** (pending professional bike fit)
+- Run pace target: **10:50–11:30/mi**, walk/run 9:1
+- Overall goal: **Sub-13:00**
+
+**Completed — IM 70.3 Oregon** · Salem, OR · July 20, 2026 · Result: **5:39:04** (18:24 PR)

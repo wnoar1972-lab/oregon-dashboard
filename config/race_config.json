@@ -1,0 +1,81 @@
+{
+  "race_id": "im-california-2026",
+  "name": "Ironman California",
+  "location": "Sacramento, California",
+  "date": "2026-10-18",
+  "race_type": "full_distance_triathlon",
+  "swim_miles": 2.4,
+  "bike_miles": 112,
+  "run_miles": 26.2,
+  "goal_finish": "12:59:59",
+  "build": {
+    "start_date": "2026-07-21",
+    "total_weeks": 13,
+    "note": "Sacramento build starts the day after IM 70.3 Oregon (2026-07-20)."
+  },
+  "target_splits": {
+    "swim": "1:20 (wetsuit legal in October)",
+    "bike": "6:37 (~17mph, flat 2-loop course -- patience is the key)",
+    "run": "4:45 (walk/run 9 min run / 1 min walk every mile, plus a walk at every aid station)"
+  },
+  "strategy": {
+    "bike_target_power_watts": null,
+    "bike_target_power_note": "TBD pending professional bike fit -- the Oregon target of 145-152w does not apply to Sacramento.",
+    "bike_target_speed_mph": 17,
+    "run_target_pace": "10:50-11:30/mi",
+    "run_walk_strategy": "9:1"
+  },
+  "course_notes": "Flat, 2-loop bike course -- pacing discipline matters more than raw power. River swim.",
+  "climate_notes": "October in Sacramento -- heat preparation still relevant, though cooler than a summer race.",
+  "nutrition_plan": {
+    "run_fueling": "Gels every 20-25 minutes on the run -- zero run calories was the primary cause of the Oregon run fade.",
+    "bike_fueling": "Full-distance carbohydrate tolerance and fueling execution validated across long rides."
+  },
+  "equipment_plan": {
+    "bike": "Quintana Roo Kilo, professional bike fit completed to resolve Oregon's back/foot pain.",
+    "checklist_notes": "Use a torque wrench and a structured mechanical checklist before race week."
+  },
+  "coaching_themes": [
+    "Full-distance bike durability",
+    "Sustainable aero position",
+    "Flat-course pacing discipline",
+    "Heat preparation",
+    "River swim readiness",
+    "Full-distance carbohydrate tolerance",
+    "Arriving at T2 fueled and mechanically comfortable",
+    "Marathon pacing restraint"
+  ],
+  "prior_race_lessons_carried_forward": [
+    "Validate bike fit under long-duration load.",
+    "Practice run nutrition every 20-25 minutes.",
+    "Complete two race-rehearsal bricks.",
+    "Use a torque wrench and structured mechanical checklist.",
+    "Validate run/walk strategy.",
+    "Track pain and equipment problems as structured events."
+  ],
+  "weekly_tss_targets": {
+    "1": 150, "2": 350, "3": 420, "4": 480, "5": 520, "6": 300,
+    "7": 590, "8": 750, "9": 660, "10": 400, "11": 480, "12": 250, "13": 150
+  },
+  "week_phases": {
+    "1": "Recovery", "2": "Base", "3": "Base", "4": "Build", "5": "Build",
+    "6": "Recovery", "7": "Peak", "8": "Peak", "9": "Peak", "10": "Build",
+    "11": "Taper", "12": "Taper", "13": "Race Week"
+  },
+  "week_focus": {
+    "1": "Recovery -- easy aerobic only, no intensity",
+    "2": "First volume step-up -- Sacramento ROUVY sim, long run",
+    "3": "Consistent build -- back to back bikes, swim consistency",
+    "4": "First brick week -- 60 min ride then 20 min run, threshold swim sets",
+    "5": "Outdoor ride + long run -- first 45-50mi outdoor ride, run 10-11mi",
+    "6": "Recovery week -- volume drops 35%, no intensity",
+    "7": "Race-specific intensity -- Wed 3hr outdoor brick + Sat's first 75mi ride (full-IM length), race nutrition practice",
+    "8": "Peak volume week -- biggest week of the build, Wed 45mi brick (moderated) + Sat 90mi peak ride, open-water long swim",
+    "9": "Second peak week -- Sat's 95mi ride is the true peak of the entire build (~5.6hrs), 18mi peak long run",
+    "10": "Step down from peak -- volume drops meaningfully, keep run frequency, absorb the peak block before taper",
+    "11": "Sharpener -- last race-pace efforts, 4x200 swim, 3x8min bike, nothing hard after Wed",
+    "12": "True taper -- volume -60%, bike packed, travel to Sacramento",
+    "13": "Race week -- arrive Sacramento, race Oct 18"
+  },
+  "week1_special_rule": "If current_week == 1, this week (Jul 21-27) is mandatory post-race recovery after Oregon 70.3 on Jul 20. Low or zero TSS is 100% intentional and correct -- never flag as concerning, behind, or at risk. Only encourage rest, recovery, hydration, and booking a bike fit."
+}

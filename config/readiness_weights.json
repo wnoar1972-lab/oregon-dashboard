@@ -1,0 +1,30 @@
+{
+  "calculation_version": "1.0.0",
+  "weights_by_race_type": {
+    "full_distance_triathlon": {
+      "swim": 0.20,
+      "bike": 0.30,
+      "run": 0.25,
+      "recovery": 0.15,
+      "nutrition": 0.05,
+      "equipment": 0.05
+    }
+  },
+  "default_race_type": "full_distance_triathlon",
+  "thresholds": {
+    "strong": { "min": 85, "label": "Strong" },
+    "on_track": { "min": 70, "label": "On track" },
+    "needs_attention": { "min": 55, "label": "Needs attention" },
+    "significant_gap": { "min": 0, "label": "Significant gap" }
+  },
+  "confidence_inputs": {
+    "min_weeks_for_high_confidence": 6,
+    "min_weeks_for_moderate_confidence": 3,
+    "max_data_age_days_for_fresh": 2,
+    "long_session_thresholds": {
+      "bike_miles": 80,
+      "run_miles": 13,
+      "swim_meters": 3000
+    }
+  }
+}
