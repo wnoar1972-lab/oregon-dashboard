@@ -130,5 +130,38 @@
     "avgHR": 143.0,
     "distance": 12900.0,
     "duration": 5264.0
+  },
+  {
+    "date": "2026-08-03",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 27.0,
+    "np": 0,
+    "avgHR": 140.0,
+    "distance": 4947.5,
+    "duration": 1643.0
+  },
+  {
+    "date": "2026-08-03",
+    "title": "ROUVY - IRONMAN 70.3 Muncie",
+    "type": "VirtualR",
+    "disc": "bike",
+    "tss": 29.0,
+    "np": 0,
+    "avgHR": 113.0,
+    "distance": 37063.2,
+    "duration": 4567.0
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Pool Swim",
+    "type": "Swim",
+    "disc": "swim",
+    "tss": 30.0,
+    "np": 0,
+    "avgHR": 115.0,
+    "distance": 2743.2,
+    "duration": 3860.0
   }
 ]
