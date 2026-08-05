@@ -2,49 +2,49 @@
   "date": "August 05, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Yesterday's 10-mile run at 144 HR is a significant session -- your longest run of the Sacramento build and 38% of race distance. The 1.7mi pool swim (2,500m planned, 2,740m actual) is strong consistency. However, this back-to-back run loading (8mi Sunday, 6mi Tuesday, 10mi yesterday) creates hip risk given your Perthes constraint -- this is exactly the pattern we're supposed to watch for.",
-  "todayRecommendation": "Complete today's 75-minute outdoor ride and 25-minute brick run as scheduled -- this is your first brick of the block and critical aero conditioning. Watch for any hip, back, or foot signals during the brick run transition, and log them specifically.",
-  "weekProgress": "Week 3 of 13 is at 194 TSS of 420 target (46% complete) with 4 days remaining including today. Today's brick (~80 TSS) plus Thursday swim/run (~70 TSS) and Saturday/Sunday long bike/run (~150 TSS) would reach ~494 TSS -- you're positioned to exceed the week target if you execute the remaining schedule.",
-  "keyInsight": "You just ran 10 miles on Tuesday night (your third run in four days) -- today's brick run needs careful hip/back monitoring because this is the exact back-to-back run pattern we're guarding against with your Perthes history.",
+  "yesterdayAnalysis": "The 10-mile run at 144 HR was your longest session this build and shows solid aerobic endurance -- this is 38% of race distance. However, this run was not on the schedule for Tuesday (which called for a 2,500m swim + Run Club). You completed a 1.7mi swim (2,736m) which exceeded the planned 2,500m, but the run appears to have been swapped in from somewhere else in the week, disrupting the intended structure.",
+  "todayRecommendation": "Complete today's scheduled 75-minute outdoor ride at NP 135-145w in aero position followed by a 25-minute brick run using walk/run 9:1. This is your first structured brick of the Sacramento block -- the bike-to-run transition practice is critical and cannot be skipped or moved.",
+  "weekProgress": "Week 3 of 13: You're at 194 of 420 TSS (46% complete) with 4 days remaining, but the schedule has been altered. Monday's bike+run was skipped entirely, and Tuesday's run appears to have been moved to yesterday. Today's brick and the weekend long ride/run are essential to hit the weekly target and maintain the intended training progression.",
+  "keyInsight": "You've deviated from the structured schedule early in this build -- skipping Monday's sessions and moving Tuesday's run creates gaps in the bike volume and brick practice you need for a 112-mile race in 74 days.",
   "alerts": [
-    "Back-to-back run loading: 3 runs in 4 days (8mi, 6mi, 10mi) -- today's brick run is the 4th in 5 days",
-    "Sleep disruption Aug 1-2: scores of 49 and 43 with reduced REM/deep sleep may affect recovery capacity",
-    "No structured nutrition log exists yet -- readiness engine scores this at 60/100 and it's your largest limiter"
+    "Monday's 60-min ROUVY + 3mi run was skipped -- no bike or run TSS recorded",
+    "Tuesday's Run Club was replaced with an unscheduled 10-mile run",
+    "Week is behind on bike TSS -- only 74 accumulated vs ~140 needed by Wed",
+    "First brick of the block is scheduled for today -- cannot be moved or skipped"
   ],
   "positives": [
-    "10-mile run completed at steady 144 HR -- longest run of the build and a genuine benchmark",
-    "Swim consistency holding: 1.7mi actual vs 2,500m planned shows strong execution",
-    "Sleep recovery improving: last 3 nights averaged 85/100 after mid-week disruption"
+    "10-mile run at 144 HR shows strong aerobic base and is your longest run of this build",
+    "Swim volume exceeded plan on Tuesday (2,736m vs 2,500m target)",
+    "Sleep recovering well -- last 2 nights scored 85 and 89 with good REM/deep splits"
   ],
-  "recoveryScore": 6,
+  "recoveryScore": 7,
   "trainingLoadStatus": "Optimal",
   "evidence": [
-    "Readiness engine (run 92/100, nutrition 60/100, overall 73/100)",
-    "Last 7 days training log (3 runs in 4 days pattern)",
-    "Garmin sleep scores (7-day avg 71/100, recent improvement to 85-89)",
-    "Planned vs actual week TSS (194/420 with back-loaded schedule)",
-    "Athlete profile (Perthes constraint, back-to-back run guardrail)"
+    "Readiness engine (run 92/100, bike 62/100, swim 64/100)",
+    "Last 7 days training log (3 bikes, 1 swim, 4 runs)",
+    "Garmin sleep data (7-day avg 71/100, SpO2 93.1%)",
+    "Week 3 planned schedule vs actual completed sessions"
   ],
   "confidence": {
     "level": "moderate",
-    "reason": "Good data on training load and sleep, but no structured nutrition log yet limits full assessment -- also only 3 weeks into a 13-week build, so adaptations and trends are still forming"
+    "reason": "7 days of activity and sleep data provide clear load tracking, but no nutrition log exists yet and the schedule deviations make it unclear whether the off-structure sessions were intentional or missed workouts."
   },
   "athlete_context_considered": [
-    "Perthes disease right hip (stable) -- caution against abrupt run-load increases",
-    "Walk/run 9:1 protocol on all runs",
-    "Oregon lessons: bike position caused back/foot pain, zero run calories caused fade",
-    "Professional bike fit completed after Oregon",
-    "Sacramento race Oct 18 (74 days out)"
+    "Hip history (Perthes, stable imaging)",
+    "Walk/run 9:1 protocol",
+    "Post-Oregon bike fit completed",
+    "Brick practice critical for Sacramento",
+    "74 days to Ironman California"
   ],
   "race_implications": [
-    "10-mile run at 144 HR demonstrates aerobic base for marathon walk/run target -- this is genuine progress toward the 4:45 run goal",
-    "Back-to-back run pattern needs monitoring now to avoid injury derailing the remaining 10 weeks of build",
-    "Nutrition logging needs to start immediately -- 60/100 readiness score means race-day fueling execution is at risk"
+    "Bike TSS deficit this week means less aero conditioning time -- you need 6:37 in the saddle on race day",
+    "Missing structured bricks early in the build risks undertrained bike-to-run transitions in Sacramento",
+    "Run volume is strong, but the 112-mile bike is your largest race-day limiter -- bike consistency must improve"
   ],
   "recommended_adjustments": [
-    "Log hip/back/foot status specifically after today's brick run -- any discomfort is an association worth tracking given the recent run loading",
-    "Start structured nutrition logging this week: log carbs/hydration/sodium on today's brick and all remaining sessions",
-    "If hip shows any symptoms after today's brick, consider swapping Thursday's 4-mile run for a pool recovery swim or rest day to break the 5-day run streak"
+    "Execute today's 75-min bike + 25-min brick run exactly as scheduled -- no substitutions",
+    "If Monday's session was intentionally skipped, note the reason and adjust expectations for weekly TSS target; if it was missed unintentionally, add a short Z2 bike later this week",
+    "Lock in the remaining week schedule: Thu swim+run, Sat 90-min ride, Sun 6-mi run -- no swaps"
   ],
   "generatedAt": "2026-08-05",
   "daysToRace": 74,
