@@ -1,53 +1,53 @@
 {
-  "date": "August 04, 2026",
+  "date": "August 05, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Monday's brick (60min ROUVY + 3.1mi run) delivered 56 TSS combined -- solid execution of the first Sacramento-block brick. HR 113 on the bike and 140 on the run shows appropriate zone discipline. The brick run was the intended protocol after the ride, which is exactly what the race will demand.",
-  "todayRecommendation": "Execute the pool swim 2,500m with 4x100 steady effort, then hit Run Club maintaining walk/run 9:1 protocol. This is a double-session day -- monitor fatigue carefully and note any hip feedback after two consecutive run days.",
-  "weekProgress": "Week 3 of 13 shows 86 TSS of 420 target (20% complete) through Monday. This is normal early-week pacing given the long ride (90min Saturday) and long run (6mi Sunday) are still ahead, but you cannot afford to skip today's double or miss any remaining sessions -- the week target is aggressive and back-loaded.",
-  "keyInsight": "Two consecutive nights of poor sleep (scores 43 and 49, minimal REM on Aug 2) immediately following your 8-mile long run is a red flag for recovery capacity under building load.",
+  "yesterdayAnalysis": "Yesterday's 10-mile run at 144 HR is a significant session -- your longest run of the Sacramento build and 38% of race distance. The 1.7mi pool swim (2,500m planned, 2,740m actual) is strong consistency. However, this back-to-back run loading (8mi Sunday, 6mi Tuesday, 10mi yesterday) creates hip risk given your Perthes constraint -- this is exactly the pattern we're supposed to watch for.",
+  "todayRecommendation": "Complete today's 75-minute outdoor ride and 25-minute brick run as scheduled -- this is your first brick of the block and critical aero conditioning. Watch for any hip, back, or foot signals during the brick run transition, and log them specifically.",
+  "weekProgress": "Week 3 of 13 is at 194 TSS of 420 target (46% complete) with 4 days remaining including today. Today's brick (~80 TSS) plus Thursday swim/run (~70 TSS) and Saturday/Sunday long bike/run (~150 TSS) would reach ~494 TSS -- you're positioned to exceed the week target if you execute the remaining schedule.",
+  "keyInsight": "You just ran 10 miles on Tuesday night (your third run in four days) -- today's brick run needs careful hip/back monitoring because this is the exact back-to-back run pattern we're guarding against with your Perthes history.",
   "alerts": [
-    "Sleep scores 43 and 49 on Aug 1-2 with suppressed REM (15min and 96min respectively) -- recovery is compromised",
-    "Back-to-back run days today (Tuesday) after Monday brick -- monitor hip closely given Perthes history and recent 8mi load",
-    "Week 3 TSS target of 420 is 65% higher than Week 2 actual (254 TSS) -- steep ramp may be outpacing recovery"
+    "Back-to-back run loading: 3 runs in 4 days (8mi, 6mi, 10mi) -- today's brick run is the 4th in 5 days",
+    "Sleep disruption Aug 1-2: scores of 49 and 43 with reduced REM/deep sleep may affect recovery capacity",
+    "No structured nutrition log exists yet -- readiness engine scores this at 60/100 and it's your largest limiter"
   ],
   "positives": [
-    "8-mile long run on Aug 2 (91 TSS) is your longest single run session logged -- genuine race-distance progress",
-    "First Sacramento brick executed cleanly on Monday with appropriate HR zones (113 bike, 140 run)",
-    "Sleep rebounded to 80-85 scores the last two nights after the Aug 1-2 trough"
+    "10-mile run completed at steady 144 HR -- longest run of the build and a genuine benchmark",
+    "Swim consistency holding: 1.7mi actual vs 2,500m planned shows strong execution",
+    "Sleep recovery improving: last 3 nights averaged 85/100 after mid-week disruption"
   ],
-  "recoveryScore": 5,
-  "trainingLoadStatus": "Fatigued",
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
   "evidence": [
-    "Readiness engine (run 82/100, overall 70/100)",
-    "Garmin sleep scores (7-day avg 69/100, two nights <50)",
-    "Intervals.icu TSS tracking (86 of 420 week target)",
-    "Last 7 days activity log (8mi long run Aug 2, first brick Aug 3)",
-    "Planned session schedule for Week 3"
+    "Readiness engine (run 92/100, nutrition 60/100, overall 73/100)",
+    "Last 7 days training log (3 runs in 4 days pattern)",
+    "Garmin sleep scores (7-day avg 71/100, recent improvement to 85-89)",
+    "Planned vs actual week TSS (194/420 with back-loaded schedule)",
+    "Athlete profile (Perthes constraint, back-to-back run guardrail)"
   ],
   "confidence": {
     "level": "moderate",
-    "reason": "Sleep and TSS data are complete, but no structured nutrition log exists yet (noted as largest limiter at 60/100), and HRV data is not provided to validate recovery status beyond sleep scores."
+    "reason": "Good data on training load and sleep, but no structured nutrition log yet limits full assessment -- also only 3 weeks into a 13-week build, so adaptations and trends are still forming"
   },
   "athlete_context_considered": [
-    "Perthes disease right hip (stable, but back-to-back runs require monitoring)",
+    "Perthes disease right hip (stable) -- caution against abrupt run-load increases",
     "Walk/run 9:1 protocol on all runs",
-    "Age 54 with TRT management",
-    "Professional bike fit completed post-Oregon",
-    "75 days to IM California Sacramento"
+    "Oregon lessons: bike position caused back/foot pain, zero run calories caused fade",
+    "Professional bike fit completed after Oregon",
+    "Sacramento race Oct 18 (74 days out)"
   ],
   "race_implications": [
-    "Run readiness is strongest discipline (82/100) and the 8mi long run shows you're building race-distance exposure -- this is critical for the 26.2mi target",
-    "Sleep disruption after heavy load is a concern for IM race week recovery -- you need to absorb 420 TSS weeks consistently without collapsing sleep quality",
-    "Nutrition tracking (60/100) remains the largest limiter with 75 days to race -- without a carb/hydration log, you're repeating the Oregon mistake that cost you 13 minutes in the run fade"
+    "10-mile run at 144 HR demonstrates aerobic base for marathon walk/run target -- this is genuine progress toward the 4:45 run goal",
+    "Back-to-back run pattern needs monitoring now to avoid injury derailing the remaining 10 weeks of build",
+    "Nutrition logging needs to start immediately -- 60/100 readiness score means race-day fueling execution is at risk"
   ],
   "recommended_adjustments": [
-    "Complete today's swim and Run Club as planned, but if hip or fatigue signals are strong during Run Club, cut the session short rather than push through -- you have 5 more runs this week",
-    "Start logging nutrition immediately: carbs per hour on the bike, run nutrition timing, and hydration volume -- this is your biggest gap and it cost you at Oregon",
-    "If sleep scores drop below 50 again this week, reduce Thursday's 4mi run to 3mi or convert Friday rest to active recovery walk rather than stacking more load"
+    "Log hip/back/foot status specifically after today's brick run -- any discomfort is an association worth tracking given the recent run loading",
+    "Start structured nutrition logging this week: log carbs/hydration/sodium on today's brick and all remaining sessions",
+    "If hip shows any symptoms after today's brick, consider swapping Thursday's 4-mile run for a pool recovery swim or rest day to break the 5-day run streak"
   ],
-  "generatedAt": "2026-08-04",
-  "daysToRace": 75,
+  "generatedAt": "2026-08-05",
+  "daysToRace": 74,
   "currentWeek": 3,
   "weekPhase": "Base"
 }
