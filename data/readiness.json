@@ -1,13 +1,13 @@
 {
-  "date": "2026-08-06",
+  "date": "2026-08-07",
   "calculation_version": "1.0.0",
   "race_type": "full_distance_triathlon",
   "current_week": 3,
   "total_weeks": 13,
-  "overall_score": 74,
+  "overall_score": 75,
   "overall_status": "On track",
   "overall_confidence": "low",
-  "strongest_positive_factor": "run (92/100): Race-distance exposure: longest run session is 10.0mi (38% of race distance).",
+  "strongest_positive_factor": "run (97/100): Race-distance exposure: longest run session is 10.0mi (38% of race distance).",
   "largest_limiter": "nutrition (60/100): No structured nutrition log (carb/hydration/sodium execution) exists yet.",
   "next_action": "Start logging carbohydrate/hydration execution on key sessions -- there's currently no evidence to score this from.",
   "weights_used": {
@@ -42,20 +42,20 @@
       "confidence": "low"
     },
     "run": {
-      "score": 92,
+      "score": 97,
       "status": "Strong",
       "top_factor": "Race-distance exposure: longest run session is 10.0mi (38% of race distance).",
-      "top_limiter": "Volume: 487 TSS in the last 28 days vs. an expected ~588 for week 3.",
+      "top_limiter": "Volume: 551 TSS in the last 28 days vs. an expected ~588 for week 3.",
       "trend": "improving",
       "evidence_window_days": 28,
-      "sessions_in_window": 8,
+      "sessions_in_window": 9,
       "weeks_observed": 2,
       "confidence": "low"
     },
     "recovery": {
       "score": 82,
       "status": "Recovered",
-      "top_factor": "Resting HR is 54.2 bpm, -0.4 bpm vs. the all-time baseline of 54.6 bpm.",
+      "top_factor": "Resting HR is 54.4 bpm, -0.2 bpm vs. the all-time baseline of 54.6 bpm.",
       "top_limiter": "7-day-avg sleep score is 73/100.",
       "trend": "stable",
       "evidence_window_days": 28,

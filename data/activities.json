@@ -188,6 +188,17 @@
   },
   {
     "date": "2026-08-06",
+    "title": "Oceanside Running",
+    "type": "Run",
+    "disc": "run",
+    "tss": 64.0,
+    "np": 0,
+    "avgHR": 144.0,
+    "distance": 9735.0,
+    "duration": 3551.0
+  },
+  {
+    "date": "2026-08-06",
     "title": "Pool Swim",
     "type": "Swim",
     "disc": "swim",
