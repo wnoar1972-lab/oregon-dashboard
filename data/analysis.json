@@ -2,48 +2,49 @@
   "date": "August 08, 2026",
   "overallStatus": "Needs Attention",
   "statusColor": "yellow",
-  "yesterdayAnalysis": "Open water swim in Carlsbad, 1.4mi at TSS 24 and HR 114 -- solid distance and low-stress execution. This is good race-specific conditioning with wetsuit legal conditions expected in Sacramento. However, the weekly bike TSS is critically behind schedule with only one day remaining in the week.",
-  "todayRecommendation": "Execute the full 90-minute outdoor ride on the QR Kilo as planned -- this is mandatory to hit the week's bike TSS target and essential for back/position adaptation post-fit. Stay strictly in Z2 and focus on position comfort and nutrition timing.",
-  "weekProgress": "Week 3 of 13 sits at 343 of 420 TSS (82% complete) with only today remaining. The bike load is the critical gap -- you've logged just 61 bike TSS across two short indoor sessions when this week called for back-to-back outdoor rides building toward 112-mile readiness. Today's 90-minute session is not optional.",
-  "keyInsight": "You're skipping the outdoor bike volume this build requires -- two indoor trainer sessions under 25 miles each will not prepare your back, position, or aerobic base for a 112-mile race in 71 days.",
+  "yesterdayAnalysis": "Open water swim at Carlsbad went well -- 1.4mi with TSS 24 and controlled HR 114. This is solid swim volume and execution. However, you had two swims yesterday (OWS + pool 1.7mi), which is unusual and not on your scheduled plan that called for a rest day Friday.",
+  "todayRecommendation": "Complete the scheduled 90-minute outdoor ride in aero on the QR Kilo at Z2. This is a critical session -- your back needs progressive exposure to the aero position after the bike fit, and you're 71 days out from a 112-mile ride. Do not skip this.",
+  "weekProgress": "Week 3 of 13 is at 82% of target TSS (343/420), but Saturday's 90-minute ride will bring you close or over target with Sunday's 6-mile run remaining. The week structure looks solid if you execute today's ride.",
+  "keyInsight": "Your run is tracking well (10mi session on Aug 4, solid placement at Oregon), but bike volume is the current limiter -- only 1 brick completed and bike readiness is rated 64/100 with 71 days to race.",
   "alerts": [
-    "Bike volume critically low this week: 2 sessions, 48mi total vs plan calling for outdoor rides 75min Wed + 90min Sat",
-    "Only 61 bike TSS logged vs ~150 needed to support weekly target and race prep",
-    "Back-to-back outdoor bike sessions (Wed/Sat) were the stated week focus -- only indoor trainer rides completed so far"
+    "Bike fit validation under long-duration load is incomplete -- today's 90min ride is essential",
+    "Only 1 brick workout completed in this build (scheduled 2 total) -- brick execution needs attention",
+    "Nutrition tracking is still absent (60/100 readiness score) -- no carb/hydration log exists yet",
+    "Last night's sleep score dropped to 69 with low REM (29min) -- monitor fatigue closely today"
   ],
   "positives": [
-    "Run execution is strong: 10mi long run on Aug 4 at HR 144 shows solid aerobic control and race-distance exposure building appropriately",
-    "Swim consistency holding: 3 sessions in 7 days with good mix of pool and OWS",
-    "Sleep quality improved: 5 of last 6 nights scored 77+ with adequate deep/REM distribution"
+    "10-mile run on Aug 4 at TSS 108 shows strong run endurance building appropriately",
+    "Swim consistency is excellent -- 4 swim sessions in 7 days with controlled HR and good volume",
+    "7-day average sleep score is 75/100 with stable RHR (54-56) indicating adequate recovery baseline"
   ],
-  "recoveryScore": 7,
-  "trainingLoadStatus": "Fresh",
+  "recoveryScore": 6,
+  "trainingLoadStatus": "Optimal",
   "evidence": [
-    "Readiness engine (bike 64/100, run 97/100)",
-    "Last 7 days activity log from Intervals.icu",
-    "Garmin sleep data (7-day avg 76/100)",
-    "Weekly TSS tracking (343/420)",
-    "Planned vs actual session comparison (Week 3 schedule)"
+    "Readiness engine (bike 64/100, run 97/100, nutrition 60/100)",
+    "Last 7 days training log (6 swim sessions, 10mi run Aug 4)",
+    "Garmin sleep data (last night 69 score, 29min REM, 7-day avg 75)",
+    "Week TSS tracking (343/420, 82% complete)"
   ],
   "confidence": {
-    "level": "high",
-    "reason": "Clear activity data, planned schedule, and sleep metrics available; the bike volume gap is objectively measurable and the pattern is unambiguous -- no nutrition log or HRV data limits ability to assess fueling readiness but does not affect this week's load assessment."
+    "level": "moderate",
+    "reason": "7 days of complete training and sleep data available, but nutrition execution is not tracked yet, and bike fit validation under race-duration load remains incomplete with only 3 weeks into a 13-week build."
   },
   "athlete_context_considered": [
-    "Professional bike fit completed post-Oregon",
-    "Back pain history from bike position (requires progressive outdoor load)",
-    "71 days to Ironman California (needs consistent bike TSS now)",
-    "Age 54 with hip history (cannot compress bike volume into fewer sessions later)"
+    "Hip history (Perthes, stable) -- monitoring progressive run load",
+    "Active race (Ironman California Oct 18, 71 days out)",
+    "Bike fit completed post-Oregon to address back/foot pain",
+    "Walk/run 9:1 protocol",
+    "Age 54, TRT managed"
   ],
   "race_implications": [
-    "Missing outdoor bike sessions now means less time to validate the new bike fit under race-duration load before Sacramento taper",
-    "Bike readiness score of 64/100 will not improve without consistent outdoor volume -- 112 miles at race pace requires adaptation you're not building",
-    "The stated week focus (back-to-back bikes, aero conditioning) is not happening -- this pattern repeated will compromise race readiness"
+    "Bike readiness (64/100) is the current limiter for a 6:37 target -- 90min+ rides must become consistent",
+    "Nutrition tracking gap (60/100) is a race-day risk -- Oregon's run fade from missing 130g carbs cannot repeat",
+    "Run endurance is tracking well (97/100) but needs brick validation to confirm run-off-bike execution"
   ],
   "recommended_adjustments": [
-    "Complete today's 90min outdoor ride in full -- non-negotiable for weekly TSS and position adaptation",
-    "Next week: prioritize outdoor rides over indoor trainer sessions when schedule allows weather/logistics -- your back needs real-world position stress",
-    "If outdoor rides are consistently missed due to scheduling, we need to restructure the plan now rather than pretend indoor 25-mile sessions will prepare you for 112 miles in October"
+    "Execute today's 90-minute ride in full aero position and log any back/hip discomfort -- this validates the bike fit under progressive load",
+    "Start a structured nutrition log this week -- track carb/hydration/sodium intake on at least one long ride and one long run to build race-day protocol",
+    "Prioritize the second brick workout in the next 2 weeks -- run-off-bike execution needs validation before taper"
   ],
   "generatedAt": "2026-08-08",
   "daysToRace": 71,
